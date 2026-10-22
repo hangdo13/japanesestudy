@@ -1,0 +1,87 @@
+<!-- @dsCard group="Học tập" height=600 subtitle="Kéo thử: phải = đã nhớ, trái = ôn lại, chạm = lật" -->
+<!doctype html>
+<html lang="vi">
+<head><meta charset="utf-8"><title>Flashcard — preview</title></head>
+<body>
+<section class="kt-phone kt-session" aria-label="Ôn kanji">
+  <div class="kt-session__head">
+    <button class="kt-iconbtn kt-iconbtn--sm" aria-label="Đóng"><i data-icon="x"></i></button>
+    <div class="kt-seg kt-seg--kanji kt-seg--thick" id="seg" role="progressbar" aria-valuemax="10"></div>
+    <span class="kt-count" id="count">4 / 10</span>
+  </div>
+
+  <div class="kt-deck" id="deck" tabindex="0" aria-label="Thẻ kanji. Mũi tên phải: đã nhớ. Mũi tên trái: ôn lại. Phím cách: lật thẻ."></div>
+
+  <div class="kt-swipe-hint" aria-hidden="true">
+    <span><i data-icon="chevron-left"></i>Ôn lại</span>
+    <span>Chạm để lật</span>
+    <span class="is-yes">Đã nhớ<i data-icon="chevron-right"></i></span>
+  </div>
+</section>
+
+<template id="card">
+  <article class="kt-flash">
+    <span class="kt-flash__stamp kt-flash__stamp--yes">Đã nhớ</span>
+    <span class="kt-flash__stamp kt-flash__stamp--no">Ôn lại</span>
+    <div class="kt-flash__top"><span class="kt-chip kt-chip--kanji">Kanji N5</span><span class="kt-flash__tools"><button class="kt-iconbtn kt-iconbtn--sm" aria-label="Phát âm"><i data-icon="volume"></i></button><button class="kt-iconbtn kt-iconbtn--sm" aria-label="Lưu thẻ"><i data-icon="bookmark"></i></button></span></div>
+    <div class="kt-flash__face">
+      <span class="kt-flash__kana" data-f="kana"></span>
+      <span class="kt-flash__glyph" lang="ja" data-f="glyph"></span>
+      <span class="kt-flash__meaning" data-f="meaning"></span>
+      <span class="kt-flash__tap">Chạm để xem nghĩa</span>
+    </div>
+    <div class="kt-flash__ex"><p lang="ja" data-f="ex"></p><small data-f="vi"></small></div>
+  </article>
+</template>
+
+<script>
+(function () {
+  var words = [
+    { glyph: '水', kana: 'みず', meaning: 'nước', ex: '水を のみます。', vi: 'Tôi uống nước.' },
+    { glyph: '火', kana: 'ひ', meaning: 'lửa', ex: '火を つけます。', vi: 'Tôi nhóm lửa.' },
+    { glyph: '木', kana: 'き', meaning: 'cây', ex: '大きい 木です。', vi: 'Là một cái cây lớn.' },
+    { glyph: '山', kana: 'やま', meaning: 'núi', ex: '山に のぼります。', vi: 'Tôi leo núi.' },
+    { glyph: '川', kana: 'かわ', meaning: 'sông', ex: '川で およぎます。', vi: 'Tôi bơi ở sông.' }
+  ];
+  var deck = document.getElementById('deck'), tpl = document.getElementById('card');
+  var seg = document.getElementById('seg'), count = document.getElementById('count');
+  var next = 0, done = 3, total = 10;
+
+  function fill(card, w) {
+    card.querySelectorAll('[data-f]').forEach(function (el) { el.textContent = w[el.getAttribute('data-f')]; });
+  }
+  function make() {
+    var card = tpl.content.firstElementChild.cloneNode(true);
+    fill(card, words[next % words.length]); next++;
+    return card;
+  }
+  function progress() {
+    var cells = '';
+    for (var i = 0; i < total; i++) cells += i < done ? '<i class="on"></i>' : '<i></i>';
+    seg.innerHTML = cells; seg.setAttribute('aria-valuenow', done);
+    count.textContent = Math.min(done + 1, total) + ' / ' + total;
+  }
+  // build three stacked cards; the last child is on top
+  var stack = [make(), make(), make()];
+  for (var i = stack.length - 1; i >= 0; i--) deck.appendChild(stack[i]);
+  deck.lastElementChild.classList.add('is-revealed');
+  if (window.Kotoba) Kotoba.hydrate(deck);
+  progress();
+
+  if (!window.Kotoba || !Kotoba.swipeDeck) return;
+  var api = Kotoba.swipeDeck(deck, {
+    onSwipe: function (dir, card) {
+      if (dir === 'right') done = done >= total ? 0 : done + 1;   // demo loops
+      progress();
+      // recycle the card to the bottom of the stack with the next word
+      api.reset(card);
+      card.classList.remove('is-revealed');
+      fill(card, words[next % words.length]); next++;
+      deck.insertBefore(card, deck.firstElementChild);
+    }
+  });
+})();
+</script>
+<script>window.Kotoba && Kotoba.hydrate();</script>
+</body>
+</html>

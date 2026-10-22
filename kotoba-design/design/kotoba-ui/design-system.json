@@ -1,0 +1,25 @@
+{
+  "v": 3,
+  "layout": "files",
+  "createdOnFiles": {
+    "v": 1,
+    "at": "2026-10-22T06:51:29Z"
+  },
+  "title": "Kotoba UI",
+  "namespace": "Kotoba",
+  "libraries": [],
+  "sections": {},
+  "groups": [],
+  "assetGroups": {},
+  "blobs": {},
+  "docs": {
+    "readme": "project/README.md",
+    "sections": []
+  },
+  "lastChange": {
+    "by": "Claude",
+    "at": "2026-10-22T08:15:36Z",
+    "via": "Claude app",
+    "note": "Thêm linh vật Pyon (component Mascot, Kotoba.mascot), token sakura, EmptyState, GoalComplete; AIHeroBanner, AIInsightCard, QuizOption, SwipeButton dùng Pyon."
+  }
+}

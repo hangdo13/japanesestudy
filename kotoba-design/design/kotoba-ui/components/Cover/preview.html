@@ -1,0 +1,58 @@
+<!-- @dsCard height=340 -->
+<!doctype html>
+<html lang="vi">
+<head><meta charset="utf-8"><title>Kotoba UI — cover</title>
+<style>
+  html, body { margin: 0; padding: 0; background: var(--bg); }
+  .cv { position: relative; width: 960px; height: 340px; overflow: hidden; background: var(--bg); }
+  .cv svg { position: absolute; inset: 0; }
+  .primary { fill: var(--primary); }
+  .blue { fill: var(--blue); }
+  .peach { fill: var(--peach); }
+  .tint { fill: var(--surface-tint); }
+  .slab { rx: var(--radius-xl); ry: var(--radius-xl); }
+  .seg { rx: 4px; ry: 4px; }
+  .cv-text { position: absolute; left: 32px; bottom: 28px; max-width: 440px; }
+  .cv-name { margin: 0; font-family: var(--font-sans); font-weight: 700; font-size: 112px; line-height: .95; letter-spacing: -0.03em; color: var(--ink); }
+  .cv-tag { margin: 12px 0 0; font-family: var(--font-sans); font-size: 14px; line-height: 20px; color: var(--ink-muted); }
+</style>
+</head>
+<body>
+<div class="cv">
+  <svg viewBox="0 0 960 340" width="960" height="340" aria-hidden="true">
+    <!--
+      blocks: primary (lavender #917EFF) slab 200×260 (radius-xl), blue pill 200×120 (rx = 60, half short side),
+              peach disc 48 (rx 24, half its side) as the one small warm spark, surface-tint tile 140×104 bleeding off the right edge (radius-xl)
+      arrangement: one tall slab bleeding off the top with satellites to its right, in the box x 520–960
+      pattern: "soft, friendly, large radii → pills" — rows of pill segments, the system's SegmentedProgress,
+               the one shape every screen repeats (course cards, quiz bar, flashcards); 3 rows × 15 = 45 units
+      scales: gaps space-4 (16) between blocks, segment gap 6 / pitch 28, segment height space-2 (8), radii radius-xl 28 and pill
+    -->
+    <rect class="primary slab" x="520" y="-28" width="200" height="260"/>
+    <rect class="blue" x="736" y="24" width="200" height="120" rx="60" ry="60"/>
+    <rect class="peach" x="760" y="184" width="48" height="48" rx="24" ry="24"/>
+    <rect class="tint slab" x="848" y="160" width="140" height="104"/>
+    <g id="rows"></g>
+  </svg>
+  <div class="cv-text">
+    <h1 class="cv-name">Kotoba<br>UI</h1>
+    <p class="cv-tag">Giao diện học tiếng Nhật — sạch, sáng, có nhịp.</p>
+  </div>
+</div>
+<script>
+  (function () {
+    var g = document.getElementById('rows'), ns = 'http://www.w3.org/2000/svg';
+    var rows = [{ y: 284, on: 11, c: 'primary' }, { y: 300, on: 8, c: 'blue' }, { y: 316, on: 12, c: 'peach' }];
+    rows.forEach(function (r) {
+      for (var i = 0; i < 15; i++) {
+        var s = document.createElementNS(ns, 'rect');
+        s.setAttribute('x', 520 + i * 28); s.setAttribute('y', r.y);
+        s.setAttribute('width', 22); s.setAttribute('height', 8);
+        s.setAttribute('class', 'seg ' + (i < r.on ? r.c : 'tint'));
+        g.appendChild(s);
+      }
+    });
+  })();
+</script>
+</body>
+</html>

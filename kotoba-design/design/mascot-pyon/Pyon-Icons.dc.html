@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>Pyon — biểu tượng</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="ds/kotoba/tokens.css">
+<link rel="stylesheet" href="ds/kotoba/components/bundle.css">
+<script src="ds/kotoba/components/bundle.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<style>
+body{margin:0;padding:0;background:transparent}
+</style>
+</helmet>
+<div style="width: 1180px; height: 600px; box-sizing: border-box; padding: 40px 48px; background: var(--bg); color: var(--ink); font-family: var(--font-sans); display: flex; gap: 48px; align-items: center;">
+
+  <div style="display: flex; flex-direction: column; align-items: center; gap: 16px; flex: none;">
+    <div style="width: 440px; height: 440px; border-radius: 50%; background: var(--surface-tint); display: flex; align-items: center; justify-content: center;">
+      <dc-import name="Mascot" kind="pyon" mood="{{mood}}" size="400" hint-size="400px,400px"></dc-import>
+    </div>
+    <div style="text-align: center;">
+      <b style="font-size: 20px; line-height: 26px;">Pyon</b>
+      <p style="margin: 2px 0 0; font-size: 13px; color: var(--ink-muted);">Khăn hachimaki hoa anh đào · áo hanten hồng sakura · ôm viên mochi</p>
+    </div>
+  </div>
+
+  <div style="flex: 1; display: flex; flex-direction: column; gap: 36px;">
+    <section style="display: flex; flex-direction: column; gap: 16px;">
+      <h2 style="margin: 0; font-size: 18px; line-height: 24px; font-weight: 700;">Icon app</h2>
+      <div style="display: flex; align-items: flex-end; gap: 28px;">
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 8px;">
+          <div style="position: relative; width: 160px; height: 160px; border-radius: 36px; overflow: hidden; background: linear-gradient(150deg, #C9BEFF 0%, #917EFF 55%, #6B9CFF 100%); box-shadow: 0 12px 28px rgba(112,90,242,0.32);">
+            <div style="position: absolute; left: 5px; top: 8px;"><dc-import name="Mascot" kind="pyon" mood="default" size="150" hint-size="150px,150px"></dc-import></div>
+          </div>
+          <span style="font-size: 12px; color: var(--ink-muted);">Màn hình chính</span>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 8px;">
+          <div style="position: relative; width: 96px; height: 96px; border-radius: 22px; overflow: hidden; background: linear-gradient(150deg, #C9BEFF 0%, #917EFF 55%, #6B9CFF 100%); box-shadow: 0 8px 18px rgba(112,90,242,0.28);">
+            <div style="position: absolute; left: 3px; top: 5px;"><dc-import name="Mascot" kind="pyon" mood="default" size="90" hint-size="90px,90px"></dc-import></div>
+          </div>
+          <span style="font-size: 12px; color: var(--ink-muted);">Thông báo</span>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 8px;">
+          <div style="position: relative; width: 56px; height: 56px; border-radius: 13px; overflow: hidden; background: linear-gradient(150deg, #C9BEFF 0%, #917EFF 55%, #6B9CFF 100%);">
+            <div style="position: absolute; left: 1px; top: 3px;"><dc-import name="Mascot" kind="pyon" mood="default" size="54" hint-size="54px,54px"></dc-import></div>
+          </div>
+          <span style="font-size: 12px; color: var(--ink-muted);">Nhỏ</span>
+        </div>
+      </div>
+    </section>
+
+    <section style="display: flex; flex-direction: column; gap: 16px;">
+      <h2 style="margin: 0; font-size: 18px; line-height: 24px; font-weight: 700;">Huy hiệu &amp; sticker</h2>
+      <div style="display: flex; gap: 24px;">
+        <sc-for list="{{badges}}" as="b" hint-placeholder-count="4">
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 8px; width: 104px; text-align: center;">
+            <div style="width: 92px; height: 92px; border-radius: 50%; background: var(--surface); box-shadow: inset 0 0 0 3px {{b.ring}}, var(--shadow-card); display: flex; align-items: center; justify-content: center;">
+              <dc-import name="Mascot" kind="pyon" mood="{{b.mood}}" size="82" hint-size="82px,82px"></dc-import>
+            </div>
+            <span style="font-size: 13px; line-height: 18px; font-weight: 600;">{{b.label}}</span>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+  </div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"mood":{"editor":"enum","options":["default","happy","think","sleepy","oops","celebrate"],"default":"default"},"$preview":{"width":1180,"height":600}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      mood: this.props.mood || 'default',
+      badges: [
+        { mood: 'celebrate', label: 'Đạt mục tiêu', ring: '#FF9F68' },
+        { mood: 'happy', label: 'Trả lời đúng', ring: '#28D873' },
+        { mood: 'think', label: 'Gia sư AI', ring: '#6B9CFF' },
+        { mood: 'sleepy', label: 'Nhắc học', ring: '#D6D2EF' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

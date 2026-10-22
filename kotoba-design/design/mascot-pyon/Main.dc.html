@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>Pyon — linh vật Kotoba</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="ds/kotoba/tokens.css">
+<link rel="stylesheet" href="ds/kotoba/components/bundle.css">
+<script src="ds/kotoba/components/bundle.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<style>
+body{margin:0;padding:0;background:transparent}
+</style>
+</helmet>
+<div style="width: 1320px; height: 600px; box-sizing: border-box; padding: 48px 64px; background: var(--bg); color: var(--ink); font-family: var(--font-sans); display: flex; align-items: center; gap: 64px;">
+  <div style="width: 480px; height: 480px; border-radius: 50%; background: var(--surface-tint); display: flex; align-items: center; justify-content: center; flex: none;">
+    <dc-import name="Mascot" mood="{{mood}}" size="430" hint-size="430px,430px"></dc-import>
+  </div>
+
+  <div style="flex: 1; display: flex; flex-direction: column; gap: 20px;">
+    <span class="kt-chip kt-chip--primary" style="align-self: flex-start;">Linh vật chính thức</span>
+    <h1 style="margin: 0; font-size: 56px; line-height: 60px; font-weight: 800; letter-spacing: -0.03em;">Pyon <span class="kt-jp" lang="ja" style="font-size: 32px; font-weight: 700; color: var(--primary-ink);">ぴょん</span></h1>
+    <p style="margin: 0; font-size: 17px; line-height: 26px; color: var(--ink-muted); max-width: 520px;">Bé thỏ chibi buộc khăn hachimaki quyết tâm, mặc áo hanten hồng hoa anh đào, ôm viên mochi. ぴょん là tiếng thỏ nhảy — mỗi ngày học là một bước nhảy nhỏ.</p>
+
+    <div style="display: flex; gap: 16px; margin-top: 8px;">
+      <div style="display: flex; flex-direction: column; gap: 6px; align-items: flex-start;">
+        <span style="width: 64px; height: 64px; border-radius: 20px; background: #FFB6CB;"></span>
+        <b style="font-size: 13px;">Áo sakura</b>
+        <span style="font-size: 12px; color: var(--ink-muted);">#FFB6CB</span>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 6px; align-items: flex-start;">
+        <span style="width: 64px; height: 64px; border-radius: 20px; background: #917EFF;"></span>
+        <b style="font-size: 13px;">Đai obi</b>
+        <span style="font-size: 12px; color: var(--ink-muted);">#917EFF</span>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 6px; align-items: flex-start;">
+        <span style="width: 64px; height: 64px; border-radius: 20px; background: #F8F5FF; box-shadow: inset 0 0 0 1px var(--line);"></span>
+        <b style="font-size: 13px;">Lông</b>
+        <span style="font-size: 12px; color: var(--ink-muted);">#F8F5FF</span>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 6px; align-items: flex-start;">
+        <span style="width: 64px; height: 64px; border-radius: 20px; background: #FFD3DF;"></span>
+        <b style="font-size: 13px;">Tai, má</b>
+        <span style="font-size: 12px; color: var(--ink-muted);">#FFD3DF</span>
+      </div>
+    </div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"mood":{"editor":"enum","options":["default","happy","think","sleepy","oops","celebrate"],"default":"default"},"$preview":{"width":1320,"height":600}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return { mood: this.props.mood || 'default' };
+  }
+}
+</script>
+</body>
+</html>

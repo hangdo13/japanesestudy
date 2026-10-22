@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>Pyon — linh vật Kotoba</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="ds/kotoba/tokens.css">
+<link rel="stylesheet" href="ds/kotoba/components/bundle.css">
+<script src="ds/kotoba/components/bundle.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<style>
+body{margin:0;padding:0;background:transparent}
+</style>
+</helmet>
+<div style="position: relative; width: {{px}}; height: {{px}}; flex: none;">
+
+<svg viewBox="0 0 200 200" width="100%" height="100%" aria-hidden="true" style="position: absolute; inset: 0; overflow: visible;">
+  <defs>
+    <radialGradient id="pHead" cx="36%" cy="28%" r="78%">
+      <stop offset="0" stop-color="#FFFFFF"></stop>
+      <stop offset="0.55" stop-color="#F8F5FF"></stop>
+      <stop offset="0.85" stop-color="#E4DCFF"></stop>
+      <stop offset="1" stop-color="#C6B9FA"></stop>
+    </radialGradient>
+    <radialGradient id="pEar" cx="34%" cy="24%" r="88%">
+      <stop offset="0" stop-color="#FFFFFF"></stop>
+      <stop offset="0.6" stop-color="#F1ECFF"></stop>
+      <stop offset="1" stop-color="#CDC1FB"></stop>
+    </radialGradient>
+    <linearGradient id="pEarIn" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFB8CC"></stop>
+      <stop offset="0.55" stop-color="#FFD3DF"></stop>
+      <stop offset="1" stop-color="#FFE6EC"></stop>
+    </linearGradient>
+    <radialGradient id="pCoat" cx="35%" cy="20%" r="85%">
+      <stop offset="0" stop-color="#FFE6EE"></stop>
+      <stop offset="0.55" stop-color="#FFB6CB"></stop>
+      <stop offset="1" stop-color="#F0789F"></stop>
+    </radialGradient>
+    <linearGradient id="pBand" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"></stop>
+      <stop offset="1" stop-color="#D9CFFF"></stop>
+    </linearGradient>
+    <linearGradient id="pObi" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#B3A6FF"></stop>
+      <stop offset="1" stop-color="#7C66F5"></stop>
+    </linearGradient>
+    <radialGradient id="pPetal" cx="50%" cy="85%" r="85%">
+      <stop offset="0" stop-color="#FF8FB1"></stop>
+      <stop offset="1" stop-color="#FFD6E2"></stop>
+    </radialGradient>
+    <radialGradient id="pMochi" cx="40%" cy="30%" r="75%">
+      <stop offset="0" stop-color="#FFFFFF"></stop>
+      <stop offset="1" stop-color="#EAE3FF"></stop>
+    </radialGradient>
+    <radialGradient id="pCheek">
+      <stop offset="0" stop-color="#FF8FA6" stop-opacity="0.8"></stop>
+      <stop offset="1" stop-color="#FF8FA6" stop-opacity="0"></stop>
+    </radialGradient>
+    <radialGradient id="pEye" cx="38%" cy="32%" r="72%">
+      <stop offset="0" stop-color="#6252B8"></stop>
+      <stop offset="0.55" stop-color="#2A2350"></stop>
+      <stop offset="1" stop-color="#171230"></stop>
+    </radialGradient>
+    <radialGradient id="pShadow">
+      <stop offset="0" stop-color="#6E62C8" stop-opacity="0.38"></stop>
+      <stop offset="1" stop-color="#6E62C8" stop-opacity="0"></stop>
+    </radialGradient>
+    <filter id="pSoft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="3"></feGaussianBlur></filter>
+  </defs>
+
+  <ellipse cx="100" cy="190" rx="58" ry="10" fill="url(#pShadow)"></ellipse>
+
+  <g transform="rotate(-16 86 66)">
+    <ellipse cx="86" cy="36" rx="15" ry="31" fill="url(#pEar)"></ellipse>
+    <ellipse cx="86" cy="40" rx="7.5" ry="21" fill="url(#pEarIn)"></ellipse>
+    <ellipse cx="81" cy="24" rx="3.5" ry="9" fill="#FFFFFF" opacity="0.85"></ellipse>
+  </g>
+  <g transform="rotate(20 114 66)">
+    <ellipse cx="114" cy="38" rx="15" ry="29" fill="url(#pEar)"></ellipse>
+    <ellipse cx="114" cy="42" rx="7.5" ry="19" fill="url(#pEarIn)"></ellipse>
+  </g>
+
+  <ellipse cx="83" cy="185" rx="15" ry="9" fill="url(#pHead)"></ellipse>
+  <ellipse cx="117" cy="185" rx="15" ry="9" fill="url(#pHead)"></ellipse>
+
+  <path d="M100 130 C 130 130 143 150 141 167 C 139 182 124 188 100 188 C 76 188 61 182 59 167 C 57 150 70 130 100 130 Z" fill="url(#pCoat)"></path>
+  <ellipse cx="80" cy="150" rx="12" ry="8" transform="rotate(-30 80 150)" fill="#FFFFFF" opacity="0.45" filter="url(#pSoft)"></ellipse>
+  <path d="M85 136 Q 90 150 100 158" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" opacity="0.95"></path>
+  <path d="M115 136 Q 110 150 100 158" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" opacity="0.95"></path>
+  <g transform="translate(100 146)">
+    <circle cx="0" cy="-2.4" r="2" fill="#FFFFFF"></circle>
+    <circle cx="2.3" cy="-0.7" r="2" fill="#FFFFFF"></circle>
+    <circle cx="1.4" cy="1.9" r="2" fill="#FFFFFF"></circle>
+    <circle cx="-1.4" cy="1.9" r="2" fill="#FFFFFF"></circle>
+    <circle cx="-2.3" cy="-0.7" r="2" fill="#FFFFFF"></circle>
+    <circle cx="0" cy="0" r="1.1" fill="#F0789F"></circle>
+  </g>
+  <path d="M61 165 Q 100 177 139 165 Q 141 171 139.5 176 Q 100 188 60.5 176 Q 59 171 61 165 Z" fill="url(#pObi)"></path>
+
+  <g transform="{{armL}}">
+    <ellipse cx="72" cy="157" rx="13" ry="15" fill="url(#pCoat)"></ellipse>
+    <g transform="translate(68 151)">
+      <circle cx="0" cy="-2.6" r="2.3" fill="#FFFFFF"></circle>
+      <circle cx="2.5" cy="-0.8" r="2.3" fill="#FFFFFF"></circle>
+      <circle cx="1.5" cy="2.1" r="2.3" fill="#FFFFFF"></circle>
+      <circle cx="-1.5" cy="2.1" r="2.3" fill="#FFFFFF"></circle>
+      <circle cx="-2.5" cy="-0.8" r="2.3" fill="#FFFFFF"></circle>
+      <circle cx="0" cy="0" r="1.2" fill="#F0789F"></circle>
+    </g>
+    <circle cx="76" cy="168" r="7" fill="url(#pHead)"></circle>
+  </g>
+  <g transform="{{armR}}">
+    <path d="M128 176 L 147 114" fill="none" stroke="#D9B78F" stroke-width="3.2" stroke-linecap="round"></path>
+    <circle cx="147.4" cy="111.6" r="2.8" fill="#FFD27A"></circle>
+    <path d="M146.5 117 C 156 114 166 120 176 116 L 175.3 136 C 165.5 140 155.5 134 145.8 137 Z" fill="#FFFFFF" stroke="#DCD6EE" stroke-width="1.2" stroke-linejoin="round"></path>
+    <path d="M147.5 119 C 156 116.5 165 121.5 174 118" fill="none" stroke="#EEEAF8" stroke-width="2" stroke-linecap="round"></path>
+    <circle cx="161" cy="126.5" r="6" fill="#BC002D"></circle>
+    <ellipse cx="159.2" cy="124.4" rx="2" ry="1.3" fill="#FFFFFF" opacity="0.35"></ellipse>
+    <ellipse cx="128" cy="157" rx="13" ry="15" fill="url(#pCoat)"></ellipse>
+    <g transform="translate(132 150)">
+      <circle cx="0" cy="-2.2" r="1.9" fill="#FFFFFF"></circle>
+      <circle cx="2.1" cy="-0.7" r="1.9" fill="#FFFFFF"></circle>
+      <circle cx="1.3" cy="1.8" r="1.9" fill="#FFFFFF"></circle>
+      <circle cx="-1.3" cy="1.8" r="1.9" fill="#FFFFFF"></circle>
+      <circle cx="-2.1" cy="-0.7" r="1.9" fill="#FFFFFF"></circle>
+      <circle cx="0" cy="0" r="1" fill="#F0789F"></circle>
+    </g>
+    <circle cx="124" cy="168" r="7" fill="url(#pHead)"></circle>
+  </g>
+
+  <ellipse cx="100" cy="167" rx="16" ry="11" fill="url(#pMochi)"></ellipse>
+  <ellipse cx="95" cy="163" rx="5" ry="2.5" fill="#FFFFFF" opacity="0.9"></ellipse>
+  <circle cx="104" cy="164" r="2.4" fill="#FF8FA6"></circle>
+
+  <ellipse cx="100" cy="137" rx="38" ry="7" fill="#C2537F" opacity="0.25" filter="url(#pSoft)"></ellipse>
+  <ellipse cx="100" cy="97" rx="49" ry="45" fill="url(#pHead)"></ellipse>
+  <ellipse cx="77" cy="77" rx="17" ry="10" transform="rotate(-30 77 77)" fill="#FFFFFF" opacity="0.9" filter="url(#pSoft)"></ellipse>
+
+  <path d="M55 85 Q 100 62 145 85 Q 147 91 145 96 Q 100 74 55 96 Q 53 91 55 85 Z" fill="url(#pBand)"></path>
+  <g transform="translate(100 76)">
+    <ellipse cx="0" cy="-4.2" rx="3" ry="4" fill="url(#pPetal)"></ellipse>
+    <ellipse cx="0" cy="-4.2" rx="3" ry="4" transform="rotate(72)" fill="url(#pPetal)"></ellipse>
+    <ellipse cx="0" cy="-4.2" rx="3" ry="4" transform="rotate(144)" fill="url(#pPetal)"></ellipse>
+    <ellipse cx="0" cy="-4.2" rx="3" ry="4" transform="rotate(216)" fill="url(#pPetal)"></ellipse>
+    <ellipse cx="0" cy="-4.2" rx="3" ry="4" transform="rotate(288)" fill="url(#pPetal)"></ellipse>
+    <circle cx="0" cy="0" r="1.7" fill="#FFD27A"></circle>
+  </g>
+  <circle cx="147" cy="89" r="6" fill="url(#pBand)"></circle>
+  <ellipse cx="155" cy="99" rx="4.5" ry="10" transform="rotate(-38 155 99)" fill="url(#pBand)"></ellipse>
+  <ellipse cx="148" cy="103" rx="4" ry="9" transform="rotate(-8 148 103)" fill="url(#pBand)"></ellipse>
+
+  <ellipse cx="72" cy="117" rx="12" ry="8" fill="url(#pCheek)"></ellipse>
+  <ellipse cx="128" cy="117" rx="12" ry="8" fill="url(#pCheek)"></ellipse>
+  <path d="{{eLf}}" fill="url(#pEye)"></path>
+  <path d="{{eRf}}" fill="url(#pEye)"></path>
+  <path d="{{hlL}}" fill="#FFFFFF"></path>
+  <path d="{{hlR}}" fill="#FFFFFF"></path>
+  <path d="{{eLs}}" fill="none" stroke="#2A2350" stroke-width="3.5" stroke-linecap="round"></path>
+  <path d="{{eRs}}" fill="none" stroke="#2A2350" stroke-width="3.5" stroke-linecap="round"></path>
+  <ellipse cx="100" cy="113" rx="3.6" ry="2.6" fill="#FF8FA6"></ellipse>
+  <path d="{{mouthF}}" fill="#2A2350"></path>
+  <path d="{{tongue}}" fill="#FF8FA6"></path>
+  <path d="{{mouthS}}" fill="none" stroke="#2A2350" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+
+<svg viewBox="0 0 200 200" width="100%" height="100%" aria-hidden="true" style="position: absolute; inset: 0; overflow: visible;">
+  <g opacity="{{oZ}}">
+    <text x="150" y="64" font-size="18" font-weight="800" fill="#917EFF" style="font-family: var(--font-sans);">z</text>
+    <text x="164" y="44" font-size="26" font-weight="800" fill="#917EFF" style="font-family: var(--font-sans);">Z</text>
+  </g>
+  <g opacity="{{oSweat}}">
+    <path d="M160 82 C 153 93 153 100 160 102 C 167 100 167 93 160 82 Z" fill="#6B9CFF"></path>
+  </g>
+  <g opacity="{{oThink}}">
+    <circle cx="150" cy="72" r="3" fill="#917EFF"></circle>
+    <circle cx="160" cy="60" r="4.5" fill="#917EFF"></circle>
+    <circle cx="173" cy="44" r="7" fill="#917EFF"></circle>
+  </g>
+  <g opacity="{{oSpark}}">
+    <path d="M34 48 Q36.2 55.8 44 58 Q36.2 60.2 34 68 Q31.8 60.2 24 58 Q31.8 55.8 34 48 Z" fill="#FF9F68"></path>
+    <path d="M168 38 Q170.64 47.36 180 50 Q170.64 52.64 168 62 Q165.36 52.64 156 50 Q165.36 47.36 168 38 Z" fill="#6B9CFF"></path>
+    <path d="M184 76 Q185.76 82.24 192 84 Q185.76 85.76 184 92 Q182.24 85.76 176 84 Q182.24 82.24 184 76 Z" fill="#917EFF"></path>
+    <path d="M28 111 Q29.54 116.46 35 118 Q29.54 119.54 28 125 Q26.46 119.54 21 118 Q26.46 116.46 28 111 Z" fill="#FF8FB1"></path>
+  </g>
+</svg>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"mood":{"editor":"enum","options":["default","happy","think","sleepy","oops","celebrate"],"default":"default"},"size":{"editor":"int","min":48,"max":480,"default":240},"$preview":{"width":240,"height":240}}'>
+class Component extends DCLogic {
+  renderVals() {
+    var mood = this.props.mood || 'default';
+    var size = Number(this.props.size) || 240;
+    var C = { e: [[84, 104], [116, 104]], m: [100, 119], s: 1.35, pl: [76, 146], pr: [124, 146] };
+    var s = C.s;
+    function ell(x, y, rx, ry) {
+      return 'M' + (x - rx) + ' ' + y + ' a' + rx + ' ' + ry + ' 0 1 0 ' + (2 * rx) + ' 0 a' + rx + ' ' + ry + ' 0 1 0 ' + (-2 * rx) + ' 0 Z';
+    }
+    function star(x, y, r) {
+      var k = r * 0.22;
+      return 'M' + x + ' ' + (y - r) + ' Q' + (x + k) + ' ' + (y - k) + ' ' + (x + r) + ' ' + y +
+        ' Q' + (x + k) + ' ' + (y + k) + ' ' + x + ' ' + (y + r) +
+        ' Q' + (x - k) + ' ' + (y + k) + ' ' + (x - r) + ' ' + y +
+        ' Q' + (x - k) + ' ' + (y - k) + ' ' + x + ' ' + (y - r) + ' Z';
+    }
+    function arcUp(x, y, w) { return 'M' + (x - w) + ' ' + (y + 2) + ' Q' + x + ' ' + (y - w - 1) + ' ' + (x + w) + ' ' + (y + 2); }
+    function arcDown(x, y, w) { return 'M' + (x - w) + ' ' + y + ' Q' + x + ' ' + (y + 5) + ' ' + (x + w) + ' ' + y; }
+    function eye(i) {
+      var x = C.e[i][0], y = C.e[i][1], fill = '', stroke = '', hl = '', hx = x, hy = y;
+      if (mood === 'happy') stroke = arcUp(x, y, 6 * s);
+      else if (mood === 'sleepy') stroke = arcDown(x, y, 6 * s);
+      else if (mood === 'celebrate') fill = star(x, y, 8 * s);
+      else if (mood === 'think') { hx = x + 2; hy = y - 3; fill = ell(hx, hy, 4.5 * s, 5.5 * s); }
+      else if (mood === 'oops') { hy = y + 1; fill = ell(x, hy, 4.5 * s, 5 * s); }
+      else fill = ell(x, y, 5 * s, 6.5 * s);
+      if (fill && mood !== 'celebrate') {
+        hl = ell(hx - 1.8 * s, hy - 2.6 * s, 2 * s, 2 * s) + ' ' + ell(hx + 2 * s, hy + 2.6 * s, 0.9 * s, 0.9 * s);
+      }
+      return { fill: fill, stroke: stroke, hl: hl };
+    }
+    var mx = C.m[0], my = C.m[1], mouthS = '', mouthF = '', tongue = '';
+    if (mood === 'happy' || mood === 'celebrate') {
+      var w = mood === 'celebrate' ? 11 : 9, h = mood === 'celebrate' ? 16 : 12;
+      mouthF = 'M' + (mx - w) + ' ' + my + ' Q' + mx + ' ' + (my + h) + ' ' + (mx + w) + ' ' + my + ' Z';
+      tongue = ell(mx, my + h * 0.42, w * 0.42, h * 0.16);
+    } else if (mood === 'think') {
+      mouthF = ell(mx + 3, my + 1, 3.5, 3.5);
+    } else if (mood === 'sleepy') {
+      mouthF = ell(mx, my + 1, 2.5, 2.5);
+    } else if (mood === 'oops') {
+      mouthS = 'M' + (mx - 8) + ' ' + (my + 2) + ' q4 -4 8 0 t8 0';
+    } else {
+      mouthS = 'M' + (mx - 7) + ' ' + my + ' q3.5 4.5 7 0 q3.5 4.5 7 0';
+    }
+    /* right paw holds the flag, so it only tilts; the left arm does the gestures */
+    var aL = 0, aR = 0;
+    if (mood === 'happy') { aL = 60; aR = 8; }
+    if (mood === 'celebrate') { aL = 75; aR = 14; }
+    if (mood === 'think') aL = 35;
+    if (mood === 'sleepy') { aL = -8; aR = 10; }
+    if (mood === 'oops') aR = 4;
+    var eL = eye(0), eR = eye(1);
+    return {
+      px: size + 'px',
+      eLf: eL.fill, eLs: eL.stroke, eRf: eR.fill, eRs: eR.stroke,
+      hlL: eL.hl, hlR: eR.hl,
+      mouthS: mouthS, mouthF: mouthF, tongue: tongue,
+      armL: 'rotate(' + aL + ' ' + C.pl[0] + ' ' + C.pl[1] + ')',
+      armR: 'rotate(' + aR + ' ' + C.pr[0] + ' ' + C.pr[1] + ')',
+      oZ: mood === 'sleepy' ? 1 : 0, oSweat: mood === 'oops' ? 1 : 0,
+      oSpark: mood === 'celebrate' ? 1 : 0, oThink: mood === 'think' ? 1 : 0
+    };
+  }
+}
+</script>
+</body>
+</html>

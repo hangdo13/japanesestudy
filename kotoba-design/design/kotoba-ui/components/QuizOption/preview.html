@@ -1,0 +1,25 @@
+<!-- @dsCard group="Học tập" height=560 -->
+<!doctype html>
+<html lang="vi">
+<head><meta charset="utf-8"><title>QuizOption — preview</title></head>
+<body>
+<div class="kt-phone kt-stack">
+  <p style="margin:0 0 var(--space-2);font-size:18px;line-height:24px;font-weight:700"><span class="kt-jp" lang="ja">「ありがとう」</span> nghĩa là gì?</p>
+  <button class="kt-option"><span class="kt-option__key">A</span><span class="kt-option__text">Xin chào</span></button>
+  <button class="kt-option is-correct"><span class="kt-option__key">B</span><span class="kt-option__text">Cảm ơn</span><i data-icon="check" class="kt-option__state"></i></button>
+  <button class="kt-option is-wrong"><span class="kt-option__key">C</span><span class="kt-option__text">Xin lỗi</span><i data-icon="x" class="kt-option__state"></i></button>
+  <button class="kt-option is-selected"><span class="kt-option__key">D</span><span class="kt-option__text">Tạm biệt <small class="kt-muted">(đang chọn)</small></span></button>
+  <div class="kt-feedback" role="status">
+    <span class="kt-feedback__mascot kt-mascot" data-mascot="happy" data-size="64"></span>
+    <div class="kt-feedback__body"><b>Đúng rồi! +10 XP</b><span lang="ja" class="kt-jp">ありがとう</span><span> = cảm ơn</span></div>
+    <button class="kt-btn kt-btn--primary kt-btn--sm">Tiếp tục</button>
+  </div>
+  <div class="kt-feedback kt-feedback--wrong" role="status">
+    <span class="kt-feedback__mascot kt-mascot" data-mascot="oops" data-size="64"></span>
+    <div class="kt-feedback__body"><b>Chưa đúng rồi</b><span>Đáp án: <span lang="ja" class="kt-jp">ありがとう</span> = cảm ơn</span></div>
+    <button class="kt-btn kt-btn--primary kt-btn--sm">Tiếp tục</button>
+  </div>
+</div>
+<script>window.Kotoba && Kotoba.hydrate();</script>
+</body>
+</html>

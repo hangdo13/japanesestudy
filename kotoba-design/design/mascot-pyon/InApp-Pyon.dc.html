@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>Pyon trong app</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="ds/kotoba/tokens.css">
+<link rel="stylesheet" href="ds/kotoba/components/bundle.css">
+<script src="ds/kotoba/components/bundle.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<style>
+body{margin:0;padding:0;background:transparent}
+</style>
+</helmet>
+<div style="width: 1290px; height: 844px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 60px; font-family: var(--font-sans); color: var(--ink);">
+
+  <section style="background: var(--bg); border: 1px solid var(--line); border-radius: 36px; padding: 28px 20px; box-sizing: border-box; display: flex; flex-direction: column; gap: 20px; overflow: hidden;">
+    <div class="kt-greeting">
+      <h1>Chào, <b>Hằng!</b></h1>
+      <p>Còn 2 bài để giữ chuỗi hôm nay.</p>
+    </div>
+
+    <article style="position: relative; background: var(--surface-tint); border-radius: 28px; padding: 20px 136px 20px 20px; display: flex; flex-direction: column; align-items: flex-start; gap: 12px; min-height: 172px; box-sizing: border-box;">
+      <span class="kt-chip kt-chip--ai">Pyon gợi ý</span>
+      <h3 style="margin: 0; font-size: 18px; line-height: 24px; font-weight: 700;">Ôn 5 kanji trước khi ngủ nhé?</h3>
+      <button class="kt-btn kt-btn--primary kt-btn--sm" type="button">Ôn ngay</button>
+      <div style="position: absolute; right: 8px; bottom: 6px;">
+        <dc-import name="Mascot" kind="pyon" mood="think" size="128" hint-size="128px,128px"></dc-import>
+      </div>
+    </article>
+
+    <div class="kt-sechead"><h2>Lịch học hôm nay</h2></div>
+    <div style="flex: 1; background: var(--surface); border: 1px solid var(--line); border-radius: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; text-align: center; padding: 20px;">
+      <dc-import name="Mascot" kind="pyon" mood="sleepy" size="120" hint-size="120px,120px"></dc-import>
+      <b style="font-size: 15px;">Hôm nay chưa có lớp</b>
+      <span style="font-size: 13px; line-height: 18px; color: var(--ink-muted); max-width: 240px;">Pyon chợp mắt một chút. Bạn muốn nhảy thêm 5 phút từ vựng không?</span>
+      <button class="kt-btn kt-btn--soft kt-btn--sm" type="button" style="margin-top: 4px;">Học 5 phút</button>
+    </div>
+  </section>
+
+  <section style="background: var(--bg); border: 1px solid var(--line); border-radius: 36px; padding: 28px 20px; box-sizing: border-box; display: flex; flex-direction: column; gap: 12px; overflow: hidden;">
+    <div class="kt-session__head">
+      <button class="kt-iconbtn kt-iconbtn--sm" type="button" aria-label="Đóng"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"></path></svg></button>
+      <div class="kt-seg kt-seg--speaking kt-seg--thick" role="progressbar" aria-valuenow="3" aria-valuemax="8"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i><i></i><i></i></div>
+      <span class="kt-count">3 / 8</span>
+    </div>
+    <p style="margin: 20px 0 8px; font-size: 20px; line-height: 28px; font-weight: 700;"><span class="kt-jp" lang="ja">「ありがとう」</span> nghĩa là gì?</p>
+    <button class="kt-option" type="button"><span class="kt-option__key">A</span><span class="kt-option__text">Xin chào</span></button>
+    <button class="kt-option is-correct" type="button"><span class="kt-option__key">B</span><span class="kt-option__text">Cảm ơn</span><svg class="kt-option__state" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></button>
+    <button class="kt-option" type="button"><span class="kt-option__key">C</span><span class="kt-option__text">Xin lỗi</span></button>
+    <button class="kt-option" type="button"><span class="kt-option__key">D</span><span class="kt-option__text">Tạm biệt</span></button>
+
+    <div class="kt-feedback" role="status" style="margin-top: auto; padding: 12px 16px 12px 8px;">
+      <dc-import name="Mascot" kind="pyon" mood="happy" size="72" hint-size="72px,72px"></dc-import>
+      <div class="kt-feedback__body"><b>Đúng rồi! +10 XP</b><span><span class="kt-jp" lang="ja">ありがとう</span> = cảm ơn</span></div>
+      <button class="kt-btn kt-btn--primary kt-btn--sm" type="button">Tiếp tục</button>
+    </div>
+  </section>
+
+  <section style="background: var(--bg); border: 1px solid var(--line); border-radius: 36px; padding: 28px 24px 32px; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; gap: 16px; text-align: center; overflow: hidden;">
+    <div style="margin-top: 48px; width: 270px; height: 270px; border-radius: 50%; background: var(--surface-tint); display: flex; align-items: center; justify-content: center;">
+      <dc-import name="Mascot" kind="pyon" mood="celebrate" size="240" hint-size="240px,240px"></dc-import>
+    </div>
+    <h2 style="margin: 12px 0 0; font-size: 26px; line-height: 32px; font-weight: 800; letter-spacing: -0.02em;">Xong mục tiêu tuần!</h2>
+    <p style="margin: 0; font-size: 15px; line-height: 22px; color: var(--ink-muted); max-width: 280px;">7 bước nhảy ぴょん cùng Pyon — 7 ngày liên tiếp, 42 từ mới.</p>
+    <div style="display: flex; gap: 8px; flex-wrap: wrap; justify-content: center;">
+      <span class="kt-chip kt-chip--rank">+200 XP</span>
+      <span class="kt-chip kt-chip--success">Chuỗi 7 ngày</span>
+    </div>
+    <button class="kt-btn kt-btn--primary kt-btn--block" type="button" style="margin-top: auto;">Tiếp tục</button>
+  </section>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1290,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

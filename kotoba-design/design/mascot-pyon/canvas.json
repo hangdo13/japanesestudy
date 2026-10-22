@@ -1,0 +1,96 @@
+{
+  "v": 3,
+  "createdOnFiles": {
+    "v": 1,
+    "at": "2026-10-22T07:37:35Z"
+  },
+  "title": "Kotoba — Linh vật",
+  "launch": {
+    "view": "canvas"
+  },
+  "pages": [],
+  "boards": {
+    "Main.dc.html": {
+      "x": 0,
+      "y": 0,
+      "w": 1320,
+      "h": 600,
+      "title": "Pyon — linh vật chính thức"
+    },
+    "Mascot.dc.html": {
+      "x": 1440,
+      "y": 0,
+      "w": 240,
+      "h": 240,
+      "title": "Pyon (component)"
+    },
+    "Onboard-Pyon.dc.html": {
+      "x": 0,
+      "y": 900,
+      "w": 390,
+      "h": 844,
+      "title": "Giới thiệu · Pyon"
+    },
+    "Moods-Pyon.dc.html": {
+      "x": 0,
+      "y": 2124,
+      "w": 1180,
+      "h": 340,
+      "title": "Biểu cảm · Pyon"
+    },
+    "InApp-Pyon.dc.html": {
+      "x": 0,
+      "y": 2844,
+      "w": 1290,
+      "h": 844,
+      "title": "Pyon trong app"
+    },
+    "Pyon-Icons.dc.html": {
+      "x": 470,
+      "y": 900,
+      "w": 1180,
+      "h": 600,
+      "title": "Pyon · icon & huy hiệu"
+    }
+  },
+  "order": [
+    "Main.dc.html",
+    "Mascot.dc.html",
+    "Onboard-Pyon.dc.html",
+    "Pyon-Icons.dc.html",
+    "Moods-Pyon.dc.html",
+    "InApp-Pyon.dc.html"
+  ],
+  "notes": {
+    "rowOnboard": {
+      "x": 0,
+      "y": 640,
+      "text": "Giới thiệu & nhận diện",
+      "kind": "title1",
+      "maxW": 1650
+    },
+    "rowMoods": {
+      "x": 0,
+      "y": 1864,
+      "text": "Bộ biểu cảm xuyên suốt app",
+      "kind": "title1",
+      "maxW": 1180
+    },
+    "rowInApp": {
+      "x": 0,
+      "y": 2584,
+      "text": "Linh vật trong app",
+      "kind": "title1",
+      "maxW": 1290
+    }
+  },
+  "designSystems": [
+    {
+      "title": "Kotoba UI",
+      "namespace": "kotoba",
+      "artifact": "https://claude.ai/artifact/Wg9tDhDqqw6C95J2c7hhSE",
+      "version": "1792656944-0ec5",
+      "copiedAt": "2026-10-22T08:15:55Z"
+    }
+  ]
+}
