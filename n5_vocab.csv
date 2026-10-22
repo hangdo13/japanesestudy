@@ -1,0 +1,719 @@
+﻿id,word,reading,meaning_vi,meaning_en,type,topic,kanji,suru_verb,level
+n5-0001,ああ,ああ,"à, ồ (thán từ)","Ah!, Oh!","thán từ, câu giao tiếp","Chào hỏi, giao tiếp",,,N5
+n5-0002,会う,あう,gặp,"to meet, to see",động từ nhóm 1,Động từ thường dùng,会,,N5
+n5-0003,青,あお,màu xanh dương (danh từ),blue,danh từ,Màu sắc,青,,N5
+n5-0004,青い,あおい,xanh dương (tính từ),blue,tính từ い,Màu sắc,青,,N5
+n5-0005,赤,あか,màu đỏ (danh từ),red,danh từ,Màu sắc,赤,,N5
+n5-0006,赤い,あかい,đỏ (tính từ),red,tính từ い,Màu sắc,赤,,N5
+n5-0007,明るい,あかるい,"sáng sủa; vui vẻ, tươi tắn",bright (in reference to personality or weather); cheerful,tính từ い,"Tính chất, cảm xúc",明,,N5
+n5-0008,秋,あき,mùa thu,fall (season),danh từ,"Thời tiết, thiên nhiên",秋,,N5
+n5-0009,開く,あく,(cửa) mở,"to open, to become open",động từ nhóm 1,Động từ thường dùng,開,,N5
+n5-0010,開ける,あける,mở (cái gì),to open (v.t.),động từ nhóm 2,Động từ thường dùng,開,,N5
+n5-0011,上げる,あげる,"nâng lên; cho, tặng","to raise, to lift",động từ nhóm 2,Động từ thường dùng,上,,N5
+n5-0012,朝,あさ,buổi sáng,morning,danh từ,Thời gian,朝,,N5
+n5-0013,朝御飯,あさごはん,bữa sáng,breakfast,danh từ,Ăn uống,朝 御 飯,,N5
+n5-0014,明後日,あさって,ngày kia,day after tomorrow,danh từ,Thời gian,明 後 日,,N5
+n5-0015,足; 脚,あし,chân,foot; leg,danh từ,"Cơ thể, sức khỏe",足 脚,,N5
+n5-0016,明日,あした,ngày mai,tomorrow,danh từ,Thời gian,明 日,,N5
+n5-0017,あそこ,あそこ,"chỗ kia, đằng kia","there, over there, that place",từ chỉ định,"Chỉ định, nghi vấn",,,N5
+n5-0018,遊ぶ,あそぶ,"chơi, đi chơi",to play; to spend time pleasantly; to hang out,động từ nhóm 1,"Sở thích, giải trí",遊,,N5
+n5-0019,暖かい,あたたかい,ấm áp,warm,tính từ い,"Thời tiết, thiên nhiên",暖,,N5
+n5-0020,頭,あたま,đầu,head,danh từ,"Cơ thể, sức khỏe",頭,,N5
+n5-0021,新しい,あたらしい,mới,new,tính từ い,"Tính chất, cảm xúc",新,,N5
+n5-0022,あちら,あちら,"phía kia, đằng kia (lịch sự)",this way (polite),từ chỉ định,"Chỉ định, nghi vấn",,,N5
+n5-0023,暑い,あつい,nóng (thời tiết),"hot (in reference to weather), warm",tính từ い,"Thời tiết, thiên nhiên",暑,,N5
+n5-0024,熱い,あつい,nóng (đồ vật),hot (objects),tính từ い,"Tính chất, cảm xúc",熱,,N5
+n5-0025,厚い,あつい,dày,"kind, warm(hearted), thick, deep",tính từ い,"Tính chất, cảm xúc",厚,,N5
+n5-0026,あっち,あっち,đằng kia (thân mật),over there,từ chỉ định,"Chỉ định, nghi vấn",,,N5
+n5-0027,後,あと,"sau, sau đó; phần còn lại",afterwards (later); in the future; the rest; since then,danh từ,Thời gian,後,,N5
+n5-0028,あなた,あなた,"bạn, anh, chị (ngôi thứ hai)",you,đại từ,"Gia đình, con người",,,N5
+n5-0029,兄,あに,anh trai (của mình),(my) older brother (humble),danh từ,"Gia đình, con người",兄,,N5
+n5-0030,姉,あね,chị gái (của mình),(my) older sister (humble),danh từ,"Gia đình, con người",姉,,N5
+n5-0031,アパート,アパート,"căn hộ, chung cư",apartment (abbr.),danh từ,"Nhà ở, đồ vật",,,N5
+n5-0032,あの,あの,"... kia (đứng trước danh từ); à, ờ...","that over there; like that, that way; um...",từ chỉ định,"Chỉ định, nghi vấn",,,N5
+n5-0033,浴びる,あびる,"tắm (vòi sen), dội nước","to bathe, to shower",động từ nhóm 2,Sinh hoạt hằng ngày,浴,,N5
+n5-0034,危ない,あぶない,nguy hiểm,"dangerous, critical",tính từ い,"Tính chất, cảm xúc",危,,N5
+n5-0035,甘い,あまい,ngọt; dễ dãi,"generous, sweet",tính từ い,Ăn uống,甘,,N5
+n5-0036,余り,あまり,không ... lắm (đi với phủ định),not very; surplus,trạng từ,"Từ chức năng, trạng từ",余,,N5
+n5-0037,雨,あめ,mưa,rain,danh từ,"Thời tiết, thiên nhiên",雨,,N5
+n5-0038,飴,あめ,kẹo,(hard) candy,danh từ,Ăn uống,飴,,N5
+n5-0039,洗う,あらう,"rửa, giặt",to wash,động từ nhóm 1,Sinh hoạt hằng ngày,洗,,N5
+n5-0040,在る,ある,"có, ở (đồ vật)","to be, to have",động từ nhóm 1,Động từ thường dùng,在,,N5
+n5-0041,有る,ある,có (sở hữu),"to be, to have",động từ nhóm 1,Động từ thường dùng,有,,N5
+n5-0042,歩く,あるく,đi bộ,to walk,động từ nhóm 1,Động từ thường dùng,歩,,N5
+n5-0043,あれ,あれ,cái kia,that one (over there),từ chỉ định,"Chỉ định, nghi vấn",,,N5
+n5-0044,いい; よい,いい; よい,"tốt, được",good,tính từ い,"Tính chất, cảm xúc",,,N5
+n5-0045,いいえ,いいえ,không (trả lời),"no, not at all","thán từ, câu giao tiếp","Chào hỏi, giao tiếp",,,N5
+n5-0046,言う,いう,nói,to say,động từ nhóm 1,Động từ thường dùng,言,,N5
+n5-0047,家,いえ,nhà,"house, home",danh từ,"Nhà ở, đồ vật",家,,N5
+n5-0048,いかが,いかが,thế nào (lịch sự),"how, in what way",từ để hỏi,"Chỉ định, nghi vấn",,,N5
+n5-0049,行く,いく; ゆく,đi,to go,động từ nhóm 1,Động từ thường dùng,行,,N5
+n5-0050,いくつ,いくつ,mấy cái; bao nhiêu tuổi,"how many, how old",từ để hỏi,"Chỉ định, nghi vấn",,,N5
+n5-0051,いくら,いくら,bao nhiêu (tiền),"how much, how many",từ để hỏi,"Mua sắm, tiền",,,N5
+n5-0052,池,いけ,cái ao,pond,danh từ,"Thời tiết, thiên nhiên",池,,N5
+n5-0053,医者,いしゃ,bác sĩ,doctor; physician,danh từ,"Cơ thể, sức khỏe",医 者,,N5
+n5-0054,椅子,いす,cái ghế,chair,danh từ,"Nhà ở, đồ vật",椅 子,,N5
+n5-0055,忙しい,いそがしい,bận,"busy (people, days)",tính từ い,"Tính chất, cảm xúc",忙,,N5
+n5-0056,痛い,いたい,đau,hurt; painful; sore,tính từ い,"Cơ thể, sức khỏe",痛,,N5
+n5-0057,一,いち,một (số 1),one,số từ,"Số, đếm",一,,N5
+n5-0058,一日,いちにち,một ngày,one day (duration),danh từ,Thời gian,一 日,,N5
+n5-0059,一番,いちばん,"nhất, số một","best (most), first, number one",trạng từ,"Từ chức năng, trạng từ",一 番,,N5
+n5-0060,いつ,いつ,khi nào,when,từ để hỏi,"Chỉ định, nghi vấn",,,N5
+n5-0061,五日,いつか,ngày mùng 5; 5 ngày,five days; fifth day of the month,danh từ,Thời gian,五 日,,N5
+n5-0062,一緒,いっしょ,cùng nhau,together,trạng từ,"Từ chức năng, trạng từ",一 緒,,N5
+n5-0063,五つ,いつつ,5 cái,five things,số từ,"Số, đếm",五,,N5
+n5-0064,いつも,いつも,"luôn luôn, lúc nào cũng","always, usually, every time, never (with neg. verb)",trạng từ,"Từ chức năng, trạng từ",,,N5
+n5-0065,犬,いぬ,con chó,dog,danh từ,Động vật,犬,,N5
+n5-0066,今,いま,bây giờ,now,danh từ,Thời gian,今,,N5
+n5-0067,意味,いみ,ý nghĩa,"meaning, significance",danh từ,"Trường học, công việc",意 味,,N5
+n5-0068,妹,いもうと,em gái (của mình),younger sister (humble),danh từ,"Gia đình, con người",妹,,N5
+n5-0069,嫌,いや,"ghét, không thích","disagreeable, detestable, unpleasant",tính từ な,"Tính chất, cảm xúc",嫌,,N5
+n5-0070,入口,いりぐち,lối vào,entrance,danh từ,"Phố xá, giao thông",入 口,,N5
+n5-0071,居る,いる,"có, ở (người, con vật)","(humble) to be (animate), to exist",động từ nhóm 2,Động từ thường dùng,居,,N5
+n5-0072,要る,いる,cần,to need,động từ nhóm 1,Động từ thường dùng,要,,N5
+n5-0073,入れる,いれる,"cho vào, bỏ vào",to put in,động từ nhóm 2,Động từ thường dùng,入,,N5
+n5-0074,色,いろ,màu sắc,color,danh từ,Màu sắc,色,,N5
+n5-0075,色々,いろいろ,"nhiều loại, đa dạng",various,tính từ な,"Tính chất, cảm xúc",色 々,,N5
+n5-0076,上,うえ,"trên, phía trên","above (up, top, etc.), over, on top of",danh từ,"Vị trí, phương hướng",上,,N5
+n5-0077,後ろ,うしろ,phía sau,"back, behind, rear",danh từ,"Vị trí, phương hướng",後,,N5
+n5-0078,薄い,うすい,mỏng; nhạt,"thin, weak",tính từ い,"Tính chất, cảm xúc",薄,,N5
+n5-0079,歌,うた,bài hát,a song,danh từ,"Sở thích, giải trí",歌,,N5
+n5-0080,歌う,うたう,hát,to sing,động từ nhóm 1,"Sở thích, giải trí",歌,,N5
+n5-0081,うち,うち,nhà (của mình),home; house; my place,danh từ,"Nhà ở, đồ vật",,,N5
+n5-0082,生まれる,うまれる,được sinh ra,to be born,động từ nhóm 2,"Gia đình, con người",生,,N5
+n5-0083,海,うみ,biển,"sea, beach",danh từ,"Thời tiết, thiên nhiên",海,,N5
+n5-0084,売る,うる,bán,to sell (v.t.),động từ nhóm 1,"Mua sắm, tiền",売,,N5
+n5-0085,うるさい,うるさい,ồn ào; phiền phức,noisy; annoying,tính từ い,"Tính chất, cảm xúc",,,N5
+n5-0086,上着,うわぎ,áo khoác,"coat, jacket",danh từ,Quần áo,上 着,,N5
+n5-0087,絵,え,bức tranh,a painting; a picture; a drawing,danh từ,"Sở thích, giải trí",絵,,N5
+n5-0088,映画,えいが,phim (điện ảnh),"movie, film",danh từ,"Sở thích, giải trí",映 画,,N5
+n5-0089,映画館,えいがかん,rạp chiếu phim,"movie theater, cinema",danh từ,"Phố xá, giao thông",映 画 館,,N5
+n5-0090,英語,えいご,tiếng Anh,English (language),danh từ,"Trường học, công việc",英 語,,N5
+n5-0091,ええ,ええ,"vâng, ừ",yes,"thán từ, câu giao tiếp","Chào hỏi, giao tiếp",,,N5
+n5-0092,駅,えき,nhà ga,station,danh từ,"Phố xá, giao thông",駅,,N5
+n5-0093,エレベーター,エレベーター,thang máy,elevator,danh từ,"Nhà ở, đồ vật",,,N5
+n5-0094,～円,～えん,... yên (đơn vị tiền Nhật),Yen,trợ số từ,"Mua sắm, tiền",円,,N5
+n5-0095,鉛筆,えんぴつ,bút chì,pencil,danh từ,"Trường học, công việc",鉛 筆,,N5
+n5-0096,お～,お～,"tiền tố kính ngữ ""o-""",honorable ~ (honorific),tiền tố,"Từ chức năng, trạng từ",,,N5
+n5-0097,美味しい,おいしい,ngon,"delicious, tasty",tính từ い,Ăn uống,美 味,,N5
+n5-0098,多い,おおい,nhiều,many; there are a lot,tính từ い,"Tính chất, cảm xúc",多,,N5
+n5-0099,大きい,おおきい,"to, lớn","big, large",tính từ い,"Tính chất, cảm xúc",大,,N5
+n5-0100,大きな,おおきな,"to, lớn (đứng trước danh từ)",big,tính từ な,"Tính chất, cảm xúc",大,,N5
+n5-0101,大勢,おおぜい,đông người,great number of people,danh từ,"Gia đình, con người",大 勢,,N5
+n5-0102,お母さん,おかあさん,"mẹ (người khác, hoặc gọi mẹ mình)",mother (formal),danh từ,"Gia đình, con người",母,,N5
+n5-0103,お菓子,おかし,bánh kẹo,"confections, sweets, snack",danh từ,Ăn uống,菓 子,,N5
+n5-0104,お金,おかね,tiền,money,danh từ,"Mua sắm, tiền",金,,N5
+n5-0105,起きる,おきる,thức dậy; xảy ra,"to get up (e.g., from sleeping); to happen",động từ nhóm 2,Sinh hoạt hằng ngày,起,,N5
+n5-0106,置く,おく,"đặt, để",to put; to lay; to place,động từ nhóm 1,Động từ thường dùng,置,,N5
+n5-0107,奥さん,おくさん,vợ (người khác),(someone else's) wife (hon.),danh từ,"Gia đình, con người",奥,,N5
+n5-0108,お酒,おさけ,rượu; rượu sake,sake; alcohol,danh từ,Ăn uống,酒,,N5
+n5-0109,お皿,おさら,cái đĩa,"plate, dish",danh từ,Ăn uống,皿,,N5
+n5-0110,伯父; 叔父さん,おじさん,"chú, bác (trai); người đàn ông trung niên","uncle, middle-aged man",danh từ,"Gia đình, con người",伯 父 叔,,N5
+n5-0111,おじいさん,おじいさん,ông; cụ ông,"grandfather, male senior citizen",danh từ,"Gia đình, con người",,,N5
+n5-0112,教える,おしえる,"dạy; chỉ cho, cho biết","to teach, to inform, to instruct",động từ nhóm 2,"Trường học, công việc",教,,N5
+n5-0113,押す,おす,"đẩy, ấn; đóng (dấu)","to push, to press, to stamp (e.g., a passport)",động từ nhóm 1,Động từ thường dùng,押,,N5
+n5-0114,遅い,おそい,chậm; muộn,slow; (to be) late,tính từ い,"Tính chất, cảm xúc",遅,,N5
+n5-0115,お茶,おちゃ,trà (trà xanh),(green) tea,danh từ,Ăn uống,茶,,N5
+n5-0116,お手洗い,おてあらい,nhà vệ sinh (lịch sự),"toilet, restroom, bathroom (lit., a place to wash one's hands)",danh từ,"Nhà ở, đồ vật",手 洗,,N5
+n5-0117,お父さん,おとうさん,"bố (người khác, hoặc gọi bố mình)",father (formal),danh từ,"Gia đình, con người",父,,N5
+n5-0118,弟,おとうと,em trai (của mình),younger brother,danh từ,"Gia đình, con người",弟,,N5
+n5-0119,男,おとこ,"đàn ông, nam","man, male",danh từ,"Gia đình, con người",男,,N5
+n5-0120,男の子,おとこのこ,bé trai,boy,danh từ,"Gia đình, con người",男 子,,N5
+n5-0121,一昨日,おととい,hôm kia,the day before yesterday,danh từ,Thời gian,一 昨 日,,N5
+n5-0122,おととし,おととし,năm kia,year before last,danh từ,Thời gian,,,N5
+n5-0123,大人,おとな,người lớn,adult,danh từ,"Gia đình, con người",大 人,,N5
+n5-0124,お腹,おなか,bụng,stomach,danh từ,"Cơ thể, sức khỏe",腹,,N5
+n5-0125,同じ,おなじ,giống nhau,"same, identical",tính từ な,"Tính chất, cảm xúc",同,,N5
+n5-0126,お兄さん,おにいさん,"anh trai (người khác, hoặc gọi anh mình)",(someone else's) older brother (formal),danh từ,"Gia đình, con người",兄,,N5
+n5-0127,お姉さん,おねえさん,"chị gái (người khác, hoặc gọi chị mình)",older sister (formal),danh từ,"Gia đình, con người",姉,,N5
+n5-0128,伯母さん; 叔母さん,おばさん,"cô, dì, bác (gái)",aunt,danh từ,"Gia đình, con người",伯 母 叔,,N5
+n5-0129,おばあさん,おばあさん,bà; cụ bà,"grandmother, female senior-citizen",danh từ,"Gia đình, con người",,,N5
+n5-0130,お風呂,おふろ,bồn tắm; việc tắm,a bath,danh từ,Sinh hoạt hằng ngày,風 呂,,N5
+n5-0131,お弁当,おべんとう,cơm hộp,a boxed lunch,danh từ,Ăn uống,弁 当,,N5
+n5-0132,覚える,おぼえる,"nhớ, thuộc","to learn, to commit to memory, to remember, to memorize",động từ nhóm 2,"Trường học, công việc",覚,,N5
+n5-0133,おまわりさん,おまわりさん,chú cảnh sát (cách gọi thân mật),policeman (friendly term),danh từ,"Phố xá, giao thông",,,N5
+n5-0134,重い,おもい,nặng; nghiêm trọng,heavy; serious,tính từ い,"Tính chất, cảm xúc",重,,N5
+n5-0135,面白い,おもしろい,"thú vị, hay","interesting, amusing",tính từ い,"Tính chất, cảm xúc",面 白,,N5
+n5-0136,泳ぐ,およぐ,bơi,to swim,động từ nhóm 1,"Sở thích, giải trí",泳,,N5
+n5-0137,降りる,おりる,"xuống (xe, tàu)",to get off,động từ nhóm 2,"Phố xá, giao thông",降,,N5
+n5-0138,終る,おわる,"kết thúc, xong","to finish, to close",động từ nhóm 1,Động từ thường dùng,終,,N5
+n5-0139,音楽,おんがく,âm nhạc,Music,danh từ,"Sở thích, giải trí",音 楽,,N5
+n5-0140,女,おんな,"phụ nữ, nữ","woman, female",danh từ,"Gia đình, con người",女,,N5
+n5-0141,女の子,おんなのこ,bé gái,girl,danh từ,"Gia đình, con người",女 子,,N5
+n5-0142,～回,～かい,... lần,counter for occurrences (~ times),trợ số từ,"Số, đếm",回,,N5
+n5-0143,～階,～かい,tầng thứ ...,counter for stories (floors) of a building,trợ số từ,"Số, đếm",階,,N5
+n5-0144,外国,がいこく,nước ngoài,foreign country; abroad,danh từ,"Phố xá, giao thông",外 国,,N5
+n5-0145,外国人,がいこくじん,người nước ngoài,foreigner,danh từ,"Gia đình, con người",外 国 人,,N5
+n5-0146,会社,かいしゃ,công ty,"company, corporation",danh từ,"Trường học, công việc",会 社,,N5
+n5-0147,階段,かいだん,cầu thang,stairs,danh từ,"Nhà ở, đồ vật",階 段,,N5
+n5-0148,買い物,かいもの,mua sắm,shopping,danh từ + する,"Mua sắm, tiền",買 物,x,N5
+n5-0149,買う,かう,mua,to buy,động từ nhóm 1,"Mua sắm, tiền",買,,N5
+n5-0150,返す,かえす,trả lại,to return something,động từ nhóm 1,Động từ thường dùng,返,,N5
+n5-0151,帰る,かえる,"về, trở về","to go back, to go home, to return",động từ nhóm 1,Sinh hoạt hằng ngày,帰,,N5
+n5-0152,顔,かお,khuôn mặt,face (body part),danh từ,"Cơ thể, sức khỏe",顔,,N5
+n5-0153,かかる,かかる,"mất (thời gian, tiền)","it takes (amount of time, money) (v.i.)",động từ nhóm 1,Động từ thường dùng,,,N5
+n5-0154,鍵,かぎ,chìa khóa; ổ khóa,a lock; a key,danh từ,"Nhà ở, đồ vật",鍵,,N5
+n5-0155,書く,かく,viết,to write,động từ nhóm 1,"Trường học, công việc",書,,N5
+n5-0156,学生,がくせい,"học sinh, sinh viên",student,danh từ,"Trường học, công việc",学 生,,N5
+n5-0157,～か月,～かげつ,... tháng (khoảng thời gian),(number of) months,trợ số từ,Thời gian,月,,N5
+n5-0158,掛ける,かける,treo; đeo (kính),"to put on (e.g., glasses); to hang (e.g., on a wall)",động từ nhóm 2,Động từ thường dùng,掛,,N5
+n5-0159,かける,かける,gọi (điện thoại); ngồi (lên ghế),"to dial/call (e.g., phone); to sit down",động từ nhóm 2,Động từ thường dùng,,,N5
+n5-0160,傘,かさ,"cái ô, dù","umbrella, parasol",danh từ,"Nhà ở, đồ vật",傘,,N5
+n5-0161,貸す,かす,cho mượn,to lend,động từ nhóm 1,Động từ thường dùng,貸,,N5
+n5-0162,風,かぜ,gió,"wind, breeze",danh từ,"Thời tiết, thiên nhiên",風,,N5
+n5-0163,風邪,かぜ,cảm cúm,"cold, flu",danh từ,"Cơ thể, sức khỏe",風 邪,,N5
+n5-0164,方,かた,"vị, người (kính ngữ của 人); cách làm",-- honorific form for 人 (ひと) --; way of doing,danh từ,"Gia đình, con người",方,,N5
+n5-0165,家族,かぞく,gia đình,"family, members of a family",danh từ,"Gia đình, con người",家 族,,N5
+n5-0166,片仮名,かたかな,chữ katakana,katakana,danh từ,"Trường học, công việc",片 仮 名,,N5
+n5-0167,～月,～がつ,tháng ... (trong năm),month of year,trợ số từ,Thời gian,月,,N5
+n5-0168,学校,がっこう,trường học,a school,danh từ,"Trường học, công việc",学 校,,N5
+n5-0169,カップ,カップ,"cái cốc, tách",cup,danh từ,Ăn uống,,,N5
+n5-0170,家庭,かてい,"gia đình, tổ ấm",home; family,danh từ,"Gia đình, con người",家 庭,,N5
+n5-0171,角,かど,"góc (bàn, phố)","corner (e.g., desk, pavement)",danh từ,"Vị trí, phương hướng",角,,N5
+n5-0172,かばん,かばん,"cái cặp, túi xách","bag, basket",danh từ,"Nhà ở, đồ vật",,,N5
+n5-0173,花瓶,かびん,bình hoa,(flower) vase,danh từ,"Nhà ở, đồ vật",花 瓶,,N5
+n5-0174,かぶる,かぶる,đội (mũ),"to wear, to put on (e.g., a hat on the head)",động từ nhóm 1,Quần áo,,,N5
+n5-0175,紙,かみ,giấy,paper,danh từ,"Trường học, công việc",紙,,N5
+n5-0176,カメラ,カメラ,máy ảnh,camera,danh từ,"Sở thích, giải trí",,,N5
+n5-0177,火曜日,かようび,thứ Ba,Tuesday,danh từ,Thời gian,火 曜 日,,N5
+n5-0178,辛い,からい,cay; mặn,hot and spicy; salty,tính từ い,Ăn uống,辛,,N5
+n5-0179,体,からだ,cơ thể; sức khỏe,body; health,danh từ,"Cơ thể, sức khỏe",体,,N5
+n5-0180,借りる,かりる,"vay, mượn","to borrow, to owe",động từ nhóm 2,Động từ thường dùng,借,,N5
+n5-0181,～がる,～がる,"cảm thấy, tỏ ra (hậu tố, ví dụ ほしがる)",feel,hậu tố,"Từ chức năng, trạng từ",,,N5
+n5-0182,軽い,かるい,nhẹ; không nghiêm trọng,"light, non-serious, minor",tính từ い,"Tính chất, cảm xúc",軽,,N5
+n5-0183,カレー,カレー,cà ri,curry (abbr. for curry and rice),danh từ,Ăn uống,,,N5
+n5-0184,カレンダー,カレンダー,lịch (tờ lịch),calendar,danh từ,"Nhà ở, đồ vật",,,N5
+n5-0185,川; 河,かわ,con sông,river,danh từ,"Thời tiết, thiên nhiên",川 河,,N5
+n5-0186,～側,～がわ,"phía ..., bên ...",~ side,hậu tố,"Vị trí, phương hướng",側,,N5
+n5-0187,可愛い,かわいい,dễ thương,"cute, adorable",tính từ い,"Tính chất, cảm xúc",可 愛,,N5
+n5-0188,漢字,かんじ,"chữ Hán, kanji",kanji; Chinese character,danh từ,"Trường học, công việc",漢 字,,N5
+n5-0189,木,き,cái cây; gỗ,"tree, wood, timber",danh từ,"Thời tiết, thiên nhiên",木,,N5
+n5-0190,黄色,きいろ,màu vàng (danh từ),yellow,danh từ,Màu sắc,黄 色,,N5
+n5-0191,黄色い,きいろい,vàng (tính từ),yellow,tính từ い,Màu sắc,黄 色,,N5
+n5-0192,消える,きえる,"tắt, biến mất","to vanish, to disappear",động từ nhóm 2,Động từ thường dùng,消,,N5
+n5-0193,聞く,きく,nghe; hỏi,"to hear, to listen, to ask",động từ nhóm 1,Động từ thường dùng,聞,,N5
+n5-0194,北,きた,phía bắc,north,danh từ,"Vị trí, phương hướng",北,,N5
+n5-0195,ギター,ギター,đàn ghi-ta,guitar,danh từ,"Sở thích, giải trí",,,N5
+n5-0196,汚い,きたない,bẩn,"dirty, unclean, filthy",tính từ い,"Tính chất, cảm xúc",汚,,N5
+n5-0197,喫茶店,きっさてん,quán cà phê,café,danh từ,"Phố xá, giao thông",喫 茶 店,,N5
+n5-0198,切手,きって,tem thư,postal (postage) stamps,danh từ,"Phố xá, giao thông",切 手,,N5
+n5-0199,切符,きっぷ,vé,a ticket,danh từ,"Phố xá, giao thông",切 符,,N5
+n5-0200,昨日,きのう,hôm qua,yesterday,danh từ,Thời gian,昨 日,,N5
+n5-0201,九,きゅう,chín (số 9),nine,số từ,"Số, đếm",九,,N5
+n5-0202,牛肉,ぎゅうにく,thịt bò,beef,danh từ,Ăn uống,牛 肉,,N5
+n5-0203,牛乳,ぎゅうにゅう,sữa bò,milk,danh từ,Ăn uống,牛 乳,,N5
+n5-0204,今日,きょう,hôm nay,"today, this day",danh từ,Thời gian,今 日,,N5
+n5-0205,教室,きょうしつ,phòng học,classroom,danh từ,"Trường học, công việc",教 室,,N5
+n5-0206,兄弟,きょうだい,anh chị em,"siblings (humble), brothers and sisters",danh từ,"Gia đình, con người",兄 弟,,N5
+n5-0207,去年,きょねん,năm ngoái,last year,danh từ,Thời gian,去 年,,N5
+n5-0208,嫌い,きらい,"ghét, không thích",dislike,tính từ な,"Tính chất, cảm xúc",嫌,,N5
+n5-0209,切る,きる,cắt,to cut; to hang up (a phone),động từ nhóm 1,Động từ thường dùng,切,,N5
+n5-0210,着る,きる,"mặc (áo, phần trên người)",to put on (clothes above your waist); to wear,động từ nhóm 2,Quần áo,着,,N5
+n5-0211,綺麗,きれい,đẹp; sạch sẽ,"pretty, clean, tidy",tính từ な,"Tính chất, cảm xúc",綺 麗,,N5
+n5-0212,キロ; キログラム,キロ; キログラム,ki-lô-gam,(abbr.) kilo (kilogram),danh từ,"Số, đếm",,,N5
+n5-0213,キロ; キロメートル,キロ; キロメートル,ki-lô-mét,(abbr.) kilo (kilometer),danh từ,"Số, đếm",,,N5
+n5-0214,銀行,ぎんこう,ngân hàng,bank,danh từ,"Phố xá, giao thông",銀 行,,N5
+n5-0215,金曜日,きんようび,thứ Sáu,Friday,danh từ,Thời gian,金 曜 日,,N5
+n5-0216,九,く,"chín (số 9, cách đọc く)",nine,số từ,"Số, đếm",九,,N5
+n5-0217,薬,くすり,thuốc,medicine,danh từ,"Cơ thể, sức khỏe",薬,,N5
+n5-0218,下さい,ください,xin hãy ... (đi sau thể て); cho tôi ...,(with te-form verb) please do for me,"thán từ, câu giao tiếp","Từ chức năng, trạng từ",下,,N5
+n5-0219,果物,くだもの,trái cây,fruit,danh từ,Ăn uống,果 物,,N5
+n5-0220,口,くち,miệng,job opening; mouth,danh từ,"Cơ thể, sức khỏe",口,,N5
+n5-0221,靴,くつ,giày,"shoes, footwear",danh từ,Quần áo,靴,,N5
+n5-0222,靴下,くつした,"tất, vớ",socks,danh từ,Quần áo,靴 下,,N5
+n5-0223,国,くに,đất nước; quê hương,country; place of origin,danh từ,"Phố xá, giao thông",国,,N5
+n5-0224,曇り,くもり,trời nhiều mây,"cloudiness, cloudy weather",danh từ,"Thời tiết, thiên nhiên",曇,,N5
+n5-0225,曇る,くもる,"(trời) có mây, u ám","to become cloudy, to become dim",động từ nhóm 1,"Thời tiết, thiên nhiên",曇,,N5
+n5-0226,暗い,くらい,tối,"dark, gloomy",tính từ い,"Tính chất, cảm xúc",暗,,N5
+n5-0227,～くらい; ぐらい,～くらい; ぐらい,khoảng (số lượng),approximate (quantity),hậu tố,"Từ chức năng, trạng từ",,,N5
+n5-0228,クラス,クラス,lớp học,a class,danh từ,"Trường học, công việc",,,N5
+n5-0229,グラム,グラム,gam,gram,danh từ,"Số, đếm",,,N5
+n5-0230,来る,くる,đến,to come,động từ bất quy tắc,Động từ thường dùng,来,,N5
+n5-0231,車,くるま,"ô tô, xe hơi","car, vehicle",danh từ,"Phố xá, giao thông",車,,N5
+n5-0232,黒,くろ,màu đen (danh từ),black,danh từ,Màu sắc,黒,,N5
+n5-0233,黒い,くろい,đen (tính từ),black; dark,tính từ い,Màu sắc,黒,,N5
+n5-0234,警官,けいかん,cảnh sát,police officer,danh từ,"Phố xá, giao thông",警 官,,N5
+n5-0235,今朝,けさ,sáng nay,this morning,danh từ,Thời gian,今 朝,,N5
+n5-0236,消す,けす,tắt (điện); xóa,"to erase, to delete, to turn off power",động từ nhóm 1,Động từ thường dùng,消,,N5
+n5-0237,結構,けっこう,"tốt, được; đủ rồi","splendid; enough, tolerably",tính từ な,"Chào hỏi, giao tiếp",結 構,,N5
+n5-0238,結婚,けっこん,kết hôn,marriage (get married),danh từ + する,"Gia đình, con người",結 婚,x,N5
+n5-0239,月曜日,げつようび,thứ Hai,Monday,danh từ,Thời gian,月 曜 日,,N5
+n5-0240,玄関,げんかん,"lối vào nhà, sảnh cửa",entrance (to a house or a building),danh từ,"Nhà ở, đồ vật",玄 関,,N5
+n5-0241,元気,げんき,khỏe mạnh,"health(y), energetic",tính từ な,"Cơ thể, sức khỏe",元 気,,N5
+n5-0242,～個,～こ,... cái (vật nhỏ),"counter for small items (e.g., fruits, cups)",trợ số từ,"Số, đếm",個,,N5
+n5-0243,五,ご,năm (số 5),five,số từ,"Số, đếm",五,,N5
+n5-0244,～語,～ご,tiếng ... (ngôn ngữ),"word, language",hậu tố,"Trường học, công việc",語,,N5
+n5-0245,公園,こうえん,công viên,a park,danh từ,"Phố xá, giao thông",公 園,,N5
+n5-0246,交差点,こうさてん,ngã tư,intersection,danh từ,"Phố xá, giao thông",交 差 点,,N5
+n5-0247,紅茶,こうちゃ,trà đen (hồng trà),black tea,danh từ,Ăn uống,紅 茶,,N5
+n5-0248,交番,こうばん,đồn cảnh sát nhỏ (koban),police box,danh từ,"Phố xá, giao thông",交 番,,N5
+n5-0249,声,こえ,giọng nói,voice,danh từ,"Cơ thể, sức khỏe",声,,N5
+n5-0250,コート,コート,áo khoác dài; sân (tennis),"coat; court (e.g., tennis)",danh từ,Quần áo,,,N5
+n5-0251,コーヒー,コーヒー,cà phê,coffee,danh từ,Ăn uống,,,N5
+n5-0252,ここ,ここ,"chỗ này, ở đây","here, this place",từ chỉ định,"Chỉ định, nghi vấn",,,N5
+n5-0253,午後,ごご,"buổi chiều, giờ chiều (PM)","afternoon, P.M.",danh từ,Thời gian,午 後,,N5
+n5-0254,九日,ここのか,ngày mùng 9; 9 ngày,nine days; ninth day of the month,danh từ,Thời gian,九 日,,N5
+n5-0255,九つ,ここのつ,9 cái,nine things,số từ,"Số, đếm",九,,N5
+n5-0256,午前,ごぜん,"buổi sáng, giờ sáng (AM)","morning, A.M.",danh từ,Thời gian,午 前,,N5
+n5-0257,答える,こたえる,trả lời,"to answer, to reply",động từ nhóm 2,"Trường học, công việc",答,,N5
+n5-0258,こちら,こちら,phía này; người này (lịch sự),this person (polite); this way (polite),từ chỉ định,"Chỉ định, nghi vấn",,,N5
+n5-0259,こっち,こっち,phía này (thân mật),this person; this direction; this side,từ chỉ định,"Chỉ định, nghi vấn",,,N5
+n5-0260,コップ,コップ,cái cốc thủy tinh,a tumbler; a glass,danh từ,Ăn uống,,,N5
+n5-0261,今年,ことし,năm nay,this year,danh từ,Thời gian,今 年,,N5
+n5-0262,言葉,ことば,từ ngữ; ngôn ngữ,language; word(s); expression(s),danh từ,"Trường học, công việc",言 葉,,N5
+n5-0263,子供,こども,trẻ con,child(ren),danh từ,"Gia đình, con người",子 供,,N5
+n5-0264,この,この,... này (đứng trước danh từ),this,từ chỉ định,"Chỉ định, nghi vấn",,,N5
+n5-0265,御飯,ごはん,cơm; bữa ăn,rice (cooked); meal,danh từ,Ăn uống,御 飯,,N5
+n5-0266,コピーする,コピーする,"sao chép, photo",to copy,danh từ + する,"Trường học, công việc",,x,N5
+n5-0267,困る,こまる,"gặp khó khăn, bối rối","to be bothered, to have difficulty",động từ nhóm 1,"Tính chất, cảm xúc",困,,N5
+n5-0268,これ,これ,cái này,this one,từ chỉ định,"Chỉ định, nghi vấn",,,N5
+n5-0269,～ころ; ～ごろ,～ころ; ～ごろ,khoảng (thời điểm),"about, toward, approximately (time)",hậu tố,Thời gian,,,N5
+n5-0270,今月,こんげつ,tháng này,this month,danh từ,Thời gian,今 月,,N5
+n5-0271,今週,こんしゅう,tuần này,this week,danh từ,Thời gian,今 週,,N5
+n5-0272,こんな,こんな,như thế này,"such, like this",từ chỉ định,"Chỉ định, nghi vấn",,,N5
+n5-0273,今晩,こんばん,tối nay,"tonight, this evening",danh từ,Thời gian,今 晩,,N5
+n5-0274,さあ,さあ,"nào, thôi nào; ừm (không chắc)","come now, well","thán từ, câu giao tiếp","Chào hỏi, giao tiếp",,,N5
+n5-0275,～歳,～さい,... tuổi,~ years old,trợ số từ,"Số, đếm",歳,,N5
+n5-0276,財布,さいふ,cái ví,wallet,danh từ,"Mua sắm, tiền",財 布,,N5
+n5-0277,魚,さかな,con cá; món cá,fish,danh từ,Ăn uống,魚,,N5
+n5-0278,先,さき,trước; phía trước; trước đây,"future; recent, previous",danh từ,Thời gian,先,,N5
+n5-0279,咲く,さく,(hoa) nở,to bloom,động từ nhóm 1,"Thời tiết, thiên nhiên",咲,,N5
+n5-0280,作文,さくぶん,"bài văn, bài luận",essay; composition,danh từ,"Trường học, công việc",作 文,,N5
+n5-0281,差す,さす,giương (ô),"to raise (stretch out) hands, to raise (e.g., umbrella)",động từ nhóm 1,Động từ thường dùng,差,,N5
+n5-0282,～冊,～さつ,"... cuốn (sách, vở)",counter for books,trợ số từ,"Số, đếm",冊,,N5
+n5-0283,雑誌,ざっし,tạp chí,"magazine, journal",danh từ,"Sở thích, giải trí",雑 誌,,N5
+n5-0284,砂糖,さとう,đường (ăn),sugar,danh từ,Ăn uống,砂 糖,,N5
+n5-0285,寒い,さむい,lạnh (thời tiết),cold (in reference to weather),tính từ い,"Thời tiết, thiên nhiên",寒,,N5
+n5-0286,さ来年,さらいねん,năm sau nữa,year after next,danh từ,Thời gian,来 年,,N5
+n5-0287,～さん,～さん,"anh, chị, ông, bà ... (hậu tố gọi tên)","Mr. ~, Ms. ~",hậu tố,"Gia đình, con người",,,N5
+n5-0288,三,さん,ba (số 3),three,số từ,"Số, đếm",三,,N5
+n5-0289,散歩,さんぽ,đi dạo,"walk, stroll",danh từ + する,"Sở thích, giải trí",散 歩,x,N5
+n5-0290,四,し,"bốn (số 4, cách đọc し)",four,số từ,"Số, đếm",四,,N5
+n5-0291,～時,～じ,... giờ,~ o'clock (time),trợ số từ,Thời gian,時,,N5
+n5-0292,塩,しお,muối,salt,danh từ,Ăn uống,塩,,N5
+n5-0293,しかし,しかし,"tuy nhiên, nhưng",however; but,liên từ,"Từ chức năng, trạng từ",,,N5
+n5-0294,時間,じかん,thời gian,time,danh từ,Thời gian,時 間,,N5
+n5-0295,～時間,～じかん,... tiếng đồng hồ,~ hours,trợ số từ,Thời gian,時 間,,N5
+n5-0296,仕事,しごと,công việc,"work, job, occupation, employment",danh từ,"Trường học, công việc",仕 事,,N5
+n5-0297,辞書,じしょ,từ điển,dictionary,danh từ,"Trường học, công việc",辞 書,,N5
+n5-0298,静か,しずか,yên tĩnh,"quiet, calm",tính từ な,"Tính chất, cảm xúc",静,,N5
+n5-0299,下,した,"dưới, phía dưới","under, below, beneath",danh từ,"Vị trí, phương hướng",下,,N5
+n5-0300,七,しち,"bảy (số 7, cách đọc しち)",seven,số từ,"Số, đếm",七,,N5
+n5-0301,質問,しつもん,câu hỏi,"question, inquiry",danh từ,"Trường học, công việc",質 問,,N5
+n5-0302,自転車,じてんしゃ,xe đạp,bicycle,danh từ,"Phố xá, giao thông",自 転 車,,N5
+n5-0303,自動車,じどうしゃ,xe ô tô,automobile,danh từ,"Phố xá, giao thông",自 動 車,,N5
+n5-0304,死ぬ,しぬ,chết,to die,động từ nhóm 1,Động từ thường dùng,死,,N5
+n5-0305,字引,じびき,từ điển (cách nói cũ),dictionary,danh từ,"Trường học, công việc",字 引,,N5
+n5-0306,自分,じぶん,"bản thân, tự mình","myself, oneself",đại từ,"Gia đình, con người",自 分,,N5
+n5-0307,閉まる,しまる,(cửa) đóng,"to close, to be closed",động từ nhóm 1,Động từ thường dùng,閉,,N5
+n5-0308,閉める,しめる,đóng (cái gì),"to close, to shut",động từ nhóm 2,Động từ thường dùng,閉,,N5
+n5-0309,締める,しめる,"thắt (cà vạt, dây an toàn)","to tie, to fasten, to tighten",động từ nhóm 2,Quần áo,締,,N5
+n5-0310,じゃ; じゃあ,じゃ; じゃあ,"vậy thì, thế thì","well, well then",liên từ,"Chào hỏi, giao tiếp",,,N5
+n5-0311,写真,しゃしん,bức ảnh,a picture; a photograph,danh từ,"Sở thích, giải trí",写 真,,N5
+n5-0312,シャツ,シャツ,áo sơ mi,shirt,danh từ,Quần áo,,,N5
+n5-0313,シャワー,シャワー,"vòi hoa sen, tắm vòi sen",shower,danh từ,Sinh hoạt hằng ngày,,,N5
+n5-0314,十,じゅう,mười (số 10),ten,số từ,"Số, đếm",十,,N5
+n5-0315,～中,～じゅう,"suốt, khắp (ví dụ いちにちじゅう)","during, while",hậu tố,Thời gian,中,,N5
+n5-0316,～週間,～しゅうかん,... tuần (khoảng thời gian),~ weeks,trợ số từ,Thời gian,週 間,,N5
+n5-0317,授業,じゅぎょう,"giờ học, tiết học",a class (of school),danh từ,"Trường học, công việc",授 業,,N5
+n5-0318,宿題,しゅくだい,bài tập về nhà,homework,danh từ,"Trường học, công việc",宿 題,,N5
+n5-0319,上手,じょうず,giỏi,"be good at, skillful",tính từ な,"Tính chất, cảm xúc",上 手,,N5
+n5-0320,丈夫,じょうぶ,"chắc chắn, bền; khỏe mạnh","strong, solid, durable",tính từ な,"Tính chất, cảm xúc",丈 夫,,N5
+n5-0321,醤油,しょうゆ,"xì dầu, nước tương",soy sauce,danh từ,Ăn uống,醤 油,,N5
+n5-0322,食堂,しょくどう,"nhà ăn, căng tin","cafeteria, dining hall",danh từ,Ăn uống,食 堂,,N5
+n5-0323,知る,しる,biết,"to know, to understand",động từ nhóm 1,Động từ thường dùng,知,,N5
+n5-0324,白,しろ,màu trắng (danh từ),white,danh từ,Màu sắc,白,,N5
+n5-0325,白い,しろい,trắng (tính từ),white,tính từ い,Màu sắc,白,,N5
+n5-0326,～人,～じん,người nước ... (ví dụ ベトナムじん),counter for people,hậu tố,"Gia đình, con người",人,,N5
+n5-0327,新聞,しんぶん,báo (tờ báo),newspaper,danh từ,"Sở thích, giải trí",新 聞,,N5
+n5-0328,水曜日,すいようび,thứ Tư,Wednesday,danh từ,Thời gian,水 曜 日,,N5
+n5-0329,吸う,すう,hút (thuốc); hít vào,"to breathe in, to suck",động từ nhóm 1,Động từ thường dùng,吸,,N5
+n5-0330,スカート,スカート,váy,skirt,danh từ,Quần áo,,,N5
+n5-0331,好き,すき,thích,"liking, fondness, love",tính từ な,"Tính chất, cảm xúc",好,,N5
+n5-0332,～すぎ,～すぎ,"quá, hơn (ví dụ 5じすぎ: hơn 5 giờ)","past; to exceed, ~ too much",hậu tố,"Từ chức năng, trạng từ",,,N5
+n5-0333,少ない,すくない,ít,a little; a few,tính từ い,"Tính chất, cảm xúc",少,,N5
+n5-0334,すぐに,すぐに,ngay lập tức,"immediately, soon",trạng từ,"Từ chức năng, trạng từ",,,N5
+n5-0335,少し,すこし,"một chút, ít","little, few",trạng từ,"Từ chức năng, trạng từ",少,,N5
+n5-0336,涼しい,すずしい,mát mẻ,"cool, refreshing (in reference to weather)",tính từ い,"Thời tiết, thiên nhiên",涼,,N5
+n5-0337,～ずつ,～ずつ,"mỗi ..., từng ...",at a time,hậu tố,"Từ chức năng, trạng từ",,,N5
+n5-0338,ストーブ,ストーブ,lò sưởi,heater (lit: stove),danh từ,"Nhà ở, đồ vật",,,N5
+n5-0339,スプーン,スプーン,cái thìa,spoon,danh từ,Ăn uống,,,N5
+n5-0340,スポーツ,スポーツ,thể thao,sport(s),danh từ,"Sở thích, giải trí",,,N5
+n5-0341,ズボン,ズボン,quần dài,trousers,danh từ,Quần áo,,,N5
+n5-0342,住む,すむ,"sống, cư trú","to reside, to live in",động từ nhóm 1,Sinh hoạt hằng ngày,住,,N5
+n5-0343,する,する,"làm; đeo (cà vạt, đồng hồ)","to do, to try; to wear small items (e.g., necktie, watch, etc.)",động từ bất quy tắc,Động từ thường dùng,,,N5
+n5-0344,座る,すわる,ngồi,to sit,động từ nhóm 1,Động từ thường dùng,座,,N5
+n5-0345,背,せい,chiều cao (người),"(one's) height, stature",danh từ,"Cơ thể, sức khỏe",背,,N5
+n5-0346,生徒,せいと,học sinh (cấp 1–3),student; pupil,danh từ,"Trường học, công việc",生 徒,,N5
+n5-0347,セーター,セーター,áo len,sweater,danh từ,Quần áo,,,N5
+n5-0348,石鹸,せっけん,xà phòng,soap,danh từ,Sinh hoạt hằng ngày,石 鹸,,N5
+n5-0349,背広,せびろ,bộ com-lê nam,men's suit,danh từ,Quần áo,背 広,,N5
+n5-0350,狭い,せまい,"chật, hẹp",narrow; not spacious,tính từ い,"Tính chất, cảm xúc",狭,,N5
+n5-0351,ゼロ,ゼロ,số không,zero,số từ,"Số, đếm",,,N5
+n5-0352,千,せん,nghìn,thousand,số từ,"Số, đếm",千,,N5
+n5-0353,先月,せんげつ,tháng trước,last month,danh từ,Thời gian,先 月,,N5
+n5-0354,先週,せんしゅう,tuần trước,last week,danh từ,Thời gian,先 週,,N5
+n5-0355,先生,せんせい,"giáo viên, thầy cô; bác sĩ","teacher, professor; master; doctor",danh từ,"Trường học, công việc",先 生,,N5
+n5-0356,洗濯,せんたく,giặt giũ,"washing, laundry",danh từ + する,Sinh hoạt hằng ngày,洗 濯,x,N5
+n5-0357,全部,ぜんぶ,"toàn bộ, tất cả","all, entire, whole",danh từ,"Từ chức năng, trạng từ",全 部,,N5
+n5-0358,そう; そうです,そう; そうです,"vâng, đúng vậy","yes; appears, to be the case","thán từ, câu giao tiếp","Chào hỏi, giao tiếp",,,N5
+n5-0359,掃除,そうじ,dọn dẹp,"cleaning, sweeping",danh từ + する,Sinh hoạt hằng ngày,掃 除,x,N5
+n5-0360,そうして; そして,そうして; そして,"và, rồi thì","and, like that",liên từ,"Từ chức năng, trạng từ",,,N5
+n5-0361,そこ,そこ,"chỗ đó, ở đó","that place, there; bottom, sole",từ chỉ định,"Chỉ định, nghi vấn",,,N5
+n5-0362,そちら,そちら,phía đó (lịch sự),over there,từ chỉ định,"Chỉ định, nghi vấn",,,N5
+n5-0363,そっち,そっち,phía đó (thân mật),over there,từ chỉ định,"Chỉ định, nghi vấn",,,N5
+n5-0364,外,そと,bên ngoài,"outside, exterior",danh từ,"Vị trí, phương hướng",外,,N5
+n5-0365,その,その,... đó (đứng trước danh từ),that,từ chỉ định,"Chỉ định, nghi vấn",,,N5
+n5-0366,そば,そば,"bên cạnh, gần; mì soba","near, close, beside; Japanese traditional buckwheat noodle",danh từ,"Vị trí, phương hướng",,,N5
+n5-0367,空,そら,bầu trời,sky,danh từ,"Thời tiết, thiên nhiên",空,,N5
+n5-0368,それ,それ,cái đó,that one,từ chỉ định,"Chỉ định, nghi vấn",,,N5
+n5-0369,それから,それから,"sau đó, rồi thì","and then, after that",liên từ,"Từ chức năng, trạng từ",,,N5
+n5-0370,それでは,それでは,"vậy thì, thế thì","in that situation, well then...",liên từ,"Từ chức năng, trạng từ",,,N5
+n5-0371,～台,～だい,"... chiếc (xe, máy móc)",counter for vehicles; machines,trợ số từ,"Số, đếm",台,,N5
+n5-0372,大学,だいがく,trường đại học,college; university,danh từ,"Trường học, công việc",大 学,,N5
+n5-0373,大使館,たいしかん,đại sứ quán,embassy,danh từ,"Phố xá, giao thông",大 使 館,,N5
+n5-0374,大丈夫,だいじょうぶ,"không sao, ổn",It's ok (all right); No need to worry; Everything is under control,tính từ な,"Chào hỏi, giao tiếp",大 丈 夫,,N5
+n5-0375,大好き,だいすき,rất thích,"very like-able, like very much",tính từ な,"Tính chất, cảm xúc",大 好,,N5
+n5-0376,大切,たいせつ,"quan trọng, quý giá",important,tính từ な,"Tính chất, cảm xúc",大 切,,N5
+n5-0377,台所,だいどころ,nhà bếp,kitchen,danh từ,"Nhà ở, đồ vật",台 所,,N5
+n5-0378,大変,たいへん,"rất; vất vả, khó khăn","very; difficult, hard",tính từ な,"Tính chất, cảm xúc",大 変,,N5
+n5-0379,高い,たかい,cao; đắt,"tall, high; expensive",tính từ い,"Tính chất, cảm xúc",高,,N5
+n5-0380,～だけ,～だけ,chỉ ...,"only ~, just ~, as ~",hậu tố,"Từ chức năng, trạng từ",,,N5
+n5-0381,沢山,たくさん,nhiều,"many, much",trạng từ,"Từ chức năng, trạng từ",沢 山,,N5
+n5-0382,タクシー,タクシー,xe taxi,taxi,danh từ,"Phố xá, giao thông",,,N5
+n5-0383,出す,だす,lấy ra; nộp; gửi (thư),to take (something) out; to hand in (something),động từ nhóm 1,Động từ thường dùng,出,,N5
+n5-0384,～たち,～たち,"các ..., những ... (số nhiều, ví dụ わたしたち)",plural suffix,hậu tố,"Gia đình, con người",,,N5
+n5-0385,立つ,たつ,"đứng, đứng dậy",to stand up,động từ nhóm 1,Động từ thường dùng,立,,N5
+n5-0386,たて,たて,chiều dọc,"length, height",danh từ,"Vị trí, phương hướng",,,N5
+n5-0387,建物,たてもの,tòa nhà,building,danh từ,"Phố xá, giao thông",建 物,,N5
+n5-0388,楽しい,たのしい,vui,"enjoyable, fun",tính từ い,"Tính chất, cảm xúc",楽,,N5
+n5-0389,頼む,たのむ,"nhờ, yêu cầu; gọi (món)","to request, to ask (a favor)",động từ nhóm 1,Động từ thường dùng,頼,,N5
+n5-0390,たばこ,たばこ,thuốc lá,"tobacco, cigarettes",danh từ,Sinh hoạt hằng ngày,,,N5
+n5-0391,多分,たぶん,có lẽ,"perhaps, probably, maybe",trạng từ,"Từ chức năng, trạng từ",多 分,,N5
+n5-0392,食べ物,たべもの,đồ ăn,food,danh từ,Ăn uống,食 物,,N5
+n5-0393,食べる,たべる,ăn,to eat,động từ nhóm 2,Ăn uống,食,,N5
+n5-0394,卵,たまご,quả trứng,egg,danh từ,Ăn uống,卵,,N5
+n5-0395,誰,だれ,ai,who,từ để hỏi,"Chỉ định, nghi vấn",誰,,N5
+n5-0396,誰か,だれか,ai đó,someone,đại từ,"Chỉ định, nghi vấn",誰,,N5
+n5-0397,誕生日,たんじょうび,sinh nhật,birthday,danh từ,"Gia đình, con người",誕 生 日,,N5
+n5-0398,段々,だんだん,dần dần,"gradually, by degrees",trạng từ,"Từ chức năng, trạng từ",段 々,,N5
+n5-0399,小さい,ちいさい,"nhỏ, bé","small, little",tính từ い,"Tính chất, cảm xúc",小,,N5
+n5-0400,小さな,ちいさな,"nhỏ, bé (đứng trước danh từ)","small, little",tính từ な,"Tính chất, cảm xúc",小,,N5
+n5-0401,近い,ちかい,gần,"near, close by, short",tính từ い,"Vị trí, phương hướng",近,,N5
+n5-0402,違う,ちがう,khác; sai,to be different; to differ; wrong,động từ nhóm 1,"Tính chất, cảm xúc",違,,N5
+n5-0403,近く,ちかく,"gần đây, vùng gần",nearby; in the neighborhood,danh từ,"Vị trí, phương hướng",近,,N5
+n5-0404,地下鉄,ちかてつ,tàu điện ngầm,"underground train, subway",danh từ,"Phố xá, giao thông",地 下 鉄,,N5
+n5-0405,地図,ちず,bản đồ,a map,danh từ,"Phố xá, giao thông",地 図,,N5
+n5-0406,父,ちち,bố (của mình),(my) father,danh từ,"Gia đình, con người",父,,N5
+n5-0407,茶色,ちゃいろ,màu nâu,brown,danh từ,Màu sắc,茶 色,,N5
+n5-0408,茶碗,ちゃわん,bát ăn cơm,rice bowl,danh từ,Ăn uống,茶 碗,,N5
+n5-0409,～中,～ちゅう,"đang ..., trong lúc (ví dụ しごとちゅう)","during, while ~ing",hậu tố,"Từ chức năng, trạng từ",中,,N5
+n5-0410,丁度,ちょうど,vừa đúng,"just, right, exactly",trạng từ,"Từ chức năng, trạng từ",丁 度,,N5
+n5-0411,ちょっと,ちょっと,một chút; hơi,"a little, somewhat; just a little, somewhat",trạng từ,"Từ chức năng, trạng từ",,,N5
+n5-0412,一日,ついたち,ngày mùng 1,one day; first day of the month,danh từ,Thời gian,一 日,,N5
+n5-0413,使う,つかう,"dùng, sử dụng",to use,động từ nhóm 1,Động từ thường dùng,使,,N5
+n5-0414,疲れる,つかれる,mệt,to get (become) tired; to become fatigued,động từ nhóm 2,"Cơ thể, sức khỏe",疲,,N5
+n5-0415,次,つぎ,tiếp theo,next,danh từ,Thời gian,次,,N5
+n5-0416,着く,つく,đến nơi,"to arrive at, to reach",động từ nhóm 1,"Phố xá, giao thông",着,,N5
+n5-0417,机,つくえ,"cái bàn (học, làm việc)",desk,danh từ,"Nhà ở, đồ vật",机,,N5
+n5-0418,作る,つくる,"làm, chế tạo; nấu","to make, to create",động từ nhóm 1,Động từ thường dùng,作,,N5
+n5-0419,つける,つける,"bật (đèn, điện)","to turn on (e.g., a light); to take",động từ nhóm 2,Động từ thường dùng,,,N5
+n5-0420,勤める,つとめる,làm việc (cho công ty),to work (for),động từ nhóm 2,"Trường học, công việc",勤,,N5
+n5-0421,つまらない,つまらない,"chán, nhàm","boring, dull; insignificant",tính từ い,"Tính chất, cảm xúc",,,N5
+n5-0422,冷たい,つめたい,lạnh (đồ vật); lạnh lùng,"cold (things, people)",tính từ い,"Tính chất, cảm xúc",冷,,N5
+n5-0423,強い,つよい,mạnh,"strong, powerful",tính từ い,"Tính chất, cảm xúc",強,,N5
+n5-0424,手,て,tay,hand,danh từ,"Cơ thể, sức khỏe",手,,N5
+n5-0425,テープ,テープ,"băng (dính, ghi âm)",tape,danh từ,"Nhà ở, đồ vật",,,N5
+n5-0426,テープレコーダー,テープレコーダー,máy ghi âm (băng),tape recorder,danh từ,"Nhà ở, đồ vật",,,N5
+n5-0427,テーブル,テーブル,cái bàn,table,danh từ,"Nhà ở, đồ vật",,,N5
+n5-0428,出かける,でかける,đi ra ngoài,to go out; to depart,động từ nhóm 2,Sinh hoạt hằng ngày,出,,N5
+n5-0429,手紙,てがみ,lá thư,letter,danh từ,"Phố xá, giao thông",手 紙,,N5
+n5-0430,できる,できる,"có thể, làm được",to be able to (to accomplish),động từ nhóm 2,Động từ thường dùng,,,N5
+n5-0431,出口,でぐち,lối ra,an exit,danh từ,"Phố xá, giao thông",出 口,,N5
+n5-0432,テスト,テスト,bài kiểm tra,test,danh từ,"Trường học, công việc",,,N5
+n5-0433,では,では,vậy thì,"then, well, so",liên từ,"Chào hỏi, giao tiếp",,,N5
+n5-0434,デパート,デパート,cửa hàng bách hóa,(abbr.) department store,danh từ,"Mua sắm, tiền",,,N5
+n5-0435,でも,でも,nhưng,"but, however",liên từ,"Từ chức năng, trạng từ",,,N5
+n5-0436,出る,でる,"ra, đi ra; xuất hiện","to appear, to leave",động từ nhóm 2,Động từ thường dùng,出,,N5
+n5-0437,テレビ,テレビ,ti vi,"television, TV",danh từ,"Sở thích, giải trí",,,N5
+n5-0438,天気,てんき,thời tiết,weather,danh từ,"Thời tiết, thiên nhiên",天 気,,N5
+n5-0439,電気,でんき,điện; đèn điện,"electricity, (electric) light",danh từ,"Nhà ở, đồ vật",電 気,,N5
+n5-0440,電車,でんしゃ,tàu điện,electric train,danh từ,"Phố xá, giao thông",電 車,,N5
+n5-0441,電話,でんわ,điện thoại,a telephone,danh từ,"Nhà ở, đồ vật",電 話,,N5
+n5-0442,戸,と,cửa (kiểu Nhật),door (Japanese style),danh từ,"Nhà ở, đồ vật",戸,,N5
+n5-0443,～度,～ど,... lần; ... độ,counter for occurrences; ~ degree; ~ point,trợ số từ,"Số, đếm",度,,N5
+n5-0444,ドア,ドア,cửa (kiểu Tây),door (Western style),danh từ,"Nhà ở, đồ vật",,,N5
+n5-0445,トイレ,トイレ,nhà vệ sinh,bathroom; toilet,danh từ,"Nhà ở, đồ vật",,,N5
+n5-0446,どう,どう,thế nào,"how, in what way",từ để hỏi,"Chỉ định, nghi vấn",,,N5
+n5-0447,どうして,どうして,tại sao,"why, for what reason",từ để hỏi,"Chỉ định, nghi vấn",,,N5
+n5-0448,どうぞ,どうぞ,xin mời,"please, kindly, by all means","thán từ, câu giao tiếp","Chào hỏi, giao tiếp",,,N5
+n5-0449,動物,どうぶつ,động vật,animal,danh từ,Động vật,動 物,,N5
+n5-0450,どうも,どうも,cảm ơn; chào (thân mật),Thank you; somehow; no matter how hard one may try,"thán từ, câu giao tiếp","Chào hỏi, giao tiếp",,,N5
+n5-0451,十,とお,mười cái,ten (~),số từ,"Số, đếm",十,,N5
+n5-0452,遠い,とおい,xa,"far (away), distant",tính từ い,"Vị trí, phương hướng",遠,,N5
+n5-0453,十日,とおか,ngày mùng 10; 10 ngày,ten days; tenth day of the month,danh từ,Thời gian,十 日,,N5
+n5-0454,～時,～とき,"khi, lúc",at the time of ~,danh từ,"Từ chức năng, trạng từ",時,,N5
+n5-0455,時々,ときどき,thỉnh thoảng,sometimes,trạng từ,"Từ chức năng, trạng từ",時 々,,N5
+n5-0456,時計,とけい,đồng hồ,a watch; a clock,danh từ,"Nhà ở, đồ vật",時 計,,N5
+n5-0457,どこ,どこ,ở đâu,"where, what place",từ để hỏi,"Chỉ định, nghi vấn",,,N5
+n5-0458,所,ところ,"nơi, chỗ",place,danh từ,"Vị trí, phương hướng",所,,N5
+n5-0459,年,とし,năm; tuổi,"year, age",danh từ,Thời gian,年,,N5
+n5-0460,図書館,としょかん,thư viện,library,danh từ,"Trường học, công việc",図 書 館,,N5
+n5-0461,どちら,どちら,"cái nào, phía nào; ở đâu (lịch sự)",which (one) (way); where (polite),từ để hỏi,"Chỉ định, nghi vấn",,,N5
+n5-0462,どっち,どっち,cái nào (thân mật),"which one, which way",từ để hỏi,"Chỉ định, nghi vấn",,,N5
+n5-0463,とても,とても,rất,"very (much), greatly, exceedingly",trạng từ,"Từ chức năng, trạng từ",,,N5
+n5-0464,どなた,どなた,"vị nào, ai (lịch sự)",who,từ để hỏi,"Chỉ định, nghi vấn",,,N5
+n5-0465,隣,となり,"bên cạnh, nhà bên","next to, next door to",danh từ,"Vị trí, phương hướng",隣,,N5
+n5-0466,どの,どの,... nào (đứng trước danh từ),which,từ để hỏi,"Chỉ định, nghi vấn",,,N5
+n5-0467,飛ぶ,とぶ,bay; nhảy,"to fly, to hop",động từ nhóm 1,Động từ thường dùng,飛,,N5
+n5-0468,止まる,とまる,dừng lại,to come to a halt,động từ nhóm 1,"Phố xá, giao thông",止,,N5
+n5-0469,友達,ともだち,bạn bè,friend,danh từ,"Gia đình, con người",友 達,,N5
+n5-0470,土曜日,どようび,thứ Bảy,Saturday,danh từ,Thời gian,土 曜 日,,N5
+n5-0471,鳥,とり,con chim; con gà,"chicken (lit., bird)",danh từ,Động vật,鳥,,N5
+n5-0472,鶏肉,とりにく,thịt gà,chicken meat,danh từ,Ăn uống,鶏 肉,,N5
+n5-0473,取る,とる,"lấy, cầm; đạt được",to take (a class); to get (a grade),động từ nhóm 1,Động từ thường dùng,取,,N5
+n5-0474,撮る,とる,"chụp (ảnh), quay (phim)","to take (a photo), to make (a film)",động từ nhóm 1,"Sở thích, giải trí",撮,,N5
+n5-0475,どれ,どれ,cái nào,which one,từ để hỏi,"Chỉ định, nghi vấn",,,N5
+n5-0476,どんな,どんな,"như thế nào, loại gì","what, what kind of",từ để hỏi,"Chỉ định, nghi vấn",,,N5
+n5-0477,ない,ない,không có,"there isn't, doesn't have",tính từ い,Động từ thường dùng,,,N5
+n5-0478,ナイフ,ナイフ,con dao,knife,danh từ,Ăn uống,,,N5
+n5-0479,中,なか,"bên trong, giữa","inside, middle, among",danh từ,"Vị trí, phương hướng",中,,N5
+n5-0480,長い,ながい,dài,"long, lengthy",tính từ い,"Tính chất, cảm xúc",長,,N5
+n5-0481,鳴く,なく,"(động vật) kêu, hót",to make sound (animal),động từ nhóm 1,Động vật,鳴,,N5
+n5-0482,無くす,なくす,làm mất,to lose something,động từ nhóm 1,Động từ thường dùng,無,,N5
+n5-0483,なぜ,なぜ,tại sao,why (same as どうして),từ để hỏi,"Chỉ định, nghi vấn",,,N5
+n5-0484,夏,なつ,mùa hè,summer,danh từ,"Thời tiết, thiên nhiên",夏,,N5
+n5-0485,夏休み,なつやすみ,kỳ nghỉ hè,summer vacation,danh từ,"Trường học, công việc",夏 休,,N5
+n5-0486,～など,～など,vân vân,et cetera,hậu tố,"Từ chức năng, trạng từ",,,N5
+n5-0487,七つ,ななつ,7 cái,seven things,số từ,"Số, đếm",七,,N5
+n5-0488,何,なん; なに,cái gì,what,từ để hỏi,"Chỉ định, nghi vấn",何,,N5
+n5-0489,七日,なのか,ngày mùng 7; 7 ngày,seven days; seventh day (of the month),danh từ,Thời gian,七 日,,N5
+n5-0490,名前,なまえ,tên,name,danh từ,"Chào hỏi, giao tiếp",名 前,,N5
+n5-0491,習う,ならう,học (từ ai đó),to learn,động từ nhóm 1,"Trường học, công việc",習,,N5
+n5-0492,並ぶ,ならぶ,xếp hàng,"to line up, to stand in a line (v.i.)",động từ nhóm 1,Động từ thường dùng,並,,N5
+n5-0493,並べる,ならべる,"xếp, bày (cái gì) thành hàng",to put (things) side by side; to line up,động từ nhóm 2,Động từ thường dùng,並,,N5
+n5-0494,なる,なる,trở thành,to become,động từ nhóm 1,Động từ thường dùng,,,N5
+n5-0495,何～,なん～,"mấy ..., ... gì (ví dụ なんじ, なんにん)",what sort of ~,tiền tố,"Chỉ định, nghi vấn",何,,N5
+n5-0496,二,に,hai (số 2),two,số từ,"Số, đếm",二,,N5
+n5-0497,にぎやか,にぎやか,"náo nhiệt, nhộn nhịp","bustling, busy",tính từ な,"Tính chất, cảm xúc",,,N5
+n5-0498,肉,にく,thịt,meat,danh từ,Ăn uống,肉,,N5
+n5-0499,西,にし,phía tây,west,danh từ,"Vị trí, phương hướng",西,,N5
+n5-0500,～日,～にち,ngày ... ; ... ngày,"~ day of the month, for ~ days",trợ số từ,Thời gian,日,,N5
+n5-0501,日曜日,にちようび,Chủ nhật,Sunday,danh từ,Thời gian,日 曜,,N5
+n5-0502,荷物,にもつ,hành lý,luggage; baggage,danh từ,"Phố xá, giao thông",荷 物,,N5
+n5-0503,ニュース,ニュース,tin tức,news,danh từ,"Sở thích, giải trí",,,N5
+n5-0504,庭,にわ,khu vườn,garden,danh từ,"Nhà ở, đồ vật",庭,,N5
+n5-0505,～人,～にん,... người,counter for people,trợ số từ,"Số, đếm",人,,N5
+n5-0506,脱ぐ,ぬぐ,"cởi (quần áo, giày)",to take off (clothes),động từ nhóm 1,Quần áo,脱,,N5
+n5-0507,温い,ぬるい,"âm ấm, nguội",lukewarm,tính từ い,"Tính chất, cảm xúc",温,,N5
+n5-0508,ネクタイ,ネクタイ,cà vạt,"tie, necktie",danh từ,Quần áo,,,N5
+n5-0509,猫,ねこ,con mèo,cat,danh từ,Động vật,猫,,N5
+n5-0510,寝る,ねる,"ngủ, đi ngủ",to sleep; to go to sleep; to go to bed,động từ nhóm 2,Sinh hoạt hằng ngày,寝,,N5
+n5-0511,～年,～ねん,... năm,~ years,trợ số từ,Thời gian,年,,N5
+n5-0512,ノート,ノート,quyển vở,notebook,danh từ,"Trường học, công việc",,,N5
+n5-0513,登る,のぼる,"leo, trèo",to climb,động từ nhóm 1,"Sở thích, giải trí",登,,N5
+n5-0514,飲み物,のみもの,đồ uống,"drink, beverage",danh từ,Ăn uống,飲 物,,N5
+n5-0515,飲む,のむ,uống; uống (thuốc),to drink,động từ nhóm 1,Ăn uống,飲,,N5
+n5-0516,乗る,のる,"lên (xe, tàu), cưỡi","to get on, to ride in, to board",động từ nhóm 1,"Phố xá, giao thông",乗,,N5
+n5-0517,歯,は,răng,tooth,danh từ,"Cơ thể, sức khỏe",歯,,N5
+n5-0518,パーティー,パーティー,bữa tiệc,a party,danh từ,"Sở thích, giải trí",,,N5
+n5-0519,はい,はい,"vâng, có",yes,"thán từ, câu giao tiếp","Chào hỏi, giao tiếp",,,N5
+n5-0520,～杯,～はい,"... cốc, chén",counter for cupfuls,trợ số từ,"Số, đếm",杯,,N5
+n5-0521,灰皿,はいざら,cái gạt tàn,ashtray,danh từ,"Nhà ở, đồ vật",灰 皿,,N5
+n5-0522,入る,はいる,vào; tắm (bồn),"to enter, to contain, to hold",động từ nhóm 1,Động từ thường dùng,入,,N5
+n5-0523,葉書,はがき,bưu thiếp,postcard,danh từ,"Phố xá, giao thông",葉 書,,N5
+n5-0524,はく,はく,"mặc (quần, váy), đi (giày)",to put on (items below your waist),động từ nhóm 1,Quần áo,,,N5
+n5-0525,箱,はこ,cái hộp,box,danh từ,"Nhà ở, đồ vật",箱,,N5
+n5-0526,橋,はし,cây cầu,bridge,danh từ,"Phố xá, giao thông",橋,,N5
+n5-0527,箸,はし,đôi đũa,chopsticks,danh từ,Ăn uống,箸,,N5
+n5-0528,始まる,はじまる,(cái gì đó) bắt đầu,(something) begins,động từ nhóm 1,Động từ thường dùng,始,,N5
+n5-0529,初め; 始め,はじめ,"lúc đầu, sự bắt đầu","beginning, start",danh từ,Thời gian,初 始,,N5
+n5-0530,初めて,はじめて,lần đầu tiên,for the first time,trạng từ,"Từ chức năng, trạng từ",初,,N5
+n5-0531,走る,はしる,chạy,to run,động từ nhóm 1,Động từ thường dùng,走,,N5
+n5-0532,バス,バス,xe buýt,bus; bath; bass,danh từ,"Phố xá, giao thông",,,N5
+n5-0533,バター,バター,bơ,butter,danh từ,Ăn uống,,,N5
+n5-0534,二十歳,はたち,20 tuổi,20 years old,danh từ,"Số, đếm",二 十 歳,,N5
+n5-0535,働く,はたらく,"làm việc, lao động",to work,động từ nhóm 1,"Trường học, công việc",働,,N5
+n5-0536,八,はち,tám (số 8),eight,số từ,"Số, đếm",八,,N5
+n5-0537,二十日,はつか,ngày 20; 20 ngày,"twenty days, twentieth (day of the month)",danh từ,Thời gian,二 十 日,,N5
+n5-0538,花,はな,hoa,flower,danh từ,"Thời tiết, thiên nhiên",花,,N5
+n5-0539,鼻,はな,mũi,nose,danh từ,"Cơ thể, sức khỏe",鼻,,N5
+n5-0540,話,はなし,"câu chuyện, cuộc nói chuyện","talk (chat), story",danh từ,"Chào hỏi, giao tiếp",話,,N5
+n5-0541,話す,はなす,nói chuyện,to speak,động từ nhóm 1,"Chào hỏi, giao tiếp",話,,N5
+n5-0542,母,はは,mẹ (của mình),(my) mother,danh từ,"Gia đình, con người",母,,N5
+n5-0543,早い,はやい,sớm,early,tính từ い,Thời gian,早,,N5
+n5-0544,速い,はやい,nhanh,"fast, quick",tính từ い,"Tính chất, cảm xúc",速,,N5
+n5-0545,春,はる,mùa xuân,spring,danh từ,"Thời tiết, thiên nhiên",春,,N5
+n5-0546,貼る,はる,dán,to post; to paste; to attach,động từ nhóm 1,Động từ thường dùng,貼,,N5
+n5-0547,晴れ,はれ,"trời nắng, quang đãng",clear (sunny) weather,danh từ,"Thời tiết, thiên nhiên",晴,,N5
+n5-0548,晴れる,はれる,(trời) nắng,to be sunny,động từ nhóm 2,"Thời tiết, thiên nhiên",晴,,N5
+n5-0549,半,はん,"rưỡi, một nửa (ví dụ にじはん: 2 giờ rưỡi)","half (e.g., にじはん | half-past two)",danh từ,Thời gian,半,,N5
+n5-0550,晩,ばん,buổi tối,evening,danh từ,Thời gian,晩,,N5
+n5-0551,～番,～ばん,"số ..., thứ ... (ví dụ いちばん)",~st; ~th best,trợ số từ,"Số, đếm",番,,N5
+n5-0552,パン,パン,bánh mì,bread,danh từ,Ăn uống,,,N5
+n5-0553,ハンカチ,ハンカチ,khăn tay,handkerchief,danh từ,Quần áo,,,N5
+n5-0554,番号,ばんごう,"con số, số hiệu","number, series of digits",danh từ,"Số, đếm",番 号,,N5
+n5-0555,晩御飯,ばんごはん,bữa tối,"dinner, evening meal",danh từ,Ăn uống,晩 御 飯,,N5
+n5-0556,半分,はんぶん,một nửa,half,danh từ,"Số, đếm",半 分,,N5
+n5-0557,東,ひがし,phía đông,east,danh từ,"Vị trí, phương hướng",東,,N5
+n5-0558,～匹,～ひき,... con (động vật nhỏ),counter for small animals,trợ số từ,"Số, đếm",匹,,N5
+n5-0559,引く,ひく,kéo; trừ,"to pull, to draw; subtract",động từ nhóm 1,Động từ thường dùng,引,,N5
+n5-0560,弾く,ひく,"chơi (đàn, piano)",to play (a string instrument or piano),động từ nhóm 1,"Sở thích, giải trí",弾,,N5
+n5-0561,低い,ひくい,thấp,"short, low",tính từ い,"Tính chất, cảm xúc",低,,N5
+n5-0562,飛行機,ひこうき,máy bay,airplane,danh từ,"Phố xá, giao thông",飛 行 機,,N5
+n5-0563,左,ひだり,bên trái,left hand side,danh từ,"Vị trí, phương hướng",左,,N5
+n5-0564,人,ひと,người,"man, person",danh từ,"Gia đình, con người",人,,N5
+n5-0565,一つ,ひとつ,1 cái,one thing,số từ,"Số, đếm",一,,N5
+n5-0566,一月,ひとつき,một tháng,one month,danh từ,Thời gian,一 月,,N5
+n5-0567,一人,ひとり,một người,one person,danh từ,"Số, đếm",一 人,,N5
+n5-0568,暇,ひま,rảnh rỗi; thời gian rảnh,"free time, leisure",tính từ な,"Sở thích, giải trí",暇,,N5
+n5-0569,百,ひゃく,trăm,hundred,số từ,"Số, đếm",百,,N5
+n5-0570,病院,びょういん,bệnh viện,hospital,danh từ,"Cơ thể, sức khỏe",病 院,,N5
+n5-0571,病気,びょうき,bệnh,illness; sickness,danh từ,"Cơ thể, sức khỏe",病 気,,N5
+n5-0572,平仮名,ひらがな,chữ hiragana,hiragana,danh từ,"Trường học, công việc",平 仮 名,,N5
+n5-0573,昼,ひる,"buổi trưa, ban ngày","noon, daytime",danh từ,Thời gian,昼,,N5
+n5-0574,昼御飯,ひるごはん,bữa trưa,"lunch, midday meal",danh từ,Ăn uống,昼 御 飯,,N5
+n5-0575,広い,ひろい,rộng,spacious; wide; broad,tính từ い,"Tính chất, cảm xúc",広,,N5
+n5-0576,フィルム,フィルム,phim (cuộn phim máy ảnh),film (roll of),danh từ,"Sở thích, giải trí",,,N5
+n5-0577,封筒,ふうとう,phong bì,envelope,danh từ,"Phố xá, giao thông",封 筒,,N5
+n5-0578,プール,プール,bể bơi,swimming pool,danh từ,"Sở thích, giải trí",,,N5
+n5-0579,フォーク,フォーク,cái nĩa,fork,danh từ,Ăn uống,,,N5
+n5-0580,吹く,ふく,thổi (gió),"to blow (wind, etc.)",động từ nhóm 1,"Thời tiết, thiên nhiên",吹,,N5
+n5-0581,服,ふく,quần áo,clothes,danh từ,Quần áo,服,,N5
+n5-0582,二つ,ふたつ,2 cái,two things,số từ,"Số, đếm",二,,N5
+n5-0583,豚肉,ぶたにく,thịt lợn,pork,danh từ,Ăn uống,豚 肉,,N5
+n5-0584,二人,ふたり,hai người,two people,danh từ,"Số, đếm",二 人,,N5
+n5-0585,二日,ふつか,ngày mùng 2; 2 ngày,two days; second day of the month,danh từ,Thời gian,二 日,,N5
+n5-0586,太い,ふとい,"béo, to, dày","fat, thick",tính từ い,"Tính chất, cảm xúc",太,,N5
+n5-0587,冬,ふゆ,mùa đông,winter,danh từ,"Thời tiết, thiên nhiên",冬,,N5
+n5-0588,降る,ふる,"(mưa, tuyết) rơi","to precipitate, to fall (e.g., rain, snow, etc.)",động từ nhóm 1,"Thời tiết, thiên nhiên",降,,N5
+n5-0589,古い,ふるい,cũ,"old (in reference to objects, not people), aged, ancient",tính từ い,"Tính chất, cảm xúc",古,,N5
+n5-0590,～分,～ふん,... phút,~ minutes,trợ số từ,Thời gian,分,,N5
+n5-0591,文章,ぶんしょう,"câu văn, đoạn văn","sentence, text",danh từ,"Trường học, công việc",文 章,,N5
+n5-0592,ページ,ページ,trang (sách),a page,danh từ,"Trường học, công việc",,,N5
+n5-0593,下手,へた,"kém, dở","unskillful, poor",tính từ な,"Tính chất, cảm xúc",下 手,,N5
+n5-0594,ベッド,ベッド,cái giường,bed,danh từ,"Nhà ở, đồ vật",,,N5
+n5-0595,ペット,ペット,thú cưng,pet,danh từ,Động vật,,,N5
+n5-0596,部屋,へや,căn phòng,a room,danh từ,"Nhà ở, đồ vật",部 屋,,N5
+n5-0597,辺,へん,"khu vực, vùng lân cận","area, vicinity",danh từ,"Vị trí, phương hướng",辺,,N5
+n5-0598,ペン,ペン,cái bút,pen,danh từ,"Trường học, công việc",,,N5
+n5-0599,勉強,べんきょう,"học, học tập",study,danh từ + する,"Trường học, công việc",勉 強,x,N5
+n5-0600,便利,べんり,tiện lợi,"convenient, handy",tính từ な,"Tính chất, cảm xúc",便 利,,N5
+n5-0601,帽子,ぼうし,cái mũ,hat; cap,danh từ,Quần áo,帽 子,,N5
+n5-0602,ボールペン,ボールペン,bút bi,ball-point pen,danh từ,"Trường học, công việc",,,N5
+n5-0603,外,ほか,"cái khác, chỗ khác","other, the rest",danh từ,"Từ chức năng, trạng từ",外,,N5
+n5-0604,ポケット,ポケット,"túi (quần, áo)",pocket,danh từ,Quần áo,,,N5
+n5-0605,欲しい,ほしい,muốn có,"to want, in need of",tính từ い,"Tính chất, cảm xúc",欲,,N5
+n5-0606,ポスト,ポスト,hòm thư,"mailbox; post, position",danh từ,"Phố xá, giao thông",,,N5
+n5-0607,細い,ほそい,"gầy, mảnh, nhỏ","thin, slender, fine",tính từ い,"Tính chất, cảm xúc",細,,N5
+n5-0608,ボタン,ボタン,cái cúc áo; nút bấm,button,danh từ,Quần áo,,,N5
+n5-0609,ホテル,ホテル,khách sạn,hotel,danh từ,"Phố xá, giao thông",,,N5
+n5-0610,本,ほん,quyển sách,book,danh từ,"Trường học, công việc",本,,N5
+n5-0611,～本,～ほん,"... cái (vật dài: bút, chai)",counter for long cylindrical things,trợ số từ,"Số, đếm",本,,N5
+n5-0612,本棚,ほんだな,giá sách,bookshelf,danh từ,"Nhà ở, đồ vật",本 棚,,N5
+n5-0613,本当,ほんとう,"thật, thực sự","real, true",danh từ,"Từ chức năng, trạng từ",本 当,,N5
+n5-0614,～枚,～まい,"... tờ, chiếc (vật mỏng)",counter for flat things,trợ số từ,"Số, đếm",枚,,N5
+n5-0615,毎朝,まいあさ,mỗi sáng,every morning,danh từ,Thời gian,毎 朝,,N5
+n5-0616,毎月,まいげつ; まいつき,mỗi tháng,"every month, monthly",danh từ,Thời gian,毎 月,,N5
+n5-0617,毎週,まいしゅう,mỗi tuần,every week,danh từ,Thời gian,毎 週,,N5
+n5-0618,毎日,まいにち,mỗi ngày,every day,danh từ,Thời gian,毎 日,,N5
+n5-0619,毎年,まいねん; まいとし,mỗi năm,"every year, yearly, annually",danh từ,Thời gian,毎 年,,N5
+n5-0620,毎晩,まいばん,mỗi tối,every night,danh từ,Thời gian,毎 晩,,N5
+n5-0621,前,まえ,"trước, phía trước","before, in front",danh từ,"Vị trí, phương hướng",前,,N5
+n5-0622,～前,～まえ,"trước ... (ví dụ 3じまえ, えきのまえ)",in front of ~,hậu tố,"Vị trí, phương hướng",前,,N5
+n5-0623,曲る,まがる,rẽ; cong,"to turn, to bend",động từ nhóm 1,"Phố xá, giao thông",曲,,N5
+n5-0624,まずい,まずい,"dở (đồ ăn), không ngon; không hay","terrible (in reference to food), unappetizing, unpleasant (taste)",tính từ い,Ăn uống,,,N5
+n5-0625,また,また,"lại, nữa",and; furthermore,trạng từ,"Từ chức năng, trạng từ",,,N5
+n5-0626,まだ,まだ,"vẫn, vẫn còn; chưa","yet, still, besides",trạng từ,"Từ chức năng, trạng từ",,,N5
+n5-0627,町,まち,"thị trấn, phố",town; city,danh từ,"Phố xá, giao thông",町,,N5
+n5-0628,待つ,まつ,"chờ, đợi",to wait,động từ nhóm 1,Động từ thường dùng,待,,N5
+n5-0629,まっすぐ,まっすぐ,thẳng,"straight (ahead), direct",trạng từ,"Phố xá, giao thông",,,N5
+n5-0630,マッチ,マッチ,que diêm,match,danh từ,"Nhà ở, đồ vật",,,N5
+n5-0631,窓,まど,cửa sổ,window,danh từ,"Nhà ở, đồ vật",窓,,N5
+n5-0632,丸い; 円い,まるい,tròn,"round, circular",tính từ い,"Tính chất, cảm xúc",丸 円,,N5
+n5-0633,万,まん,mười nghìn (vạn),ten thousand,số từ,"Số, đếm",万,,N5
+n5-0634,万年筆,まんねんひつ,bút máy,fountain pen,danh từ,"Trường học, công việc",万 年 筆,,N5
+n5-0635,磨く,みがく,đánh (răng); đánh bóng,to brush (teeth); to polish,động từ nhóm 1,Sinh hoạt hằng ngày,磨,,N5
+n5-0636,右,みぎ,bên phải,right hand side,danh từ,"Vị trí, phương hướng",右,,N5
+n5-0637,短い,みじかい,ngắn,short (length),tính từ い,"Tính chất, cảm xúc",短,,N5
+n5-0638,水,みず,nước,water,danh từ,Ăn uống,水,,N5
+n5-0639,店,みせ,cửa hàng,"store, shop",danh từ,"Mua sắm, tiền",店,,N5
+n5-0640,見せる,みせる,cho xem,"to show, to display",động từ nhóm 2,Động từ thường dùng,見,,N5
+n5-0641,道,みち,con đường; đường đi,"road, street; way, directions",danh từ,"Phố xá, giao thông",道,,N5
+n5-0642,三日,みっか,ngày mùng 3; 3 ngày,"three days, third day of the month",danh từ,Thời gian,三 日,,N5
+n5-0643,三つ,みっつ,3 cái,three things,số từ,"Số, đếm",三,,N5
+n5-0644,緑,みどり,màu xanh lá,green,danh từ,Màu sắc,緑,,N5
+n5-0645,皆さん,みなさん,"các bạn, mọi người (lịch sự)","all of you, everyone",đại từ,"Gia đình, con người",皆,,N5
+n5-0646,南,みなみ,phía nam,South,danh từ,"Vị trí, phương hướng",南,,N5
+n5-0647,耳,みみ,tai,ear,danh từ,"Cơ thể, sức khỏe",耳,,N5
+n5-0648,見る,みる,"xem, nhìn","to see, to look",động từ nhóm 2,Động từ thường dùng,見,,N5
+n5-0649,みんな,みんな,"mọi người, tất cả","all, everyone, everybody",đại từ,"Gia đình, con người",,,N5
+n5-0650,六日,むいか,ngày mùng 6; 6 ngày,six days; sixth day of month,danh từ,Thời gian,六 日,,N5
+n5-0651,向こう,むこう,phía bên kia,"beyond, over there",danh từ,"Vị trí, phương hướng",向,,N5
+n5-0652,難しい,むずかしい,khó,difficult,tính từ い,"Tính chất, cảm xúc",難,,N5
+n5-0653,六つ,むっつ,6 cái,six things,số từ,"Số, đếm",六,,N5
+n5-0654,村,むら,làng,village,danh từ,"Phố xá, giao thông",村,,N5
+n5-0655,目,め,mắt,eye(s),danh từ,"Cơ thể, sức khỏe",目,,N5
+n5-0656,メートル,メートル,mét,meter,danh từ,"Số, đếm",,,N5
+n5-0657,眼鏡,めがね,kính đeo mắt,eye glasses,danh từ,Quần áo,眼 鏡,,N5
+n5-0658,もう,もう,đã ... rồi; thêm nữa,already; again; more,trạng từ,"Từ chức năng, trạng từ",,,N5
+n5-0659,木曜日,もくようび,thứ Năm,Thursday,danh từ,Thời gian,木 曜 日,,N5
+n5-0660,もしもし,もしもし,a lô (khi gọi điện),Hello? (used on the phone),"thán từ, câu giao tiếp","Chào hỏi, giao tiếp",,,N5
+n5-0661,持つ,もつ,"cầm, mang; có, sở hữu","to hold, to carry; to possess",động từ nhóm 1,Động từ thường dùng,持,,N5
+n5-0662,もっと,もっと,"hơn nữa, thêm",more,trạng từ,"Từ chức năng, trạng từ",,,N5
+n5-0663,物,もの,"đồ vật, thứ",thing (concrete object),danh từ,"Nhà ở, đồ vật",物,,N5
+n5-0664,門,もん,cổng,gate,danh từ,"Nhà ở, đồ vật",門,,N5
+n5-0665,問題,もんだい,vấn đề; câu hỏi (bài tập),a problem,danh từ,"Trường học, công việc",問 題,,N5
+n5-0666,～屋,～や,cửa hàng ... (ví dụ ほんや: hiệu sách),~ shop,hậu tố,"Mua sắm, tiền",屋,,N5
+n5-0667,八百屋,やおや,cửa hàng rau quả,greengrocer,danh từ,"Mua sắm, tiền",八 百 屋,,N5
+n5-0668,野菜,やさい,rau,vegetable,danh từ,Ăn uống,野 菜,,N5
+n5-0669,易しい,やさしい,dễ,"easy, plain, simple",tính từ い,"Tính chất, cảm xúc",易,,N5
+n5-0670,安い,やすい,rẻ,inexpensive; cheap (things),tính từ い,"Mua sắm, tiền",安,,N5
+n5-0671,休み,やすみ,"ngày nghỉ, kỳ nghỉ",holiday; day off; absence,danh từ,"Trường học, công việc",休,,N5
+n5-0672,休む,やすむ,"nghỉ, nghỉ ngơi","to rest, to have a break, to get time off",động từ nhóm 1,Sinh hoạt hằng ngày,休,,N5
+n5-0673,八つ,やっつ,8 cái,eight things,số từ,"Số, đếm",八,,N5
+n5-0674,山,やま,núi,mountain,danh từ,"Thời tiết, thiên nhiên",山,,N5
+n5-0675,やる,やる,"làm; cho (con vật, người dưới)","to do; to give (to pets, parents, siblings, etc.)",động từ nhóm 1,Động từ thường dùng,,,N5
+n5-0676,夕方,ゆうがた,chiều tối,"late afternoon (typically just before dinner time), evening",danh từ,Thời gian,夕 方,,N5
+n5-0677,夕飯,ゆうはん,bữa tối,"dinner, supper, evening meal",danh từ,Ăn uống,夕 飯,,N5
+n5-0678,郵便局,ゆうびんきょく,bưu điện,post office,danh từ,"Phố xá, giao thông",郵 便 局,,N5
+n5-0679,昨夜,ゆうべ,tối qua,last night,danh từ,Thời gian,昨 夜,,N5
+n5-0680,有名,ゆうめい,nổi tiếng,famous,tính từ な,"Tính chất, cảm xúc",有 名,,N5
+n5-0681,雪,ゆき,tuyết,snow,danh từ,"Thời tiết, thiên nhiên",雪,,N5
+n5-0682,ゆっくりと,ゆっくりと,"chậm rãi, thong thả","slowly, at ease",trạng từ,"Từ chức năng, trạng từ",,,N5
+n5-0683,八日,ようか,ngày mùng 8; 8 ngày,eight days; eighth day of the month,danh từ,Thời gian,八 日,,N5
+n5-0684,洋服,ようふく,quần áo kiểu Tây,Western-style clothes,danh từ,Quần áo,洋 服,,N5
+n5-0685,よく,よく,"thường, hay; tốt, giỏi","frequently, often (much); well, skillfully",trạng từ,"Từ chức năng, trạng từ",,,N5
+n5-0686,横,よこ,bên cạnh; chiều ngang,beside; side; width,danh từ,"Vị trí, phương hướng",横,,N5
+n5-0687,四日,よっか,ngày mùng 4; 4 ngày,four days; fourth day of the month,danh từ,Thời gian,四 日,,N5
+n5-0688,四つ,よっつ,4 cái,four things,số từ,"Số, đếm",四,,N5
+n5-0689,呼ぶ,よぶ,gọi; mời,to call (one's name); to invite,động từ nhóm 1,Động từ thường dùng,呼,,N5
+n5-0690,読む,よむ,đọc,to read,động từ nhóm 1,"Trường học, công việc",読,,N5
+n5-0691,夜,よる,"buổi tối, ban đêm","evening, night",danh từ,Thời gian,夜,,N5
+n5-0692,弱い,よわい,yếu,weak,tính từ い,"Tính chất, cảm xúc",弱,,N5
+n5-0693,来月,らいげつ,tháng sau,next month,danh từ,Thời gian,来 月,,N5
+n5-0694,来週,らいしゅう,tuần sau,next week,danh từ,Thời gian,来 週,,N5
+n5-0695,来年,らいねん,năm sau,next year,danh từ,Thời gian,来 年,,N5
+n5-0696,ラジオ,ラジオ,"đài, radio",radio,danh từ,"Sở thích, giải trí",,,N5
+n5-0697,ラジオカセ,ラジオカセ,máy radio cát-xét,radio cassette player,danh từ,"Sở thích, giải trí",,,N5
+n5-0698,りっぱ,りっぱ,"tuyệt vời, lộng lẫy","splendid, fine",tính từ な,"Tính chất, cảm xúc",,,N5
+n5-0699,留学生,りゅうがくせい,du học sinh,international student,danh từ,"Trường học, công việc",留 学 生,,N5
+n5-0700,両親,りょうしん,bố mẹ,"parents (lit., both parents)",danh từ,"Gia đình, con người",両 親,,N5
+n5-0701,料理,りょうり,món ăn; việc nấu ăn,cooking; cuisine,danh từ + する,Ăn uống,料 理,x,N5
+n5-0702,旅行,りょこう,du lịch,"travel, trip",danh từ + する,"Sở thích, giải trí",旅 行,x,N5
+n5-0703,零,れい,số không,"zero, nought",số từ,"Số, đếm",零,,N5
+n5-0704,冷蔵庫,れいぞうこ,tủ lạnh,refrigerator,danh từ,"Nhà ở, đồ vật",冷 蔵 庫,,N5
+n5-0705,レコード,レコード,đĩa hát; kỷ lục,record,danh từ,"Sở thích, giải trí",,,N5
+n5-0706,レストラン,レストラン,nhà hàng,restaurant,danh từ,Ăn uống,,,N5
+n5-0707,練習,れんしゅう,luyện tập,(to) practice,danh từ + する,"Trường học, công việc",練 習,x,N5
+n5-0708,廊下,ろうか,hành lang,corridor,danh từ,"Nhà ở, đồ vật",廊 下,,N5
+n5-0709,六,ろく,sáu (số 6),six,số từ,"Số, đếm",六,,N5
+n5-0710,ワイシャツ,ワイシャツ,áo sơ mi (công sở),"shirt (lit: white shirt), business shirt",danh từ,Quần áo,,,N5
+n5-0711,若い,わかい,trẻ,young,tính từ い,"Tính chất, cảm xúc",若,,N5
+n5-0712,分かる,わかる,hiểu,to understand,động từ nhóm 1,"Trường học, công việc",分,,N5
+n5-0713,忘れる,わすれる,quên,to forget,động từ nhóm 2,Động từ thường dùng,忘,,N5
+n5-0714,私,わたし,tôi,"I, myself",đại từ,"Gia đình, con người",私,,N5
+n5-0715,私,わたくし,tôi (trang trọng),"I (formal), myself, private affairs",đại từ,"Gia đình, con người",私,,N5
+n5-0716,渡す,わたす,"đưa, trao",to hand (something) over (v.t.); to get across,động từ nhóm 1,Động từ thường dùng,渡,,N5
+n5-0717,渡る,わたる,"băng qua, đi qua","to cross over, to go across",động từ nhóm 1,"Phố xá, giao thông",渡,,N5
+n5-0718,悪い,わるい,"xấu, tồi; có lỗi","bad, sinful; inferior",tính từ い,"Tính chất, cảm xúc",悪,,N5

@@ -1,0 +1,10005 @@
+{
+ "meta": {
+  "name": "JLPT N5 vocabulary (tiếng Việt)",
+  "count": 718,
+  "source": "jlpt-word-list (github.com/elzup/jlpt-word-list), dữ liệu gốc tanos.co.uk – Jonathan Waller, CC BY",
+  "note": "Nghĩa tiếng Việt, loại từ và chủ đề được bổ sung; nên rà lại trước khi dùng."
+ },
+ "words": [
+  {
+   "id": "n5-0001",
+   "word": "ああ",
+   "reading": "ああ",
+   "meaning_vi": "à, ồ (thán từ)",
+   "meaning_en": "Ah!, Oh!",
+   "type": "thán từ, câu giao tiếp",
+   "topic": "Chào hỏi, giao tiếp",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0002",
+   "word": "会う",
+   "reading": "あう",
+   "meaning_vi": "gặp",
+   "meaning_en": "to meet, to see",
+   "type": "động từ nhóm 1",
+   "topic": "Động từ thường dùng",
+   "kanji": [
+    "会"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0003",
+   "word": "青",
+   "reading": "あお",
+   "meaning_vi": "màu xanh dương (danh từ)",
+   "meaning_en": "blue",
+   "type": "danh từ",
+   "topic": "Màu sắc",
+   "kanji": [
+    "青"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0004",
+   "word": "青い",
+   "reading": "あおい",
+   "meaning_vi": "xanh dương (tính từ)",
+   "meaning_en": "blue",
+   "type": "tính từ い",
+   "topic": "Màu sắc",
+   "kanji": [
+    "青"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0005",
+   "word": "赤",
+   "reading": "あか",
+   "meaning_vi": "màu đỏ (danh từ)",
+   "meaning_en": "red",
+   "type": "danh từ",
+   "topic": "Màu sắc",
+   "kanji": [
+    "赤"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0006",
+   "word": "赤い",
+   "reading": "あかい",
+   "meaning_vi": "đỏ (tính từ)",
+   "meaning_en": "red",
+   "type": "tính từ い",
+   "topic": "Màu sắc",
+   "kanji": [
+    "赤"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0007",
+   "word": "明るい",
+   "reading": "あかるい",
+   "meaning_vi": "sáng sủa; vui vẻ, tươi tắn",
+   "meaning_en": "bright (in reference to personality or weather); cheerful",
+   "type": "tính từ い",
+   "topic": "Tính chất, cảm xúc",
+   "kanji": [
+    "明"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0008",
+   "word": "秋",
+   "reading": "あき",
+   "meaning_vi": "mùa thu",
+   "meaning_en": "fall (season)",
+   "type": "danh từ",
+   "topic": "Thời tiết, thiên nhiên",
+   "kanji": [
+    "秋"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0009",
+   "word": "開く",
+   "reading": "あく",
+   "meaning_vi": "(cửa) mở",
+   "meaning_en": "to open, to become open",
+   "type": "động từ nhóm 1",
+   "topic": "Động từ thường dùng",
+   "kanji": [
+    "開"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0010",
+   "word": "開ける",
+   "reading": "あける",
+   "meaning_vi": "mở (cái gì)",
+   "meaning_en": "to open (v.t.)",
+   "type": "động từ nhóm 2",
+   "topic": "Động từ thường dùng",
+   "kanji": [
+    "開"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0011",
+   "word": "上げる",
+   "reading": "あげる",
+   "meaning_vi": "nâng lên; cho, tặng",
+   "meaning_en": "to raise, to lift",
+   "type": "động từ nhóm 2",
+   "topic": "Động từ thường dùng",
+   "kanji": [
+    "上"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0012",
+   "word": "朝",
+   "reading": "あさ",
+   "meaning_vi": "buổi sáng",
+   "meaning_en": "morning",
+   "type": "danh từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "朝"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0013",
+   "word": "朝御飯",
+   "reading": "あさごはん",
+   "meaning_vi": "bữa sáng",
+   "meaning_en": "breakfast",
+   "type": "danh từ",
+   "topic": "Ăn uống",
+   "kanji": [
+    "朝",
+    "御",
+    "飯"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0014",
+   "word": "明後日",
+   "reading": "あさって",
+   "meaning_vi": "ngày kia",
+   "meaning_en": "day after tomorrow",
+   "type": "danh từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "明",
+    "後",
+    "日"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0015",
+   "word": "足; 脚",
+   "reading": "あし",
+   "meaning_vi": "chân",
+   "meaning_en": "foot; leg",
+   "type": "danh từ",
+   "topic": "Cơ thể, sức khỏe",
+   "kanji": [
+    "足",
+    "脚"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0016",
+   "word": "明日",
+   "reading": "あした",
+   "meaning_vi": "ngày mai",
+   "meaning_en": "tomorrow",
+   "type": "danh từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "明",
+    "日"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0017",
+   "word": "あそこ",
+   "reading": "あそこ",
+   "meaning_vi": "chỗ kia, đằng kia",
+   "meaning_en": "there, over there, that place",
+   "type": "từ chỉ định",
+   "topic": "Chỉ định, nghi vấn",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0018",
+   "word": "遊ぶ",
+   "reading": "あそぶ",
+   "meaning_vi": "chơi, đi chơi",
+   "meaning_en": "to play; to spend time pleasantly; to hang out",
+   "type": "động từ nhóm 1",
+   "topic": "Sở thích, giải trí",
+   "kanji": [
+    "遊"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0019",
+   "word": "暖かい",
+   "reading": "あたたかい",
+   "meaning_vi": "ấm áp",
+   "meaning_en": "warm",
+   "type": "tính từ い",
+   "topic": "Thời tiết, thiên nhiên",
+   "kanji": [
+    "暖"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0020",
+   "word": "頭",
+   "reading": "あたま",
+   "meaning_vi": "đầu",
+   "meaning_en": "head",
+   "type": "danh từ",
+   "topic": "Cơ thể, sức khỏe",
+   "kanji": [
+    "頭"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0021",
+   "word": "新しい",
+   "reading": "あたらしい",
+   "meaning_vi": "mới",
+   "meaning_en": "new",
+   "type": "tính từ い",
+   "topic": "Tính chất, cảm xúc",
+   "kanji": [
+    "新"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0022",
+   "word": "あちら",
+   "reading": "あちら",
+   "meaning_vi": "phía kia, đằng kia (lịch sự)",
+   "meaning_en": "this way (polite)",
+   "type": "từ chỉ định",
+   "topic": "Chỉ định, nghi vấn",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0023",
+   "word": "暑い",
+   "reading": "あつい",
+   "meaning_vi": "nóng (thời tiết)",
+   "meaning_en": "hot (in reference to weather), warm",
+   "type": "tính từ い",
+   "topic": "Thời tiết, thiên nhiên",
+   "kanji": [
+    "暑"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0024",
+   "word": "熱い",
+   "reading": "あつい",
+   "meaning_vi": "nóng (đồ vật)",
+   "meaning_en": "hot (objects)",
+   "type": "tính từ い",
+   "topic": "Tính chất, cảm xúc",
+   "kanji": [
+    "熱"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0025",
+   "word": "厚い",
+   "reading": "あつい",
+   "meaning_vi": "dày",
+   "meaning_en": "kind, warm(hearted), thick, deep",
+   "type": "tính từ い",
+   "topic": "Tính chất, cảm xúc",
+   "kanji": [
+    "厚"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0026",
+   "word": "あっち",
+   "reading": "あっち",
+   "meaning_vi": "đằng kia (thân mật)",
+   "meaning_en": "over there",
+   "type": "từ chỉ định",
+   "topic": "Chỉ định, nghi vấn",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0027",
+   "word": "後",
+   "reading": "あと",
+   "meaning_vi": "sau, sau đó; phần còn lại",
+   "meaning_en": "afterwards (later); in the future; the rest; since then",
+   "type": "danh từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "後"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0028",
+   "word": "あなた",
+   "reading": "あなた",
+   "meaning_vi": "bạn, anh, chị (ngôi thứ hai)",
+   "meaning_en": "you",
+   "type": "đại từ",
+   "topic": "Gia đình, con người",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0029",
+   "word": "兄",
+   "reading": "あに",
+   "meaning_vi": "anh trai (của mình)",
+   "meaning_en": "(my) older brother (humble)",
+   "type": "danh từ",
+   "topic": "Gia đình, con người",
+   "kanji": [
+    "兄"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0030",
+   "word": "姉",
+   "reading": "あね",
+   "meaning_vi": "chị gái (của mình)",
+   "meaning_en": "(my) older sister (humble)",
+   "type": "danh từ",
+   "topic": "Gia đình, con người",
+   "kanji": [
+    "姉"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0031",
+   "word": "アパート",
+   "reading": "アパート",
+   "meaning_vi": "căn hộ, chung cư",
+   "meaning_en": "apartment (abbr.)",
+   "type": "danh từ",
+   "topic": "Nhà ở, đồ vật",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0032",
+   "word": "あの",
+   "reading": "あの",
+   "meaning_vi": "... kia (đứng trước danh từ); à, ờ...",
+   "meaning_en": "that over there; like that, that way; um...",
+   "type": "từ chỉ định",
+   "topic": "Chỉ định, nghi vấn",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0033",
+   "word": "浴びる",
+   "reading": "あびる",
+   "meaning_vi": "tắm (vòi sen), dội nước",
+   "meaning_en": "to bathe, to shower",
+   "type": "động từ nhóm 2",
+   "topic": "Sinh hoạt hằng ngày",
+   "kanji": [
+    "浴"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0034",
+   "word": "危ない",
+   "reading": "あぶない",
+   "meaning_vi": "nguy hiểm",
+   "meaning_en": "dangerous, critical",
+   "type": "tính từ い",
+   "topic": "Tính chất, cảm xúc",
+   "kanji": [
+    "危"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0035",
+   "word": "甘い",
+   "reading": "あまい",
+   "meaning_vi": "ngọt; dễ dãi",
+   "meaning_en": "generous, sweet",
+   "type": "tính từ い",
+   "topic": "Ăn uống",
+   "kanji": [
+    "甘"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0036",
+   "word": "余り",
+   "reading": "あまり",
+   "meaning_vi": "không ... lắm (đi với phủ định)",
+   "meaning_en": "not very; surplus",
+   "type": "trạng từ",
+   "topic": "Từ chức năng, trạng từ",
+   "kanji": [
+    "余"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0037",
+   "word": "雨",
+   "reading": "あめ",
+   "meaning_vi": "mưa",
+   "meaning_en": "rain",
+   "type": "danh từ",
+   "topic": "Thời tiết, thiên nhiên",
+   "kanji": [
+    "雨"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0038",
+   "word": "飴",
+   "reading": "あめ",
+   "meaning_vi": "kẹo",
+   "meaning_en": "(hard) candy",
+   "type": "danh từ",
+   "topic": "Ăn uống",
+   "kanji": [
+    "飴"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0039",
+   "word": "洗う",
+   "reading": "あらう",
+   "meaning_vi": "rửa, giặt",
+   "meaning_en": "to wash",
+   "type": "động từ nhóm 1",
+   "topic": "Sinh hoạt hằng ngày",
+   "kanji": [
+    "洗"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0040",
+   "word": "在る",
+   "reading": "ある",
+   "meaning_vi": "có, ở (đồ vật)",
+   "meaning_en": "to be, to have",
+   "type": "động từ nhóm 1",
+   "topic": "Động từ thường dùng",
+   "kanji": [
+    "在"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0041",
+   "word": "有る",
+   "reading": "ある",
+   "meaning_vi": "có (sở hữu)",
+   "meaning_en": "to be, to have",
+   "type": "động từ nhóm 1",
+   "topic": "Động từ thường dùng",
+   "kanji": [
+    "有"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0042",
+   "word": "歩く",
+   "reading": "あるく",
+   "meaning_vi": "đi bộ",
+   "meaning_en": "to walk",
+   "type": "động từ nhóm 1",
+   "topic": "Động từ thường dùng",
+   "kanji": [
+    "歩"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0043",
+   "word": "あれ",
+   "reading": "あれ",
+   "meaning_vi": "cái kia",
+   "meaning_en": "that one (over there)",
+   "type": "từ chỉ định",
+   "topic": "Chỉ định, nghi vấn",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0044",
+   "word": "いい; よい",
+   "reading": "いい; よい",
+   "meaning_vi": "tốt, được",
+   "meaning_en": "good",
+   "type": "tính từ い",
+   "topic": "Tính chất, cảm xúc",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0045",
+   "word": "いいえ",
+   "reading": "いいえ",
+   "meaning_vi": "không (trả lời)",
+   "meaning_en": "no, not at all",
+   "type": "thán từ, câu giao tiếp",
+   "topic": "Chào hỏi, giao tiếp",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0046",
+   "word": "言う",
+   "reading": "いう",
+   "meaning_vi": "nói",
+   "meaning_en": "to say",
+   "type": "động từ nhóm 1",
+   "topic": "Động từ thường dùng",
+   "kanji": [
+    "言"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0047",
+   "word": "家",
+   "reading": "いえ",
+   "meaning_vi": "nhà",
+   "meaning_en": "house, home",
+   "type": "danh từ",
+   "topic": "Nhà ở, đồ vật",
+   "kanji": [
+    "家"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0048",
+   "word": "いかが",
+   "reading": "いかが",
+   "meaning_vi": "thế nào (lịch sự)",
+   "meaning_en": "how, in what way",
+   "type": "từ để hỏi",
+   "topic": "Chỉ định, nghi vấn",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0049",
+   "word": "行く",
+   "reading": "いく; ゆく",
+   "meaning_vi": "đi",
+   "meaning_en": "to go",
+   "type": "động từ nhóm 1",
+   "topic": "Động từ thường dùng",
+   "kanji": [
+    "行"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0050",
+   "word": "いくつ",
+   "reading": "いくつ",
+   "meaning_vi": "mấy cái; bao nhiêu tuổi",
+   "meaning_en": "how many, how old",
+   "type": "từ để hỏi",
+   "topic": "Chỉ định, nghi vấn",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0051",
+   "word": "いくら",
+   "reading": "いくら",
+   "meaning_vi": "bao nhiêu (tiền)",
+   "meaning_en": "how much, how many",
+   "type": "từ để hỏi",
+   "topic": "Mua sắm, tiền",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0052",
+   "word": "池",
+   "reading": "いけ",
+   "meaning_vi": "cái ao",
+   "meaning_en": "pond",
+   "type": "danh từ",
+   "topic": "Thời tiết, thiên nhiên",
+   "kanji": [
+    "池"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0053",
+   "word": "医者",
+   "reading": "いしゃ",
+   "meaning_vi": "bác sĩ",
+   "meaning_en": "doctor; physician",
+   "type": "danh từ",
+   "topic": "Cơ thể, sức khỏe",
+   "kanji": [
+    "医",
+    "者"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0054",
+   "word": "椅子",
+   "reading": "いす",
+   "meaning_vi": "cái ghế",
+   "meaning_en": "chair",
+   "type": "danh từ",
+   "topic": "Nhà ở, đồ vật",
+   "kanji": [
+    "椅",
+    "子"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0055",
+   "word": "忙しい",
+   "reading": "いそがしい",
+   "meaning_vi": "bận",
+   "meaning_en": "busy (people, days)",
+   "type": "tính từ い",
+   "topic": "Tính chất, cảm xúc",
+   "kanji": [
+    "忙"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0056",
+   "word": "痛い",
+   "reading": "いたい",
+   "meaning_vi": "đau",
+   "meaning_en": "hurt; painful; sore",
+   "type": "tính từ い",
+   "topic": "Cơ thể, sức khỏe",
+   "kanji": [
+    "痛"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0057",
+   "word": "一",
+   "reading": "いち",
+   "meaning_vi": "một (số 1)",
+   "meaning_en": "one",
+   "type": "số từ",
+   "topic": "Số, đếm",
+   "kanji": [
+    "一"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0058",
+   "word": "一日",
+   "reading": "いちにち",
+   "meaning_vi": "một ngày",
+   "meaning_en": "one day (duration)",
+   "type": "danh từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "一",
+    "日"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0059",
+   "word": "一番",
+   "reading": "いちばん",
+   "meaning_vi": "nhất, số một",
+   "meaning_en": "best (most), first, number one",
+   "type": "trạng từ",
+   "topic": "Từ chức năng, trạng từ",
+   "kanji": [
+    "一",
+    "番"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0060",
+   "word": "いつ",
+   "reading": "いつ",
+   "meaning_vi": "khi nào",
+   "meaning_en": "when",
+   "type": "từ để hỏi",
+   "topic": "Chỉ định, nghi vấn",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0061",
+   "word": "五日",
+   "reading": "いつか",
+   "meaning_vi": "ngày mùng 5; 5 ngày",
+   "meaning_en": "five days; fifth day of the month",
+   "type": "danh từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "五",
+    "日"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0062",
+   "word": "一緒",
+   "reading": "いっしょ",
+   "meaning_vi": "cùng nhau",
+   "meaning_en": "together",
+   "type": "trạng từ",
+   "topic": "Từ chức năng, trạng từ",
+   "kanji": [
+    "一",
+    "緒"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0063",
+   "word": "五つ",
+   "reading": "いつつ",
+   "meaning_vi": "5 cái",
+   "meaning_en": "five things",
+   "type": "số từ",
+   "topic": "Số, đếm",
+   "kanji": [
+    "五"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0064",
+   "word": "いつも",
+   "reading": "いつも",
+   "meaning_vi": "luôn luôn, lúc nào cũng",
+   "meaning_en": "always, usually, every time, never (with neg. verb)",
+   "type": "trạng từ",
+   "topic": "Từ chức năng, trạng từ",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0065",
+   "word": "犬",
+   "reading": "いぬ",
+   "meaning_vi": "con chó",
+   "meaning_en": "dog",
+   "type": "danh từ",
+   "topic": "Động vật",
+   "kanji": [
+    "犬"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0066",
+   "word": "今",
+   "reading": "いま",
+   "meaning_vi": "bây giờ",
+   "meaning_en": "now",
+   "type": "danh từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "今"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0067",
+   "word": "意味",
+   "reading": "いみ",
+   "meaning_vi": "ý nghĩa",
+   "meaning_en": "meaning, significance",
+   "type": "danh từ",
+   "topic": "Trường học, công việc",
+   "kanji": [
+    "意",
+    "味"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0068",
+   "word": "妹",
+   "reading": "いもうと",
+   "meaning_vi": "em gái (của mình)",
+   "meaning_en": "younger sister (humble)",
+   "type": "danh từ",
+   "topic": "Gia đình, con người",
+   "kanji": [
+    "妹"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0069",
+   "word": "嫌",
+   "reading": "いや",
+   "meaning_vi": "ghét, không thích",
+   "meaning_en": "disagreeable, detestable, unpleasant",
+   "type": "tính từ な",
+   "topic": "Tính chất, cảm xúc",
+   "kanji": [
+    "嫌"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0070",
+   "word": "入口",
+   "reading": "いりぐち",
+   "meaning_vi": "lối vào",
+   "meaning_en": "entrance",
+   "type": "danh từ",
+   "topic": "Phố xá, giao thông",
+   "kanji": [
+    "入",
+    "口"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0071",
+   "word": "居る",
+   "reading": "いる",
+   "meaning_vi": "có, ở (người, con vật)",
+   "meaning_en": "(humble) to be (animate), to exist",
+   "type": "động từ nhóm 2",
+   "topic": "Động từ thường dùng",
+   "kanji": [
+    "居"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0072",
+   "word": "要る",
+   "reading": "いる",
+   "meaning_vi": "cần",
+   "meaning_en": "to need",
+   "type": "động từ nhóm 1",
+   "topic": "Động từ thường dùng",
+   "kanji": [
+    "要"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0073",
+   "word": "入れる",
+   "reading": "いれる",
+   "meaning_vi": "cho vào, bỏ vào",
+   "meaning_en": "to put in",
+   "type": "động từ nhóm 2",
+   "topic": "Động từ thường dùng",
+   "kanji": [
+    "入"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0074",
+   "word": "色",
+   "reading": "いろ",
+   "meaning_vi": "màu sắc",
+   "meaning_en": "color",
+   "type": "danh từ",
+   "topic": "Màu sắc",
+   "kanji": [
+    "色"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0075",
+   "word": "色々",
+   "reading": "いろいろ",
+   "meaning_vi": "nhiều loại, đa dạng",
+   "meaning_en": "various",
+   "type": "tính từ な",
+   "topic": "Tính chất, cảm xúc",
+   "kanji": [
+    "色",
+    "々"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0076",
+   "word": "上",
+   "reading": "うえ",
+   "meaning_vi": "trên, phía trên",
+   "meaning_en": "above (up, top, etc.), over, on top of",
+   "type": "danh từ",
+   "topic": "Vị trí, phương hướng",
+   "kanji": [
+    "上"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0077",
+   "word": "後ろ",
+   "reading": "うしろ",
+   "meaning_vi": "phía sau",
+   "meaning_en": "back, behind, rear",
+   "type": "danh từ",
+   "topic": "Vị trí, phương hướng",
+   "kanji": [
+    "後"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0078",
+   "word": "薄い",
+   "reading": "うすい",
+   "meaning_vi": "mỏng; nhạt",
+   "meaning_en": "thin, weak",
+   "type": "tính từ い",
+   "topic": "Tính chất, cảm xúc",
+   "kanji": [
+    "薄"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0079",
+   "word": "歌",
+   "reading": "うた",
+   "meaning_vi": "bài hát",
+   "meaning_en": "a song",
+   "type": "danh từ",
+   "topic": "Sở thích, giải trí",
+   "kanji": [
+    "歌"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0080",
+   "word": "歌う",
+   "reading": "うたう",
+   "meaning_vi": "hát",
+   "meaning_en": "to sing",
+   "type": "động từ nhóm 1",
+   "topic": "Sở thích, giải trí",
+   "kanji": [
+    "歌"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0081",
+   "word": "うち",
+   "reading": "うち",
+   "meaning_vi": "nhà (của mình)",
+   "meaning_en": "home; house; my place",
+   "type": "danh từ",
+   "topic": "Nhà ở, đồ vật",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0082",
+   "word": "生まれる",
+   "reading": "うまれる",
+   "meaning_vi": "được sinh ra",
+   "meaning_en": "to be born",
+   "type": "động từ nhóm 2",
+   "topic": "Gia đình, con người",
+   "kanji": [
+    "生"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0083",
+   "word": "海",
+   "reading": "うみ",
+   "meaning_vi": "biển",
+   "meaning_en": "sea, beach",
+   "type": "danh từ",
+   "topic": "Thời tiết, thiên nhiên",
+   "kanji": [
+    "海"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0084",
+   "word": "売る",
+   "reading": "うる",
+   "meaning_vi": "bán",
+   "meaning_en": "to sell (v.t.)",
+   "type": "động từ nhóm 1",
+   "topic": "Mua sắm, tiền",
+   "kanji": [
+    "売"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0085",
+   "word": "うるさい",
+   "reading": "うるさい",
+   "meaning_vi": "ồn ào; phiền phức",
+   "meaning_en": "noisy; annoying",
+   "type": "tính từ い",
+   "topic": "Tính chất, cảm xúc",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0086",
+   "word": "上着",
+   "reading": "うわぎ",
+   "meaning_vi": "áo khoác",
+   "meaning_en": "coat, jacket",
+   "type": "danh từ",
+   "topic": "Quần áo",
+   "kanji": [
+    "上",
+    "着"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0087",
+   "word": "絵",
+   "reading": "え",
+   "meaning_vi": "bức tranh",
+   "meaning_en": "a painting; a picture; a drawing",
+   "type": "danh từ",
+   "topic": "Sở thích, giải trí",
+   "kanji": [
+    "絵"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0088",
+   "word": "映画",
+   "reading": "えいが",
+   "meaning_vi": "phim (điện ảnh)",
+   "meaning_en": "movie, film",
+   "type": "danh từ",
+   "topic": "Sở thích, giải trí",
+   "kanji": [
+    "映",
+    "画"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0089",
+   "word": "映画館",
+   "reading": "えいがかん",
+   "meaning_vi": "rạp chiếu phim",
+   "meaning_en": "movie theater, cinema",
+   "type": "danh từ",
+   "topic": "Phố xá, giao thông",
+   "kanji": [
+    "映",
+    "画",
+    "館"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0090",
+   "word": "英語",
+   "reading": "えいご",
+   "meaning_vi": "tiếng Anh",
+   "meaning_en": "English (language)",
+   "type": "danh từ",
+   "topic": "Trường học, công việc",
+   "kanji": [
+    "英",
+    "語"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0091",
+   "word": "ええ",
+   "reading": "ええ",
+   "meaning_vi": "vâng, ừ",
+   "meaning_en": "yes",
+   "type": "thán từ, câu giao tiếp",
+   "topic": "Chào hỏi, giao tiếp",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0092",
+   "word": "駅",
+   "reading": "えき",
+   "meaning_vi": "nhà ga",
+   "meaning_en": "station",
+   "type": "danh từ",
+   "topic": "Phố xá, giao thông",
+   "kanji": [
+    "駅"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0093",
+   "word": "エレベーター",
+   "reading": "エレベーター",
+   "meaning_vi": "thang máy",
+   "meaning_en": "elevator",
+   "type": "danh từ",
+   "topic": "Nhà ở, đồ vật",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0094",
+   "word": "～円",
+   "reading": "～えん",
+   "meaning_vi": "... yên (đơn vị tiền Nhật)",
+   "meaning_en": "Yen",
+   "type": "trợ số từ",
+   "topic": "Mua sắm, tiền",
+   "kanji": [
+    "円"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0095",
+   "word": "鉛筆",
+   "reading": "えんぴつ",
+   "meaning_vi": "bút chì",
+   "meaning_en": "pencil",
+   "type": "danh từ",
+   "topic": "Trường học, công việc",
+   "kanji": [
+    "鉛",
+    "筆"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0096",
+   "word": "お～",
+   "reading": "お～",
+   "meaning_vi": "tiền tố kính ngữ \"o-\"",
+   "meaning_en": "honorable ~ (honorific)",
+   "type": "tiền tố",
+   "topic": "Từ chức năng, trạng từ",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0097",
+   "word": "美味しい",
+   "reading": "おいしい",
+   "meaning_vi": "ngon",
+   "meaning_en": "delicious, tasty",
+   "type": "tính từ い",
+   "topic": "Ăn uống",
+   "kanji": [
+    "美",
+    "味"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0098",
+   "word": "多い",
+   "reading": "おおい",
+   "meaning_vi": "nhiều",
+   "meaning_en": "many; there are a lot",
+   "type": "tính từ い",
+   "topic": "Tính chất, cảm xúc",
+   "kanji": [
+    "多"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0099",
+   "word": "大きい",
+   "reading": "おおきい",
+   "meaning_vi": "to, lớn",
+   "meaning_en": "big, large",
+   "type": "tính từ い",
+   "topic": "Tính chất, cảm xúc",
+   "kanji": [
+    "大"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0100",
+   "word": "大きな",
+   "reading": "おおきな",
+   "meaning_vi": "to, lớn (đứng trước danh từ)",
+   "meaning_en": "big",
+   "type": "tính từ な",
+   "topic": "Tính chất, cảm xúc",
+   "kanji": [
+    "大"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0101",
+   "word": "大勢",
+   "reading": "おおぜい",
+   "meaning_vi": "đông người",
+   "meaning_en": "great number of people",
+   "type": "danh từ",
+   "topic": "Gia đình, con người",
+   "kanji": [
+    "大",
+    "勢"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0102",
+   "word": "お母さん",
+   "reading": "おかあさん",
+   "meaning_vi": "mẹ (người khác, hoặc gọi mẹ mình)",
+   "meaning_en": "mother (formal)",
+   "type": "danh từ",
+   "topic": "Gia đình, con người",
+   "kanji": [
+    "母"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0103",
+   "word": "お菓子",
+   "reading": "おかし",
+   "meaning_vi": "bánh kẹo",
+   "meaning_en": "confections, sweets, snack",
+   "type": "danh từ",
+   "topic": "Ăn uống",
+   "kanji": [
+    "菓",
+    "子"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0104",
+   "word": "お金",
+   "reading": "おかね",
+   "meaning_vi": "tiền",
+   "meaning_en": "money",
+   "type": "danh từ",
+   "topic": "Mua sắm, tiền",
+   "kanji": [
+    "金"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0105",
+   "word": "起きる",
+   "reading": "おきる",
+   "meaning_vi": "thức dậy; xảy ra",
+   "meaning_en": "to get up (e.g., from sleeping); to happen",
+   "type": "động từ nhóm 2",
+   "topic": "Sinh hoạt hằng ngày",
+   "kanji": [
+    "起"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0106",
+   "word": "置く",
+   "reading": "おく",
+   "meaning_vi": "đặt, để",
+   "meaning_en": "to put; to lay; to place",
+   "type": "động từ nhóm 1",
+   "topic": "Động từ thường dùng",
+   "kanji": [
+    "置"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0107",
+   "word": "奥さん",
+   "reading": "おくさん",
+   "meaning_vi": "vợ (người khác)",
+   "meaning_en": "(someone else's) wife (hon.)",
+   "type": "danh từ",
+   "topic": "Gia đình, con người",
+   "kanji": [
+    "奥"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0108",
+   "word": "お酒",
+   "reading": "おさけ",
+   "meaning_vi": "rượu; rượu sake",
+   "meaning_en": "sake; alcohol",
+   "type": "danh từ",
+   "topic": "Ăn uống",
+   "kanji": [
+    "酒"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0109",
+   "word": "お皿",
+   "reading": "おさら",
+   "meaning_vi": "cái đĩa",
+   "meaning_en": "plate, dish",
+   "type": "danh từ",
+   "topic": "Ăn uống",
+   "kanji": [
+    "皿"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0110",
+   "word": "伯父; 叔父さん",
+   "reading": "おじさん",
+   "meaning_vi": "chú, bác (trai); người đàn ông trung niên",
+   "meaning_en": "uncle, middle-aged man",
+   "type": "danh từ",
+   "topic": "Gia đình, con người",
+   "kanji": [
+    "伯",
+    "父",
+    "叔"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0111",
+   "word": "おじいさん",
+   "reading": "おじいさん",
+   "meaning_vi": "ông; cụ ông",
+   "meaning_en": "grandfather, male senior citizen",
+   "type": "danh từ",
+   "topic": "Gia đình, con người",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0112",
+   "word": "教える",
+   "reading": "おしえる",
+   "meaning_vi": "dạy; chỉ cho, cho biết",
+   "meaning_en": "to teach, to inform, to instruct",
+   "type": "động từ nhóm 2",
+   "topic": "Trường học, công việc",
+   "kanji": [
+    "教"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0113",
+   "word": "押す",
+   "reading": "おす",
+   "meaning_vi": "đẩy, ấn; đóng (dấu)",
+   "meaning_en": "to push, to press, to stamp (e.g., a passport)",
+   "type": "động từ nhóm 1",
+   "topic": "Động từ thường dùng",
+   "kanji": [
+    "押"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0114",
+   "word": "遅い",
+   "reading": "おそい",
+   "meaning_vi": "chậm; muộn",
+   "meaning_en": "slow; (to be) late",
+   "type": "tính từ い",
+   "topic": "Tính chất, cảm xúc",
+   "kanji": [
+    "遅"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0115",
+   "word": "お茶",
+   "reading": "おちゃ",
+   "meaning_vi": "trà (trà xanh)",
+   "meaning_en": "(green) tea",
+   "type": "danh từ",
+   "topic": "Ăn uống",
+   "kanji": [
+    "茶"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0116",
+   "word": "お手洗い",
+   "reading": "おてあらい",
+   "meaning_vi": "nhà vệ sinh (lịch sự)",
+   "meaning_en": "toilet, restroom, bathroom (lit., a place to wash one's hands)",
+   "type": "danh từ",
+   "topic": "Nhà ở, đồ vật",
+   "kanji": [
+    "手",
+    "洗"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0117",
+   "word": "お父さん",
+   "reading": "おとうさん",
+   "meaning_vi": "bố (người khác, hoặc gọi bố mình)",
+   "meaning_en": "father (formal)",
+   "type": "danh từ",
+   "topic": "Gia đình, con người",
+   "kanji": [
+    "父"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0118",
+   "word": "弟",
+   "reading": "おとうと",
+   "meaning_vi": "em trai (của mình)",
+   "meaning_en": "younger brother",
+   "type": "danh từ",
+   "topic": "Gia đình, con người",
+   "kanji": [
+    "弟"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0119",
+   "word": "男",
+   "reading": "おとこ",
+   "meaning_vi": "đàn ông, nam",
+   "meaning_en": "man, male",
+   "type": "danh từ",
+   "topic": "Gia đình, con người",
+   "kanji": [
+    "男"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0120",
+   "word": "男の子",
+   "reading": "おとこのこ",
+   "meaning_vi": "bé trai",
+   "meaning_en": "boy",
+   "type": "danh từ",
+   "topic": "Gia đình, con người",
+   "kanji": [
+    "男",
+    "子"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0121",
+   "word": "一昨日",
+   "reading": "おととい",
+   "meaning_vi": "hôm kia",
+   "meaning_en": "the day before yesterday",
+   "type": "danh từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "一",
+    "昨",
+    "日"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0122",
+   "word": "おととし",
+   "reading": "おととし",
+   "meaning_vi": "năm kia",
+   "meaning_en": "year before last",
+   "type": "danh từ",
+   "topic": "Thời gian",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0123",
+   "word": "大人",
+   "reading": "おとな",
+   "meaning_vi": "người lớn",
+   "meaning_en": "adult",
+   "type": "danh từ",
+   "topic": "Gia đình, con người",
+   "kanji": [
+    "大",
+    "人"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0124",
+   "word": "お腹",
+   "reading": "おなか",
+   "meaning_vi": "bụng",
+   "meaning_en": "stomach",
+   "type": "danh từ",
+   "topic": "Cơ thể, sức khỏe",
+   "kanji": [
+    "腹"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0125",
+   "word": "同じ",
+   "reading": "おなじ",
+   "meaning_vi": "giống nhau",
+   "meaning_en": "same, identical",
+   "type": "tính từ な",
+   "topic": "Tính chất, cảm xúc",
+   "kanji": [
+    "同"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0126",
+   "word": "お兄さん",
+   "reading": "おにいさん",
+   "meaning_vi": "anh trai (người khác, hoặc gọi anh mình)",
+   "meaning_en": "(someone else's) older brother (formal)",
+   "type": "danh từ",
+   "topic": "Gia đình, con người",
+   "kanji": [
+    "兄"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0127",
+   "word": "お姉さん",
+   "reading": "おねえさん",
+   "meaning_vi": "chị gái (người khác, hoặc gọi chị mình)",
+   "meaning_en": "older sister (formal)",
+   "type": "danh từ",
+   "topic": "Gia đình, con người",
+   "kanji": [
+    "姉"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0128",
+   "word": "伯母さん; 叔母さん",
+   "reading": "おばさん",
+   "meaning_vi": "cô, dì, bác (gái)",
+   "meaning_en": "aunt",
+   "type": "danh từ",
+   "topic": "Gia đình, con người",
+   "kanji": [
+    "伯",
+    "母",
+    "叔"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0129",
+   "word": "おばあさん",
+   "reading": "おばあさん",
+   "meaning_vi": "bà; cụ bà",
+   "meaning_en": "grandmother, female senior-citizen",
+   "type": "danh từ",
+   "topic": "Gia đình, con người",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0130",
+   "word": "お風呂",
+   "reading": "おふろ",
+   "meaning_vi": "bồn tắm; việc tắm",
+   "meaning_en": "a bath",
+   "type": "danh từ",
+   "topic": "Sinh hoạt hằng ngày",
+   "kanji": [
+    "風",
+    "呂"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0131",
+   "word": "お弁当",
+   "reading": "おべんとう",
+   "meaning_vi": "cơm hộp",
+   "meaning_en": "a boxed lunch",
+   "type": "danh từ",
+   "topic": "Ăn uống",
+   "kanji": [
+    "弁",
+    "当"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0132",
+   "word": "覚える",
+   "reading": "おぼえる",
+   "meaning_vi": "nhớ, thuộc",
+   "meaning_en": "to learn, to commit to memory, to remember, to memorize",
+   "type": "động từ nhóm 2",
+   "topic": "Trường học, công việc",
+   "kanji": [
+    "覚"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0133",
+   "word": "おまわりさん",
+   "reading": "おまわりさん",
+   "meaning_vi": "chú cảnh sát (cách gọi thân mật)",
+   "meaning_en": "policeman (friendly term)",
+   "type": "danh từ",
+   "topic": "Phố xá, giao thông",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0134",
+   "word": "重い",
+   "reading": "おもい",
+   "meaning_vi": "nặng; nghiêm trọng",
+   "meaning_en": "heavy; serious",
+   "type": "tính từ い",
+   "topic": "Tính chất, cảm xúc",
+   "kanji": [
+    "重"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0135",
+   "word": "面白い",
+   "reading": "おもしろい",
+   "meaning_vi": "thú vị, hay",
+   "meaning_en": "interesting, amusing",
+   "type": "tính từ い",
+   "topic": "Tính chất, cảm xúc",
+   "kanji": [
+    "面",
+    "白"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0136",
+   "word": "泳ぐ",
+   "reading": "およぐ",
+   "meaning_vi": "bơi",
+   "meaning_en": "to swim",
+   "type": "động từ nhóm 1",
+   "topic": "Sở thích, giải trí",
+   "kanji": [
+    "泳"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0137",
+   "word": "降りる",
+   "reading": "おりる",
+   "meaning_vi": "xuống (xe, tàu)",
+   "meaning_en": "to get off",
+   "type": "động từ nhóm 2",
+   "topic": "Phố xá, giao thông",
+   "kanji": [
+    "降"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0138",
+   "word": "終る",
+   "reading": "おわる",
+   "meaning_vi": "kết thúc, xong",
+   "meaning_en": "to finish, to close",
+   "type": "động từ nhóm 1",
+   "topic": "Động từ thường dùng",
+   "kanji": [
+    "終"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0139",
+   "word": "音楽",
+   "reading": "おんがく",
+   "meaning_vi": "âm nhạc",
+   "meaning_en": "Music",
+   "type": "danh từ",
+   "topic": "Sở thích, giải trí",
+   "kanji": [
+    "音",
+    "楽"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0140",
+   "word": "女",
+   "reading": "おんな",
+   "meaning_vi": "phụ nữ, nữ",
+   "meaning_en": "woman, female",
+   "type": "danh từ",
+   "topic": "Gia đình, con người",
+   "kanji": [
+    "女"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0141",
+   "word": "女の子",
+   "reading": "おんなのこ",
+   "meaning_vi": "bé gái",
+   "meaning_en": "girl",
+   "type": "danh từ",
+   "topic": "Gia đình, con người",
+   "kanji": [
+    "女",
+    "子"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0142",
+   "word": "～回",
+   "reading": "～かい",
+   "meaning_vi": "... lần",
+   "meaning_en": "counter for occurrences (~ times)",
+   "type": "trợ số từ",
+   "topic": "Số, đếm",
+   "kanji": [
+    "回"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0143",
+   "word": "～階",
+   "reading": "～かい",
+   "meaning_vi": "tầng thứ ...",
+   "meaning_en": "counter for stories (floors) of a building",
+   "type": "trợ số từ",
+   "topic": "Số, đếm",
+   "kanji": [
+    "階"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0144",
+   "word": "外国",
+   "reading": "がいこく",
+   "meaning_vi": "nước ngoài",
+   "meaning_en": "foreign country; abroad",
+   "type": "danh từ",
+   "topic": "Phố xá, giao thông",
+   "kanji": [
+    "外",
+    "国"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0145",
+   "word": "外国人",
+   "reading": "がいこくじん",
+   "meaning_vi": "người nước ngoài",
+   "meaning_en": "foreigner",
+   "type": "danh từ",
+   "topic": "Gia đình, con người",
+   "kanji": [
+    "外",
+    "国",
+    "人"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0146",
+   "word": "会社",
+   "reading": "かいしゃ",
+   "meaning_vi": "công ty",
+   "meaning_en": "company, corporation",
+   "type": "danh từ",
+   "topic": "Trường học, công việc",
+   "kanji": [
+    "会",
+    "社"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0147",
+   "word": "階段",
+   "reading": "かいだん",
+   "meaning_vi": "cầu thang",
+   "meaning_en": "stairs",
+   "type": "danh từ",
+   "topic": "Nhà ở, đồ vật",
+   "kanji": [
+    "階",
+    "段"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0148",
+   "word": "買い物",
+   "reading": "かいもの",
+   "meaning_vi": "mua sắm",
+   "meaning_en": "shopping",
+   "type": "danh từ + する",
+   "topic": "Mua sắm, tiền",
+   "kanji": [
+    "買",
+    "物"
+   ],
+   "suru_verb": true,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0149",
+   "word": "買う",
+   "reading": "かう",
+   "meaning_vi": "mua",
+   "meaning_en": "to buy",
+   "type": "động từ nhóm 1",
+   "topic": "Mua sắm, tiền",
+   "kanji": [
+    "買"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0150",
+   "word": "返す",
+   "reading": "かえす",
+   "meaning_vi": "trả lại",
+   "meaning_en": "to return something",
+   "type": "động từ nhóm 1",
+   "topic": "Động từ thường dùng",
+   "kanji": [
+    "返"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0151",
+   "word": "帰る",
+   "reading": "かえる",
+   "meaning_vi": "về, trở về",
+   "meaning_en": "to go back, to go home, to return",
+   "type": "động từ nhóm 1",
+   "topic": "Sinh hoạt hằng ngày",
+   "kanji": [
+    "帰"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0152",
+   "word": "顔",
+   "reading": "かお",
+   "meaning_vi": "khuôn mặt",
+   "meaning_en": "face (body part)",
+   "type": "danh từ",
+   "topic": "Cơ thể, sức khỏe",
+   "kanji": [
+    "顔"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0153",
+   "word": "かかる",
+   "reading": "かかる",
+   "meaning_vi": "mất (thời gian, tiền)",
+   "meaning_en": "it takes (amount of time, money) (v.i.)",
+   "type": "động từ nhóm 1",
+   "topic": "Động từ thường dùng",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0154",
+   "word": "鍵",
+   "reading": "かぎ",
+   "meaning_vi": "chìa khóa; ổ khóa",
+   "meaning_en": "a lock; a key",
+   "type": "danh từ",
+   "topic": "Nhà ở, đồ vật",
+   "kanji": [
+    "鍵"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0155",
+   "word": "書く",
+   "reading": "かく",
+   "meaning_vi": "viết",
+   "meaning_en": "to write",
+   "type": "động từ nhóm 1",
+   "topic": "Trường học, công việc",
+   "kanji": [
+    "書"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0156",
+   "word": "学生",
+   "reading": "がくせい",
+   "meaning_vi": "học sinh, sinh viên",
+   "meaning_en": "student",
+   "type": "danh từ",
+   "topic": "Trường học, công việc",
+   "kanji": [
+    "学",
+    "生"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0157",
+   "word": "～か月",
+   "reading": "～かげつ",
+   "meaning_vi": "... tháng (khoảng thời gian)",
+   "meaning_en": "(number of) months",
+   "type": "trợ số từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "月"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0158",
+   "word": "掛ける",
+   "reading": "かける",
+   "meaning_vi": "treo; đeo (kính)",
+   "meaning_en": "to put on (e.g., glasses); to hang (e.g., on a wall)",
+   "type": "động từ nhóm 2",
+   "topic": "Động từ thường dùng",
+   "kanji": [
+    "掛"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0159",
+   "word": "かける",
+   "reading": "かける",
+   "meaning_vi": "gọi (điện thoại); ngồi (lên ghế)",
+   "meaning_en": "to dial/call (e.g., phone); to sit down",
+   "type": "động từ nhóm 2",
+   "topic": "Động từ thường dùng",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0160",
+   "word": "傘",
+   "reading": "かさ",
+   "meaning_vi": "cái ô, dù",
+   "meaning_en": "umbrella, parasol",
+   "type": "danh từ",
+   "topic": "Nhà ở, đồ vật",
+   "kanji": [
+    "傘"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0161",
+   "word": "貸す",
+   "reading": "かす",
+   "meaning_vi": "cho mượn",
+   "meaning_en": "to lend",
+   "type": "động từ nhóm 1",
+   "topic": "Động từ thường dùng",
+   "kanji": [
+    "貸"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0162",
+   "word": "風",
+   "reading": "かぜ",
+   "meaning_vi": "gió",
+   "meaning_en": "wind, breeze",
+   "type": "danh từ",
+   "topic": "Thời tiết, thiên nhiên",
+   "kanji": [
+    "風"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0163",
+   "word": "風邪",
+   "reading": "かぜ",
+   "meaning_vi": "cảm cúm",
+   "meaning_en": "cold, flu",
+   "type": "danh từ",
+   "topic": "Cơ thể, sức khỏe",
+   "kanji": [
+    "風",
+    "邪"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0164",
+   "word": "方",
+   "reading": "かた",
+   "meaning_vi": "vị, người (kính ngữ của 人); cách làm",
+   "meaning_en": "-- honorific form for 人 (ひと) --; way of doing",
+   "type": "danh từ",
+   "topic": "Gia đình, con người",
+   "kanji": [
+    "方"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0165",
+   "word": "家族",
+   "reading": "かぞく",
+   "meaning_vi": "gia đình",
+   "meaning_en": "family, members of a family",
+   "type": "danh từ",
+   "topic": "Gia đình, con người",
+   "kanji": [
+    "家",
+    "族"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0166",
+   "word": "片仮名",
+   "reading": "かたかな",
+   "meaning_vi": "chữ katakana",
+   "meaning_en": "katakana",
+   "type": "danh từ",
+   "topic": "Trường học, công việc",
+   "kanji": [
+    "片",
+    "仮",
+    "名"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0167",
+   "word": "～月",
+   "reading": "～がつ",
+   "meaning_vi": "tháng ... (trong năm)",
+   "meaning_en": "month of year",
+   "type": "trợ số từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "月"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0168",
+   "word": "学校",
+   "reading": "がっこう",
+   "meaning_vi": "trường học",
+   "meaning_en": "a school",
+   "type": "danh từ",
+   "topic": "Trường học, công việc",
+   "kanji": [
+    "学",
+    "校"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0169",
+   "word": "カップ",
+   "reading": "カップ",
+   "meaning_vi": "cái cốc, tách",
+   "meaning_en": "cup",
+   "type": "danh từ",
+   "topic": "Ăn uống",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0170",
+   "word": "家庭",
+   "reading": "かてい",
+   "meaning_vi": "gia đình, tổ ấm",
+   "meaning_en": "home; family",
+   "type": "danh từ",
+   "topic": "Gia đình, con người",
+   "kanji": [
+    "家",
+    "庭"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0171",
+   "word": "角",
+   "reading": "かど",
+   "meaning_vi": "góc (bàn, phố)",
+   "meaning_en": "corner (e.g., desk, pavement)",
+   "type": "danh từ",
+   "topic": "Vị trí, phương hướng",
+   "kanji": [
+    "角"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0172",
+   "word": "かばん",
+   "reading": "かばん",
+   "meaning_vi": "cái cặp, túi xách",
+   "meaning_en": "bag, basket",
+   "type": "danh từ",
+   "topic": "Nhà ở, đồ vật",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0173",
+   "word": "花瓶",
+   "reading": "かびん",
+   "meaning_vi": "bình hoa",
+   "meaning_en": "(flower) vase",
+   "type": "danh từ",
+   "topic": "Nhà ở, đồ vật",
+   "kanji": [
+    "花",
+    "瓶"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0174",
+   "word": "かぶる",
+   "reading": "かぶる",
+   "meaning_vi": "đội (mũ)",
+   "meaning_en": "to wear, to put on (e.g., a hat on the head)",
+   "type": "động từ nhóm 1",
+   "topic": "Quần áo",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0175",
+   "word": "紙",
+   "reading": "かみ",
+   "meaning_vi": "giấy",
+   "meaning_en": "paper",
+   "type": "danh từ",
+   "topic": "Trường học, công việc",
+   "kanji": [
+    "紙"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0176",
+   "word": "カメラ",
+   "reading": "カメラ",
+   "meaning_vi": "máy ảnh",
+   "meaning_en": "camera",
+   "type": "danh từ",
+   "topic": "Sở thích, giải trí",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0177",
+   "word": "火曜日",
+   "reading": "かようび",
+   "meaning_vi": "thứ Ba",
+   "meaning_en": "Tuesday",
+   "type": "danh từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "火",
+    "曜",
+    "日"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0178",
+   "word": "辛い",
+   "reading": "からい",
+   "meaning_vi": "cay; mặn",
+   "meaning_en": "hot and spicy; salty",
+   "type": "tính từ い",
+   "topic": "Ăn uống",
+   "kanji": [
+    "辛"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0179",
+   "word": "体",
+   "reading": "からだ",
+   "meaning_vi": "cơ thể; sức khỏe",
+   "meaning_en": "body; health",
+   "type": "danh từ",
+   "topic": "Cơ thể, sức khỏe",
+   "kanji": [
+    "体"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0180",
+   "word": "借りる",
+   "reading": "かりる",
+   "meaning_vi": "vay, mượn",
+   "meaning_en": "to borrow, to owe",
+   "type": "động từ nhóm 2",
+   "topic": "Động từ thường dùng",
+   "kanji": [
+    "借"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0181",
+   "word": "～がる",
+   "reading": "～がる",
+   "meaning_vi": "cảm thấy, tỏ ra (hậu tố, ví dụ ほしがる)",
+   "meaning_en": "feel",
+   "type": "hậu tố",
+   "topic": "Từ chức năng, trạng từ",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0182",
+   "word": "軽い",
+   "reading": "かるい",
+   "meaning_vi": "nhẹ; không nghiêm trọng",
+   "meaning_en": "light, non-serious, minor",
+   "type": "tính từ い",
+   "topic": "Tính chất, cảm xúc",
+   "kanji": [
+    "軽"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0183",
+   "word": "カレー",
+   "reading": "カレー",
+   "meaning_vi": "cà ri",
+   "meaning_en": "curry (abbr. for curry and rice)",
+   "type": "danh từ",
+   "topic": "Ăn uống",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0184",
+   "word": "カレンダー",
+   "reading": "カレンダー",
+   "meaning_vi": "lịch (tờ lịch)",
+   "meaning_en": "calendar",
+   "type": "danh từ",
+   "topic": "Nhà ở, đồ vật",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0185",
+   "word": "川; 河",
+   "reading": "かわ",
+   "meaning_vi": "con sông",
+   "meaning_en": "river",
+   "type": "danh từ",
+   "topic": "Thời tiết, thiên nhiên",
+   "kanji": [
+    "川",
+    "河"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0186",
+   "word": "～側",
+   "reading": "～がわ",
+   "meaning_vi": "phía ..., bên ...",
+   "meaning_en": "~ side",
+   "type": "hậu tố",
+   "topic": "Vị trí, phương hướng",
+   "kanji": [
+    "側"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0187",
+   "word": "可愛い",
+   "reading": "かわいい",
+   "meaning_vi": "dễ thương",
+   "meaning_en": "cute, adorable",
+   "type": "tính từ い",
+   "topic": "Tính chất, cảm xúc",
+   "kanji": [
+    "可",
+    "愛"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0188",
+   "word": "漢字",
+   "reading": "かんじ",
+   "meaning_vi": "chữ Hán, kanji",
+   "meaning_en": "kanji; Chinese character",
+   "type": "danh từ",
+   "topic": "Trường học, công việc",
+   "kanji": [
+    "漢",
+    "字"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0189",
+   "word": "木",
+   "reading": "き",
+   "meaning_vi": "cái cây; gỗ",
+   "meaning_en": "tree, wood, timber",
+   "type": "danh từ",
+   "topic": "Thời tiết, thiên nhiên",
+   "kanji": [
+    "木"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0190",
+   "word": "黄色",
+   "reading": "きいろ",
+   "meaning_vi": "màu vàng (danh từ)",
+   "meaning_en": "yellow",
+   "type": "danh từ",
+   "topic": "Màu sắc",
+   "kanji": [
+    "黄",
+    "色"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0191",
+   "word": "黄色い",
+   "reading": "きいろい",
+   "meaning_vi": "vàng (tính từ)",
+   "meaning_en": "yellow",
+   "type": "tính từ い",
+   "topic": "Màu sắc",
+   "kanji": [
+    "黄",
+    "色"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0192",
+   "word": "消える",
+   "reading": "きえる",
+   "meaning_vi": "tắt, biến mất",
+   "meaning_en": "to vanish, to disappear",
+   "type": "động từ nhóm 2",
+   "topic": "Động từ thường dùng",
+   "kanji": [
+    "消"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0193",
+   "word": "聞く",
+   "reading": "きく",
+   "meaning_vi": "nghe; hỏi",
+   "meaning_en": "to hear, to listen, to ask",
+   "type": "động từ nhóm 1",
+   "topic": "Động từ thường dùng",
+   "kanji": [
+    "聞"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0194",
+   "word": "北",
+   "reading": "きた",
+   "meaning_vi": "phía bắc",
+   "meaning_en": "north",
+   "type": "danh từ",
+   "topic": "Vị trí, phương hướng",
+   "kanji": [
+    "北"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0195",
+   "word": "ギター",
+   "reading": "ギター",
+   "meaning_vi": "đàn ghi-ta",
+   "meaning_en": "guitar",
+   "type": "danh từ",
+   "topic": "Sở thích, giải trí",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0196",
+   "word": "汚い",
+   "reading": "きたない",
+   "meaning_vi": "bẩn",
+   "meaning_en": "dirty, unclean, filthy",
+   "type": "tính từ い",
+   "topic": "Tính chất, cảm xúc",
+   "kanji": [
+    "汚"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0197",
+   "word": "喫茶店",
+   "reading": "きっさてん",
+   "meaning_vi": "quán cà phê",
+   "meaning_en": "café",
+   "type": "danh từ",
+   "topic": "Phố xá, giao thông",
+   "kanji": [
+    "喫",
+    "茶",
+    "店"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0198",
+   "word": "切手",
+   "reading": "きって",
+   "meaning_vi": "tem thư",
+   "meaning_en": "postal (postage) stamps",
+   "type": "danh từ",
+   "topic": "Phố xá, giao thông",
+   "kanji": [
+    "切",
+    "手"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0199",
+   "word": "切符",
+   "reading": "きっぷ",
+   "meaning_vi": "vé",
+   "meaning_en": "a ticket",
+   "type": "danh từ",
+   "topic": "Phố xá, giao thông",
+   "kanji": [
+    "切",
+    "符"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0200",
+   "word": "昨日",
+   "reading": "きのう",
+   "meaning_vi": "hôm qua",
+   "meaning_en": "yesterday",
+   "type": "danh từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "昨",
+    "日"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0201",
+   "word": "九",
+   "reading": "きゅう",
+   "meaning_vi": "chín (số 9)",
+   "meaning_en": "nine",
+   "type": "số từ",
+   "topic": "Số, đếm",
+   "kanji": [
+    "九"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0202",
+   "word": "牛肉",
+   "reading": "ぎゅうにく",
+   "meaning_vi": "thịt bò",
+   "meaning_en": "beef",
+   "type": "danh từ",
+   "topic": "Ăn uống",
+   "kanji": [
+    "牛",
+    "肉"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0203",
+   "word": "牛乳",
+   "reading": "ぎゅうにゅう",
+   "meaning_vi": "sữa bò",
+   "meaning_en": "milk",
+   "type": "danh từ",
+   "topic": "Ăn uống",
+   "kanji": [
+    "牛",
+    "乳"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0204",
+   "word": "今日",
+   "reading": "きょう",
+   "meaning_vi": "hôm nay",
+   "meaning_en": "today, this day",
+   "type": "danh từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "今",
+    "日"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0205",
+   "word": "教室",
+   "reading": "きょうしつ",
+   "meaning_vi": "phòng học",
+   "meaning_en": "classroom",
+   "type": "danh từ",
+   "topic": "Trường học, công việc",
+   "kanji": [
+    "教",
+    "室"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0206",
+   "word": "兄弟",
+   "reading": "きょうだい",
+   "meaning_vi": "anh chị em",
+   "meaning_en": "siblings (humble), brothers and sisters",
+   "type": "danh từ",
+   "topic": "Gia đình, con người",
+   "kanji": [
+    "兄",
+    "弟"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0207",
+   "word": "去年",
+   "reading": "きょねん",
+   "meaning_vi": "năm ngoái",
+   "meaning_en": "last year",
+   "type": "danh từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "去",
+    "年"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0208",
+   "word": "嫌い",
+   "reading": "きらい",
+   "meaning_vi": "ghét, không thích",
+   "meaning_en": "dislike",
+   "type": "tính từ な",
+   "topic": "Tính chất, cảm xúc",
+   "kanji": [
+    "嫌"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0209",
+   "word": "切る",
+   "reading": "きる",
+   "meaning_vi": "cắt",
+   "meaning_en": "to cut; to hang up (a phone)",
+   "type": "động từ nhóm 1",
+   "topic": "Động từ thường dùng",
+   "kanji": [
+    "切"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0210",
+   "word": "着る",
+   "reading": "きる",
+   "meaning_vi": "mặc (áo, phần trên người)",
+   "meaning_en": "to put on (clothes above your waist); to wear",
+   "type": "động từ nhóm 2",
+   "topic": "Quần áo",
+   "kanji": [
+    "着"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0211",
+   "word": "綺麗",
+   "reading": "きれい",
+   "meaning_vi": "đẹp; sạch sẽ",
+   "meaning_en": "pretty, clean, tidy",
+   "type": "tính từ な",
+   "topic": "Tính chất, cảm xúc",
+   "kanji": [
+    "綺",
+    "麗"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0212",
+   "word": "キロ; キログラム",
+   "reading": "キロ; キログラム",
+   "meaning_vi": "ki-lô-gam",
+   "meaning_en": "(abbr.) kilo (kilogram)",
+   "type": "danh từ",
+   "topic": "Số, đếm",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0213",
+   "word": "キロ; キロメートル",
+   "reading": "キロ; キロメートル",
+   "meaning_vi": "ki-lô-mét",
+   "meaning_en": "(abbr.) kilo (kilometer)",
+   "type": "danh từ",
+   "topic": "Số, đếm",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0214",
+   "word": "銀行",
+   "reading": "ぎんこう",
+   "meaning_vi": "ngân hàng",
+   "meaning_en": "bank",
+   "type": "danh từ",
+   "topic": "Phố xá, giao thông",
+   "kanji": [
+    "銀",
+    "行"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0215",
+   "word": "金曜日",
+   "reading": "きんようび",
+   "meaning_vi": "thứ Sáu",
+   "meaning_en": "Friday",
+   "type": "danh từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "金",
+    "曜",
+    "日"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0216",
+   "word": "九",
+   "reading": "く",
+   "meaning_vi": "chín (số 9, cách đọc く)",
+   "meaning_en": "nine",
+   "type": "số từ",
+   "topic": "Số, đếm",
+   "kanji": [
+    "九"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0217",
+   "word": "薬",
+   "reading": "くすり",
+   "meaning_vi": "thuốc",
+   "meaning_en": "medicine",
+   "type": "danh từ",
+   "topic": "Cơ thể, sức khỏe",
+   "kanji": [
+    "薬"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0218",
+   "word": "下さい",
+   "reading": "ください",
+   "meaning_vi": "xin hãy ... (đi sau thể て); cho tôi ...",
+   "meaning_en": "(with te-form verb) please do for me",
+   "type": "thán từ, câu giao tiếp",
+   "topic": "Từ chức năng, trạng từ",
+   "kanji": [
+    "下"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0219",
+   "word": "果物",
+   "reading": "くだもの",
+   "meaning_vi": "trái cây",
+   "meaning_en": "fruit",
+   "type": "danh từ",
+   "topic": "Ăn uống",
+   "kanji": [
+    "果",
+    "物"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0220",
+   "word": "口",
+   "reading": "くち",
+   "meaning_vi": "miệng",
+   "meaning_en": "job opening; mouth",
+   "type": "danh từ",
+   "topic": "Cơ thể, sức khỏe",
+   "kanji": [
+    "口"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0221",
+   "word": "靴",
+   "reading": "くつ",
+   "meaning_vi": "giày",
+   "meaning_en": "shoes, footwear",
+   "type": "danh từ",
+   "topic": "Quần áo",
+   "kanji": [
+    "靴"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0222",
+   "word": "靴下",
+   "reading": "くつした",
+   "meaning_vi": "tất, vớ",
+   "meaning_en": "socks",
+   "type": "danh từ",
+   "topic": "Quần áo",
+   "kanji": [
+    "靴",
+    "下"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0223",
+   "word": "国",
+   "reading": "くに",
+   "meaning_vi": "đất nước; quê hương",
+   "meaning_en": "country; place of origin",
+   "type": "danh từ",
+   "topic": "Phố xá, giao thông",
+   "kanji": [
+    "国"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0224",
+   "word": "曇り",
+   "reading": "くもり",
+   "meaning_vi": "trời nhiều mây",
+   "meaning_en": "cloudiness, cloudy weather",
+   "type": "danh từ",
+   "topic": "Thời tiết, thiên nhiên",
+   "kanji": [
+    "曇"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0225",
+   "word": "曇る",
+   "reading": "くもる",
+   "meaning_vi": "(trời) có mây, u ám",
+   "meaning_en": "to become cloudy, to become dim",
+   "type": "động từ nhóm 1",
+   "topic": "Thời tiết, thiên nhiên",
+   "kanji": [
+    "曇"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0226",
+   "word": "暗い",
+   "reading": "くらい",
+   "meaning_vi": "tối",
+   "meaning_en": "dark, gloomy",
+   "type": "tính từ い",
+   "topic": "Tính chất, cảm xúc",
+   "kanji": [
+    "暗"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0227",
+   "word": "～くらい; ぐらい",
+   "reading": "～くらい; ぐらい",
+   "meaning_vi": "khoảng (số lượng)",
+   "meaning_en": "approximate (quantity)",
+   "type": "hậu tố",
+   "topic": "Từ chức năng, trạng từ",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0228",
+   "word": "クラス",
+   "reading": "クラス",
+   "meaning_vi": "lớp học",
+   "meaning_en": "a class",
+   "type": "danh từ",
+   "topic": "Trường học, công việc",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0229",
+   "word": "グラム",
+   "reading": "グラム",
+   "meaning_vi": "gam",
+   "meaning_en": "gram",
+   "type": "danh từ",
+   "topic": "Số, đếm",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0230",
+   "word": "来る",
+   "reading": "くる",
+   "meaning_vi": "đến",
+   "meaning_en": "to come",
+   "type": "động từ bất quy tắc",
+   "topic": "Động từ thường dùng",
+   "kanji": [
+    "来"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0231",
+   "word": "車",
+   "reading": "くるま",
+   "meaning_vi": "ô tô, xe hơi",
+   "meaning_en": "car, vehicle",
+   "type": "danh từ",
+   "topic": "Phố xá, giao thông",
+   "kanji": [
+    "車"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0232",
+   "word": "黒",
+   "reading": "くろ",
+   "meaning_vi": "màu đen (danh từ)",
+   "meaning_en": "black",
+   "type": "danh từ",
+   "topic": "Màu sắc",
+   "kanji": [
+    "黒"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0233",
+   "word": "黒い",
+   "reading": "くろい",
+   "meaning_vi": "đen (tính từ)",
+   "meaning_en": "black; dark",
+   "type": "tính từ い",
+   "topic": "Màu sắc",
+   "kanji": [
+    "黒"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0234",
+   "word": "警官",
+   "reading": "けいかん",
+   "meaning_vi": "cảnh sát",
+   "meaning_en": "police officer",
+   "type": "danh từ",
+   "topic": "Phố xá, giao thông",
+   "kanji": [
+    "警",
+    "官"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0235",
+   "word": "今朝",
+   "reading": "けさ",
+   "meaning_vi": "sáng nay",
+   "meaning_en": "this morning",
+   "type": "danh từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "今",
+    "朝"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0236",
+   "word": "消す",
+   "reading": "けす",
+   "meaning_vi": "tắt (điện); xóa",
+   "meaning_en": "to erase, to delete, to turn off power",
+   "type": "động từ nhóm 1",
+   "topic": "Động từ thường dùng",
+   "kanji": [
+    "消"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0237",
+   "word": "結構",
+   "reading": "けっこう",
+   "meaning_vi": "tốt, được; đủ rồi",
+   "meaning_en": "splendid; enough, tolerably",
+   "type": "tính từ な",
+   "topic": "Chào hỏi, giao tiếp",
+   "kanji": [
+    "結",
+    "構"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0238",
+   "word": "結婚",
+   "reading": "けっこん",
+   "meaning_vi": "kết hôn",
+   "meaning_en": "marriage (get married)",
+   "type": "danh từ + する",
+   "topic": "Gia đình, con người",
+   "kanji": [
+    "結",
+    "婚"
+   ],
+   "suru_verb": true,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0239",
+   "word": "月曜日",
+   "reading": "げつようび",
+   "meaning_vi": "thứ Hai",
+   "meaning_en": "Monday",
+   "type": "danh từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "月",
+    "曜",
+    "日"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0240",
+   "word": "玄関",
+   "reading": "げんかん",
+   "meaning_vi": "lối vào nhà, sảnh cửa",
+   "meaning_en": "entrance (to a house or a building)",
+   "type": "danh từ",
+   "topic": "Nhà ở, đồ vật",
+   "kanji": [
+    "玄",
+    "関"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0241",
+   "word": "元気",
+   "reading": "げんき",
+   "meaning_vi": "khỏe mạnh",
+   "meaning_en": "health(y), energetic",
+   "type": "tính từ な",
+   "topic": "Cơ thể, sức khỏe",
+   "kanji": [
+    "元",
+    "気"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0242",
+   "word": "～個",
+   "reading": "～こ",
+   "meaning_vi": "... cái (vật nhỏ)",
+   "meaning_en": "counter for small items (e.g., fruits, cups)",
+   "type": "trợ số từ",
+   "topic": "Số, đếm",
+   "kanji": [
+    "個"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0243",
+   "word": "五",
+   "reading": "ご",
+   "meaning_vi": "năm (số 5)",
+   "meaning_en": "five",
+   "type": "số từ",
+   "topic": "Số, đếm",
+   "kanji": [
+    "五"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0244",
+   "word": "～語",
+   "reading": "～ご",
+   "meaning_vi": "tiếng ... (ngôn ngữ)",
+   "meaning_en": "word, language",
+   "type": "hậu tố",
+   "topic": "Trường học, công việc",
+   "kanji": [
+    "語"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0245",
+   "word": "公園",
+   "reading": "こうえん",
+   "meaning_vi": "công viên",
+   "meaning_en": "a park",
+   "type": "danh từ",
+   "topic": "Phố xá, giao thông",
+   "kanji": [
+    "公",
+    "園"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0246",
+   "word": "交差点",
+   "reading": "こうさてん",
+   "meaning_vi": "ngã tư",
+   "meaning_en": "intersection",
+   "type": "danh từ",
+   "topic": "Phố xá, giao thông",
+   "kanji": [
+    "交",
+    "差",
+    "点"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0247",
+   "word": "紅茶",
+   "reading": "こうちゃ",
+   "meaning_vi": "trà đen (hồng trà)",
+   "meaning_en": "black tea",
+   "type": "danh từ",
+   "topic": "Ăn uống",
+   "kanji": [
+    "紅",
+    "茶"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0248",
+   "word": "交番",
+   "reading": "こうばん",
+   "meaning_vi": "đồn cảnh sát nhỏ (koban)",
+   "meaning_en": "police box",
+   "type": "danh từ",
+   "topic": "Phố xá, giao thông",
+   "kanji": [
+    "交",
+    "番"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0249",
+   "word": "声",
+   "reading": "こえ",
+   "meaning_vi": "giọng nói",
+   "meaning_en": "voice",
+   "type": "danh từ",
+   "topic": "Cơ thể, sức khỏe",
+   "kanji": [
+    "声"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0250",
+   "word": "コート",
+   "reading": "コート",
+   "meaning_vi": "áo khoác dài; sân (tennis)",
+   "meaning_en": "coat; court (e.g., tennis)",
+   "type": "danh từ",
+   "topic": "Quần áo",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0251",
+   "word": "コーヒー",
+   "reading": "コーヒー",
+   "meaning_vi": "cà phê",
+   "meaning_en": "coffee",
+   "type": "danh từ",
+   "topic": "Ăn uống",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0252",
+   "word": "ここ",
+   "reading": "ここ",
+   "meaning_vi": "chỗ này, ở đây",
+   "meaning_en": "here, this place",
+   "type": "từ chỉ định",
+   "topic": "Chỉ định, nghi vấn",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0253",
+   "word": "午後",
+   "reading": "ごご",
+   "meaning_vi": "buổi chiều, giờ chiều (PM)",
+   "meaning_en": "afternoon, P.M.",
+   "type": "danh từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "午",
+    "後"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0254",
+   "word": "九日",
+   "reading": "ここのか",
+   "meaning_vi": "ngày mùng 9; 9 ngày",
+   "meaning_en": "nine days; ninth day of the month",
+   "type": "danh từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "九",
+    "日"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0255",
+   "word": "九つ",
+   "reading": "ここのつ",
+   "meaning_vi": "9 cái",
+   "meaning_en": "nine things",
+   "type": "số từ",
+   "topic": "Số, đếm",
+   "kanji": [
+    "九"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0256",
+   "word": "午前",
+   "reading": "ごぜん",
+   "meaning_vi": "buổi sáng, giờ sáng (AM)",
+   "meaning_en": "morning, A.M.",
+   "type": "danh từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "午",
+    "前"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0257",
+   "word": "答える",
+   "reading": "こたえる",
+   "meaning_vi": "trả lời",
+   "meaning_en": "to answer, to reply",
+   "type": "động từ nhóm 2",
+   "topic": "Trường học, công việc",
+   "kanji": [
+    "答"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0258",
+   "word": "こちら",
+   "reading": "こちら",
+   "meaning_vi": "phía này; người này (lịch sự)",
+   "meaning_en": "this person (polite); this way (polite)",
+   "type": "từ chỉ định",
+   "topic": "Chỉ định, nghi vấn",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0259",
+   "word": "こっち",
+   "reading": "こっち",
+   "meaning_vi": "phía này (thân mật)",
+   "meaning_en": "this person; this direction; this side",
+   "type": "từ chỉ định",
+   "topic": "Chỉ định, nghi vấn",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0260",
+   "word": "コップ",
+   "reading": "コップ",
+   "meaning_vi": "cái cốc thủy tinh",
+   "meaning_en": "a tumbler; a glass",
+   "type": "danh từ",
+   "topic": "Ăn uống",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0261",
+   "word": "今年",
+   "reading": "ことし",
+   "meaning_vi": "năm nay",
+   "meaning_en": "this year",
+   "type": "danh từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "今",
+    "年"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0262",
+   "word": "言葉",
+   "reading": "ことば",
+   "meaning_vi": "từ ngữ; ngôn ngữ",
+   "meaning_en": "language; word(s); expression(s)",
+   "type": "danh từ",
+   "topic": "Trường học, công việc",
+   "kanji": [
+    "言",
+    "葉"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0263",
+   "word": "子供",
+   "reading": "こども",
+   "meaning_vi": "trẻ con",
+   "meaning_en": "child(ren)",
+   "type": "danh từ",
+   "topic": "Gia đình, con người",
+   "kanji": [
+    "子",
+    "供"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0264",
+   "word": "この",
+   "reading": "この",
+   "meaning_vi": "... này (đứng trước danh từ)",
+   "meaning_en": "this",
+   "type": "từ chỉ định",
+   "topic": "Chỉ định, nghi vấn",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0265",
+   "word": "御飯",
+   "reading": "ごはん",
+   "meaning_vi": "cơm; bữa ăn",
+   "meaning_en": "rice (cooked); meal",
+   "type": "danh từ",
+   "topic": "Ăn uống",
+   "kanji": [
+    "御",
+    "飯"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0266",
+   "word": "コピーする",
+   "reading": "コピーする",
+   "meaning_vi": "sao chép, photo",
+   "meaning_en": "to copy",
+   "type": "danh từ + する",
+   "topic": "Trường học, công việc",
+   "kanji": [],
+   "suru_verb": true,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0267",
+   "word": "困る",
+   "reading": "こまる",
+   "meaning_vi": "gặp khó khăn, bối rối",
+   "meaning_en": "to be bothered, to have difficulty",
+   "type": "động từ nhóm 1",
+   "topic": "Tính chất, cảm xúc",
+   "kanji": [
+    "困"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0268",
+   "word": "これ",
+   "reading": "これ",
+   "meaning_vi": "cái này",
+   "meaning_en": "this one",
+   "type": "từ chỉ định",
+   "topic": "Chỉ định, nghi vấn",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0269",
+   "word": "～ころ; ～ごろ",
+   "reading": "～ころ; ～ごろ",
+   "meaning_vi": "khoảng (thời điểm)",
+   "meaning_en": "about, toward, approximately (time)",
+   "type": "hậu tố",
+   "topic": "Thời gian",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0270",
+   "word": "今月",
+   "reading": "こんげつ",
+   "meaning_vi": "tháng này",
+   "meaning_en": "this month",
+   "type": "danh từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "今",
+    "月"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0271",
+   "word": "今週",
+   "reading": "こんしゅう",
+   "meaning_vi": "tuần này",
+   "meaning_en": "this week",
+   "type": "danh từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "今",
+    "週"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0272",
+   "word": "こんな",
+   "reading": "こんな",
+   "meaning_vi": "như thế này",
+   "meaning_en": "such, like this",
+   "type": "từ chỉ định",
+   "topic": "Chỉ định, nghi vấn",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0273",
+   "word": "今晩",
+   "reading": "こんばん",
+   "meaning_vi": "tối nay",
+   "meaning_en": "tonight, this evening",
+   "type": "danh từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "今",
+    "晩"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0274",
+   "word": "さあ",
+   "reading": "さあ",
+   "meaning_vi": "nào, thôi nào; ừm (không chắc)",
+   "meaning_en": "come now, well",
+   "type": "thán từ, câu giao tiếp",
+   "topic": "Chào hỏi, giao tiếp",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0275",
+   "word": "～歳",
+   "reading": "～さい",
+   "meaning_vi": "... tuổi",
+   "meaning_en": "~ years old",
+   "type": "trợ số từ",
+   "topic": "Số, đếm",
+   "kanji": [
+    "歳"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0276",
+   "word": "財布",
+   "reading": "さいふ",
+   "meaning_vi": "cái ví",
+   "meaning_en": "wallet",
+   "type": "danh từ",
+   "topic": "Mua sắm, tiền",
+   "kanji": [
+    "財",
+    "布"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0277",
+   "word": "魚",
+   "reading": "さかな",
+   "meaning_vi": "con cá; món cá",
+   "meaning_en": "fish",
+   "type": "danh từ",
+   "topic": "Ăn uống",
+   "kanji": [
+    "魚"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0278",
+   "word": "先",
+   "reading": "さき",
+   "meaning_vi": "trước; phía trước; trước đây",
+   "meaning_en": "future; recent, previous",
+   "type": "danh từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "先"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0279",
+   "word": "咲く",
+   "reading": "さく",
+   "meaning_vi": "(hoa) nở",
+   "meaning_en": "to bloom",
+   "type": "động từ nhóm 1",
+   "topic": "Thời tiết, thiên nhiên",
+   "kanji": [
+    "咲"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0280",
+   "word": "作文",
+   "reading": "さくぶん",
+   "meaning_vi": "bài văn, bài luận",
+   "meaning_en": "essay; composition",
+   "type": "danh từ",
+   "topic": "Trường học, công việc",
+   "kanji": [
+    "作",
+    "文"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0281",
+   "word": "差す",
+   "reading": "さす",
+   "meaning_vi": "giương (ô)",
+   "meaning_en": "to raise (stretch out) hands, to raise (e.g., umbrella)",
+   "type": "động từ nhóm 1",
+   "topic": "Động từ thường dùng",
+   "kanji": [
+    "差"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0282",
+   "word": "～冊",
+   "reading": "～さつ",
+   "meaning_vi": "... cuốn (sách, vở)",
+   "meaning_en": "counter for books",
+   "type": "trợ số từ",
+   "topic": "Số, đếm",
+   "kanji": [
+    "冊"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0283",
+   "word": "雑誌",
+   "reading": "ざっし",
+   "meaning_vi": "tạp chí",
+   "meaning_en": "magazine, journal",
+   "type": "danh từ",
+   "topic": "Sở thích, giải trí",
+   "kanji": [
+    "雑",
+    "誌"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0284",
+   "word": "砂糖",
+   "reading": "さとう",
+   "meaning_vi": "đường (ăn)",
+   "meaning_en": "sugar",
+   "type": "danh từ",
+   "topic": "Ăn uống",
+   "kanji": [
+    "砂",
+    "糖"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0285",
+   "word": "寒い",
+   "reading": "さむい",
+   "meaning_vi": "lạnh (thời tiết)",
+   "meaning_en": "cold (in reference to weather)",
+   "type": "tính từ い",
+   "topic": "Thời tiết, thiên nhiên",
+   "kanji": [
+    "寒"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0286",
+   "word": "さ来年",
+   "reading": "さらいねん",
+   "meaning_vi": "năm sau nữa",
+   "meaning_en": "year after next",
+   "type": "danh từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "来",
+    "年"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0287",
+   "word": "～さん",
+   "reading": "～さん",
+   "meaning_vi": "anh, chị, ông, bà ... (hậu tố gọi tên)",
+   "meaning_en": "Mr. ~, Ms. ~",
+   "type": "hậu tố",
+   "topic": "Gia đình, con người",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0288",
+   "word": "三",
+   "reading": "さん",
+   "meaning_vi": "ba (số 3)",
+   "meaning_en": "three",
+   "type": "số từ",
+   "topic": "Số, đếm",
+   "kanji": [
+    "三"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0289",
+   "word": "散歩",
+   "reading": "さんぽ",
+   "meaning_vi": "đi dạo",
+   "meaning_en": "walk, stroll",
+   "type": "danh từ + する",
+   "topic": "Sở thích, giải trí",
+   "kanji": [
+    "散",
+    "歩"
+   ],
+   "suru_verb": true,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0290",
+   "word": "四",
+   "reading": "し",
+   "meaning_vi": "bốn (số 4, cách đọc し)",
+   "meaning_en": "four",
+   "type": "số từ",
+   "topic": "Số, đếm",
+   "kanji": [
+    "四"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0291",
+   "word": "～時",
+   "reading": "～じ",
+   "meaning_vi": "... giờ",
+   "meaning_en": "~ o'clock (time)",
+   "type": "trợ số từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "時"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0292",
+   "word": "塩",
+   "reading": "しお",
+   "meaning_vi": "muối",
+   "meaning_en": "salt",
+   "type": "danh từ",
+   "topic": "Ăn uống",
+   "kanji": [
+    "塩"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0293",
+   "word": "しかし",
+   "reading": "しかし",
+   "meaning_vi": "tuy nhiên, nhưng",
+   "meaning_en": "however; but",
+   "type": "liên từ",
+   "topic": "Từ chức năng, trạng từ",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0294",
+   "word": "時間",
+   "reading": "じかん",
+   "meaning_vi": "thời gian",
+   "meaning_en": "time",
+   "type": "danh từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "時",
+    "間"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0295",
+   "word": "～時間",
+   "reading": "～じかん",
+   "meaning_vi": "... tiếng đồng hồ",
+   "meaning_en": "~ hours",
+   "type": "trợ số từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "時",
+    "間"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0296",
+   "word": "仕事",
+   "reading": "しごと",
+   "meaning_vi": "công việc",
+   "meaning_en": "work, job, occupation, employment",
+   "type": "danh từ",
+   "topic": "Trường học, công việc",
+   "kanji": [
+    "仕",
+    "事"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0297",
+   "word": "辞書",
+   "reading": "じしょ",
+   "meaning_vi": "từ điển",
+   "meaning_en": "dictionary",
+   "type": "danh từ",
+   "topic": "Trường học, công việc",
+   "kanji": [
+    "辞",
+    "書"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0298",
+   "word": "静か",
+   "reading": "しずか",
+   "meaning_vi": "yên tĩnh",
+   "meaning_en": "quiet, calm",
+   "type": "tính từ な",
+   "topic": "Tính chất, cảm xúc",
+   "kanji": [
+    "静"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0299",
+   "word": "下",
+   "reading": "した",
+   "meaning_vi": "dưới, phía dưới",
+   "meaning_en": "under, below, beneath",
+   "type": "danh từ",
+   "topic": "Vị trí, phương hướng",
+   "kanji": [
+    "下"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0300",
+   "word": "七",
+   "reading": "しち",
+   "meaning_vi": "bảy (số 7, cách đọc しち)",
+   "meaning_en": "seven",
+   "type": "số từ",
+   "topic": "Số, đếm",
+   "kanji": [
+    "七"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0301",
+   "word": "質問",
+   "reading": "しつもん",
+   "meaning_vi": "câu hỏi",
+   "meaning_en": "question, inquiry",
+   "type": "danh từ",
+   "topic": "Trường học, công việc",
+   "kanji": [
+    "質",
+    "問"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0302",
+   "word": "自転車",
+   "reading": "じてんしゃ",
+   "meaning_vi": "xe đạp",
+   "meaning_en": "bicycle",
+   "type": "danh từ",
+   "topic": "Phố xá, giao thông",
+   "kanji": [
+    "自",
+    "転",
+    "車"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0303",
+   "word": "自動車",
+   "reading": "じどうしゃ",
+   "meaning_vi": "xe ô tô",
+   "meaning_en": "automobile",
+   "type": "danh từ",
+   "topic": "Phố xá, giao thông",
+   "kanji": [
+    "自",
+    "動",
+    "車"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0304",
+   "word": "死ぬ",
+   "reading": "しぬ",
+   "meaning_vi": "chết",
+   "meaning_en": "to die",
+   "type": "động từ nhóm 1",
+   "topic": "Động từ thường dùng",
+   "kanji": [
+    "死"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0305",
+   "word": "字引",
+   "reading": "じびき",
+   "meaning_vi": "từ điển (cách nói cũ)",
+   "meaning_en": "dictionary",
+   "type": "danh từ",
+   "topic": "Trường học, công việc",
+   "kanji": [
+    "字",
+    "引"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0306",
+   "word": "自分",
+   "reading": "じぶん",
+   "meaning_vi": "bản thân, tự mình",
+   "meaning_en": "myself, oneself",
+   "type": "đại từ",
+   "topic": "Gia đình, con người",
+   "kanji": [
+    "自",
+    "分"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0307",
+   "word": "閉まる",
+   "reading": "しまる",
+   "meaning_vi": "(cửa) đóng",
+   "meaning_en": "to close, to be closed",
+   "type": "động từ nhóm 1",
+   "topic": "Động từ thường dùng",
+   "kanji": [
+    "閉"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0308",
+   "word": "閉める",
+   "reading": "しめる",
+   "meaning_vi": "đóng (cái gì)",
+   "meaning_en": "to close, to shut",
+   "type": "động từ nhóm 2",
+   "topic": "Động từ thường dùng",
+   "kanji": [
+    "閉"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0309",
+   "word": "締める",
+   "reading": "しめる",
+   "meaning_vi": "thắt (cà vạt, dây an toàn)",
+   "meaning_en": "to tie, to fasten, to tighten",
+   "type": "động từ nhóm 2",
+   "topic": "Quần áo",
+   "kanji": [
+    "締"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0310",
+   "word": "じゃ; じゃあ",
+   "reading": "じゃ; じゃあ",
+   "meaning_vi": "vậy thì, thế thì",
+   "meaning_en": "well, well then",
+   "type": "liên từ",
+   "topic": "Chào hỏi, giao tiếp",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0311",
+   "word": "写真",
+   "reading": "しゃしん",
+   "meaning_vi": "bức ảnh",
+   "meaning_en": "a picture; a photograph",
+   "type": "danh từ",
+   "topic": "Sở thích, giải trí",
+   "kanji": [
+    "写",
+    "真"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0312",
+   "word": "シャツ",
+   "reading": "シャツ",
+   "meaning_vi": "áo sơ mi",
+   "meaning_en": "shirt",
+   "type": "danh từ",
+   "topic": "Quần áo",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0313",
+   "word": "シャワー",
+   "reading": "シャワー",
+   "meaning_vi": "vòi hoa sen, tắm vòi sen",
+   "meaning_en": "shower",
+   "type": "danh từ",
+   "topic": "Sinh hoạt hằng ngày",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0314",
+   "word": "十",
+   "reading": "じゅう",
+   "meaning_vi": "mười (số 10)",
+   "meaning_en": "ten",
+   "type": "số từ",
+   "topic": "Số, đếm",
+   "kanji": [
+    "十"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0315",
+   "word": "～中",
+   "reading": "～じゅう",
+   "meaning_vi": "suốt, khắp (ví dụ いちにちじゅう)",
+   "meaning_en": "during, while",
+   "type": "hậu tố",
+   "topic": "Thời gian",
+   "kanji": [
+    "中"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0316",
+   "word": "～週間",
+   "reading": "～しゅうかん",
+   "meaning_vi": "... tuần (khoảng thời gian)",
+   "meaning_en": "~ weeks",
+   "type": "trợ số từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "週",
+    "間"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0317",
+   "word": "授業",
+   "reading": "じゅぎょう",
+   "meaning_vi": "giờ học, tiết học",
+   "meaning_en": "a class (of school)",
+   "type": "danh từ",
+   "topic": "Trường học, công việc",
+   "kanji": [
+    "授",
+    "業"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0318",
+   "word": "宿題",
+   "reading": "しゅくだい",
+   "meaning_vi": "bài tập về nhà",
+   "meaning_en": "homework",
+   "type": "danh từ",
+   "topic": "Trường học, công việc",
+   "kanji": [
+    "宿",
+    "題"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0319",
+   "word": "上手",
+   "reading": "じょうず",
+   "meaning_vi": "giỏi",
+   "meaning_en": "be good at, skillful",
+   "type": "tính từ な",
+   "topic": "Tính chất, cảm xúc",
+   "kanji": [
+    "上",
+    "手"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0320",
+   "word": "丈夫",
+   "reading": "じょうぶ",
+   "meaning_vi": "chắc chắn, bền; khỏe mạnh",
+   "meaning_en": "strong, solid, durable",
+   "type": "tính từ な",
+   "topic": "Tính chất, cảm xúc",
+   "kanji": [
+    "丈",
+    "夫"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0321",
+   "word": "醤油",
+   "reading": "しょうゆ",
+   "meaning_vi": "xì dầu, nước tương",
+   "meaning_en": "soy sauce",
+   "type": "danh từ",
+   "topic": "Ăn uống",
+   "kanji": [
+    "醤",
+    "油"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0322",
+   "word": "食堂",
+   "reading": "しょくどう",
+   "meaning_vi": "nhà ăn, căng tin",
+   "meaning_en": "cafeteria, dining hall",
+   "type": "danh từ",
+   "topic": "Ăn uống",
+   "kanji": [
+    "食",
+    "堂"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0323",
+   "word": "知る",
+   "reading": "しる",
+   "meaning_vi": "biết",
+   "meaning_en": "to know, to understand",
+   "type": "động từ nhóm 1",
+   "topic": "Động từ thường dùng",
+   "kanji": [
+    "知"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0324",
+   "word": "白",
+   "reading": "しろ",
+   "meaning_vi": "màu trắng (danh từ)",
+   "meaning_en": "white",
+   "type": "danh từ",
+   "topic": "Màu sắc",
+   "kanji": [
+    "白"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0325",
+   "word": "白い",
+   "reading": "しろい",
+   "meaning_vi": "trắng (tính từ)",
+   "meaning_en": "white",
+   "type": "tính từ い",
+   "topic": "Màu sắc",
+   "kanji": [
+    "白"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0326",
+   "word": "～人",
+   "reading": "～じん",
+   "meaning_vi": "người nước ... (ví dụ ベトナムじん)",
+   "meaning_en": "counter for people",
+   "type": "hậu tố",
+   "topic": "Gia đình, con người",
+   "kanji": [
+    "人"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0327",
+   "word": "新聞",
+   "reading": "しんぶん",
+   "meaning_vi": "báo (tờ báo)",
+   "meaning_en": "newspaper",
+   "type": "danh từ",
+   "topic": "Sở thích, giải trí",
+   "kanji": [
+    "新",
+    "聞"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0328",
+   "word": "水曜日",
+   "reading": "すいようび",
+   "meaning_vi": "thứ Tư",
+   "meaning_en": "Wednesday",
+   "type": "danh từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "水",
+    "曜",
+    "日"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0329",
+   "word": "吸う",
+   "reading": "すう",
+   "meaning_vi": "hút (thuốc); hít vào",
+   "meaning_en": "to breathe in, to suck",
+   "type": "động từ nhóm 1",
+   "topic": "Động từ thường dùng",
+   "kanji": [
+    "吸"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0330",
+   "word": "スカート",
+   "reading": "スカート",
+   "meaning_vi": "váy",
+   "meaning_en": "skirt",
+   "type": "danh từ",
+   "topic": "Quần áo",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0331",
+   "word": "好き",
+   "reading": "すき",
+   "meaning_vi": "thích",
+   "meaning_en": "liking, fondness, love",
+   "type": "tính từ な",
+   "topic": "Tính chất, cảm xúc",
+   "kanji": [
+    "好"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0332",
+   "word": "～すぎ",
+   "reading": "～すぎ",
+   "meaning_vi": "quá, hơn (ví dụ 5じすぎ: hơn 5 giờ)",
+   "meaning_en": "past; to exceed, ~ too much",
+   "type": "hậu tố",
+   "topic": "Từ chức năng, trạng từ",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0333",
+   "word": "少ない",
+   "reading": "すくない",
+   "meaning_vi": "ít",
+   "meaning_en": "a little; a few",
+   "type": "tính từ い",
+   "topic": "Tính chất, cảm xúc",
+   "kanji": [
+    "少"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0334",
+   "word": "すぐに",
+   "reading": "すぐに",
+   "meaning_vi": "ngay lập tức",
+   "meaning_en": "immediately, soon",
+   "type": "trạng từ",
+   "topic": "Từ chức năng, trạng từ",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0335",
+   "word": "少し",
+   "reading": "すこし",
+   "meaning_vi": "một chút, ít",
+   "meaning_en": "little, few",
+   "type": "trạng từ",
+   "topic": "Từ chức năng, trạng từ",
+   "kanji": [
+    "少"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0336",
+   "word": "涼しい",
+   "reading": "すずしい",
+   "meaning_vi": "mát mẻ",
+   "meaning_en": "cool, refreshing (in reference to weather)",
+   "type": "tính từ い",
+   "topic": "Thời tiết, thiên nhiên",
+   "kanji": [
+    "涼"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0337",
+   "word": "～ずつ",
+   "reading": "～ずつ",
+   "meaning_vi": "mỗi ..., từng ...",
+   "meaning_en": "at a time",
+   "type": "hậu tố",
+   "topic": "Từ chức năng, trạng từ",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0338",
+   "word": "ストーブ",
+   "reading": "ストーブ",
+   "meaning_vi": "lò sưởi",
+   "meaning_en": "heater (lit: stove)",
+   "type": "danh từ",
+   "topic": "Nhà ở, đồ vật",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0339",
+   "word": "スプーン",
+   "reading": "スプーン",
+   "meaning_vi": "cái thìa",
+   "meaning_en": "spoon",
+   "type": "danh từ",
+   "topic": "Ăn uống",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0340",
+   "word": "スポーツ",
+   "reading": "スポーツ",
+   "meaning_vi": "thể thao",
+   "meaning_en": "sport(s)",
+   "type": "danh từ",
+   "topic": "Sở thích, giải trí",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0341",
+   "word": "ズボン",
+   "reading": "ズボン",
+   "meaning_vi": "quần dài",
+   "meaning_en": "trousers",
+   "type": "danh từ",
+   "topic": "Quần áo",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0342",
+   "word": "住む",
+   "reading": "すむ",
+   "meaning_vi": "sống, cư trú",
+   "meaning_en": "to reside, to live in",
+   "type": "động từ nhóm 1",
+   "topic": "Sinh hoạt hằng ngày",
+   "kanji": [
+    "住"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0343",
+   "word": "する",
+   "reading": "する",
+   "meaning_vi": "làm; đeo (cà vạt, đồng hồ)",
+   "meaning_en": "to do, to try; to wear small items (e.g., necktie, watch, etc.)",
+   "type": "động từ bất quy tắc",
+   "topic": "Động từ thường dùng",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0344",
+   "word": "座る",
+   "reading": "すわる",
+   "meaning_vi": "ngồi",
+   "meaning_en": "to sit",
+   "type": "động từ nhóm 1",
+   "topic": "Động từ thường dùng",
+   "kanji": [
+    "座"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0345",
+   "word": "背",
+   "reading": "せい",
+   "meaning_vi": "chiều cao (người)",
+   "meaning_en": "(one's) height, stature",
+   "type": "danh từ",
+   "topic": "Cơ thể, sức khỏe",
+   "kanji": [
+    "背"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0346",
+   "word": "生徒",
+   "reading": "せいと",
+   "meaning_vi": "học sinh (cấp 1–3)",
+   "meaning_en": "student; pupil",
+   "type": "danh từ",
+   "topic": "Trường học, công việc",
+   "kanji": [
+    "生",
+    "徒"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0347",
+   "word": "セーター",
+   "reading": "セーター",
+   "meaning_vi": "áo len",
+   "meaning_en": "sweater",
+   "type": "danh từ",
+   "topic": "Quần áo",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0348",
+   "word": "石鹸",
+   "reading": "せっけん",
+   "meaning_vi": "xà phòng",
+   "meaning_en": "soap",
+   "type": "danh từ",
+   "topic": "Sinh hoạt hằng ngày",
+   "kanji": [
+    "石",
+    "鹸"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0349",
+   "word": "背広",
+   "reading": "せびろ",
+   "meaning_vi": "bộ com-lê nam",
+   "meaning_en": "men's suit",
+   "type": "danh từ",
+   "topic": "Quần áo",
+   "kanji": [
+    "背",
+    "広"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0350",
+   "word": "狭い",
+   "reading": "せまい",
+   "meaning_vi": "chật, hẹp",
+   "meaning_en": "narrow; not spacious",
+   "type": "tính từ い",
+   "topic": "Tính chất, cảm xúc",
+   "kanji": [
+    "狭"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0351",
+   "word": "ゼロ",
+   "reading": "ゼロ",
+   "meaning_vi": "số không",
+   "meaning_en": "zero",
+   "type": "số từ",
+   "topic": "Số, đếm",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0352",
+   "word": "千",
+   "reading": "せん",
+   "meaning_vi": "nghìn",
+   "meaning_en": "thousand",
+   "type": "số từ",
+   "topic": "Số, đếm",
+   "kanji": [
+    "千"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0353",
+   "word": "先月",
+   "reading": "せんげつ",
+   "meaning_vi": "tháng trước",
+   "meaning_en": "last month",
+   "type": "danh từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "先",
+    "月"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0354",
+   "word": "先週",
+   "reading": "せんしゅう",
+   "meaning_vi": "tuần trước",
+   "meaning_en": "last week",
+   "type": "danh từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "先",
+    "週"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0355",
+   "word": "先生",
+   "reading": "せんせい",
+   "meaning_vi": "giáo viên, thầy cô; bác sĩ",
+   "meaning_en": "teacher, professor; master; doctor",
+   "type": "danh từ",
+   "topic": "Trường học, công việc",
+   "kanji": [
+    "先",
+    "生"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0356",
+   "word": "洗濯",
+   "reading": "せんたく",
+   "meaning_vi": "giặt giũ",
+   "meaning_en": "washing, laundry",
+   "type": "danh từ + する",
+   "topic": "Sinh hoạt hằng ngày",
+   "kanji": [
+    "洗",
+    "濯"
+   ],
+   "suru_verb": true,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0357",
+   "word": "全部",
+   "reading": "ぜんぶ",
+   "meaning_vi": "toàn bộ, tất cả",
+   "meaning_en": "all, entire, whole",
+   "type": "danh từ",
+   "topic": "Từ chức năng, trạng từ",
+   "kanji": [
+    "全",
+    "部"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0358",
+   "word": "そう; そうです",
+   "reading": "そう; そうです",
+   "meaning_vi": "vâng, đúng vậy",
+   "meaning_en": "yes; appears, to be the case",
+   "type": "thán từ, câu giao tiếp",
+   "topic": "Chào hỏi, giao tiếp",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0359",
+   "word": "掃除",
+   "reading": "そうじ",
+   "meaning_vi": "dọn dẹp",
+   "meaning_en": "cleaning, sweeping",
+   "type": "danh từ + する",
+   "topic": "Sinh hoạt hằng ngày",
+   "kanji": [
+    "掃",
+    "除"
+   ],
+   "suru_verb": true,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0360",
+   "word": "そうして; そして",
+   "reading": "そうして; そして",
+   "meaning_vi": "và, rồi thì",
+   "meaning_en": "and, like that",
+   "type": "liên từ",
+   "topic": "Từ chức năng, trạng từ",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0361",
+   "word": "そこ",
+   "reading": "そこ",
+   "meaning_vi": "chỗ đó, ở đó",
+   "meaning_en": "that place, there; bottom, sole",
+   "type": "từ chỉ định",
+   "topic": "Chỉ định, nghi vấn",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0362",
+   "word": "そちら",
+   "reading": "そちら",
+   "meaning_vi": "phía đó (lịch sự)",
+   "meaning_en": "over there",
+   "type": "từ chỉ định",
+   "topic": "Chỉ định, nghi vấn",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0363",
+   "word": "そっち",
+   "reading": "そっち",
+   "meaning_vi": "phía đó (thân mật)",
+   "meaning_en": "over there",
+   "type": "từ chỉ định",
+   "topic": "Chỉ định, nghi vấn",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0364",
+   "word": "外",
+   "reading": "そと",
+   "meaning_vi": "bên ngoài",
+   "meaning_en": "outside, exterior",
+   "type": "danh từ",
+   "topic": "Vị trí, phương hướng",
+   "kanji": [
+    "外"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0365",
+   "word": "その",
+   "reading": "その",
+   "meaning_vi": "... đó (đứng trước danh từ)",
+   "meaning_en": "that",
+   "type": "từ chỉ định",
+   "topic": "Chỉ định, nghi vấn",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0366",
+   "word": "そば",
+   "reading": "そば",
+   "meaning_vi": "bên cạnh, gần; mì soba",
+   "meaning_en": "near, close, beside; Japanese traditional buckwheat noodle",
+   "type": "danh từ",
+   "topic": "Vị trí, phương hướng",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0367",
+   "word": "空",
+   "reading": "そら",
+   "meaning_vi": "bầu trời",
+   "meaning_en": "sky",
+   "type": "danh từ",
+   "topic": "Thời tiết, thiên nhiên",
+   "kanji": [
+    "空"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0368",
+   "word": "それ",
+   "reading": "それ",
+   "meaning_vi": "cái đó",
+   "meaning_en": "that one",
+   "type": "từ chỉ định",
+   "topic": "Chỉ định, nghi vấn",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0369",
+   "word": "それから",
+   "reading": "それから",
+   "meaning_vi": "sau đó, rồi thì",
+   "meaning_en": "and then, after that",
+   "type": "liên từ",
+   "topic": "Từ chức năng, trạng từ",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0370",
+   "word": "それでは",
+   "reading": "それでは",
+   "meaning_vi": "vậy thì, thế thì",
+   "meaning_en": "in that situation, well then...",
+   "type": "liên từ",
+   "topic": "Từ chức năng, trạng từ",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0371",
+   "word": "～台",
+   "reading": "～だい",
+   "meaning_vi": "... chiếc (xe, máy móc)",
+   "meaning_en": "counter for vehicles; machines",
+   "type": "trợ số từ",
+   "topic": "Số, đếm",
+   "kanji": [
+    "台"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0372",
+   "word": "大学",
+   "reading": "だいがく",
+   "meaning_vi": "trường đại học",
+   "meaning_en": "college; university",
+   "type": "danh từ",
+   "topic": "Trường học, công việc",
+   "kanji": [
+    "大",
+    "学"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0373",
+   "word": "大使館",
+   "reading": "たいしかん",
+   "meaning_vi": "đại sứ quán",
+   "meaning_en": "embassy",
+   "type": "danh từ",
+   "topic": "Phố xá, giao thông",
+   "kanji": [
+    "大",
+    "使",
+    "館"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0374",
+   "word": "大丈夫",
+   "reading": "だいじょうぶ",
+   "meaning_vi": "không sao, ổn",
+   "meaning_en": "It's ok (all right); No need to worry; Everything is under control",
+   "type": "tính từ な",
+   "topic": "Chào hỏi, giao tiếp",
+   "kanji": [
+    "大",
+    "丈",
+    "夫"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0375",
+   "word": "大好き",
+   "reading": "だいすき",
+   "meaning_vi": "rất thích",
+   "meaning_en": "very like-able, like very much",
+   "type": "tính từ な",
+   "topic": "Tính chất, cảm xúc",
+   "kanji": [
+    "大",
+    "好"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0376",
+   "word": "大切",
+   "reading": "たいせつ",
+   "meaning_vi": "quan trọng, quý giá",
+   "meaning_en": "important",
+   "type": "tính từ な",
+   "topic": "Tính chất, cảm xúc",
+   "kanji": [
+    "大",
+    "切"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0377",
+   "word": "台所",
+   "reading": "だいどころ",
+   "meaning_vi": "nhà bếp",
+   "meaning_en": "kitchen",
+   "type": "danh từ",
+   "topic": "Nhà ở, đồ vật",
+   "kanji": [
+    "台",
+    "所"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0378",
+   "word": "大変",
+   "reading": "たいへん",
+   "meaning_vi": "rất; vất vả, khó khăn",
+   "meaning_en": "very; difficult, hard",
+   "type": "tính từ な",
+   "topic": "Tính chất, cảm xúc",
+   "kanji": [
+    "大",
+    "変"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0379",
+   "word": "高い",
+   "reading": "たかい",
+   "meaning_vi": "cao; đắt",
+   "meaning_en": "tall, high; expensive",
+   "type": "tính từ い",
+   "topic": "Tính chất, cảm xúc",
+   "kanji": [
+    "高"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0380",
+   "word": "～だけ",
+   "reading": "～だけ",
+   "meaning_vi": "chỉ ...",
+   "meaning_en": "only ~, just ~, as ~",
+   "type": "hậu tố",
+   "topic": "Từ chức năng, trạng từ",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0381",
+   "word": "沢山",
+   "reading": "たくさん",
+   "meaning_vi": "nhiều",
+   "meaning_en": "many, much",
+   "type": "trạng từ",
+   "topic": "Từ chức năng, trạng từ",
+   "kanji": [
+    "沢",
+    "山"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0382",
+   "word": "タクシー",
+   "reading": "タクシー",
+   "meaning_vi": "xe taxi",
+   "meaning_en": "taxi",
+   "type": "danh từ",
+   "topic": "Phố xá, giao thông",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0383",
+   "word": "出す",
+   "reading": "だす",
+   "meaning_vi": "lấy ra; nộp; gửi (thư)",
+   "meaning_en": "to take (something) out; to hand in (something)",
+   "type": "động từ nhóm 1",
+   "topic": "Động từ thường dùng",
+   "kanji": [
+    "出"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0384",
+   "word": "～たち",
+   "reading": "～たち",
+   "meaning_vi": "các ..., những ... (số nhiều, ví dụ わたしたち)",
+   "meaning_en": "plural suffix",
+   "type": "hậu tố",
+   "topic": "Gia đình, con người",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0385",
+   "word": "立つ",
+   "reading": "たつ",
+   "meaning_vi": "đứng, đứng dậy",
+   "meaning_en": "to stand up",
+   "type": "động từ nhóm 1",
+   "topic": "Động từ thường dùng",
+   "kanji": [
+    "立"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0386",
+   "word": "たて",
+   "reading": "たて",
+   "meaning_vi": "chiều dọc",
+   "meaning_en": "length, height",
+   "type": "danh từ",
+   "topic": "Vị trí, phương hướng",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0387",
+   "word": "建物",
+   "reading": "たてもの",
+   "meaning_vi": "tòa nhà",
+   "meaning_en": "building",
+   "type": "danh từ",
+   "topic": "Phố xá, giao thông",
+   "kanji": [
+    "建",
+    "物"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0388",
+   "word": "楽しい",
+   "reading": "たのしい",
+   "meaning_vi": "vui",
+   "meaning_en": "enjoyable, fun",
+   "type": "tính từ い",
+   "topic": "Tính chất, cảm xúc",
+   "kanji": [
+    "楽"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0389",
+   "word": "頼む",
+   "reading": "たのむ",
+   "meaning_vi": "nhờ, yêu cầu; gọi (món)",
+   "meaning_en": "to request, to ask (a favor)",
+   "type": "động từ nhóm 1",
+   "topic": "Động từ thường dùng",
+   "kanji": [
+    "頼"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0390",
+   "word": "たばこ",
+   "reading": "たばこ",
+   "meaning_vi": "thuốc lá",
+   "meaning_en": "tobacco, cigarettes",
+   "type": "danh từ",
+   "topic": "Sinh hoạt hằng ngày",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0391",
+   "word": "多分",
+   "reading": "たぶん",
+   "meaning_vi": "có lẽ",
+   "meaning_en": "perhaps, probably, maybe",
+   "type": "trạng từ",
+   "topic": "Từ chức năng, trạng từ",
+   "kanji": [
+    "多",
+    "分"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0392",
+   "word": "食べ物",
+   "reading": "たべもの",
+   "meaning_vi": "đồ ăn",
+   "meaning_en": "food",
+   "type": "danh từ",
+   "topic": "Ăn uống",
+   "kanji": [
+    "食",
+    "物"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0393",
+   "word": "食べる",
+   "reading": "たべる",
+   "meaning_vi": "ăn",
+   "meaning_en": "to eat",
+   "type": "động từ nhóm 2",
+   "topic": "Ăn uống",
+   "kanji": [
+    "食"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0394",
+   "word": "卵",
+   "reading": "たまご",
+   "meaning_vi": "quả trứng",
+   "meaning_en": "egg",
+   "type": "danh từ",
+   "topic": "Ăn uống",
+   "kanji": [
+    "卵"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0395",
+   "word": "誰",
+   "reading": "だれ",
+   "meaning_vi": "ai",
+   "meaning_en": "who",
+   "type": "từ để hỏi",
+   "topic": "Chỉ định, nghi vấn",
+   "kanji": [
+    "誰"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0396",
+   "word": "誰か",
+   "reading": "だれか",
+   "meaning_vi": "ai đó",
+   "meaning_en": "someone",
+   "type": "đại từ",
+   "topic": "Chỉ định, nghi vấn",
+   "kanji": [
+    "誰"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0397",
+   "word": "誕生日",
+   "reading": "たんじょうび",
+   "meaning_vi": "sinh nhật",
+   "meaning_en": "birthday",
+   "type": "danh từ",
+   "topic": "Gia đình, con người",
+   "kanji": [
+    "誕",
+    "生",
+    "日"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0398",
+   "word": "段々",
+   "reading": "だんだん",
+   "meaning_vi": "dần dần",
+   "meaning_en": "gradually, by degrees",
+   "type": "trạng từ",
+   "topic": "Từ chức năng, trạng từ",
+   "kanji": [
+    "段",
+    "々"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0399",
+   "word": "小さい",
+   "reading": "ちいさい",
+   "meaning_vi": "nhỏ, bé",
+   "meaning_en": "small, little",
+   "type": "tính từ い",
+   "topic": "Tính chất, cảm xúc",
+   "kanji": [
+    "小"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0400",
+   "word": "小さな",
+   "reading": "ちいさな",
+   "meaning_vi": "nhỏ, bé (đứng trước danh từ)",
+   "meaning_en": "small, little",
+   "type": "tính từ な",
+   "topic": "Tính chất, cảm xúc",
+   "kanji": [
+    "小"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0401",
+   "word": "近い",
+   "reading": "ちかい",
+   "meaning_vi": "gần",
+   "meaning_en": "near, close by, short",
+   "type": "tính từ い",
+   "topic": "Vị trí, phương hướng",
+   "kanji": [
+    "近"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0402",
+   "word": "違う",
+   "reading": "ちがう",
+   "meaning_vi": "khác; sai",
+   "meaning_en": "to be different; to differ; wrong",
+   "type": "động từ nhóm 1",
+   "topic": "Tính chất, cảm xúc",
+   "kanji": [
+    "違"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0403",
+   "word": "近く",
+   "reading": "ちかく",
+   "meaning_vi": "gần đây, vùng gần",
+   "meaning_en": "nearby; in the neighborhood",
+   "type": "danh từ",
+   "topic": "Vị trí, phương hướng",
+   "kanji": [
+    "近"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0404",
+   "word": "地下鉄",
+   "reading": "ちかてつ",
+   "meaning_vi": "tàu điện ngầm",
+   "meaning_en": "underground train, subway",
+   "type": "danh từ",
+   "topic": "Phố xá, giao thông",
+   "kanji": [
+    "地",
+    "下",
+    "鉄"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0405",
+   "word": "地図",
+   "reading": "ちず",
+   "meaning_vi": "bản đồ",
+   "meaning_en": "a map",
+   "type": "danh từ",
+   "topic": "Phố xá, giao thông",
+   "kanji": [
+    "地",
+    "図"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0406",
+   "word": "父",
+   "reading": "ちち",
+   "meaning_vi": "bố (của mình)",
+   "meaning_en": "(my) father",
+   "type": "danh từ",
+   "topic": "Gia đình, con người",
+   "kanji": [
+    "父"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0407",
+   "word": "茶色",
+   "reading": "ちゃいろ",
+   "meaning_vi": "màu nâu",
+   "meaning_en": "brown",
+   "type": "danh từ",
+   "topic": "Màu sắc",
+   "kanji": [
+    "茶",
+    "色"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0408",
+   "word": "茶碗",
+   "reading": "ちゃわん",
+   "meaning_vi": "bát ăn cơm",
+   "meaning_en": "rice bowl",
+   "type": "danh từ",
+   "topic": "Ăn uống",
+   "kanji": [
+    "茶",
+    "碗"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0409",
+   "word": "～中",
+   "reading": "～ちゅう",
+   "meaning_vi": "đang ..., trong lúc (ví dụ しごとちゅう)",
+   "meaning_en": "during, while ~ing",
+   "type": "hậu tố",
+   "topic": "Từ chức năng, trạng từ",
+   "kanji": [
+    "中"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0410",
+   "word": "丁度",
+   "reading": "ちょうど",
+   "meaning_vi": "vừa đúng",
+   "meaning_en": "just, right, exactly",
+   "type": "trạng từ",
+   "topic": "Từ chức năng, trạng từ",
+   "kanji": [
+    "丁",
+    "度"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0411",
+   "word": "ちょっと",
+   "reading": "ちょっと",
+   "meaning_vi": "một chút; hơi",
+   "meaning_en": "a little, somewhat; just a little, somewhat",
+   "type": "trạng từ",
+   "topic": "Từ chức năng, trạng từ",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0412",
+   "word": "一日",
+   "reading": "ついたち",
+   "meaning_vi": "ngày mùng 1",
+   "meaning_en": "one day; first day of the month",
+   "type": "danh từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "一",
+    "日"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0413",
+   "word": "使う",
+   "reading": "つかう",
+   "meaning_vi": "dùng, sử dụng",
+   "meaning_en": "to use",
+   "type": "động từ nhóm 1",
+   "topic": "Động từ thường dùng",
+   "kanji": [
+    "使"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0414",
+   "word": "疲れる",
+   "reading": "つかれる",
+   "meaning_vi": "mệt",
+   "meaning_en": "to get (become) tired; to become fatigued",
+   "type": "động từ nhóm 2",
+   "topic": "Cơ thể, sức khỏe",
+   "kanji": [
+    "疲"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0415",
+   "word": "次",
+   "reading": "つぎ",
+   "meaning_vi": "tiếp theo",
+   "meaning_en": "next",
+   "type": "danh từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "次"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0416",
+   "word": "着く",
+   "reading": "つく",
+   "meaning_vi": "đến nơi",
+   "meaning_en": "to arrive at, to reach",
+   "type": "động từ nhóm 1",
+   "topic": "Phố xá, giao thông",
+   "kanji": [
+    "着"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0417",
+   "word": "机",
+   "reading": "つくえ",
+   "meaning_vi": "cái bàn (học, làm việc)",
+   "meaning_en": "desk",
+   "type": "danh từ",
+   "topic": "Nhà ở, đồ vật",
+   "kanji": [
+    "机"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0418",
+   "word": "作る",
+   "reading": "つくる",
+   "meaning_vi": "làm, chế tạo; nấu",
+   "meaning_en": "to make, to create",
+   "type": "động từ nhóm 1",
+   "topic": "Động từ thường dùng",
+   "kanji": [
+    "作"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0419",
+   "word": "つける",
+   "reading": "つける",
+   "meaning_vi": "bật (đèn, điện)",
+   "meaning_en": "to turn on (e.g., a light); to take",
+   "type": "động từ nhóm 2",
+   "topic": "Động từ thường dùng",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0420",
+   "word": "勤める",
+   "reading": "つとめる",
+   "meaning_vi": "làm việc (cho công ty)",
+   "meaning_en": "to work (for)",
+   "type": "động từ nhóm 2",
+   "topic": "Trường học, công việc",
+   "kanji": [
+    "勤"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0421",
+   "word": "つまらない",
+   "reading": "つまらない",
+   "meaning_vi": "chán, nhàm",
+   "meaning_en": "boring, dull; insignificant",
+   "type": "tính từ い",
+   "topic": "Tính chất, cảm xúc",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0422",
+   "word": "冷たい",
+   "reading": "つめたい",
+   "meaning_vi": "lạnh (đồ vật); lạnh lùng",
+   "meaning_en": "cold (things, people)",
+   "type": "tính từ い",
+   "topic": "Tính chất, cảm xúc",
+   "kanji": [
+    "冷"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0423",
+   "word": "強い",
+   "reading": "つよい",
+   "meaning_vi": "mạnh",
+   "meaning_en": "strong, powerful",
+   "type": "tính từ い",
+   "topic": "Tính chất, cảm xúc",
+   "kanji": [
+    "強"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0424",
+   "word": "手",
+   "reading": "て",
+   "meaning_vi": "tay",
+   "meaning_en": "hand",
+   "type": "danh từ",
+   "topic": "Cơ thể, sức khỏe",
+   "kanji": [
+    "手"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0425",
+   "word": "テープ",
+   "reading": "テープ",
+   "meaning_vi": "băng (dính, ghi âm)",
+   "meaning_en": "tape",
+   "type": "danh từ",
+   "topic": "Nhà ở, đồ vật",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0426",
+   "word": "テープレコーダー",
+   "reading": "テープレコーダー",
+   "meaning_vi": "máy ghi âm (băng)",
+   "meaning_en": "tape recorder",
+   "type": "danh từ",
+   "topic": "Nhà ở, đồ vật",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0427",
+   "word": "テーブル",
+   "reading": "テーブル",
+   "meaning_vi": "cái bàn",
+   "meaning_en": "table",
+   "type": "danh từ",
+   "topic": "Nhà ở, đồ vật",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0428",
+   "word": "出かける",
+   "reading": "でかける",
+   "meaning_vi": "đi ra ngoài",
+   "meaning_en": "to go out; to depart",
+   "type": "động từ nhóm 2",
+   "topic": "Sinh hoạt hằng ngày",
+   "kanji": [
+    "出"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0429",
+   "word": "手紙",
+   "reading": "てがみ",
+   "meaning_vi": "lá thư",
+   "meaning_en": "letter",
+   "type": "danh từ",
+   "topic": "Phố xá, giao thông",
+   "kanji": [
+    "手",
+    "紙"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0430",
+   "word": "できる",
+   "reading": "できる",
+   "meaning_vi": "có thể, làm được",
+   "meaning_en": "to be able to (to accomplish)",
+   "type": "động từ nhóm 2",
+   "topic": "Động từ thường dùng",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0431",
+   "word": "出口",
+   "reading": "でぐち",
+   "meaning_vi": "lối ra",
+   "meaning_en": "an exit",
+   "type": "danh từ",
+   "topic": "Phố xá, giao thông",
+   "kanji": [
+    "出",
+    "口"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0432",
+   "word": "テスト",
+   "reading": "テスト",
+   "meaning_vi": "bài kiểm tra",
+   "meaning_en": "test",
+   "type": "danh từ",
+   "topic": "Trường học, công việc",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0433",
+   "word": "では",
+   "reading": "では",
+   "meaning_vi": "vậy thì",
+   "meaning_en": "then, well, so",
+   "type": "liên từ",
+   "topic": "Chào hỏi, giao tiếp",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0434",
+   "word": "デパート",
+   "reading": "デパート",
+   "meaning_vi": "cửa hàng bách hóa",
+   "meaning_en": "(abbr.) department store",
+   "type": "danh từ",
+   "topic": "Mua sắm, tiền",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0435",
+   "word": "でも",
+   "reading": "でも",
+   "meaning_vi": "nhưng",
+   "meaning_en": "but, however",
+   "type": "liên từ",
+   "topic": "Từ chức năng, trạng từ",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0436",
+   "word": "出る",
+   "reading": "でる",
+   "meaning_vi": "ra, đi ra; xuất hiện",
+   "meaning_en": "to appear, to leave",
+   "type": "động từ nhóm 2",
+   "topic": "Động từ thường dùng",
+   "kanji": [
+    "出"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0437",
+   "word": "テレビ",
+   "reading": "テレビ",
+   "meaning_vi": "ti vi",
+   "meaning_en": "television, TV",
+   "type": "danh từ",
+   "topic": "Sở thích, giải trí",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0438",
+   "word": "天気",
+   "reading": "てんき",
+   "meaning_vi": "thời tiết",
+   "meaning_en": "weather",
+   "type": "danh từ",
+   "topic": "Thời tiết, thiên nhiên",
+   "kanji": [
+    "天",
+    "気"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0439",
+   "word": "電気",
+   "reading": "でんき",
+   "meaning_vi": "điện; đèn điện",
+   "meaning_en": "electricity, (electric) light",
+   "type": "danh từ",
+   "topic": "Nhà ở, đồ vật",
+   "kanji": [
+    "電",
+    "気"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0440",
+   "word": "電車",
+   "reading": "でんしゃ",
+   "meaning_vi": "tàu điện",
+   "meaning_en": "electric train",
+   "type": "danh từ",
+   "topic": "Phố xá, giao thông",
+   "kanji": [
+    "電",
+    "車"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0441",
+   "word": "電話",
+   "reading": "でんわ",
+   "meaning_vi": "điện thoại",
+   "meaning_en": "a telephone",
+   "type": "danh từ",
+   "topic": "Nhà ở, đồ vật",
+   "kanji": [
+    "電",
+    "話"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0442",
+   "word": "戸",
+   "reading": "と",
+   "meaning_vi": "cửa (kiểu Nhật)",
+   "meaning_en": "door (Japanese style)",
+   "type": "danh từ",
+   "topic": "Nhà ở, đồ vật",
+   "kanji": [
+    "戸"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0443",
+   "word": "～度",
+   "reading": "～ど",
+   "meaning_vi": "... lần; ... độ",
+   "meaning_en": "counter for occurrences; ~ degree; ~ point",
+   "type": "trợ số từ",
+   "topic": "Số, đếm",
+   "kanji": [
+    "度"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0444",
+   "word": "ドア",
+   "reading": "ドア",
+   "meaning_vi": "cửa (kiểu Tây)",
+   "meaning_en": "door (Western style)",
+   "type": "danh từ",
+   "topic": "Nhà ở, đồ vật",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0445",
+   "word": "トイレ",
+   "reading": "トイレ",
+   "meaning_vi": "nhà vệ sinh",
+   "meaning_en": "bathroom; toilet",
+   "type": "danh từ",
+   "topic": "Nhà ở, đồ vật",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0446",
+   "word": "どう",
+   "reading": "どう",
+   "meaning_vi": "thế nào",
+   "meaning_en": "how, in what way",
+   "type": "từ để hỏi",
+   "topic": "Chỉ định, nghi vấn",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0447",
+   "word": "どうして",
+   "reading": "どうして",
+   "meaning_vi": "tại sao",
+   "meaning_en": "why, for what reason",
+   "type": "từ để hỏi",
+   "topic": "Chỉ định, nghi vấn",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0448",
+   "word": "どうぞ",
+   "reading": "どうぞ",
+   "meaning_vi": "xin mời",
+   "meaning_en": "please, kindly, by all means",
+   "type": "thán từ, câu giao tiếp",
+   "topic": "Chào hỏi, giao tiếp",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0449",
+   "word": "動物",
+   "reading": "どうぶつ",
+   "meaning_vi": "động vật",
+   "meaning_en": "animal",
+   "type": "danh từ",
+   "topic": "Động vật",
+   "kanji": [
+    "動",
+    "物"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0450",
+   "word": "どうも",
+   "reading": "どうも",
+   "meaning_vi": "cảm ơn; chào (thân mật)",
+   "meaning_en": "Thank you; somehow; no matter how hard one may try",
+   "type": "thán từ, câu giao tiếp",
+   "topic": "Chào hỏi, giao tiếp",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0451",
+   "word": "十",
+   "reading": "とお",
+   "meaning_vi": "mười cái",
+   "meaning_en": "ten (~)",
+   "type": "số từ",
+   "topic": "Số, đếm",
+   "kanji": [
+    "十"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0452",
+   "word": "遠い",
+   "reading": "とおい",
+   "meaning_vi": "xa",
+   "meaning_en": "far (away), distant",
+   "type": "tính từ い",
+   "topic": "Vị trí, phương hướng",
+   "kanji": [
+    "遠"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0453",
+   "word": "十日",
+   "reading": "とおか",
+   "meaning_vi": "ngày mùng 10; 10 ngày",
+   "meaning_en": "ten days; tenth day of the month",
+   "type": "danh từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "十",
+    "日"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0454",
+   "word": "～時",
+   "reading": "～とき",
+   "meaning_vi": "khi, lúc",
+   "meaning_en": "at the time of ~",
+   "type": "danh từ",
+   "topic": "Từ chức năng, trạng từ",
+   "kanji": [
+    "時"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0455",
+   "word": "時々",
+   "reading": "ときどき",
+   "meaning_vi": "thỉnh thoảng",
+   "meaning_en": "sometimes",
+   "type": "trạng từ",
+   "topic": "Từ chức năng, trạng từ",
+   "kanji": [
+    "時",
+    "々"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0456",
+   "word": "時計",
+   "reading": "とけい",
+   "meaning_vi": "đồng hồ",
+   "meaning_en": "a watch; a clock",
+   "type": "danh từ",
+   "topic": "Nhà ở, đồ vật",
+   "kanji": [
+    "時",
+    "計"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0457",
+   "word": "どこ",
+   "reading": "どこ",
+   "meaning_vi": "ở đâu",
+   "meaning_en": "where, what place",
+   "type": "từ để hỏi",
+   "topic": "Chỉ định, nghi vấn",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0458",
+   "word": "所",
+   "reading": "ところ",
+   "meaning_vi": "nơi, chỗ",
+   "meaning_en": "place",
+   "type": "danh từ",
+   "topic": "Vị trí, phương hướng",
+   "kanji": [
+    "所"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0459",
+   "word": "年",
+   "reading": "とし",
+   "meaning_vi": "năm; tuổi",
+   "meaning_en": "year, age",
+   "type": "danh từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "年"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0460",
+   "word": "図書館",
+   "reading": "としょかん",
+   "meaning_vi": "thư viện",
+   "meaning_en": "library",
+   "type": "danh từ",
+   "topic": "Trường học, công việc",
+   "kanji": [
+    "図",
+    "書",
+    "館"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0461",
+   "word": "どちら",
+   "reading": "どちら",
+   "meaning_vi": "cái nào, phía nào; ở đâu (lịch sự)",
+   "meaning_en": "which (one) (way); where (polite)",
+   "type": "từ để hỏi",
+   "topic": "Chỉ định, nghi vấn",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0462",
+   "word": "どっち",
+   "reading": "どっち",
+   "meaning_vi": "cái nào (thân mật)",
+   "meaning_en": "which one, which way",
+   "type": "từ để hỏi",
+   "topic": "Chỉ định, nghi vấn",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0463",
+   "word": "とても",
+   "reading": "とても",
+   "meaning_vi": "rất",
+   "meaning_en": "very (much), greatly, exceedingly",
+   "type": "trạng từ",
+   "topic": "Từ chức năng, trạng từ",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0464",
+   "word": "どなた",
+   "reading": "どなた",
+   "meaning_vi": "vị nào, ai (lịch sự)",
+   "meaning_en": "who",
+   "type": "từ để hỏi",
+   "topic": "Chỉ định, nghi vấn",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0465",
+   "word": "隣",
+   "reading": "となり",
+   "meaning_vi": "bên cạnh, nhà bên",
+   "meaning_en": "next to, next door to",
+   "type": "danh từ",
+   "topic": "Vị trí, phương hướng",
+   "kanji": [
+    "隣"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0466",
+   "word": "どの",
+   "reading": "どの",
+   "meaning_vi": "... nào (đứng trước danh từ)",
+   "meaning_en": "which",
+   "type": "từ để hỏi",
+   "topic": "Chỉ định, nghi vấn",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0467",
+   "word": "飛ぶ",
+   "reading": "とぶ",
+   "meaning_vi": "bay; nhảy",
+   "meaning_en": "to fly, to hop",
+   "type": "động từ nhóm 1",
+   "topic": "Động từ thường dùng",
+   "kanji": [
+    "飛"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0468",
+   "word": "止まる",
+   "reading": "とまる",
+   "meaning_vi": "dừng lại",
+   "meaning_en": "to come to a halt",
+   "type": "động từ nhóm 1",
+   "topic": "Phố xá, giao thông",
+   "kanji": [
+    "止"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0469",
+   "word": "友達",
+   "reading": "ともだち",
+   "meaning_vi": "bạn bè",
+   "meaning_en": "friend",
+   "type": "danh từ",
+   "topic": "Gia đình, con người",
+   "kanji": [
+    "友",
+    "達"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0470",
+   "word": "土曜日",
+   "reading": "どようび",
+   "meaning_vi": "thứ Bảy",
+   "meaning_en": "Saturday",
+   "type": "danh từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "土",
+    "曜",
+    "日"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0471",
+   "word": "鳥",
+   "reading": "とり",
+   "meaning_vi": "con chim; con gà",
+   "meaning_en": "chicken (lit., bird)",
+   "type": "danh từ",
+   "topic": "Động vật",
+   "kanji": [
+    "鳥"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0472",
+   "word": "鶏肉",
+   "reading": "とりにく",
+   "meaning_vi": "thịt gà",
+   "meaning_en": "chicken meat",
+   "type": "danh từ",
+   "topic": "Ăn uống",
+   "kanji": [
+    "鶏",
+    "肉"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0473",
+   "word": "取る",
+   "reading": "とる",
+   "meaning_vi": "lấy, cầm; đạt được",
+   "meaning_en": "to take (a class); to get (a grade)",
+   "type": "động từ nhóm 1",
+   "topic": "Động từ thường dùng",
+   "kanji": [
+    "取"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0474",
+   "word": "撮る",
+   "reading": "とる",
+   "meaning_vi": "chụp (ảnh), quay (phim)",
+   "meaning_en": "to take (a photo), to make (a film)",
+   "type": "động từ nhóm 1",
+   "topic": "Sở thích, giải trí",
+   "kanji": [
+    "撮"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0475",
+   "word": "どれ",
+   "reading": "どれ",
+   "meaning_vi": "cái nào",
+   "meaning_en": "which one",
+   "type": "từ để hỏi",
+   "topic": "Chỉ định, nghi vấn",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0476",
+   "word": "どんな",
+   "reading": "どんな",
+   "meaning_vi": "như thế nào, loại gì",
+   "meaning_en": "what, what kind of",
+   "type": "từ để hỏi",
+   "topic": "Chỉ định, nghi vấn",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0477",
+   "word": "ない",
+   "reading": "ない",
+   "meaning_vi": "không có",
+   "meaning_en": "there isn't, doesn't have",
+   "type": "tính từ い",
+   "topic": "Động từ thường dùng",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0478",
+   "word": "ナイフ",
+   "reading": "ナイフ",
+   "meaning_vi": "con dao",
+   "meaning_en": "knife",
+   "type": "danh từ",
+   "topic": "Ăn uống",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0479",
+   "word": "中",
+   "reading": "なか",
+   "meaning_vi": "bên trong, giữa",
+   "meaning_en": "inside, middle, among",
+   "type": "danh từ",
+   "topic": "Vị trí, phương hướng",
+   "kanji": [
+    "中"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0480",
+   "word": "長い",
+   "reading": "ながい",
+   "meaning_vi": "dài",
+   "meaning_en": "long, lengthy",
+   "type": "tính từ い",
+   "topic": "Tính chất, cảm xúc",
+   "kanji": [
+    "長"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0481",
+   "word": "鳴く",
+   "reading": "なく",
+   "meaning_vi": "(động vật) kêu, hót",
+   "meaning_en": "to make sound (animal)",
+   "type": "động từ nhóm 1",
+   "topic": "Động vật",
+   "kanji": [
+    "鳴"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0482",
+   "word": "無くす",
+   "reading": "なくす",
+   "meaning_vi": "làm mất",
+   "meaning_en": "to lose something",
+   "type": "động từ nhóm 1",
+   "topic": "Động từ thường dùng",
+   "kanji": [
+    "無"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0483",
+   "word": "なぜ",
+   "reading": "なぜ",
+   "meaning_vi": "tại sao",
+   "meaning_en": "why (same as どうして)",
+   "type": "từ để hỏi",
+   "topic": "Chỉ định, nghi vấn",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0484",
+   "word": "夏",
+   "reading": "なつ",
+   "meaning_vi": "mùa hè",
+   "meaning_en": "summer",
+   "type": "danh từ",
+   "topic": "Thời tiết, thiên nhiên",
+   "kanji": [
+    "夏"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0485",
+   "word": "夏休み",
+   "reading": "なつやすみ",
+   "meaning_vi": "kỳ nghỉ hè",
+   "meaning_en": "summer vacation",
+   "type": "danh từ",
+   "topic": "Trường học, công việc",
+   "kanji": [
+    "夏",
+    "休"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0486",
+   "word": "～など",
+   "reading": "～など",
+   "meaning_vi": "vân vân",
+   "meaning_en": "et cetera",
+   "type": "hậu tố",
+   "topic": "Từ chức năng, trạng từ",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0487",
+   "word": "七つ",
+   "reading": "ななつ",
+   "meaning_vi": "7 cái",
+   "meaning_en": "seven things",
+   "type": "số từ",
+   "topic": "Số, đếm",
+   "kanji": [
+    "七"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0488",
+   "word": "何",
+   "reading": "なん; なに",
+   "meaning_vi": "cái gì",
+   "meaning_en": "what",
+   "type": "từ để hỏi",
+   "topic": "Chỉ định, nghi vấn",
+   "kanji": [
+    "何"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0489",
+   "word": "七日",
+   "reading": "なのか",
+   "meaning_vi": "ngày mùng 7; 7 ngày",
+   "meaning_en": "seven days; seventh day (of the month)",
+   "type": "danh từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "七",
+    "日"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0490",
+   "word": "名前",
+   "reading": "なまえ",
+   "meaning_vi": "tên",
+   "meaning_en": "name",
+   "type": "danh từ",
+   "topic": "Chào hỏi, giao tiếp",
+   "kanji": [
+    "名",
+    "前"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0491",
+   "word": "習う",
+   "reading": "ならう",
+   "meaning_vi": "học (từ ai đó)",
+   "meaning_en": "to learn",
+   "type": "động từ nhóm 1",
+   "topic": "Trường học, công việc",
+   "kanji": [
+    "習"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0492",
+   "word": "並ぶ",
+   "reading": "ならぶ",
+   "meaning_vi": "xếp hàng",
+   "meaning_en": "to line up, to stand in a line (v.i.)",
+   "type": "động từ nhóm 1",
+   "topic": "Động từ thường dùng",
+   "kanji": [
+    "並"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0493",
+   "word": "並べる",
+   "reading": "ならべる",
+   "meaning_vi": "xếp, bày (cái gì) thành hàng",
+   "meaning_en": "to put (things) side by side; to line up",
+   "type": "động từ nhóm 2",
+   "topic": "Động từ thường dùng",
+   "kanji": [
+    "並"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0494",
+   "word": "なる",
+   "reading": "なる",
+   "meaning_vi": "trở thành",
+   "meaning_en": "to become",
+   "type": "động từ nhóm 1",
+   "topic": "Động từ thường dùng",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0495",
+   "word": "何～",
+   "reading": "なん～",
+   "meaning_vi": "mấy ..., ... gì (ví dụ なんじ, なんにん)",
+   "meaning_en": "what sort of ~",
+   "type": "tiền tố",
+   "topic": "Chỉ định, nghi vấn",
+   "kanji": [
+    "何"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0496",
+   "word": "二",
+   "reading": "に",
+   "meaning_vi": "hai (số 2)",
+   "meaning_en": "two",
+   "type": "số từ",
+   "topic": "Số, đếm",
+   "kanji": [
+    "二"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0497",
+   "word": "にぎやか",
+   "reading": "にぎやか",
+   "meaning_vi": "náo nhiệt, nhộn nhịp",
+   "meaning_en": "bustling, busy",
+   "type": "tính từ な",
+   "topic": "Tính chất, cảm xúc",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0498",
+   "word": "肉",
+   "reading": "にく",
+   "meaning_vi": "thịt",
+   "meaning_en": "meat",
+   "type": "danh từ",
+   "topic": "Ăn uống",
+   "kanji": [
+    "肉"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0499",
+   "word": "西",
+   "reading": "にし",
+   "meaning_vi": "phía tây",
+   "meaning_en": "west",
+   "type": "danh từ",
+   "topic": "Vị trí, phương hướng",
+   "kanji": [
+    "西"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0500",
+   "word": "～日",
+   "reading": "～にち",
+   "meaning_vi": "ngày ... ; ... ngày",
+   "meaning_en": "~ day of the month, for ~ days",
+   "type": "trợ số từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "日"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0501",
+   "word": "日曜日",
+   "reading": "にちようび",
+   "meaning_vi": "Chủ nhật",
+   "meaning_en": "Sunday",
+   "type": "danh từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "日",
+    "曜"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0502",
+   "word": "荷物",
+   "reading": "にもつ",
+   "meaning_vi": "hành lý",
+   "meaning_en": "luggage; baggage",
+   "type": "danh từ",
+   "topic": "Phố xá, giao thông",
+   "kanji": [
+    "荷",
+    "物"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0503",
+   "word": "ニュース",
+   "reading": "ニュース",
+   "meaning_vi": "tin tức",
+   "meaning_en": "news",
+   "type": "danh từ",
+   "topic": "Sở thích, giải trí",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0504",
+   "word": "庭",
+   "reading": "にわ",
+   "meaning_vi": "khu vườn",
+   "meaning_en": "garden",
+   "type": "danh từ",
+   "topic": "Nhà ở, đồ vật",
+   "kanji": [
+    "庭"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0505",
+   "word": "～人",
+   "reading": "～にん",
+   "meaning_vi": "... người",
+   "meaning_en": "counter for people",
+   "type": "trợ số từ",
+   "topic": "Số, đếm",
+   "kanji": [
+    "人"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0506",
+   "word": "脱ぐ",
+   "reading": "ぬぐ",
+   "meaning_vi": "cởi (quần áo, giày)",
+   "meaning_en": "to take off (clothes)",
+   "type": "động từ nhóm 1",
+   "topic": "Quần áo",
+   "kanji": [
+    "脱"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0507",
+   "word": "温い",
+   "reading": "ぬるい",
+   "meaning_vi": "âm ấm, nguội",
+   "meaning_en": "lukewarm",
+   "type": "tính từ い",
+   "topic": "Tính chất, cảm xúc",
+   "kanji": [
+    "温"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0508",
+   "word": "ネクタイ",
+   "reading": "ネクタイ",
+   "meaning_vi": "cà vạt",
+   "meaning_en": "tie, necktie",
+   "type": "danh từ",
+   "topic": "Quần áo",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0509",
+   "word": "猫",
+   "reading": "ねこ",
+   "meaning_vi": "con mèo",
+   "meaning_en": "cat",
+   "type": "danh từ",
+   "topic": "Động vật",
+   "kanji": [
+    "猫"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0510",
+   "word": "寝る",
+   "reading": "ねる",
+   "meaning_vi": "ngủ, đi ngủ",
+   "meaning_en": "to sleep; to go to sleep; to go to bed",
+   "type": "động từ nhóm 2",
+   "topic": "Sinh hoạt hằng ngày",
+   "kanji": [
+    "寝"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0511",
+   "word": "～年",
+   "reading": "～ねん",
+   "meaning_vi": "... năm",
+   "meaning_en": "~ years",
+   "type": "trợ số từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "年"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0512",
+   "word": "ノート",
+   "reading": "ノート",
+   "meaning_vi": "quyển vở",
+   "meaning_en": "notebook",
+   "type": "danh từ",
+   "topic": "Trường học, công việc",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0513",
+   "word": "登る",
+   "reading": "のぼる",
+   "meaning_vi": "leo, trèo",
+   "meaning_en": "to climb",
+   "type": "động từ nhóm 1",
+   "topic": "Sở thích, giải trí",
+   "kanji": [
+    "登"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0514",
+   "word": "飲み物",
+   "reading": "のみもの",
+   "meaning_vi": "đồ uống",
+   "meaning_en": "drink, beverage",
+   "type": "danh từ",
+   "topic": "Ăn uống",
+   "kanji": [
+    "飲",
+    "物"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0515",
+   "word": "飲む",
+   "reading": "のむ",
+   "meaning_vi": "uống; uống (thuốc)",
+   "meaning_en": "to drink",
+   "type": "động từ nhóm 1",
+   "topic": "Ăn uống",
+   "kanji": [
+    "飲"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0516",
+   "word": "乗る",
+   "reading": "のる",
+   "meaning_vi": "lên (xe, tàu), cưỡi",
+   "meaning_en": "to get on, to ride in, to board",
+   "type": "động từ nhóm 1",
+   "topic": "Phố xá, giao thông",
+   "kanji": [
+    "乗"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0517",
+   "word": "歯",
+   "reading": "は",
+   "meaning_vi": "răng",
+   "meaning_en": "tooth",
+   "type": "danh từ",
+   "topic": "Cơ thể, sức khỏe",
+   "kanji": [
+    "歯"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0518",
+   "word": "パーティー",
+   "reading": "パーティー",
+   "meaning_vi": "bữa tiệc",
+   "meaning_en": "a party",
+   "type": "danh từ",
+   "topic": "Sở thích, giải trí",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0519",
+   "word": "はい",
+   "reading": "はい",
+   "meaning_vi": "vâng, có",
+   "meaning_en": "yes",
+   "type": "thán từ, câu giao tiếp",
+   "topic": "Chào hỏi, giao tiếp",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0520",
+   "word": "～杯",
+   "reading": "～はい",
+   "meaning_vi": "... cốc, chén",
+   "meaning_en": "counter for cupfuls",
+   "type": "trợ số từ",
+   "topic": "Số, đếm",
+   "kanji": [
+    "杯"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0521",
+   "word": "灰皿",
+   "reading": "はいざら",
+   "meaning_vi": "cái gạt tàn",
+   "meaning_en": "ashtray",
+   "type": "danh từ",
+   "topic": "Nhà ở, đồ vật",
+   "kanji": [
+    "灰",
+    "皿"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0522",
+   "word": "入る",
+   "reading": "はいる",
+   "meaning_vi": "vào; tắm (bồn)",
+   "meaning_en": "to enter, to contain, to hold",
+   "type": "động từ nhóm 1",
+   "topic": "Động từ thường dùng",
+   "kanji": [
+    "入"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0523",
+   "word": "葉書",
+   "reading": "はがき",
+   "meaning_vi": "bưu thiếp",
+   "meaning_en": "postcard",
+   "type": "danh từ",
+   "topic": "Phố xá, giao thông",
+   "kanji": [
+    "葉",
+    "書"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0524",
+   "word": "はく",
+   "reading": "はく",
+   "meaning_vi": "mặc (quần, váy), đi (giày)",
+   "meaning_en": "to put on (items below your waist)",
+   "type": "động từ nhóm 1",
+   "topic": "Quần áo",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0525",
+   "word": "箱",
+   "reading": "はこ",
+   "meaning_vi": "cái hộp",
+   "meaning_en": "box",
+   "type": "danh từ",
+   "topic": "Nhà ở, đồ vật",
+   "kanji": [
+    "箱"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0526",
+   "word": "橋",
+   "reading": "はし",
+   "meaning_vi": "cây cầu",
+   "meaning_en": "bridge",
+   "type": "danh từ",
+   "topic": "Phố xá, giao thông",
+   "kanji": [
+    "橋"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0527",
+   "word": "箸",
+   "reading": "はし",
+   "meaning_vi": "đôi đũa",
+   "meaning_en": "chopsticks",
+   "type": "danh từ",
+   "topic": "Ăn uống",
+   "kanji": [
+    "箸"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0528",
+   "word": "始まる",
+   "reading": "はじまる",
+   "meaning_vi": "(cái gì đó) bắt đầu",
+   "meaning_en": "(something) begins",
+   "type": "động từ nhóm 1",
+   "topic": "Động từ thường dùng",
+   "kanji": [
+    "始"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0529",
+   "word": "初め; 始め",
+   "reading": "はじめ",
+   "meaning_vi": "lúc đầu, sự bắt đầu",
+   "meaning_en": "beginning, start",
+   "type": "danh từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "初",
+    "始"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0530",
+   "word": "初めて",
+   "reading": "はじめて",
+   "meaning_vi": "lần đầu tiên",
+   "meaning_en": "for the first time",
+   "type": "trạng từ",
+   "topic": "Từ chức năng, trạng từ",
+   "kanji": [
+    "初"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0531",
+   "word": "走る",
+   "reading": "はしる",
+   "meaning_vi": "chạy",
+   "meaning_en": "to run",
+   "type": "động từ nhóm 1",
+   "topic": "Động từ thường dùng",
+   "kanji": [
+    "走"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0532",
+   "word": "バス",
+   "reading": "バス",
+   "meaning_vi": "xe buýt",
+   "meaning_en": "bus; bath; bass",
+   "type": "danh từ",
+   "topic": "Phố xá, giao thông",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0533",
+   "word": "バター",
+   "reading": "バター",
+   "meaning_vi": "bơ",
+   "meaning_en": "butter",
+   "type": "danh từ",
+   "topic": "Ăn uống",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0534",
+   "word": "二十歳",
+   "reading": "はたち",
+   "meaning_vi": "20 tuổi",
+   "meaning_en": "20 years old",
+   "type": "danh từ",
+   "topic": "Số, đếm",
+   "kanji": [
+    "二",
+    "十",
+    "歳"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0535",
+   "word": "働く",
+   "reading": "はたらく",
+   "meaning_vi": "làm việc, lao động",
+   "meaning_en": "to work",
+   "type": "động từ nhóm 1",
+   "topic": "Trường học, công việc",
+   "kanji": [
+    "働"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0536",
+   "word": "八",
+   "reading": "はち",
+   "meaning_vi": "tám (số 8)",
+   "meaning_en": "eight",
+   "type": "số từ",
+   "topic": "Số, đếm",
+   "kanji": [
+    "八"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0537",
+   "word": "二十日",
+   "reading": "はつか",
+   "meaning_vi": "ngày 20; 20 ngày",
+   "meaning_en": "twenty days, twentieth (day of the month)",
+   "type": "danh từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "二",
+    "十",
+    "日"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0538",
+   "word": "花",
+   "reading": "はな",
+   "meaning_vi": "hoa",
+   "meaning_en": "flower",
+   "type": "danh từ",
+   "topic": "Thời tiết, thiên nhiên",
+   "kanji": [
+    "花"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0539",
+   "word": "鼻",
+   "reading": "はな",
+   "meaning_vi": "mũi",
+   "meaning_en": "nose",
+   "type": "danh từ",
+   "topic": "Cơ thể, sức khỏe",
+   "kanji": [
+    "鼻"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0540",
+   "word": "話",
+   "reading": "はなし",
+   "meaning_vi": "câu chuyện, cuộc nói chuyện",
+   "meaning_en": "talk (chat), story",
+   "type": "danh từ",
+   "topic": "Chào hỏi, giao tiếp",
+   "kanji": [
+    "話"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0541",
+   "word": "話す",
+   "reading": "はなす",
+   "meaning_vi": "nói chuyện",
+   "meaning_en": "to speak",
+   "type": "động từ nhóm 1",
+   "topic": "Chào hỏi, giao tiếp",
+   "kanji": [
+    "話"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0542",
+   "word": "母",
+   "reading": "はは",
+   "meaning_vi": "mẹ (của mình)",
+   "meaning_en": "(my) mother",
+   "type": "danh từ",
+   "topic": "Gia đình, con người",
+   "kanji": [
+    "母"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0543",
+   "word": "早い",
+   "reading": "はやい",
+   "meaning_vi": "sớm",
+   "meaning_en": "early",
+   "type": "tính từ い",
+   "topic": "Thời gian",
+   "kanji": [
+    "早"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0544",
+   "word": "速い",
+   "reading": "はやい",
+   "meaning_vi": "nhanh",
+   "meaning_en": "fast, quick",
+   "type": "tính từ い",
+   "topic": "Tính chất, cảm xúc",
+   "kanji": [
+    "速"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0545",
+   "word": "春",
+   "reading": "はる",
+   "meaning_vi": "mùa xuân",
+   "meaning_en": "spring",
+   "type": "danh từ",
+   "topic": "Thời tiết, thiên nhiên",
+   "kanji": [
+    "春"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0546",
+   "word": "貼る",
+   "reading": "はる",
+   "meaning_vi": "dán",
+   "meaning_en": "to post; to paste; to attach",
+   "type": "động từ nhóm 1",
+   "topic": "Động từ thường dùng",
+   "kanji": [
+    "貼"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0547",
+   "word": "晴れ",
+   "reading": "はれ",
+   "meaning_vi": "trời nắng, quang đãng",
+   "meaning_en": "clear (sunny) weather",
+   "type": "danh từ",
+   "topic": "Thời tiết, thiên nhiên",
+   "kanji": [
+    "晴"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0548",
+   "word": "晴れる",
+   "reading": "はれる",
+   "meaning_vi": "(trời) nắng",
+   "meaning_en": "to be sunny",
+   "type": "động từ nhóm 2",
+   "topic": "Thời tiết, thiên nhiên",
+   "kanji": [
+    "晴"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0549",
+   "word": "半",
+   "reading": "はん",
+   "meaning_vi": "rưỡi, một nửa (ví dụ にじはん: 2 giờ rưỡi)",
+   "meaning_en": "half (e.g., にじはん | half-past two)",
+   "type": "danh từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "半"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0550",
+   "word": "晩",
+   "reading": "ばん",
+   "meaning_vi": "buổi tối",
+   "meaning_en": "evening",
+   "type": "danh từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "晩"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0551",
+   "word": "～番",
+   "reading": "～ばん",
+   "meaning_vi": "số ..., thứ ... (ví dụ いちばん)",
+   "meaning_en": "~st; ~th best",
+   "type": "trợ số từ",
+   "topic": "Số, đếm",
+   "kanji": [
+    "番"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0552",
+   "word": "パン",
+   "reading": "パン",
+   "meaning_vi": "bánh mì",
+   "meaning_en": "bread",
+   "type": "danh từ",
+   "topic": "Ăn uống",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0553",
+   "word": "ハンカチ",
+   "reading": "ハンカチ",
+   "meaning_vi": "khăn tay",
+   "meaning_en": "handkerchief",
+   "type": "danh từ",
+   "topic": "Quần áo",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0554",
+   "word": "番号",
+   "reading": "ばんごう",
+   "meaning_vi": "con số, số hiệu",
+   "meaning_en": "number, series of digits",
+   "type": "danh từ",
+   "topic": "Số, đếm",
+   "kanji": [
+    "番",
+    "号"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0555",
+   "word": "晩御飯",
+   "reading": "ばんごはん",
+   "meaning_vi": "bữa tối",
+   "meaning_en": "dinner, evening meal",
+   "type": "danh từ",
+   "topic": "Ăn uống",
+   "kanji": [
+    "晩",
+    "御",
+    "飯"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0556",
+   "word": "半分",
+   "reading": "はんぶん",
+   "meaning_vi": "một nửa",
+   "meaning_en": "half",
+   "type": "danh từ",
+   "topic": "Số, đếm",
+   "kanji": [
+    "半",
+    "分"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0557",
+   "word": "東",
+   "reading": "ひがし",
+   "meaning_vi": "phía đông",
+   "meaning_en": "east",
+   "type": "danh từ",
+   "topic": "Vị trí, phương hướng",
+   "kanji": [
+    "東"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0558",
+   "word": "～匹",
+   "reading": "～ひき",
+   "meaning_vi": "... con (động vật nhỏ)",
+   "meaning_en": "counter for small animals",
+   "type": "trợ số từ",
+   "topic": "Số, đếm",
+   "kanji": [
+    "匹"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0559",
+   "word": "引く",
+   "reading": "ひく",
+   "meaning_vi": "kéo; trừ",
+   "meaning_en": "to pull, to draw; subtract",
+   "type": "động từ nhóm 1",
+   "topic": "Động từ thường dùng",
+   "kanji": [
+    "引"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0560",
+   "word": "弾く",
+   "reading": "ひく",
+   "meaning_vi": "chơi (đàn, piano)",
+   "meaning_en": "to play (a string instrument or piano)",
+   "type": "động từ nhóm 1",
+   "topic": "Sở thích, giải trí",
+   "kanji": [
+    "弾"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0561",
+   "word": "低い",
+   "reading": "ひくい",
+   "meaning_vi": "thấp",
+   "meaning_en": "short, low",
+   "type": "tính từ い",
+   "topic": "Tính chất, cảm xúc",
+   "kanji": [
+    "低"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0562",
+   "word": "飛行機",
+   "reading": "ひこうき",
+   "meaning_vi": "máy bay",
+   "meaning_en": "airplane",
+   "type": "danh từ",
+   "topic": "Phố xá, giao thông",
+   "kanji": [
+    "飛",
+    "行",
+    "機"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0563",
+   "word": "左",
+   "reading": "ひだり",
+   "meaning_vi": "bên trái",
+   "meaning_en": "left hand side",
+   "type": "danh từ",
+   "topic": "Vị trí, phương hướng",
+   "kanji": [
+    "左"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0564",
+   "word": "人",
+   "reading": "ひと",
+   "meaning_vi": "người",
+   "meaning_en": "man, person",
+   "type": "danh từ",
+   "topic": "Gia đình, con người",
+   "kanji": [
+    "人"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0565",
+   "word": "一つ",
+   "reading": "ひとつ",
+   "meaning_vi": "1 cái",
+   "meaning_en": "one thing",
+   "type": "số từ",
+   "topic": "Số, đếm",
+   "kanji": [
+    "一"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0566",
+   "word": "一月",
+   "reading": "ひとつき",
+   "meaning_vi": "một tháng",
+   "meaning_en": "one month",
+   "type": "danh từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "一",
+    "月"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0567",
+   "word": "一人",
+   "reading": "ひとり",
+   "meaning_vi": "một người",
+   "meaning_en": "one person",
+   "type": "danh từ",
+   "topic": "Số, đếm",
+   "kanji": [
+    "一",
+    "人"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0568",
+   "word": "暇",
+   "reading": "ひま",
+   "meaning_vi": "rảnh rỗi; thời gian rảnh",
+   "meaning_en": "free time, leisure",
+   "type": "tính từ な",
+   "topic": "Sở thích, giải trí",
+   "kanji": [
+    "暇"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0569",
+   "word": "百",
+   "reading": "ひゃく",
+   "meaning_vi": "trăm",
+   "meaning_en": "hundred",
+   "type": "số từ",
+   "topic": "Số, đếm",
+   "kanji": [
+    "百"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0570",
+   "word": "病院",
+   "reading": "びょういん",
+   "meaning_vi": "bệnh viện",
+   "meaning_en": "hospital",
+   "type": "danh từ",
+   "topic": "Cơ thể, sức khỏe",
+   "kanji": [
+    "病",
+    "院"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0571",
+   "word": "病気",
+   "reading": "びょうき",
+   "meaning_vi": "bệnh",
+   "meaning_en": "illness; sickness",
+   "type": "danh từ",
+   "topic": "Cơ thể, sức khỏe",
+   "kanji": [
+    "病",
+    "気"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0572",
+   "word": "平仮名",
+   "reading": "ひらがな",
+   "meaning_vi": "chữ hiragana",
+   "meaning_en": "hiragana",
+   "type": "danh từ",
+   "topic": "Trường học, công việc",
+   "kanji": [
+    "平",
+    "仮",
+    "名"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0573",
+   "word": "昼",
+   "reading": "ひる",
+   "meaning_vi": "buổi trưa, ban ngày",
+   "meaning_en": "noon, daytime",
+   "type": "danh từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "昼"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0574",
+   "word": "昼御飯",
+   "reading": "ひるごはん",
+   "meaning_vi": "bữa trưa",
+   "meaning_en": "lunch, midday meal",
+   "type": "danh từ",
+   "topic": "Ăn uống",
+   "kanji": [
+    "昼",
+    "御",
+    "飯"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0575",
+   "word": "広い",
+   "reading": "ひろい",
+   "meaning_vi": "rộng",
+   "meaning_en": "spacious; wide; broad",
+   "type": "tính từ い",
+   "topic": "Tính chất, cảm xúc",
+   "kanji": [
+    "広"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0576",
+   "word": "フィルム",
+   "reading": "フィルム",
+   "meaning_vi": "phim (cuộn phim máy ảnh)",
+   "meaning_en": "film (roll of)",
+   "type": "danh từ",
+   "topic": "Sở thích, giải trí",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0577",
+   "word": "封筒",
+   "reading": "ふうとう",
+   "meaning_vi": "phong bì",
+   "meaning_en": "envelope",
+   "type": "danh từ",
+   "topic": "Phố xá, giao thông",
+   "kanji": [
+    "封",
+    "筒"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0578",
+   "word": "プール",
+   "reading": "プール",
+   "meaning_vi": "bể bơi",
+   "meaning_en": "swimming pool",
+   "type": "danh từ",
+   "topic": "Sở thích, giải trí",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0579",
+   "word": "フォーク",
+   "reading": "フォーク",
+   "meaning_vi": "cái nĩa",
+   "meaning_en": "fork",
+   "type": "danh từ",
+   "topic": "Ăn uống",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0580",
+   "word": "吹く",
+   "reading": "ふく",
+   "meaning_vi": "thổi (gió)",
+   "meaning_en": "to blow (wind, etc.)",
+   "type": "động từ nhóm 1",
+   "topic": "Thời tiết, thiên nhiên",
+   "kanji": [
+    "吹"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0581",
+   "word": "服",
+   "reading": "ふく",
+   "meaning_vi": "quần áo",
+   "meaning_en": "clothes",
+   "type": "danh từ",
+   "topic": "Quần áo",
+   "kanji": [
+    "服"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0582",
+   "word": "二つ",
+   "reading": "ふたつ",
+   "meaning_vi": "2 cái",
+   "meaning_en": "two things",
+   "type": "số từ",
+   "topic": "Số, đếm",
+   "kanji": [
+    "二"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0583",
+   "word": "豚肉",
+   "reading": "ぶたにく",
+   "meaning_vi": "thịt lợn",
+   "meaning_en": "pork",
+   "type": "danh từ",
+   "topic": "Ăn uống",
+   "kanji": [
+    "豚",
+    "肉"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0584",
+   "word": "二人",
+   "reading": "ふたり",
+   "meaning_vi": "hai người",
+   "meaning_en": "two people",
+   "type": "danh từ",
+   "topic": "Số, đếm",
+   "kanji": [
+    "二",
+    "人"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0585",
+   "word": "二日",
+   "reading": "ふつか",
+   "meaning_vi": "ngày mùng 2; 2 ngày",
+   "meaning_en": "two days; second day of the month",
+   "type": "danh từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "二",
+    "日"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0586",
+   "word": "太い",
+   "reading": "ふとい",
+   "meaning_vi": "béo, to, dày",
+   "meaning_en": "fat, thick",
+   "type": "tính từ い",
+   "topic": "Tính chất, cảm xúc",
+   "kanji": [
+    "太"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0587",
+   "word": "冬",
+   "reading": "ふゆ",
+   "meaning_vi": "mùa đông",
+   "meaning_en": "winter",
+   "type": "danh từ",
+   "topic": "Thời tiết, thiên nhiên",
+   "kanji": [
+    "冬"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0588",
+   "word": "降る",
+   "reading": "ふる",
+   "meaning_vi": "(mưa, tuyết) rơi",
+   "meaning_en": "to precipitate, to fall (e.g., rain, snow, etc.)",
+   "type": "động từ nhóm 1",
+   "topic": "Thời tiết, thiên nhiên",
+   "kanji": [
+    "降"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0589",
+   "word": "古い",
+   "reading": "ふるい",
+   "meaning_vi": "cũ",
+   "meaning_en": "old (in reference to objects, not people), aged, ancient",
+   "type": "tính từ い",
+   "topic": "Tính chất, cảm xúc",
+   "kanji": [
+    "古"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0590",
+   "word": "～分",
+   "reading": "～ふん",
+   "meaning_vi": "... phút",
+   "meaning_en": "~ minutes",
+   "type": "trợ số từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "分"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0591",
+   "word": "文章",
+   "reading": "ぶんしょう",
+   "meaning_vi": "câu văn, đoạn văn",
+   "meaning_en": "sentence, text",
+   "type": "danh từ",
+   "topic": "Trường học, công việc",
+   "kanji": [
+    "文",
+    "章"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0592",
+   "word": "ページ",
+   "reading": "ページ",
+   "meaning_vi": "trang (sách)",
+   "meaning_en": "a page",
+   "type": "danh từ",
+   "topic": "Trường học, công việc",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0593",
+   "word": "下手",
+   "reading": "へた",
+   "meaning_vi": "kém, dở",
+   "meaning_en": "unskillful, poor",
+   "type": "tính từ な",
+   "topic": "Tính chất, cảm xúc",
+   "kanji": [
+    "下",
+    "手"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0594",
+   "word": "ベッド",
+   "reading": "ベッド",
+   "meaning_vi": "cái giường",
+   "meaning_en": "bed",
+   "type": "danh từ",
+   "topic": "Nhà ở, đồ vật",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0595",
+   "word": "ペット",
+   "reading": "ペット",
+   "meaning_vi": "thú cưng",
+   "meaning_en": "pet",
+   "type": "danh từ",
+   "topic": "Động vật",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0596",
+   "word": "部屋",
+   "reading": "へや",
+   "meaning_vi": "căn phòng",
+   "meaning_en": "a room",
+   "type": "danh từ",
+   "topic": "Nhà ở, đồ vật",
+   "kanji": [
+    "部",
+    "屋"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0597",
+   "word": "辺",
+   "reading": "へん",
+   "meaning_vi": "khu vực, vùng lân cận",
+   "meaning_en": "area, vicinity",
+   "type": "danh từ",
+   "topic": "Vị trí, phương hướng",
+   "kanji": [
+    "辺"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0598",
+   "word": "ペン",
+   "reading": "ペン",
+   "meaning_vi": "cái bút",
+   "meaning_en": "pen",
+   "type": "danh từ",
+   "topic": "Trường học, công việc",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0599",
+   "word": "勉強",
+   "reading": "べんきょう",
+   "meaning_vi": "học, học tập",
+   "meaning_en": "study",
+   "type": "danh từ + する",
+   "topic": "Trường học, công việc",
+   "kanji": [
+    "勉",
+    "強"
+   ],
+   "suru_verb": true,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0600",
+   "word": "便利",
+   "reading": "べんり",
+   "meaning_vi": "tiện lợi",
+   "meaning_en": "convenient, handy",
+   "type": "tính từ な",
+   "topic": "Tính chất, cảm xúc",
+   "kanji": [
+    "便",
+    "利"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0601",
+   "word": "帽子",
+   "reading": "ぼうし",
+   "meaning_vi": "cái mũ",
+   "meaning_en": "hat; cap",
+   "type": "danh từ",
+   "topic": "Quần áo",
+   "kanji": [
+    "帽",
+    "子"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0602",
+   "word": "ボールペン",
+   "reading": "ボールペン",
+   "meaning_vi": "bút bi",
+   "meaning_en": "ball-point pen",
+   "type": "danh từ",
+   "topic": "Trường học, công việc",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0603",
+   "word": "外",
+   "reading": "ほか",
+   "meaning_vi": "cái khác, chỗ khác",
+   "meaning_en": "other, the rest",
+   "type": "danh từ",
+   "topic": "Từ chức năng, trạng từ",
+   "kanji": [
+    "外"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0604",
+   "word": "ポケット",
+   "reading": "ポケット",
+   "meaning_vi": "túi (quần, áo)",
+   "meaning_en": "pocket",
+   "type": "danh từ",
+   "topic": "Quần áo",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0605",
+   "word": "欲しい",
+   "reading": "ほしい",
+   "meaning_vi": "muốn có",
+   "meaning_en": "to want, in need of",
+   "type": "tính từ い",
+   "topic": "Tính chất, cảm xúc",
+   "kanji": [
+    "欲"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0606",
+   "word": "ポスト",
+   "reading": "ポスト",
+   "meaning_vi": "hòm thư",
+   "meaning_en": "mailbox; post, position",
+   "type": "danh từ",
+   "topic": "Phố xá, giao thông",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0607",
+   "word": "細い",
+   "reading": "ほそい",
+   "meaning_vi": "gầy, mảnh, nhỏ",
+   "meaning_en": "thin, slender, fine",
+   "type": "tính từ い",
+   "topic": "Tính chất, cảm xúc",
+   "kanji": [
+    "細"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0608",
+   "word": "ボタン",
+   "reading": "ボタン",
+   "meaning_vi": "cái cúc áo; nút bấm",
+   "meaning_en": "button",
+   "type": "danh từ",
+   "topic": "Quần áo",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0609",
+   "word": "ホテル",
+   "reading": "ホテル",
+   "meaning_vi": "khách sạn",
+   "meaning_en": "hotel",
+   "type": "danh từ",
+   "topic": "Phố xá, giao thông",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0610",
+   "word": "本",
+   "reading": "ほん",
+   "meaning_vi": "quyển sách",
+   "meaning_en": "book",
+   "type": "danh từ",
+   "topic": "Trường học, công việc",
+   "kanji": [
+    "本"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0611",
+   "word": "～本",
+   "reading": "～ほん",
+   "meaning_vi": "... cái (vật dài: bút, chai)",
+   "meaning_en": "counter for long cylindrical things",
+   "type": "trợ số từ",
+   "topic": "Số, đếm",
+   "kanji": [
+    "本"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0612",
+   "word": "本棚",
+   "reading": "ほんだな",
+   "meaning_vi": "giá sách",
+   "meaning_en": "bookshelf",
+   "type": "danh từ",
+   "topic": "Nhà ở, đồ vật",
+   "kanji": [
+    "本",
+    "棚"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0613",
+   "word": "本当",
+   "reading": "ほんとう",
+   "meaning_vi": "thật, thực sự",
+   "meaning_en": "real, true",
+   "type": "danh từ",
+   "topic": "Từ chức năng, trạng từ",
+   "kanji": [
+    "本",
+    "当"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0614",
+   "word": "～枚",
+   "reading": "～まい",
+   "meaning_vi": "... tờ, chiếc (vật mỏng)",
+   "meaning_en": "counter for flat things",
+   "type": "trợ số từ",
+   "topic": "Số, đếm",
+   "kanji": [
+    "枚"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0615",
+   "word": "毎朝",
+   "reading": "まいあさ",
+   "meaning_vi": "mỗi sáng",
+   "meaning_en": "every morning",
+   "type": "danh từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "毎",
+    "朝"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0616",
+   "word": "毎月",
+   "reading": "まいげつ; まいつき",
+   "meaning_vi": "mỗi tháng",
+   "meaning_en": "every month, monthly",
+   "type": "danh từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "毎",
+    "月"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0617",
+   "word": "毎週",
+   "reading": "まいしゅう",
+   "meaning_vi": "mỗi tuần",
+   "meaning_en": "every week",
+   "type": "danh từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "毎",
+    "週"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0618",
+   "word": "毎日",
+   "reading": "まいにち",
+   "meaning_vi": "mỗi ngày",
+   "meaning_en": "every day",
+   "type": "danh từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "毎",
+    "日"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0619",
+   "word": "毎年",
+   "reading": "まいねん; まいとし",
+   "meaning_vi": "mỗi năm",
+   "meaning_en": "every year, yearly, annually",
+   "type": "danh từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "毎",
+    "年"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0620",
+   "word": "毎晩",
+   "reading": "まいばん",
+   "meaning_vi": "mỗi tối",
+   "meaning_en": "every night",
+   "type": "danh từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "毎",
+    "晩"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0621",
+   "word": "前",
+   "reading": "まえ",
+   "meaning_vi": "trước, phía trước",
+   "meaning_en": "before, in front",
+   "type": "danh từ",
+   "topic": "Vị trí, phương hướng",
+   "kanji": [
+    "前"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0622",
+   "word": "～前",
+   "reading": "～まえ",
+   "meaning_vi": "trước ... (ví dụ 3じまえ, えきのまえ)",
+   "meaning_en": "in front of ~",
+   "type": "hậu tố",
+   "topic": "Vị trí, phương hướng",
+   "kanji": [
+    "前"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0623",
+   "word": "曲る",
+   "reading": "まがる",
+   "meaning_vi": "rẽ; cong",
+   "meaning_en": "to turn, to bend",
+   "type": "động từ nhóm 1",
+   "topic": "Phố xá, giao thông",
+   "kanji": [
+    "曲"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0624",
+   "word": "まずい",
+   "reading": "まずい",
+   "meaning_vi": "dở (đồ ăn), không ngon; không hay",
+   "meaning_en": "terrible (in reference to food), unappetizing, unpleasant (taste)",
+   "type": "tính từ い",
+   "topic": "Ăn uống",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0625",
+   "word": "また",
+   "reading": "また",
+   "meaning_vi": "lại, nữa",
+   "meaning_en": "and; furthermore",
+   "type": "trạng từ",
+   "topic": "Từ chức năng, trạng từ",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0626",
+   "word": "まだ",
+   "reading": "まだ",
+   "meaning_vi": "vẫn, vẫn còn; chưa",
+   "meaning_en": "yet, still, besides",
+   "type": "trạng từ",
+   "topic": "Từ chức năng, trạng từ",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0627",
+   "word": "町",
+   "reading": "まち",
+   "meaning_vi": "thị trấn, phố",
+   "meaning_en": "town; city",
+   "type": "danh từ",
+   "topic": "Phố xá, giao thông",
+   "kanji": [
+    "町"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0628",
+   "word": "待つ",
+   "reading": "まつ",
+   "meaning_vi": "chờ, đợi",
+   "meaning_en": "to wait",
+   "type": "động từ nhóm 1",
+   "topic": "Động từ thường dùng",
+   "kanji": [
+    "待"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0629",
+   "word": "まっすぐ",
+   "reading": "まっすぐ",
+   "meaning_vi": "thẳng",
+   "meaning_en": "straight (ahead), direct",
+   "type": "trạng từ",
+   "topic": "Phố xá, giao thông",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0630",
+   "word": "マッチ",
+   "reading": "マッチ",
+   "meaning_vi": "que diêm",
+   "meaning_en": "match",
+   "type": "danh từ",
+   "topic": "Nhà ở, đồ vật",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0631",
+   "word": "窓",
+   "reading": "まど",
+   "meaning_vi": "cửa sổ",
+   "meaning_en": "window",
+   "type": "danh từ",
+   "topic": "Nhà ở, đồ vật",
+   "kanji": [
+    "窓"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0632",
+   "word": "丸い; 円い",
+   "reading": "まるい",
+   "meaning_vi": "tròn",
+   "meaning_en": "round, circular",
+   "type": "tính từ い",
+   "topic": "Tính chất, cảm xúc",
+   "kanji": [
+    "丸",
+    "円"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0633",
+   "word": "万",
+   "reading": "まん",
+   "meaning_vi": "mười nghìn (vạn)",
+   "meaning_en": "ten thousand",
+   "type": "số từ",
+   "topic": "Số, đếm",
+   "kanji": [
+    "万"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0634",
+   "word": "万年筆",
+   "reading": "まんねんひつ",
+   "meaning_vi": "bút máy",
+   "meaning_en": "fountain pen",
+   "type": "danh từ",
+   "topic": "Trường học, công việc",
+   "kanji": [
+    "万",
+    "年",
+    "筆"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0635",
+   "word": "磨く",
+   "reading": "みがく",
+   "meaning_vi": "đánh (răng); đánh bóng",
+   "meaning_en": "to brush (teeth); to polish",
+   "type": "động từ nhóm 1",
+   "topic": "Sinh hoạt hằng ngày",
+   "kanji": [
+    "磨"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0636",
+   "word": "右",
+   "reading": "みぎ",
+   "meaning_vi": "bên phải",
+   "meaning_en": "right hand side",
+   "type": "danh từ",
+   "topic": "Vị trí, phương hướng",
+   "kanji": [
+    "右"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0637",
+   "word": "短い",
+   "reading": "みじかい",
+   "meaning_vi": "ngắn",
+   "meaning_en": "short (length)",
+   "type": "tính từ い",
+   "topic": "Tính chất, cảm xúc",
+   "kanji": [
+    "短"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0638",
+   "word": "水",
+   "reading": "みず",
+   "meaning_vi": "nước",
+   "meaning_en": "water",
+   "type": "danh từ",
+   "topic": "Ăn uống",
+   "kanji": [
+    "水"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0639",
+   "word": "店",
+   "reading": "みせ",
+   "meaning_vi": "cửa hàng",
+   "meaning_en": "store, shop",
+   "type": "danh từ",
+   "topic": "Mua sắm, tiền",
+   "kanji": [
+    "店"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0640",
+   "word": "見せる",
+   "reading": "みせる",
+   "meaning_vi": "cho xem",
+   "meaning_en": "to show, to display",
+   "type": "động từ nhóm 2",
+   "topic": "Động từ thường dùng",
+   "kanji": [
+    "見"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0641",
+   "word": "道",
+   "reading": "みち",
+   "meaning_vi": "con đường; đường đi",
+   "meaning_en": "road, street; way, directions",
+   "type": "danh từ",
+   "topic": "Phố xá, giao thông",
+   "kanji": [
+    "道"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0642",
+   "word": "三日",
+   "reading": "みっか",
+   "meaning_vi": "ngày mùng 3; 3 ngày",
+   "meaning_en": "three days, third day of the month",
+   "type": "danh từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "三",
+    "日"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0643",
+   "word": "三つ",
+   "reading": "みっつ",
+   "meaning_vi": "3 cái",
+   "meaning_en": "three things",
+   "type": "số từ",
+   "topic": "Số, đếm",
+   "kanji": [
+    "三"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0644",
+   "word": "緑",
+   "reading": "みどり",
+   "meaning_vi": "màu xanh lá",
+   "meaning_en": "green",
+   "type": "danh từ",
+   "topic": "Màu sắc",
+   "kanji": [
+    "緑"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0645",
+   "word": "皆さん",
+   "reading": "みなさん",
+   "meaning_vi": "các bạn, mọi người (lịch sự)",
+   "meaning_en": "all of you, everyone",
+   "type": "đại từ",
+   "topic": "Gia đình, con người",
+   "kanji": [
+    "皆"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0646",
+   "word": "南",
+   "reading": "みなみ",
+   "meaning_vi": "phía nam",
+   "meaning_en": "South",
+   "type": "danh từ",
+   "topic": "Vị trí, phương hướng",
+   "kanji": [
+    "南"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0647",
+   "word": "耳",
+   "reading": "みみ",
+   "meaning_vi": "tai",
+   "meaning_en": "ear",
+   "type": "danh từ",
+   "topic": "Cơ thể, sức khỏe",
+   "kanji": [
+    "耳"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0648",
+   "word": "見る",
+   "reading": "みる",
+   "meaning_vi": "xem, nhìn",
+   "meaning_en": "to see, to look",
+   "type": "động từ nhóm 2",
+   "topic": "Động từ thường dùng",
+   "kanji": [
+    "見"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0649",
+   "word": "みんな",
+   "reading": "みんな",
+   "meaning_vi": "mọi người, tất cả",
+   "meaning_en": "all, everyone, everybody",
+   "type": "đại từ",
+   "topic": "Gia đình, con người",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0650",
+   "word": "六日",
+   "reading": "むいか",
+   "meaning_vi": "ngày mùng 6; 6 ngày",
+   "meaning_en": "six days; sixth day of month",
+   "type": "danh từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "六",
+    "日"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0651",
+   "word": "向こう",
+   "reading": "むこう",
+   "meaning_vi": "phía bên kia",
+   "meaning_en": "beyond, over there",
+   "type": "danh từ",
+   "topic": "Vị trí, phương hướng",
+   "kanji": [
+    "向"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0652",
+   "word": "難しい",
+   "reading": "むずかしい",
+   "meaning_vi": "khó",
+   "meaning_en": "difficult",
+   "type": "tính từ い",
+   "topic": "Tính chất, cảm xúc",
+   "kanji": [
+    "難"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0653",
+   "word": "六つ",
+   "reading": "むっつ",
+   "meaning_vi": "6 cái",
+   "meaning_en": "six things",
+   "type": "số từ",
+   "topic": "Số, đếm",
+   "kanji": [
+    "六"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0654",
+   "word": "村",
+   "reading": "むら",
+   "meaning_vi": "làng",
+   "meaning_en": "village",
+   "type": "danh từ",
+   "topic": "Phố xá, giao thông",
+   "kanji": [
+    "村"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0655",
+   "word": "目",
+   "reading": "め",
+   "meaning_vi": "mắt",
+   "meaning_en": "eye(s)",
+   "type": "danh từ",
+   "topic": "Cơ thể, sức khỏe",
+   "kanji": [
+    "目"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0656",
+   "word": "メートル",
+   "reading": "メートル",
+   "meaning_vi": "mét",
+   "meaning_en": "meter",
+   "type": "danh từ",
+   "topic": "Số, đếm",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0657",
+   "word": "眼鏡",
+   "reading": "めがね",
+   "meaning_vi": "kính đeo mắt",
+   "meaning_en": "eye glasses",
+   "type": "danh từ",
+   "topic": "Quần áo",
+   "kanji": [
+    "眼",
+    "鏡"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0658",
+   "word": "もう",
+   "reading": "もう",
+   "meaning_vi": "đã ... rồi; thêm nữa",
+   "meaning_en": "already; again; more",
+   "type": "trạng từ",
+   "topic": "Từ chức năng, trạng từ",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0659",
+   "word": "木曜日",
+   "reading": "もくようび",
+   "meaning_vi": "thứ Năm",
+   "meaning_en": "Thursday",
+   "type": "danh từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "木",
+    "曜",
+    "日"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0660",
+   "word": "もしもし",
+   "reading": "もしもし",
+   "meaning_vi": "a lô (khi gọi điện)",
+   "meaning_en": "Hello? (used on the phone)",
+   "type": "thán từ, câu giao tiếp",
+   "topic": "Chào hỏi, giao tiếp",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0661",
+   "word": "持つ",
+   "reading": "もつ",
+   "meaning_vi": "cầm, mang; có, sở hữu",
+   "meaning_en": "to hold, to carry; to possess",
+   "type": "động từ nhóm 1",
+   "topic": "Động từ thường dùng",
+   "kanji": [
+    "持"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0662",
+   "word": "もっと",
+   "reading": "もっと",
+   "meaning_vi": "hơn nữa, thêm",
+   "meaning_en": "more",
+   "type": "trạng từ",
+   "topic": "Từ chức năng, trạng từ",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0663",
+   "word": "物",
+   "reading": "もの",
+   "meaning_vi": "đồ vật, thứ",
+   "meaning_en": "thing (concrete object)",
+   "type": "danh từ",
+   "topic": "Nhà ở, đồ vật",
+   "kanji": [
+    "物"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0664",
+   "word": "門",
+   "reading": "もん",
+   "meaning_vi": "cổng",
+   "meaning_en": "gate",
+   "type": "danh từ",
+   "topic": "Nhà ở, đồ vật",
+   "kanji": [
+    "門"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0665",
+   "word": "問題",
+   "reading": "もんだい",
+   "meaning_vi": "vấn đề; câu hỏi (bài tập)",
+   "meaning_en": "a problem",
+   "type": "danh từ",
+   "topic": "Trường học, công việc",
+   "kanji": [
+    "問",
+    "題"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0666",
+   "word": "～屋",
+   "reading": "～や",
+   "meaning_vi": "cửa hàng ... (ví dụ ほんや: hiệu sách)",
+   "meaning_en": "~ shop",
+   "type": "hậu tố",
+   "topic": "Mua sắm, tiền",
+   "kanji": [
+    "屋"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0667",
+   "word": "八百屋",
+   "reading": "やおや",
+   "meaning_vi": "cửa hàng rau quả",
+   "meaning_en": "greengrocer",
+   "type": "danh từ",
+   "topic": "Mua sắm, tiền",
+   "kanji": [
+    "八",
+    "百",
+    "屋"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0668",
+   "word": "野菜",
+   "reading": "やさい",
+   "meaning_vi": "rau",
+   "meaning_en": "vegetable",
+   "type": "danh từ",
+   "topic": "Ăn uống",
+   "kanji": [
+    "野",
+    "菜"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0669",
+   "word": "易しい",
+   "reading": "やさしい",
+   "meaning_vi": "dễ",
+   "meaning_en": "easy, plain, simple",
+   "type": "tính từ い",
+   "topic": "Tính chất, cảm xúc",
+   "kanji": [
+    "易"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0670",
+   "word": "安い",
+   "reading": "やすい",
+   "meaning_vi": "rẻ",
+   "meaning_en": "inexpensive; cheap (things)",
+   "type": "tính từ い",
+   "topic": "Mua sắm, tiền",
+   "kanji": [
+    "安"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0671",
+   "word": "休み",
+   "reading": "やすみ",
+   "meaning_vi": "ngày nghỉ, kỳ nghỉ",
+   "meaning_en": "holiday; day off; absence",
+   "type": "danh từ",
+   "topic": "Trường học, công việc",
+   "kanji": [
+    "休"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0672",
+   "word": "休む",
+   "reading": "やすむ",
+   "meaning_vi": "nghỉ, nghỉ ngơi",
+   "meaning_en": "to rest, to have a break, to get time off",
+   "type": "động từ nhóm 1",
+   "topic": "Sinh hoạt hằng ngày",
+   "kanji": [
+    "休"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0673",
+   "word": "八つ",
+   "reading": "やっつ",
+   "meaning_vi": "8 cái",
+   "meaning_en": "eight things",
+   "type": "số từ",
+   "topic": "Số, đếm",
+   "kanji": [
+    "八"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0674",
+   "word": "山",
+   "reading": "やま",
+   "meaning_vi": "núi",
+   "meaning_en": "mountain",
+   "type": "danh từ",
+   "topic": "Thời tiết, thiên nhiên",
+   "kanji": [
+    "山"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0675",
+   "word": "やる",
+   "reading": "やる",
+   "meaning_vi": "làm; cho (con vật, người dưới)",
+   "meaning_en": "to do; to give (to pets, parents, siblings, etc.)",
+   "type": "động từ nhóm 1",
+   "topic": "Động từ thường dùng",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0676",
+   "word": "夕方",
+   "reading": "ゆうがた",
+   "meaning_vi": "chiều tối",
+   "meaning_en": "late afternoon (typically just before dinner time), evening",
+   "type": "danh từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "夕",
+    "方"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0677",
+   "word": "夕飯",
+   "reading": "ゆうはん",
+   "meaning_vi": "bữa tối",
+   "meaning_en": "dinner, supper, evening meal",
+   "type": "danh từ",
+   "topic": "Ăn uống",
+   "kanji": [
+    "夕",
+    "飯"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0678",
+   "word": "郵便局",
+   "reading": "ゆうびんきょく",
+   "meaning_vi": "bưu điện",
+   "meaning_en": "post office",
+   "type": "danh từ",
+   "topic": "Phố xá, giao thông",
+   "kanji": [
+    "郵",
+    "便",
+    "局"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0679",
+   "word": "昨夜",
+   "reading": "ゆうべ",
+   "meaning_vi": "tối qua",
+   "meaning_en": "last night",
+   "type": "danh từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "昨",
+    "夜"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0680",
+   "word": "有名",
+   "reading": "ゆうめい",
+   "meaning_vi": "nổi tiếng",
+   "meaning_en": "famous",
+   "type": "tính từ な",
+   "topic": "Tính chất, cảm xúc",
+   "kanji": [
+    "有",
+    "名"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0681",
+   "word": "雪",
+   "reading": "ゆき",
+   "meaning_vi": "tuyết",
+   "meaning_en": "snow",
+   "type": "danh từ",
+   "topic": "Thời tiết, thiên nhiên",
+   "kanji": [
+    "雪"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0682",
+   "word": "ゆっくりと",
+   "reading": "ゆっくりと",
+   "meaning_vi": "chậm rãi, thong thả",
+   "meaning_en": "slowly, at ease",
+   "type": "trạng từ",
+   "topic": "Từ chức năng, trạng từ",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0683",
+   "word": "八日",
+   "reading": "ようか",
+   "meaning_vi": "ngày mùng 8; 8 ngày",
+   "meaning_en": "eight days; eighth day of the month",
+   "type": "danh từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "八",
+    "日"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0684",
+   "word": "洋服",
+   "reading": "ようふく",
+   "meaning_vi": "quần áo kiểu Tây",
+   "meaning_en": "Western-style clothes",
+   "type": "danh từ",
+   "topic": "Quần áo",
+   "kanji": [
+    "洋",
+    "服"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0685",
+   "word": "よく",
+   "reading": "よく",
+   "meaning_vi": "thường, hay; tốt, giỏi",
+   "meaning_en": "frequently, often (much); well, skillfully",
+   "type": "trạng từ",
+   "topic": "Từ chức năng, trạng từ",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0686",
+   "word": "横",
+   "reading": "よこ",
+   "meaning_vi": "bên cạnh; chiều ngang",
+   "meaning_en": "beside; side; width",
+   "type": "danh từ",
+   "topic": "Vị trí, phương hướng",
+   "kanji": [
+    "横"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0687",
+   "word": "四日",
+   "reading": "よっか",
+   "meaning_vi": "ngày mùng 4; 4 ngày",
+   "meaning_en": "four days; fourth day of the month",
+   "type": "danh từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "四",
+    "日"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0688",
+   "word": "四つ",
+   "reading": "よっつ",
+   "meaning_vi": "4 cái",
+   "meaning_en": "four things",
+   "type": "số từ",
+   "topic": "Số, đếm",
+   "kanji": [
+    "四"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0689",
+   "word": "呼ぶ",
+   "reading": "よぶ",
+   "meaning_vi": "gọi; mời",
+   "meaning_en": "to call (one's name); to invite",
+   "type": "động từ nhóm 1",
+   "topic": "Động từ thường dùng",
+   "kanji": [
+    "呼"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0690",
+   "word": "読む",
+   "reading": "よむ",
+   "meaning_vi": "đọc",
+   "meaning_en": "to read",
+   "type": "động từ nhóm 1",
+   "topic": "Trường học, công việc",
+   "kanji": [
+    "読"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0691",
+   "word": "夜",
+   "reading": "よる",
+   "meaning_vi": "buổi tối, ban đêm",
+   "meaning_en": "evening, night",
+   "type": "danh từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "夜"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0692",
+   "word": "弱い",
+   "reading": "よわい",
+   "meaning_vi": "yếu",
+   "meaning_en": "weak",
+   "type": "tính từ い",
+   "topic": "Tính chất, cảm xúc",
+   "kanji": [
+    "弱"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0693",
+   "word": "来月",
+   "reading": "らいげつ",
+   "meaning_vi": "tháng sau",
+   "meaning_en": "next month",
+   "type": "danh từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "来",
+    "月"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0694",
+   "word": "来週",
+   "reading": "らいしゅう",
+   "meaning_vi": "tuần sau",
+   "meaning_en": "next week",
+   "type": "danh từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "来",
+    "週"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0695",
+   "word": "来年",
+   "reading": "らいねん",
+   "meaning_vi": "năm sau",
+   "meaning_en": "next year",
+   "type": "danh từ",
+   "topic": "Thời gian",
+   "kanji": [
+    "来",
+    "年"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0696",
+   "word": "ラジオ",
+   "reading": "ラジオ",
+   "meaning_vi": "đài, radio",
+   "meaning_en": "radio",
+   "type": "danh từ",
+   "topic": "Sở thích, giải trí",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0697",
+   "word": "ラジオカセ",
+   "reading": "ラジオカセ",
+   "meaning_vi": "máy radio cát-xét",
+   "meaning_en": "radio cassette player",
+   "type": "danh từ",
+   "topic": "Sở thích, giải trí",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0698",
+   "word": "りっぱ",
+   "reading": "りっぱ",
+   "meaning_vi": "tuyệt vời, lộng lẫy",
+   "meaning_en": "splendid, fine",
+   "type": "tính từ な",
+   "topic": "Tính chất, cảm xúc",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0699",
+   "word": "留学生",
+   "reading": "りゅうがくせい",
+   "meaning_vi": "du học sinh",
+   "meaning_en": "international student",
+   "type": "danh từ",
+   "topic": "Trường học, công việc",
+   "kanji": [
+    "留",
+    "学",
+    "生"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0700",
+   "word": "両親",
+   "reading": "りょうしん",
+   "meaning_vi": "bố mẹ",
+   "meaning_en": "parents (lit., both parents)",
+   "type": "danh từ",
+   "topic": "Gia đình, con người",
+   "kanji": [
+    "両",
+    "親"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0701",
+   "word": "料理",
+   "reading": "りょうり",
+   "meaning_vi": "món ăn; việc nấu ăn",
+   "meaning_en": "cooking; cuisine",
+   "type": "danh từ + する",
+   "topic": "Ăn uống",
+   "kanji": [
+    "料",
+    "理"
+   ],
+   "suru_verb": true,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0702",
+   "word": "旅行",
+   "reading": "りょこう",
+   "meaning_vi": "du lịch",
+   "meaning_en": "travel, trip",
+   "type": "danh từ + する",
+   "topic": "Sở thích, giải trí",
+   "kanji": [
+    "旅",
+    "行"
+   ],
+   "suru_verb": true,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0703",
+   "word": "零",
+   "reading": "れい",
+   "meaning_vi": "số không",
+   "meaning_en": "zero, nought",
+   "type": "số từ",
+   "topic": "Số, đếm",
+   "kanji": [
+    "零"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0704",
+   "word": "冷蔵庫",
+   "reading": "れいぞうこ",
+   "meaning_vi": "tủ lạnh",
+   "meaning_en": "refrigerator",
+   "type": "danh từ",
+   "topic": "Nhà ở, đồ vật",
+   "kanji": [
+    "冷",
+    "蔵",
+    "庫"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0705",
+   "word": "レコード",
+   "reading": "レコード",
+   "meaning_vi": "đĩa hát; kỷ lục",
+   "meaning_en": "record",
+   "type": "danh từ",
+   "topic": "Sở thích, giải trí",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0706",
+   "word": "レストラン",
+   "reading": "レストラン",
+   "meaning_vi": "nhà hàng",
+   "meaning_en": "restaurant",
+   "type": "danh từ",
+   "topic": "Ăn uống",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0707",
+   "word": "練習",
+   "reading": "れんしゅう",
+   "meaning_vi": "luyện tập",
+   "meaning_en": "(to) practice",
+   "type": "danh từ + する",
+   "topic": "Trường học, công việc",
+   "kanji": [
+    "練",
+    "習"
+   ],
+   "suru_verb": true,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0708",
+   "word": "廊下",
+   "reading": "ろうか",
+   "meaning_vi": "hành lang",
+   "meaning_en": "corridor",
+   "type": "danh từ",
+   "topic": "Nhà ở, đồ vật",
+   "kanji": [
+    "廊",
+    "下"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0709",
+   "word": "六",
+   "reading": "ろく",
+   "meaning_vi": "sáu (số 6)",
+   "meaning_en": "six",
+   "type": "số từ",
+   "topic": "Số, đếm",
+   "kanji": [
+    "六"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0710",
+   "word": "ワイシャツ",
+   "reading": "ワイシャツ",
+   "meaning_vi": "áo sơ mi (công sở)",
+   "meaning_en": "shirt (lit: white shirt), business shirt",
+   "type": "danh từ",
+   "topic": "Quần áo",
+   "kanji": [],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0711",
+   "word": "若い",
+   "reading": "わかい",
+   "meaning_vi": "trẻ",
+   "meaning_en": "young",
+   "type": "tính từ い",
+   "topic": "Tính chất, cảm xúc",
+   "kanji": [
+    "若"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0712",
+   "word": "分かる",
+   "reading": "わかる",
+   "meaning_vi": "hiểu",
+   "meaning_en": "to understand",
+   "type": "động từ nhóm 1",
+   "topic": "Trường học, công việc",
+   "kanji": [
+    "分"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0713",
+   "word": "忘れる",
+   "reading": "わすれる",
+   "meaning_vi": "quên",
+   "meaning_en": "to forget",
+   "type": "động từ nhóm 2",
+   "topic": "Động từ thường dùng",
+   "kanji": [
+    "忘"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0714",
+   "word": "私",
+   "reading": "わたし",
+   "meaning_vi": "tôi",
+   "meaning_en": "I, myself",
+   "type": "đại từ",
+   "topic": "Gia đình, con người",
+   "kanji": [
+    "私"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0715",
+   "word": "私",
+   "reading": "わたくし",
+   "meaning_vi": "tôi (trang trọng)",
+   "meaning_en": "I (formal), myself, private affairs",
+   "type": "đại từ",
+   "topic": "Gia đình, con người",
+   "kanji": [
+    "私"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0716",
+   "word": "渡す",
+   "reading": "わたす",
+   "meaning_vi": "đưa, trao",
+   "meaning_en": "to hand (something) over (v.t.); to get across",
+   "type": "động từ nhóm 1",
+   "topic": "Động từ thường dùng",
+   "kanji": [
+    "渡"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0717",
+   "word": "渡る",
+   "reading": "わたる",
+   "meaning_vi": "băng qua, đi qua",
+   "meaning_en": "to cross over, to go across",
+   "type": "động từ nhóm 1",
+   "topic": "Phố xá, giao thông",
+   "kanji": [
+    "渡"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  },
+  {
+   "id": "n5-0718",
+   "word": "悪い",
+   "reading": "わるい",
+   "meaning_vi": "xấu, tồi; có lỗi",
+   "meaning_en": "bad, sinful; inferior",
+   "type": "tính từ い",
+   "topic": "Tính chất, cảm xúc",
+   "kanji": [
+    "悪"
+   ],
+   "suru_verb": false,
+   "level": "N5"
+  }
+ ]
+}
