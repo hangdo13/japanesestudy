@@ -1,0 +1,71 @@
+{
+  "reviewStatus": "draft",
+  "muc": [
+    {
+      "id": "am-ngat",
+      "tieuDe": "Âm ngắt: っ / ッ nhỏ",
+      "giaiThich": "っ (hoặc ッ) viết nhỏ không đọc thành \"tsu\". Nó là một nhịp ngắt ngắn: dừng hơi một chút rồi bật phụ âm phía sau. Khi viết romaji, ta nhân đôi phụ âm đứng sau (tt, kk, ss, pp). Riêng trước \"ch\" thì viết \"tch\". Bỏ っ là đổi nghĩa: きて (kite, hãy đến) khác きって (kitte, con tem).",
+      "viDu": [
+        { "tu": "切手", "doc": "きって", "romaji": "kitte", "nghia": "con tem" },
+        { "tu": "雑誌", "doc": "ざっし", "romaji": "zasshi", "nghia": "tạp chí" },
+        { "tu": "学校", "doc": "がっこう", "romaji": "gakkou", "nghia": "trường học" },
+        { "tu": "カップ", "doc": "カップ", "romaji": "kappu", "nghia": "cái cốc" }
+      ]
+    },
+    {
+      "id": "truong-am",
+      "tieuDe": "Trường âm hiragana",
+      "giaiThich": "Trường âm là kéo dài nguyên âm thêm một nhịp. Hiragana viết thêm một nguyên âm: あ sau hàng a (おかあさん), い sau hàng i (おにいさん), う sau hàng u (くうき). Hàng e thường thêm い: えい đọc là ê dài (とけい). Hàng o thường thêm う: おう đọc là ô dài (がっこう, おとうさん). Một số từ hàng o thêm お (おおきい). Đọc ngắn là đổi nghĩa: おばさん (cô, dì) khác おばあさん (bà).",
+      "viDu": [
+        { "tu": "お母さん", "doc": "おかあさん", "romaji": "okaasan", "nghia": "mẹ" },
+        { "tu": "お兄さん", "doc": "おにいさん", "romaji": "oniisan", "nghia": "anh trai" },
+        { "tu": "時計", "doc": "とけい", "romaji": "tokei", "nghia": "đồng hồ" },
+        { "tu": "お父さん", "doc": "おとうさん", "romaji": "otousan", "nghia": "bố" },
+        { "tu": "大きい", "doc": "おおきい", "romaji": "ookii", "nghia": "to, lớn" }
+      ]
+    },
+    {
+      "id": "ke-dai",
+      "tieuDe": "Dấu kéo dài ー của katakana",
+      "giaiThich": "Katakana không thêm nguyên âm để kéo dài mà dùng dấu gạch ー. Dấu này kéo dài nguyên âm ngay trước nó thêm một nhịp. Khi viết dọc, ー thành gạch dọc. Romaji viết đôi nguyên âm: コーヒー là koohii.",
+      "viDu": [
+        { "tu": "コーヒー", "doc": "コーヒー", "romaji": "koohii", "nghia": "cà phê" },
+        { "tu": "スーパー", "doc": "スーパー", "romaji": "suupaa", "nghia": "siêu thị" },
+        { "tu": "ノート", "doc": "ノート", "romaji": "nooto", "nghia": "quyển vở" },
+        { "tu": "エレベーター", "doc": "エレベーター", "romaji": "erebeetaa", "nghia": "thang máy" }
+      ]
+    },
+    {
+      "id": "tro-tu",
+      "tieuDe": "Trợ từ は, へ, を",
+      "giaiThich": "Ba chữ này khi làm trợ từ thì đọc khác mặt chữ: は đọc là \"wa\", へ đọc là \"e\", を đọc là \"o\". Khi nằm trong từ bình thường thì vẫn đọc như cũ: はな (hana, hoa), へや (heya, phòng). Chữ を gần như chỉ dùng làm trợ từ. Bảng chữ ghi を là \"wo\" để phân biệt khi gõ máy, nhưng khi nói thì đọc giống お (o).",
+      "viDu": [
+        { "tu": "私は学生です", "doc": "わたしは がくせいです", "romaji": "watashi wa gakusei desu", "nghia": "Tôi là sinh viên." },
+        { "tu": "学校へ行きます", "doc": "がっこうへ いきます", "romaji": "gakkou e ikimasu", "nghia": "Tôi đi đến trường." },
+        { "tu": "水を飲みます", "doc": "みずを のみます", "romaji": "mizu o nomimasu", "nghia": "Tôi uống nước." }
+      ]
+    },
+    {
+      "id": "kata-mo-rong",
+      "tieuDe": "Katakana mở rộng",
+      "giaiThich": "Để ghi âm của từ nước ngoài, katakana ghép thêm nguyên âm nhỏ ァ ィ ゥ ェ ォ: ティ (ti), ディ (di), ファ (fa), フィ (fi), フェ (fe), フォ (fo), ウィ (wi), ウェ (we), シェ (she), チェ (che), ジェ (je). Chữ nhỏ ghép với chữ đứng trước thành một nhịp.",
+      "viDu": [
+        { "tu": "パーティー", "doc": "パーティー", "romaji": "paatii", "nghia": "bữa tiệc" },
+        { "tu": "フォーク", "doc": "フォーク", "romaji": "fooku", "nghia": "cái nĩa" },
+        { "tu": "カフェ", "doc": "カフェ", "romaji": "kafe", "nghia": "quán cà phê" }
+      ]
+    }
+  ],
+  "cauTroTu": [
+    { "doc": "わたしは がくせいです", "romaji": "watashi wa gakusei desu", "sai": ["watashi ha gakusei desu", "watashi wa gakuse desu", "watashi ga gakusei desu"], "nghia": "Tôi là sinh viên." },
+    { "doc": "これは ほんです", "romaji": "kore wa hon desu", "sai": ["kore ha hon desu", "kore wa hoon desu", "kore o hon desu"], "nghia": "Đây là quyển sách." },
+    { "doc": "がっこうへ いきます", "romaji": "gakkou e ikimasu", "sai": ["gakkou he ikimasu", "gakou e ikimasu", "gakkou o ikimasu"], "nghia": "Tôi đi đến trường." },
+    { "doc": "うちへ かえります", "romaji": "uchi e kaerimasu", "sai": ["uchi he kaerimasu", "uchi e kaarimasu", "uchi o kaerimasu"], "nghia": "Tôi về nhà." },
+    { "doc": "みずを のみます", "romaji": "mizu o nomimasu", "sai": ["mizu e nomimasu", "mizu wa nomimasu", "mizu o noomimasu"], "nghia": "Tôi uống nước." },
+    { "doc": "パンを たべます", "romaji": "pan o tabemasu", "sai": ["pan wa tabemasu", "paan o tabemasu", "pan he tabemasu"], "nghia": "Tôi ăn bánh mì." },
+    { "doc": "きょうは あついです", "romaji": "kyou wa atsui desu", "sai": ["kyou ha atsui desu", "kyo wa atsui desu", "kyou wa attsui desu"], "nghia": "Hôm nay trời nóng." },
+    { "doc": "えきへ いきます", "romaji": "eki e ikimasu", "sai": ["eki he ikimasu", "eeki e ikimasu", "eki wa ikimasu"], "nghia": "Tôi đi đến nhà ga." },
+    { "doc": "はなは きれいです", "romaji": "hana wa kirei desu", "sai": ["wana wa kirei desu", "hana ha kirei desu", "hana wa kire desu"], "nghia": "Hoa đẹp." },
+    { "doc": "てがみを かきます", "romaji": "tegami o kakimasu", "sai": ["tegami wa kakimasu", "tegami o kakkimasu", "tegami e kakimasu"], "nghia": "Tôi viết thư." }
+  ]
+}

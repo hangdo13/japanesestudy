@@ -46,11 +46,23 @@ Mọi file `content/*.json` đều do `scripts/build-content.mjs` sinh ra. **Kh�
 
 Ở cấp gốc: `reviewStatus` (`draft` \| `approved`) áp dụng cho cả file; `capDeNham` là danh sách nhóm (mỗi nhóm có ít nhất 2 chữ khác nhau) các kana dễ nhầm, kể cả nhầm giữa hiragana và katakana. Một số romaji trùng nhau có chủ ý (ぢ/じ = ji, づ/ず = zu, ウォ/ヲ = wo); có ghi chú trong `ghiChu`.
 
+## `content/kana-quy-tac.json`
+
+```json
+{ "version": 1, "reviewStatus": "draft", "muc": [Muc, ...], "cauTroTu": [CauTroTu, ...], "tuLuyen": [TuLuyen, ...] }
+```
+
+- `Muc`: `{ id, tieuDe, giaiThich, viDu: { tu?, doc, romaji, nghia }[] }`. Có đúng 5 mục: `am-ngat`, `truong-am`, `ke-dai`, `tro-tu`, `kata-mo-rong`. Romaji ví dụ được kiểm tra khi build (mục `tro-tu` đọc は/へ/を cuối cụm là wa/e/o).
+- `CauTroTu`: `{ doc, romaji, sai: [3 chuỗi], nghia }`. Ít nhất 8 câu. `sai` là đáp án sai soạn sẵn, khác nhau và khác `romaji`.
+- `TuLuyen`: `{ id, tu, doc, romaji, nghia, loai }`, sinh từ `n5_vocab.json`: từ có cách đọc duy nhất (không ～ / ;), đọc được hết bằng bảng kana, và có âm ngắt (`am-ngat`), dấu ー (`ke-dai`) hoặc trường âm hiragana aa/ii/uu/ee/oo/ou/ei (`truong-am`; bỏ đuôi う của động từ). Mỗi loại ít nhất 5 từ.
+- Romaji: Hepburn, trường âm viết đôi chữ (okaasan, koohii), っ nhân đôi phụ âm (kitte, matcha), ん trước nguyên âm/y viết n'.
+
 ## Nguồn
 
 - `vendor/jlptsuccess/kanji.json`: dữ liệu gốc (MIT)
 - `content-vi/kanji.json`: `{ "<chữ>": { hanViet, nghia, cauGoiNho, reviewStatus } }`
 - `n5_vocab.json`: từ vựng N5 kèm nghĩa tiếng Việt
 - `public/kanji/svg/`, `public/kana/svg/`: SVG thứ tự nét của KanjiVG (CC BY-SA 3.0)
+- `content-vi/kana-quy-tac.json`: quy tắc đọc và câu trợ từ (AI soạn)
 - `content-vi/kana.json`: bảng kana, romaji, ghi chú, cặp dễ nhầm (AI soạn)
 - `public/audio/kanji/`: audio cách đọc (VOICEVOX:春日部つむぎ, do JLPTSuccess tạo)

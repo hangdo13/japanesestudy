@@ -28,3 +28,9 @@
 - source_spec: `_bmad-output/implementation-artifacts/spec-7-2-luyen-nhan-dien-kana.md`
   summary: Dạng câu "chữ này là hiragana hay katakana?" cho cặp cùng âm khác bảng (へ/ヘ, り/リ).
   evidence: Luật đáp án khác âm loại các cặp này khỏi câu trắc nghiệm.
+- source_spec: `_bmad-output/implementation-artifacts/spec-7-3-quy-tac-doc-kana.md`
+  summary: Chuyển màn luyện kana (7.2) và học kanji (1.5) sang khung chung `ui/quiz-session.js`.
+  evidence: Hiện có hai bản dựng `kt-session__head` riêng.
+- source_spec: `_bmad-output/implementation-artifacts/spec-7-3-quy-tac-doc-kana.md`
+  summary: Một hàm chung `isUnreviewed(status)` cho nhãn "chưa duyệt" (rules.js dùng !== 'approved', index.js dùng === 'draft').
+  evidence: Trạng thái lạ sẽ hiện nhãn ở màn này mà không ở màn kia.

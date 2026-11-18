@@ -5,6 +5,7 @@ import { renderEmptyState } from '../../ui/empty-state.js';
 import { renderStrokes } from '../../ui/strokes.js';
 import { speakJa, canSpeakJapanese, onVoicesChanged } from '../../ui/speech.js';
 import { renderPractice, LUYEN } from './practice.js';
+import { renderRules, QUY_TAC } from './rules.js';
 
 export const KATAKANA = 'katakana';
 
@@ -67,6 +68,8 @@ function renderTable(script) {
   head.append(el('h2', null, 'Bảng chữ cái'));
   const practice = el('a', 'kt-btn kt-btn--primary kt-btn--block kana-practice-link', 'Luyện nhận diện');
   practice.href = toHash('kana', LUYEN);
+  const rulesLink = el('a', 'kt-btn kt-btn--soft kt-btn--block kana-practice-link', 'Quy tắc đọc: っ, trường âm, は/へ/を');
+  rulesLink.href = toHash('kana', QUY_TAC);
 
   const tabs = el('nav', 'kt-row kana-tabs');
   tabs.setAttribute('aria-label', 'Chọn bảng chữ');
@@ -79,7 +82,7 @@ function renderTable(script) {
     if (s === script) t.setAttribute('aria-current', 'page');
     tabs.append(t);
   }
-  wrap.append(head, practice, tabs);
+  wrap.append(head, practice, rulesLink, tabs);
   if (kanaReviewStatus() === 'draft') {
     wrap.append(el('p', 'kt-muted kana-text', 'Ghi chú và cặp chữ dễ nhầm do AI soạn, chưa duyệt.'));
   }
@@ -184,6 +187,11 @@ function renderDetail(k, deps) {
 }
 
 export function mount(root, { param } = {}, deps = {}) {
+  if (param === QUY_TAC) {
+    const view = renderRules(deps);
+    root.append(view.node);
+    return view.cleanup;
+  }
   if (param === LUYEN) {
     const view = renderPractice(deps);
     root.append(view.node);

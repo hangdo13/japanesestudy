@@ -166,6 +166,142 @@ export function buildKana(vi, fileExists) {
   return { items: out, capDeNham: Array.isArray(pairs) ? pairs : [], reviewStatus, errors };
 }
 
+const VOWELS = 'aiueo';
+
+/**
+ * Chuyển kana sang romaji Hepburn: trường âm viết đôi (okaasan, koohii), っ nhân đôi phụ âm (kitte, matcha),
+ * ん trước nguyên âm/y viết n'. Khoảng trắng giữ nguyên. Trả null nếu có chữ không đọc được.
+ * @param {string} text
+ * @param {Map<string,string>} map  kana → romaji (từ content-vi/kana.json)
+ */
+export function romanize(text, map) {
+  const out = [];
+  let geminate = false;
+  for (let i = 0; i < text.length; ) {
+    const ch = text[i];
+    if (ch === ' ') {
+      if (geminate) return null;
+      out.push(' ');
+      i += 1;
+      continue;
+    }
+    if (ch === 'っ' || ch === 'ッ') {
+      if (geminate) return null;
+      geminate = true;
+      i += 1;
+      continue;
+    }
+    if (ch === 'ー') {
+      const prev = out.length ? out[out.length - 1] : '';
+      const v = prev[prev.length - 1];
+      if (!v || !VOWELS.includes(v) || geminate) return null;
+      out.push(v);
+      i += 1;
+      continue;
+    }
+    const two = text.slice(i, i + 2);
+    const key = map.has(two) ? two : map.has(ch) ? ch : null;
+    if (!key) return null;
+    let r = map.get(key);
+    if (geminate) {
+      if (VOWELS.includes(r[0]) || key === 'ん' || key === 'ン') return null;
+      r = (r.startsWith('ch') ? 't' : r[0]) + r;
+      geminate = false;
+    }
+    const prev = out[out.length - 1];
+    if ((prev === 'n') && (VOWELS.includes(r[0]) || r[0] === 'y')) out[out.length - 1] = "n'";
+    out.push(r);
+    i += key.length;
+  }
+  if (geminate) return null;
+  return out.join('');
+}
+
+/** Phân loại từ luyện đọc theo quy tắc nó chứa. */
+export function readingKinds(reading, romaji) {
+  const kinds = [];
+  if (/[っッ]/.test(reading)) kinds.push('am-ngat');
+  if (/ー/.test(reading)) kinds.push('ke-dai');
+  else if (/(aa|ii|uu|ee|oo|ou|ei)/.test(romaji) && /[ぁ-ゖ]/.test(reading)) kinds.push('truong-am');
+  return kinds;
+}
+
+const RULE_IDS = ['am-ngat', 'truong-am', 'ke-dai', 'tro-tu', 'kata-mo-rong'];
+const PARTICLES = { は: 'wa', へ: 'e', を: 'o' };
+
+/** Romaji cho câu có trợ từ: tách theo khoảng trắng, chữ は/へ/を cuối mỗi cụm đọc wa/e/o. */
+export function romanizeSentence(text, map) {
+  const parts = [];
+  for (const chunk of String(text).split(' ')) {
+    const last = chunk[chunk.length - 1];
+    const body = PARTICLES[last] && chunk.length > 1 ? chunk.slice(0, -1) : chunk;
+    const r = romanize(body, map);
+    if (r == null) return null;
+    parts.push(body === chunk ? r : `${r} ${PARTICLES[last]}`);
+  }
+  return parts.join(' ');
+}
+/** So câu romaji, bỏ qua khoảng trắng (kana không tách です khỏi từ trước). */
+const sameSentence = (a, b) => a != null && a.replace(/ /g, '') === String(b).replace(/ /g, '');
+const MIN_TRO_TU = 8;
+const MIN_TU_MOI_LOAI = 5;
+const isObj = (x) => x && typeof x === 'object' && !Array.isArray(x);
+
+/** Dựng content/kana-quy-tac.json: các mục quy tắc, câu trợ từ, và từ luyện đọc lấy từ n5_vocab. */
+export function buildKanaRules(rulesVi, vocab, kanaItems) {
+  const errors = [];
+  const map = new Map(kanaItems.map((k) => [k.id, k.romaji]));
+  const rawMuc = Array.isArray(rulesVi && rulesVi.muc) ? rulesVi.muc : [];
+  const muc = rawMuc.filter(isObj);
+  if (muc.length !== rawMuc.length) errors.push('kana-quy-tac: có mục không phải object');
+  const ids = muc.map((m) => m.id);
+  for (const id of RULE_IDS) if (!ids.includes(id)) errors.push(`kana-quy-tac thiếu mục ${id}`);
+  for (const id of ids) if (!RULE_IDS.includes(id)) errors.push(`kana-quy-tac có mục lạ: ${id}`);
+  if (new Set(ids).size !== ids.length) errors.push('kana-quy-tac có mục trùng id');
+  for (const m of muc) {
+    if (!m.tieuDe || !m.giaiThich) errors.push(`kana-quy-tac mục ${m.id}: thiếu tiêu đề/giải thích`);
+    if (!Array.isArray(m.viDu) || !m.viDu.length) errors.push(`kana-quy-tac mục ${m.id}: thiếu ví dụ`);
+    for (const v of Array.isArray(m.viDu) ? m.viDu : []) {
+      if (!isObj(v) || !v.doc || !v.romaji || !v.nghia) {
+        errors.push(`kana-quy-tac mục ${m.id}: ví dụ thiếu trường`);
+        continue;
+      }
+      const want = m.id === 'tro-tu' ? romanizeSentence(v.doc, map) : romanize(v.doc, map);
+      if (m.id === 'tro-tu' ? !sameSentence(want, v.romaji) : want !== v.romaji) errors.push(`kana-quy-tac mục ${m.id}: romaji "${v.romaji}" không khớp ${v.doc} (${want})`);
+    }
+  }
+  const cauTroTu = Array.isArray(rulesVi && rulesVi.cauTroTu) ? rulesVi.cauTroTu : [];
+  if (cauTroTu.length < MIN_TRO_TU) errors.push(`kana-quy-tac cần ít nhất ${MIN_TRO_TU} câu trợ từ`);
+  for (const c of cauTroTu) {
+    if (!isObj(c)) {
+      errors.push('kana-quy-tac câu trợ từ không phải object');
+      continue;
+    }
+    const sai = Array.isArray(c.sai) ? c.sai : [];
+    if (!c.doc || !c.romaji || !c.nghia || sai.length !== 3 || new Set([c.romaji, ...sai]).size !== 4)
+      errors.push(`kana-quy-tac câu trợ từ không hợp lệ: ${c.doc}`);
+    else if (!sameSentence(romanizeSentence(c.doc, map), c.romaji))
+      errors.push(`kana-quy-tac câu trợ từ: romaji "${c.romaji}" không khớp ${c.doc} (${romanizeSentence(c.doc, map)})`);
+  }
+  const seen = new Set();
+  const tuLuyen = [];
+  for (const w of (vocab && vocab.words) || []) {
+    const reading = w.reading;
+    if (!reading || /[;～~]/.test(reading) || seen.has(reading)) continue;
+    const romaji = romanize(reading, map);
+    if (!romaji) continue;
+    // động từ tận cùng う (すう, かう): う là đuôi động từ, không phải trường âm
+    const isVerbU = /động từ/.test(w.type || '') && /う$/.test(reading);
+    const loai = readingKinds(isVerbU ? reading.slice(0, -1) : reading, isVerbU ? romaji.slice(0, -1) : romaji);
+    if (!loai.length) continue;
+    seen.add(reading);
+    tuLuyen.push({ id: w.id, tu: w.word, doc: reading, romaji, nghia: w.meaning_vi, loai });
+  }
+  for (const k of ['am-ngat', 'truong-am', 'ke-dai'])
+    if (tuLuyen.filter((w) => w.loai[0] === k).length < MIN_TU_MOI_LOAI) errors.push(`kana-quy-tac: quá ít từ luyện loại ${k}`);
+  return { muc, cauTroTu, tuLuyen, reviewStatus: (rulesVi && rulesVi.reviewStatus) || 'draft', errors };
+}
+
 /** Chạy script với thư mục gốc `root`. Trả mã thoát: 0 là thành công, 1 là có lỗi (không ghi file). */
 export function main(root = ROOT) {
   const readJson = (p) => JSON.parse(readFileSync(join(root, p), 'utf8'));
@@ -176,6 +312,7 @@ export function main(root = ROOT) {
       vi: readJson('content-vi/kanji.json'),
       vocab: readJson('n5_vocab.json'),
       kanaVi: readJson('content-vi/kana.json'),
+      rulesVi: readJson('content-vi/kana-quy-tac.json'),
     };
   } catch (err) {
     console.error(`build-content: không đọc được dữ liệu nguồn: ${err.message}`);
@@ -184,7 +321,8 @@ export function main(root = ROOT) {
   const fileExists = (p) => existsSync(join(root, 'public', p));
   const { items, errors: kanjiErrors } = buildKanji(sources, fileExists);
   const kana = buildKana(sources.kanaVi, fileExists);
-  const errors = [...kanjiErrors, ...kana.errors];
+  const rules = buildKanaRules(sources.rulesVi, sources.vocab, kana.items);
+  const errors = [...kanjiErrors, ...kana.errors, ...rules.errors];
   if (errors.length) {
     console.error(`build-content: ${errors.length} lỗi`);
     for (const e of errors) console.error(`  - ${e}`);
@@ -196,6 +334,11 @@ export function main(root = ROOT) {
     join(root, 'content/kana.json'),
     JSON.stringify({ version: 1, reviewStatus: kana.reviewStatus, items: kana.items, capDeNham: kana.capDeNham }, null, 1) + '\n',
   );
+  writeFileSync(
+    join(root, 'content/kana-quy-tac.json'),
+    JSON.stringify({ version: 1, reviewStatus: rules.reviewStatus, muc: rules.muc, cauTroTu: rules.cauTroTu, tuLuyen: rules.tuLuyen }, null, 1) + '\n',
+  );
+  console.log(`build-content: content/kana-quy-tac.json (${rules.tuLuyen.length} từ luyện đọc)`);
   console.log(`build-content: content/kanji.json (${items.length} kanji), content/kana.json (${kana.items.length} kana)`);
   return 0;
 }

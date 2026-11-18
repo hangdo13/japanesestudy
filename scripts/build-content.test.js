@@ -4,7 +4,7 @@ import { readFileSync, mkdtempSync, mkdirSync, cpSync, existsSync, writeFileSync
 import { join, dirname } from 'node:path';
 import { tmpdir } from 'node:os';
 import { fileURLToPath } from 'node:url';
-import { buildKanji, buildKana, toHiragana, main } from './build-content.mjs';
+import { buildKanji, buildKana, toHiragana, main, romanize, romanizeSentence, buildKanaRules, readingKinds } from './build-content.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const read = (p) => JSON.parse(readFileSync(join(ROOT, p), 'utf8'));
@@ -146,6 +146,7 @@ describe('main', () => {
     cpSync(join(ROOT, 'vendor/jlptsuccess/kanji.json'), join(dir, 'vendor/jlptsuccess/kanji.json'));
     cpSync(join(ROOT, 'n5_vocab.json'), join(dir, 'n5_vocab.json'));
     cpSync(join(ROOT, 'content-vi/kana.json'), join(dir, 'content-vi/kana.json'));
+    cpSync(join(ROOT, 'content-vi/kana-quy-tac.json'), join(dir, 'content-vi/kana-quy-tac.json'));
     cpSync(join(ROOT, 'public'), join(dir, 'public'), { recursive: true });
     return dir;
   }
@@ -164,5 +165,103 @@ describe('main', () => {
     cpSync(join(ROOT, 'content-vi/kanji.json'), join(dir, 'content-vi/kanji.json'));
     expect(main(dir)).toBe(0);
     expect(JSON.parse(readFileSync(join(dir, 'content/kanji.json'), 'utf8')).items).toHaveLength(106);
+    expect(JSON.parse(readFileSync(join(dir, 'content/kana-quy-tac.json'), 'utf8')).muc).toHaveLength(5);
+  });
+
+  it('quy tắc sai (romaji ví dụ không khớp) thì trả mã 1', () => {
+    const dir = fixtureRoot();
+    cpSync(join(ROOT, 'content-vi/kanji.json'), join(dir, 'content-vi/kanji.json'));
+    const r = read('content-vi/kana-quy-tac.json');
+    r.muc[0].viDu[0].romaji = 'kite';
+    writeFileSync(join(dir, 'content-vi/kana-quy-tac.json'), JSON.stringify(r));
+    expect(main(dir)).toBe(1);
+    expect(existsSync(join(dir, 'content/kana-quy-tac.json'))).toBe(false);
+  });
+});
+
+describe('romanize', () => {
+  const map = new Map(read('content-vi/kana.json').items.map((k) => [k.id, k.romaji]));
+  it.each([
+    ['きって', 'kitte'],
+    ['まっちゃ', 'matcha'],
+    ['おかあさん', 'okaasan'],
+    ['がっこう', 'gakkou'],
+    ['とけい', 'tokei'],
+    ['コーヒー', 'koohii'],
+    ['パーティー', 'paatii'],
+    ['きんえん', "kin'en"],
+    ['ほんや', "hon'ya"],
+    ['しんぶん', 'shinbun'],
+    ['わたしは がくせい', 'watashiha gakusei'],
+    ['ジュース', 'juusu'],
+    ['ちょっと', 'chotto'],
+    ['ニュース', 'nyuusu'],
+  ])('%s → %s', (kana, r) => expect(romanize(kana, map)).toBe(r));
+  it.each(['～えん', 'っ', 'ーあ', 'きっ', 'abc', 'っあ', 'きっ え', 'きっん', 'カッー'])('không đọc được: %s', (x) => expect(romanize(x, map)).toBeNull());
+});
+
+describe('buildKanaRules', () => {
+  const kanaItems = read('content-vi/kana.json').items;
+  const rules = () => read('content-vi/kana-quy-tac.json');
+  const vocab = read('n5_vocab.json');
+  it('dữ liệu thật: không lỗi, đủ 5 mục, có từ luyện cho cả 3 loại, bỏ từ có ～ / ;', () => {
+    const r = buildKanaRules(rules(), vocab, kanaItems);
+    expect(r.errors).toEqual([]);
+    expect(r.muc.map((m) => m.id)).toEqual(['am-ngat', 'truong-am', 'ke-dai', 'tro-tu', 'kata-mo-rong']);
+    for (const k of ['am-ngat', 'truong-am', 'ke-dai']) expect(r.tuLuyen.some((w) => w.loai.includes(k))).toBe(true);
+    expect(r.tuLuyen.every((w) => !/[;～]/.test(w.doc))).toBe(true);
+    expect(r.tuLuyen.find((w) => w.doc === 'きって').romaji).toBe('kitte');
+    expect(new Set(r.tuLuyen.map((w) => w.doc)).size).toBe(r.tuLuyen.length);
+  });
+  it('thiếu mục / câu trợ từ sai thì báo lỗi', () => {
+    const r = rules();
+    r.muc = r.muc.filter((m) => m.id !== 'ke-dai');
+    r.cauTroTu[0].sai = ['x'];
+    const { errors } = buildKanaRules(r, vocab, kanaItems);
+    expect(errors.join('\n')).toMatch(/thiếu mục ke-dai/);
+    expect(errors.join('\n')).toMatch(/câu trợ từ không hợp lệ/);
+  });
+  it('romanizeSentence: trợ từ cuối cụm đọc wa/e/o, trong từ vẫn đọc ha/he', () => {
+    expect(romanizeSentence('はなは きれい', map)).toBe('hana wa kirei');
+    expect(romanizeSentence('へやへ いく', map)).toBe('heya e iku');
+    expect(romanizeSentence('みずを のむ', map)).toBe('mizu o nomu');
+  });
+  const map = new Map(kanaItems.map((k) => [k.id, k.romaji]));
+  const err = (mut) => {
+    const r = rules();
+    mut(r);
+    return buildKanaRules(r, vocab, kanaItems).errors.join('\n');
+  };
+  it('romaji câu trợ từ sai (ha thay wa) thì báo lỗi', () => {
+    expect(err((r) => (r.cauTroTu[0].romaji = 'watashi wa gakusee desu'))).toMatch(/câu trợ từ: romaji/);
+    expect(err((r) => (r.muc.find((m) => m.id === 'tro-tu').viDu[0].romaji = 'watashi ha gakusei desu'))).toMatch(/mục tro-tu: romaji/);
+  });
+  it('đáp án sai trùng đáp án đúng / trùng nhau thì báo lỗi', () => {
+    expect(err((r) => (r.cauTroTu[0].sai = [r.cauTroTu[0].romaji, 'a', 'b']))).toMatch(/không hợp lệ/);
+    expect(err((r) => (r.cauTroTu[0].sai = ['a', 'a', 'b']))).toMatch(/không hợp lệ/);
+  });
+  it('thiếu ví dụ / ví dụ thiếu trường / mục lạ, trùng / phần tử hỏng / ít câu trợ từ', () => {
+    expect(err((r) => (r.muc[0].viDu = []))).toMatch(/thiếu ví dụ/);
+    expect(err((r) => delete r.muc[1].viDu[0].nghia)).toMatch(/ví dụ thiếu trường/);
+    expect(err((r) => r.muc.push({ ...r.muc[0], id: 'la' }))).toMatch(/mục lạ: la/);
+    expect(err((r) => r.muc.push(r.muc[0]))).toMatch(/trùng id/);
+    expect(err((r) => r.muc.push(null))).toMatch(/không phải object/);
+    expect(err((r) => r.cauTroTu.push(null))).toMatch(/không phải object/);
+    expect(err((r) => (r.cauTroTu = r.cauTroTu.slice(0, 3)))).toMatch(/ít nhất 8/);
+  });
+  it('động từ tận cùng う không bị coi là trường âm; えい là trường âm', () => {
+    const r = buildKanaRules(rules(), vocab, kanaItems);
+    expect(r.tuLuyen.find((w) => w.doc === 'すう')).toBeUndefined();
+    expect(r.tuLuyen.find((w) => w.doc === 'とけい').loai).toEqual(['truong-am']);
+    expect(r.tuLuyen.find((w) => w.doc === 'せんせい').loai).toEqual(['truong-am']);
+  });
+  it('readingKinds', () => {
+    expect(readingKinds('がっこう', 'gakkou')).toEqual(['am-ngat', 'truong-am']);
+    expect(readingKinds('スーパー', 'suupaa')).toEqual(['ke-dai']);
+    expect(readingKinds('ボウル', 'bouru')).toEqual([]);
+    expect(readingKinds('きって', 'kitte')).toEqual(['am-ngat']);
+    expect(readingKinds('コーヒー', 'koohii')).toEqual(['ke-dai']);
+    expect(readingKinds('おかあさん', 'okaasan')).toEqual(['truong-am']);
+    expect(readingKinds('あさ', 'asa')).toEqual([]);
   });
 });
