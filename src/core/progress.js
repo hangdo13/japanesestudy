@@ -28,6 +28,7 @@ export function emptyData(nowIso) {
     settings: {},
     kanji: {},
     srs: {},
+    tuVung: {},
   };
 }
 
@@ -39,7 +40,7 @@ export class NewerVersionError extends Error {}
 /** Kiểm tra hình dạng dữ liệu bản hiện tại; điền phần thiếu, ném lỗi nếu sai kiểu. */
 export function normalize(d) {
   const out = { ...d };
-  for (const key of ['settings', 'kanji', 'srs']) {
+  for (const key of ['settings', 'kanji', 'srs', 'tuVung']) {
     if (out[key] === undefined) out[key] = {};
     else if (!isPlainObject(out[key])) throw new Error(`File sao lưu không hợp lệ: "${key}" sai kiểu dữ liệu.`);
   }

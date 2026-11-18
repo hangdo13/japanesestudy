@@ -119,7 +119,7 @@ describe('ôn kanji', () => {
     key(deck, ' ');
     expect(deck.querySelector('.kt-flash').classList.contains('is-revealed')).toBe(true);
     await Promise.resolve();
-    expect(node.querySelector('[role=status].kt-muted').textContent).toContain(kanjiById(deck.querySelector('.kt-flash').dataset.id).hanViet);
+    expect(node.querySelector('[role=status].app-sr-only').textContent).toContain(kanjiById(deck.querySelector('.kt-flash').dataset.id).hanViet);
     key(deck, 'ArrowLeft');
     expect(node.querySelector('.kt-count').textContent).toBe('2 / 2');
     key(node.querySelector('.kt-deck'), 'ArrowRight', true); // phím giữ: bỏ qua

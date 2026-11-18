@@ -1,5 +1,7 @@
 import { toHash } from '../../core/router.js';
-import { kanji } from '../../core/content.js';
+import { kanji, vocab } from '../../core/content.js';
+import { localDate } from '../../core/progress.js';
+import { dueVocab, newVocabToday, MAX_REVIEW } from '../../core/vocab-review.js';
 import { progress as defaultProgress } from '../../core/progress.js';
 import { dueKanjiCards, missingKanjiCards, MAX_PER_SESSION } from '../../core/kanji-review.js';
 
@@ -18,11 +20,24 @@ export function kanjiReviewCount(data, now = new Date()) {
   return dueKanjiCards(data, known, now).length + missingKanjiCards(data, known).length;
 }
 
+/** Từ vựng hôm nay: số thẻ đến hạn (tính tối đa một phiên) và số từ mới còn trong hạn mức. */
+export function vocabTodayCount(data, now = new Date()) {
+  const known = new Set(vocab().map((w) => w.id));
+  return {
+    due: dueVocab(data, known, now).length,
+    moi: newVocabToday(data, vocab(), localDate(now)).pack.length,
+  };
+}
+
 export function mount(root, _params, deps = {}) {
   const store = deps.progress || defaultProgress();
-  const n = kanjiReviewCount(store.get(), (deps.now || (() => new Date()))());
+  const t = (deps.now || (() => new Date()))();
+  const n = kanjiReviewCount(store.get(), t);
+  const v = vocabTodayCount(store.get(), t);
+  const vSub = [v.due ? `${v.due} từ cần ôn${v.due > MAX_REVIEW ? `, mỗi phiên ${MAX_REVIEW}` : ''}` : '', v.moi ? `${v.moi} từ mới` : ''].filter(Boolean).join(' · ') || 'Xong từ vựng hôm nay';
   const phan = [
     { title: 'Ôn kanji', sub: n ? `${n} thẻ cần ôn${n > MAX_PER_SESSION ? `, mỗi phiên ${MAX_PER_SESSION}` : ''}` : 'Chưa có thẻ đến hạn', glyph: '復', skill: 'kanji', hash: toHash('on-tap', 'kanji') },
+    { title: 'Ôn từ vựng', sub: vSub, glyph: '語', skill: 'vocab', hash: toHash('on-tap', 'tu-vung') },
     ...PHAN,
   ];
   const wrap = document.createElement('div');

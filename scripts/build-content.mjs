@@ -385,6 +385,75 @@ export function buildKanaSounds(soundsVi, kanaItems) {
   return { muc: outMuc, capAm, reviewStatus: (soundsVi && soundsVi.reviewStatus) || 'draft', errors };
 }
 
+/** Thứ tự chủ đề theo lộ trình mục 5.1, rồi các nhóm bổ sung. Tên phải khớp `topic` trong n5_vocab.json. */
+export const CHU_DE = [
+  'Chào hỏi, giao tiếp',
+  'Gia đình, con người',
+  'Ăn uống',
+  'Nhà ở, đồ vật',
+  'Trường học, công việc',
+  'Sinh hoạt hằng ngày',
+  'Sở thích, giải trí',
+  'Phố xá, giao thông',
+  'Mua sắm, tiền',
+  'Thời tiết, thiên nhiên',
+  'Cơ thể, sức khỏe',
+  'Màu sắc',
+  'Vị trí, phương hướng',
+  'Số, đếm',
+  'Thời gian',
+  'Động từ thường dùng',
+  'Tính chất, cảm xúc',
+  'Chỉ định, nghi vấn',
+  'Từ chức năng, trạng từ',
+  'Quần áo',
+  'Động vật',
+];
+
+/** Dựng content/vocab.json từ n5_vocab.json: giữ id, tách cách đọc chính/phụ, thêm thứ tự chủ đề. */
+export function buildVocab(vocab) {
+  const errors = [];
+  const words = Array.isArray(vocab && vocab.words) ? vocab.words : [];
+  if (!words.length) errors.push('vocab: n5_vocab.json không có từ nào');
+  const ids = new Set();
+  const items = [];
+  for (const w of words) {
+    if (!isObj(w) || !/^n5-\d{4}$/.test(w.id || '')) {
+      errors.push(`vocab: id không hợp lệ: ${w && w.id}`);
+      continue;
+    }
+    if (ids.has(w.id)) errors.push(`vocab: id trùng ${w.id}`);
+    ids.add(w.id);
+    const parts = (s) => String(s || '').split(/[;；]/).map((x) => x.trim()).filter(Boolean);
+    const docs = parts(w.reading);
+    let tus = parts(w.word);
+    // nhiều cách viết, một cách đọc (伯父; 叔父さん / おじさん): chọn cách viết có đuôi kana khớp cách đọc
+    if (tus.length > 1 && docs.length === 1) {
+      const tail = (t) => (t.match(/[ぁ-ゖー]+$/u) || [''])[0];
+      const best = [...tus].sort((a, b) => (docs[0].endsWith(tail(b)) ? tail(b).length : -1) - (docs[0].endsWith(tail(a)) ? tail(a).length : -1))[0];
+      tus = [best, ...tus.filter((t) => t !== best)];
+    }
+    if (!tus.length || !docs.length || !w.meaning_vi || !String(w.meaning_vi).trim()) {
+      errors.push(`vocab ${w.id}: thiếu từ, cách đọc hoặc nghĩa`);
+      continue;
+    }
+    const chuDe = CHU_DE.indexOf(w.topic);
+    if (chuDe < 0) errors.push(`vocab ${w.id}: chủ đề lạ "${w.topic}"`);
+    items.push({
+      id: w.id,
+      tu: tus[0],
+      tuKhac: tus.slice(1),
+      doc: docs[0],
+      docKhac: docs.slice(1),
+      nghia: String(w.meaning_vi).trim(),
+      loai: w.type || '',
+      chuDe: w.topic,
+      chuDeThuTu: chuDe + 1,
+    });
+  }
+  return { items, chuDe: CHU_DE, errors };
+}
+
 /** Chạy script với thư mục gốc `root`. Trả mã thoát: 0 là thành công, 1 là có lỗi (không ghi file). */
 export function main(root = ROOT) {
   const readJson = (p) => JSON.parse(readFileSync(join(root, p), 'utf8'));
@@ -407,7 +476,8 @@ export function main(root = ROOT) {
   const kana = buildKana(sources.kanaVi, fileExists);
   const rules = buildKanaRules(sources.rulesVi, sources.vocab, kana.items);
   const sounds = buildKanaSounds(sources.soundsVi, kana.items);
-  const errors = [...kanjiErrors, ...kana.errors, ...rules.errors, ...sounds.errors];
+  const vocabOut = buildVocab(sources.vocab);
+  const errors = [...kanjiErrors, ...kana.errors, ...rules.errors, ...sounds.errors, ...vocabOut.errors];
   if (errors.length) {
     console.error(`build-content: ${errors.length} lỗi`);
     for (const e of errors) console.error(`  - ${e}`);
@@ -427,6 +497,8 @@ export function main(root = ROOT) {
     join(root, 'content/kana-phat-am.json'),
     JSON.stringify({ version: 1, reviewStatus: sounds.reviewStatus, muc: sounds.muc, capAm: sounds.capAm }, null, 1) + '\n',
   );
+  writeFileSync(join(root, 'content/vocab.json'), JSON.stringify({ version: 1, chuDe: vocabOut.chuDe, items: vocabOut.items }, null, 1) + '\n');
+  console.log(`build-content: content/vocab.json (${vocabOut.items.length} từ)`);
   console.log(`build-content: content/kana-phat-am.json (${sounds.capAm.length} cặp âm)`);
   console.log(`build-content: content/kana-quy-tac.json (${rules.tuLuyen.length} từ luyện đọc)`);
   console.log(`build-content: content/kanji.json (${items.length} kanji), content/kana.json (${kana.items.length} kana)`);

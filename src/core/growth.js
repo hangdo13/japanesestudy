@@ -3,6 +3,8 @@
 export const DEFAULT_KANJI_MOI = 5;
 export const MIN_KANJI_MOI = 1;
 export const MAX_KANJI_MOI = 10;
+export const DEFAULT_TU_MOI = 10;
+export const TU_MOI_CHOICES = [5, 10, 15, 20, 30];
 
 /** Kẹp một số nguyên vào khoảng [min, max]; giá trị không hợp lệ thì dùng mặc định. */
 export function clampInt(value, min, max, fallback) {
@@ -64,4 +66,15 @@ export function shouldShowInstallGuide({ isIos, isStandalone, dismissedAt, now }
   if (!isIos || isStandalone) return false;
   const d = toTime(dismissedAt);
   return d == null || d > now.getTime() || now.getTime() - d >= DAYS_7_MS;
+}
+
+/** Số từ vựng mới mỗi ngày theo cài đặt (một trong TU_MOI_CHOICES, mặc định 10). */
+export function tuMoiLimit(settings = {}) {
+  const n = Number(settings && settings.tuMoiMoiNgay);
+  return TU_MOI_CHOICES.includes(n) ? n : DEFAULT_TU_MOI;
+}
+
+/** Có tự đọc từ khi lật thẻ không (mặc định có). */
+export function autoSpeakOnFlip(settings = {}) {
+  return !(settings && settings.tuDocKhiLat === false);
 }

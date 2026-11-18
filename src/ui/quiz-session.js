@@ -23,6 +23,7 @@ function hydrate(node) {
 /**
  * @param {object} o
  * @param {string} o.title  nhãn vùng phiên (cho trình đọc màn hình)
+ * @param {string} [o.skill]  màu kỹ năng của thanh tiến độ: kanji (mặc định), vocab, grammar, speaking
  * @param {object[]} o.questions
  * @param {(q: object) => ({ prompt: Node|string, options: (Node|string)[], answer: number, explain?: Function } | { render: (answer: (correct: boolean) => void) => Node })} o.toQuestion
  *   Trả `render` cho bước tự dựng (vd. Flashcard): gọi `answer(correct)` một lần để chấm và sang bước sau.
@@ -31,7 +32,7 @@ function hydrate(node) {
  * @param {(r: { score: number, total: number, wrong: object[] }) => Node} o.renderResult
  * @returns {HTMLElement}
  */
-export function renderQuizSession({ title, questions, toQuestion, onAnswer, onClose, renderResult }) {
+export function renderQuizSession({ title, questions, toQuestion, onAnswer, onClose, renderResult, skill = 'kanji' }) {
   const head = el('div', 'kt-session__head');
   const close = el('button', 'kt-iconbtn kt-iconbtn--sm');
   close.type = 'button';
@@ -40,7 +41,7 @@ export function renderQuizSession({ title, questions, toQuestion, onAnswer, onCl
   x.dataset.icon = 'x';
   close.append(x);
   close.addEventListener('click', onClose);
-  const seg = el('div', 'kt-seg kt-seg--kanji kt-seg--thick');
+  const seg = el('div', `kt-seg kt-seg--${skill} kt-seg--thick`);
   seg.setAttribute('role', 'progressbar');
   seg.setAttribute('aria-label', 'Tiến độ phiên');
   seg.setAttribute('aria-valuemin', '0');

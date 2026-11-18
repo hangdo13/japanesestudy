@@ -216,3 +216,24 @@ describe('hộp thoại xác nhận', () => {
     expect(document.querySelector('[role=dialog]')).toBeNull();
   });
 });
+
+describe('cài đặt từ vựng (Story 2.2)', () => {
+  it('số từ mới mỗi ngày: mặc định 10, đổi thì lưu', () => {
+    const { root, store } = setup();
+    const sel = root.querySelector('select[aria-label="Số từ vựng mới mỗi ngày"]');
+    expect(sel.value).toBe('10');
+    sel.value = '20';
+    sel.dispatchEvent(new Event('change'));
+    expect(store.get().settings.tuMoiMoiNgay).toBe(20);
+    expect(root.textContent).toContain('Đã lưu: 20 từ mới mỗi ngày.');
+  });
+  it('tự đọc khi lật: mặc định bật, bỏ chọn thì lưu false', () => {
+    const { root, store } = setup();
+    const box = root.querySelector('input[type=checkbox]');
+    expect(box.checked).toBe(true);
+    box.checked = false;
+    box.dispatchEvent(new Event('change'));
+    expect(store.get().settings.tuDocKhiLat).toBe(false);
+    expect(root.textContent).toContain('Đã tắt tự đọc khi lật thẻ.');
+  });
+});

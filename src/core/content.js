@@ -4,6 +4,7 @@ import kanjiData from '../../content/kanji.json';
 import kanaData from '../../content/kana.json';
 import kanaRulesData from '../../content/kana-quy-tac.json';
 import kanaSoundsData from '../../content/kana-phat-am.json';
+import vocabData from '../../content/vocab.json';
 
 /** Đóng băng sâu để không tính năng nào sửa được dữ liệu dùng chung. */
 function deepFreeze(v) {
@@ -73,6 +74,25 @@ const kanaSoundsFrozen = deepFreeze({
 /** Giải thích phát âm (phách, nguyên âm vô thanh, ん, r) và các cặp âm dễ nhầm. */
 export function kanaSounds() {
   return kanaSoundsFrozen;
+}
+
+const vocabList = deepFreeze(vocabData.items || []);
+const vocabMap = new Map(vocabList.map((w) => [w.id, w]));
+const chuDeList = deepFreeze(vocabData.chuDe || []);
+
+/** 718 từ vựng N5 (thứ tự gốc theo id). */
+export function vocab() {
+  return vocabList;
+}
+
+/** Một từ theo id `n5-xxxx`, hoặc null. */
+export function vocabById(id) {
+  return vocabMap.get(id) ?? null;
+}
+
+/** Tên các chủ đề từ vựng theo thứ tự lộ trình. */
+export function vocabTopics() {
+  return chuDeList;
 }
 
 /** Ghép đường dẫn file trong public/ với base của app (GitHub Pages chạy ở /japanesestudy/). */
