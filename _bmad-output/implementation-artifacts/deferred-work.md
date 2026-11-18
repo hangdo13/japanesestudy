@@ -19,3 +19,18 @@
 - source_spec: `_bmad-output/implementation-artifacts/spec-7-1-bang-kana.md`
   summary: Thêm cặp dễ nhầm giữa kana và kanji (ロ/口, エ/工, ニ/二, カ/力).
   evidence: Đây là chỗ người mới học hay nhầm. Hiện schema `capDeNham` chỉ chấp nhận kana.
+- source_spec: `_bmad-output/implementation-artifacts/spec-7-2-luyen-nhan-dien-kana.md`
+  summary: `pickDistractors` bù đáp án sai từ toàn bảng chữ khi pool nhỏ (<4 âm khác nhau).
+  evidence: Hiện mọi bộ đủ lớn nên không lỗi; người gọi sau có thể truyền pool nhỏ.
+- source_spec: `_bmad-output/implementation-artifacts/spec-7-2-luyen-nhan-dien-kana.md`
+  summary: Một vùng `role=status` cố định cho phản hồi đúng/sai thay vì tạo mới mỗi câu.
+  evidence: VoiceOver/NVDA có thể không đọc live region được chèn kèm nội dung.
+- source_spec: `_bmad-output/implementation-artifacts/spec-7-2-luyen-nhan-dien-kana.md`
+  summary: Dạng câu "chữ này là hiragana hay katakana?" cho cặp cùng âm khác bảng (へ/ヘ, り/リ).
+  evidence: Luật đáp án khác âm loại các cặp này khỏi câu trắc nghiệm.
+- source_spec: `_bmad-output/implementation-artifacts/spec-7-3-quy-tac-doc-kana.md`
+  summary: Chuyển màn luyện kana (7.2) và học kanji (1.5) sang khung chung `ui/quiz-session.js`.
+  evidence: Hiện có hai bản dựng `kt-session__head` riêng.
+- source_spec: `_bmad-output/implementation-artifacts/spec-7-3-quy-tac-doc-kana.md`
+  summary: Một hàm chung `isUnreviewed(status)` cho nhãn "chưa duyệt" (rules.js dùng !== 'approved', index.js dùng === 'draft').
+  evidence: Trạng thái lạ sẽ hiện nhãn ở màn này mà không ở màn kia.

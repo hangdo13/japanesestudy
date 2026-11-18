@@ -2,6 +2,8 @@
 // content/*.json do scripts/build-content.mjs sinh ra trước khi chạy dev/test/build.
 import kanjiData from '../../content/kanji.json';
 import kanaData from '../../content/kana.json';
+import kanaRulesData from '../../content/kana-quy-tac.json';
+import kanaSoundsData from '../../content/kana-phat-am.json';
 
 /** Đóng băng sâu để không tính năng nào sửa được dữ liệu dùng chung. */
 function deepFreeze(v) {
@@ -48,6 +50,29 @@ export function kanaPairs(id) {
   const out = new Set();
   for (const group of kanaPairList) if (group.includes(id)) group.forEach((g) => g !== id && out.add(g));
   return [...out];
+}
+
+const kanaRulesFrozen = deepFreeze({
+  reviewStatus: kanaRulesData.reviewStatus || 'draft',
+  muc: kanaRulesData.muc || [],
+  cauTroTu: kanaRulesData.cauTroTu || [],
+  tuLuyen: kanaRulesData.tuLuyen || [],
+});
+
+/** Quy tắc đọc kana (っ, trường âm, ー, trợ từ, katakana mở rộng), câu trợ từ và từ luyện đọc. */
+export function kanaRules() {
+  return kanaRulesFrozen;
+}
+
+const kanaSoundsFrozen = deepFreeze({
+  reviewStatus: kanaSoundsData.reviewStatus || 'draft',
+  muc: kanaSoundsData.muc || [],
+  capAm: kanaSoundsData.capAm || [],
+});
+
+/** Giải thích phát âm (phách, nguyên âm vô thanh, ん, r) và các cặp âm dễ nhầm. */
+export function kanaSounds() {
+  return kanaSoundsFrozen;
 }
 
 /** Ghép đường dẫn file trong public/ với base của app (GitHub Pages chạy ở /japanesestudy/). */

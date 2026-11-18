@@ -45,8 +45,8 @@ development_status:
   1-7-thêm-4-kanji-多-少-耳-魚: backlog
   epic-1-retrospective: optional
 
-  epic-2: backlog
-  2-1-ôn-kanji-theo-lịch-fsrs-3-chiều: backlog
+  epic-2: in-progress
+  2-1-ôn-kanji-theo-lịch-fsrs-3-chiều: review
   2-2-ôn-718-từ-vựng-n5-có-phát-âm: backlog
   2-3-ghi-lại-thời-gian-học-thực: backlog
   2-4-trang-chủ-việc-hôm-nay: backlog
@@ -80,9 +80,9 @@ development_status:
 
   epic-7: in-progress
   7-1-bảng-hiragana-và-katakana: review
-  7-2-luyện-nhận-diện-kana: backlog
-  7-3-quy-tắc-âm-ngắt-trường-âm-và-đọc-trợ-từ: backlog
-  7-4-luyện-phát-âm-đếm-phách-và-cặp-âm: backlog
+  7-2-luyện-nhận-diện-kana: review
+  7-3-quy-tắc-âm-ngắt-trường-âm-và-đọc-trợ-từ: review
+  7-4-luyện-phát-âm-đếm-phách-và-cặp-âm: review
   epic-7-retrospective: optional
 
   epic-8: backlog

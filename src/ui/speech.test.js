@@ -37,3 +37,15 @@ it('không có giọng Nhật hoặc không có API thì trả false', () => {
   expect(speakJa('し', { synth: undefined, Utterance: U })).toBe(false);
   expect(canSpeakJapanese(undefined)).toBe(false);
 });
+
+it('onError: gọi khi lỗi thật, bỏ qua khi bị huỷ/ngắt', () => {
+  const s = synth([{ lang: 'ja-JP' }]);
+  const onError = vi.fn();
+  speakJa('き', { synth: s, Utterance: U, onError });
+  const u = s.speak.mock.calls[0][0];
+  u.onerror({ error: 'canceled' });
+  u.onerror({ error: 'interrupted' });
+  expect(onError).not.toHaveBeenCalled();
+  u.onerror({ error: 'audio-busy' });
+  expect(onError).toHaveBeenCalledTimes(1);
+});

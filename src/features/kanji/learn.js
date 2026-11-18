@@ -1,6 +1,7 @@
 import { kanji as allKanji } from '../../core/content.js';
 import { progress as defaultProgress, localDate } from '../../core/progress.js';
 import { newKanjiToday } from '../../core/growth.js';
+import { ensureKanjiCards } from '../../core/kanji-review.js';
 import { toHash } from '../../core/router.js';
 import { renderEmptyState } from '../../ui/empty-state.js';
 import { renderGoalComplete } from '../../ui/goal-complete.js';
@@ -141,6 +142,15 @@ export function renderLearn(deps = {}) {
       status.textContent = res.error;
       return;
     }
+    // đưa các chữ vừa học vào lịch ôn (3 thẻ mỗi chữ); lỗi thì báo, màn ôn sẽ bù lại sau
+    const cardsDone = ensureKanjiCards(store, new Set(allKanji().map((k) => k.id)), now())
+      .then((r) => {
+        if (!r.ok && !disposed) status.textContent = `Chưa đưa được chữ vào lịch ôn: ${r.error}`;
+      })
+      .catch(() => {
+        if (!disposed) status.textContent = 'Chưa đưa được chữ vào lịch ôn. Màn Ôn kanji sẽ thử lại.';
+      });
+    learnApi.cardsDone = cardsDone;
     root.replaceChildren(
       renderGoalComplete({
         title: 'Xong gói kanji hôm nay!',
@@ -149,6 +159,7 @@ export function renderLearn(deps = {}) {
         actionLabel: 'Về danh sách kanji',
         onAction: goList,
       }),
+      status,
     );
     if (K && typeof K.hydrate === 'function') K.hydrate(root);
   });
@@ -157,8 +168,9 @@ export function renderLearn(deps = {}) {
   root.append(session);
   attach();
 
-  return {
+  const learnApi = {
     node: root,
+    cardsDone: Promise.resolve(),
     /** Dùng trong test và cho bàn phím: vuốt thẻ trên cùng. */
     swipe(dir = 'right') {
       if (api) api.swipe(dir);
@@ -172,4 +184,5 @@ export function renderLearn(deps = {}) {
       player.stop();
     },
   };
+  return learnApi;
 }

@@ -20,6 +20,11 @@ export function renderList() {
   learn.href = toHash('kanji', HOC_MOI);
   learn.textContent = 'Học chữ mới hôm nay';
 
+  const reviewLink = document.createElement('a');
+  reviewLink.className = 'kt-btn kt-btn--soft kt-btn--block kanji-learn-link';
+  reviewLink.href = toHash('on-tap', 'kanji');
+  reviewLink.textContent = 'Ôn kanji đến hạn';
+
   const grid = document.createElement('div');
   grid.className = 'kanji-grid';
   for (const k of kanji()) {
@@ -47,6 +52,6 @@ export function renderList() {
     grid.append(a);
   }
 
-  wrap.append(head, learn, grid);
+  wrap.append(head, learn, reviewLink, grid);
   return wrap;
 }
