@@ -57,12 +57,23 @@ Mọi file `content/*.json` đều do `scripts/build-content.mjs` sinh ra. **Kh�
 - `TuLuyen`: `{ id, tu, doc, romaji, nghia, loai }`, sinh từ `n5_vocab.json`: từ có cách đọc duy nhất (không ～ / ;), đọc được hết bằng bảng kana, và có âm ngắt (`am-ngat`), dấu ー (`ke-dai`) hoặc trường âm hiragana aa/ii/uu/ee/oo/ou/ei (`truong-am`; bỏ đuôi う của động từ). Mỗi loại ít nhất 5 từ.
 - Romaji: Hepburn, trường âm viết đôi chữ (okaasan, koohii), っ nhân đôi phụ âm (kitte, matcha), ん trước nguyên âm/y viết n'.
 
+## `content/kana-phat-am.json`
+
+```json
+{ "version": 1, "reviewStatus": "draft", "muc": [Muc, ...], "capAm": [{ "a": Tu, "b": Tu }, ...] }
+```
+
+- `Tu`: `{ doc, nghia, romaji, phach }`. `phach` là mảng phách do `src/core/mora.js` tách (とうきょう → と・う・きょ・う). `romaji` tính lúc build.
+- `Muc`: `{ id, tieuDe, giaiThich, viDu: Tu[] }`. Đúng 5 mục: `phach`, `nguyen-am`, `vo-thanh`, `n`, `r`.
+- `capAm`: ít nhất 10 cặp, không trùng. Hai từ của cặp chỉ được khác nhau ở っ hoặc trường âm (kiểm tra bằng romaji: kitte/kite, koukou/koko).
+
 ## Nguồn
 
 - `vendor/jlptsuccess/kanji.json`: dữ liệu gốc (MIT)
 - `content-vi/kanji.json`: `{ "<chữ>": { hanViet, nghia, cauGoiNho, reviewStatus } }`
 - `n5_vocab.json`: từ vựng N5 kèm nghĩa tiếng Việt
 - `public/kanji/svg/`, `public/kana/svg/`: SVG thứ tự nét của KanjiVG (CC BY-SA 3.0)
+- `content-vi/kana-phat-am.json`: giải thích phát âm và cặp âm (AI soạn)
 - `content-vi/kana-quy-tac.json`: quy tắc đọc và câu trợ từ (AI soạn)
 - `content-vi/kana.json`: bảng kana, romaji, ghi chú, cặp dễ nhầm (AI soạn)
 - `public/audio/kanji/`: audio cách đọc (VOICEVOX:春日部つむぎ, do JLPTSuccess tạo)

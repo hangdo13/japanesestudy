@@ -13,8 +13,8 @@ export function canSpeakJapanese(synth = globalThis.speechSynthesis) {
   return !!japaneseVoice(synth);
 }
 
-/** Đọc `text`. Trả true nếu đã gửi lệnh đọc. */
-export function speakJa(text, { synth = globalThis.speechSynthesis, Utterance = globalThis.SpeechSynthesisUtterance, rate = 0.85 } = {}) {
+/** Đọc `text`. Trả true nếu đã gửi lệnh đọc. `onError` được gọi nếu trình duyệt báo lỗi khi đọc (không tính bị huỷ). */
+export function speakJa(text, { synth = globalThis.speechSynthesis, Utterance = globalThis.SpeechSynthesisUtterance, rate = 0.85, onError } = {}) {
   const voice = japaneseVoice(synth);
   if (!voice || typeof Utterance !== 'function') return false;
   synth.cancel();
@@ -22,6 +22,10 @@ export function speakJa(text, { synth = globalThis.speechSynthesis, Utterance = 
   u.lang = voice.lang;
   u.voice = voice;
   u.rate = rate;
+  if (onError)
+    u.onerror = (e) => {
+      if (!e || (e.error !== 'canceled' && e.error !== 'interrupted')) onError(e);
+    };
   synth.speak(u);
   return true;
 }

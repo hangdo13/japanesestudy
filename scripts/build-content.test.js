@@ -4,7 +4,7 @@ import { readFileSync, mkdtempSync, mkdirSync, cpSync, existsSync, writeFileSync
 import { join, dirname } from 'node:path';
 import { tmpdir } from 'node:os';
 import { fileURLToPath } from 'node:url';
-import { buildKanji, buildKana, toHiragana, main, romanize, romanizeSentence, buildKanaRules, readingKinds } from './build-content.mjs';
+import { buildKanji, buildKana, toHiragana, main, romanize, romanizeSentence, buildKanaRules, readingKinds, buildKanaSounds, differsByLength } from './build-content.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const read = (p) => JSON.parse(readFileSync(join(ROOT, p), 'utf8'));
@@ -147,6 +147,7 @@ describe('main', () => {
     cpSync(join(ROOT, 'n5_vocab.json'), join(dir, 'n5_vocab.json'));
     cpSync(join(ROOT, 'content-vi/kana.json'), join(dir, 'content-vi/kana.json'));
     cpSync(join(ROOT, 'content-vi/kana-quy-tac.json'), join(dir, 'content-vi/kana-quy-tac.json'));
+    cpSync(join(ROOT, 'content-vi/kana-phat-am.json'), join(dir, 'content-vi/kana-phat-am.json'));
     cpSync(join(ROOT, 'public'), join(dir, 'public'), { recursive: true });
     return dir;
   }
@@ -166,6 +167,19 @@ describe('main', () => {
     expect(main(dir)).toBe(0);
     expect(JSON.parse(readFileSync(join(dir, 'content/kanji.json'), 'utf8')).items).toHaveLength(106);
     expect(JSON.parse(readFileSync(join(dir, 'content/kana-quy-tac.json'), 'utf8')).muc).toHaveLength(5);
+    const sounds = JSON.parse(readFileSync(join(dir, 'content/kana-phat-am.json'), 'utf8'));
+    expect(sounds.muc).toHaveLength(5);
+    expect(sounds.capAm.length).toBeGreaterThanOrEqual(10);
+  });
+
+  it('cặp âm sai thì trả mã 1 và không ghi kana-phat-am.json', () => {
+    const dir = fixtureRoot();
+    cpSync(join(ROOT, 'content-vi/kanji.json'), join(dir, 'content-vi/kanji.json'));
+    const r = read('content-vi/kana-phat-am.json');
+    r.capAm[0].b.doc = 'おばさん';
+    writeFileSync(join(dir, 'content-vi/kana-phat-am.json'), JSON.stringify(r));
+    expect(main(dir)).toBe(1);
+    expect(existsSync(join(dir, 'content/kana-phat-am.json'))).toBe(false);
   });
 
   it('quy tắc sai (romaji ví dụ không khớp) thì trả mã 1', () => {
@@ -263,5 +277,46 @@ describe('buildKanaRules', () => {
     expect(readingKinds('コーヒー', 'koohii')).toEqual(['ke-dai']);
     expect(readingKinds('おかあさん', 'okaasan')).toEqual(['truong-am']);
     expect(readingKinds('あさ', 'asa')).toEqual([]);
+  });
+});
+
+describe('buildKanaSounds', () => {
+  const kanaItems = read('content-vi/kana.json').items;
+  const src = () => read('content-vi/kana-phat-am.json');
+  const err = (mut) => {
+    const r = src();
+    mut(r);
+    return buildKanaSounds(r, kanaItems).errors.join('\n');
+  };
+  it('dữ liệu thật: không lỗi, 5 mục, ví dụ có phách và romaji', () => {
+    const r = buildKanaSounds(src(), kanaItems);
+    expect(r.errors).toEqual([]);
+    expect(r.muc.map((m) => m.id)).toEqual(['phach', 'nguyen-am', 'vo-thanh', 'n', 'r']);
+    expect(r.muc[0].viDu[0]).toMatchObject({ doc: 'とうきょう', romaji: 'toukyou', phach: ['と', 'う', 'きょ', 'う'] });
+    expect(r.capAm.length).toBeGreaterThanOrEqual(10);
+    for (const c of r.capAm) expect(c.a.phach.length).not.toBe(c.b.phach.length);
+    expect(buildKanaSounds({ ...src(), reviewStatus: undefined }, kanaItems).reviewStatus).toBe('draft');
+  });
+  it('differsByLength', () => {
+    expect(differsByLength('kitte', 'kite')).toBe(true);
+    expect(differsByLength('koukou', 'koko')).toBe(true);
+    expect(differsByLength('heiya', 'heya')).toBe(true);
+    expect(differsByLength('matcha', 'macha')).toBe(true);
+    expect(differsByLength('hanashi', 'hana')).toBe(false);
+    expect(differsByLength('kite', 'kite')).toBe(false);
+  });
+  it('báo lỗi: cặp cùng số phách, chữ lạ, thiếu nghĩa, thiếu mục, mục lạ, ít cặp, phần tử hỏng', () => {
+    expect(err((r) => (r.capAm[0].b.doc = 'おばさん'))).toMatch(/chỉ khác nhau ở っ hoặc trường âm/);
+    expect(err((r) => (r.capAm[0] = { a: { doc: 'はな', nghia: 'hoa' }, b: { doc: 'はなし', nghia: 'câu chuyện' } }))).toMatch(/chỉ khác nhau/);
+    expect(err((r) => r.capAm.push({ a: r.capAm[0].b, b: r.capAm[0].a }))).toMatch(/cặp trùng/);
+    expect(err((r) => (r.capAm[0].a.doc = ['きて']))).toMatch(/thiếu doc\/nghia/);
+    expect(err((r) => (r.capAm[0].a.nghia = '  '))).toMatch(/thiếu doc\/nghia/);
+    expect(err((r) => (r.capAm[0].a.doc = '学校'))).toMatch(/không đọc được/);
+    expect(err((r) => delete r.capAm[0].a.nghia)).toMatch(/thiếu doc\/nghia/);
+    expect(err((r) => (r.muc = r.muc.filter((m) => m.id !== 'r')))).toMatch(/thiếu mục r/);
+    expect(err((r) => r.muc.push({ ...r.muc[0], id: 'x' }))).toMatch(/mục lạ: x/);
+    expect(err((r) => (r.capAm = r.capAm.slice(0, 4)))).toMatch(/ít nhất 10/);
+    expect(err((r) => r.capAm.push(null))).toMatch(/không phải object/);
+    expect(err((r) => (r.muc[0].viDu = []))).toMatch(/thiếu ví dụ/);
   });
 });

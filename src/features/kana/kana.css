@@ -44,3 +44,5 @@
 .kana-example__nghia { flex-basis: 100%; font-size: 13px; line-height: 18px; }
 .kana-read__doc { font-size: 28px; line-height: 36px; font-weight: 700; }
 .kana-read__nghia { font-size: 14px; line-height: 20px; font-weight: 400; }
+.kana-pair { display: flex; flex-direction: column; gap: 2px; }
+.kana-pair__nghia { font-size: 13px; line-height: 18px; font-weight: 400; }

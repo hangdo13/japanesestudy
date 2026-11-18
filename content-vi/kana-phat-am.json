@@ -1,0 +1,67 @@
+{
+  "reviewStatus": "draft",
+  "muc": [
+    {
+      "id": "phach",
+      "tieuDe": "Phách (nhịp)",
+      "giaiThich": "Tiếng Nhật đọc theo nhịp đều gọi là phách. Mỗi chữ kana là một phách. Chữ nhỏ ゃ ゅ ょ ghép với chữ đứng trước thành một phách (きょ là 1 phách). Còn っ nhỏ, ん và phần kéo dài (ー hoặc nguyên âm thêm vào) mỗi cái là một phách riêng. Đọc thiếu một phách là đổi nghĩa: おばさん (cô, dì) có 4 phách, おばあさん (bà) có 5 phách.",
+      "viDu": [
+        { "doc": "とうきょう", "nghia": "Tokyo" },
+        { "doc": "きって", "nghia": "con tem" },
+        { "doc": "しんぶん", "nghia": "tờ báo" }
+      ]
+    },
+    {
+      "id": "nguyen-am",
+      "tieuDe": "5 nguyên âm",
+      "giaiThich": "Tiếng Nhật chỉ có 5 nguyên âm: a, i, u, e, o. Âm u đọc gần \"ư\" của tiếng Việt, môi không tròn. Âm e đọc như \"ê\". Mỗi nguyên âm giữ độ dài đều nhau. Tiếng Nhật không có thanh điệu như dấu tiếng Việt, nhưng mỗi từ có kiểu cao thấp riêng (trọng âm cao độ), ví dụ はし (đũa) và はし (cầu) khác cao độ. Kỳ thi N5 không hỏi trực tiếp phần này, cứ nghe và nhại lại là được.",
+      "viDu": [
+        { "doc": "あいうえお", "nghia": "a i u e o" },
+        { "doc": "うみ", "nghia": "biển" }
+      ]
+    },
+    {
+      "id": "vo-thanh",
+      "tieuDe": "Nguyên âm vô thanh",
+      "giaiThich": "Âm i và u nằm giữa hai phụ âm vô thanh (k, s, t, p, h) hoặc ở cuối câu thường bị đọc rất nhẹ, gần như không nghe thấy. Vì vậy です nghe như \"dess\", します nghe như \"shimass\", すき nghe như \"ski\". Khi đếm phách vẫn tính đủ: です vẫn là 2 phách.",
+      "viDu": [
+        { "doc": "です", "nghia": "là (đuôi câu lịch sự)" },
+        { "doc": "します", "nghia": "làm" },
+        { "doc": "すき", "nghia": "thích" }
+      ]
+    },
+    {
+      "id": "n",
+      "tieuDe": "Chữ ん đổi cách đọc",
+      "giaiThich": "ん là một phách riêng, nhưng cách đọc thay đổi theo âm đứng sau: trước m, b, p đọc như \"m\" (さんぽ, đi dạo); trước k, g đọc như \"ng\" (ぎんこう, ngân hàng); trước t, d, n, r đọc như \"n\" (ほんだな, giá sách). Bạn không cần cố đổi, cứ đọc tự nhiên thì miệng sẽ tự làm vậy.",
+      "viDu": [
+        { "doc": "さんぽ", "nghia": "đi dạo" },
+        { "doc": "ぎんこう", "nghia": "ngân hàng" },
+        { "doc": "ほんだな", "nghia": "giá sách" }
+      ]
+    },
+    {
+      "id": "r",
+      "tieuDe": "Âm r",
+      "giaiThich": "Âm r tiếng Nhật nằm giữa \"r\" và \"l\": đầu lưỡi chạm nhẹ một lần vào lợi trên rồi bật ra. Không rung lưỡi, cũng không đọc thành \"z\" như r miền Bắc. Ví dụ ら り る れ ろ.",
+      "viDu": [
+        { "doc": "らいねん", "nghia": "năm sau" },
+        { "doc": "くるま", "nghia": "xe ô tô" }
+      ]
+    }
+  ],
+  "capAm": [
+    { "a": { "doc": "おばさん", "nghia": "cô, dì" }, "b": { "doc": "おばあさん", "nghia": "bà" } },
+    { "a": { "doc": "おじさん", "nghia": "chú, bác" }, "b": { "doc": "おじいさん", "nghia": "ông" } },
+    { "a": { "doc": "きて", "nghia": "hãy đến" }, "b": { "doc": "きって", "nghia": "con tem" } },
+    { "a": { "doc": "ここ", "nghia": "ở đây" }, "b": { "doc": "こうこう", "nghia": "trường cấp 3" } },
+    { "a": { "doc": "ゆき", "nghia": "tuyết" }, "b": { "doc": "ゆうき", "nghia": "dũng khí" } },
+    { "a": { "doc": "いえ", "nghia": "ngôi nhà" }, "b": { "doc": "いいえ", "nghia": "không (trả lời)" } },
+    { "a": { "doc": "ビル", "nghia": "toà nhà" }, "b": { "doc": "ビール", "nghia": "bia" } },
+    { "a": { "doc": "さか", "nghia": "con dốc" }, "b": { "doc": "さっか", "nghia": "nhà văn" } },
+    { "a": { "doc": "かた", "nghia": "vai" }, "b": { "doc": "かった", "nghia": "đã mua" } },
+    { "a": { "doc": "とり", "nghia": "con chim" }, "b": { "doc": "とおり", "nghia": "con đường" } },
+    { "a": { "doc": "しゅじん", "nghia": "chồng (mình)" }, "b": { "doc": "しゅうじん", "nghia": "tù nhân" } },
+    { "a": { "doc": "へや", "nghia": "căn phòng" }, "b": { "doc": "へいや", "nghia": "đồng bằng" } }
+  ]
+}

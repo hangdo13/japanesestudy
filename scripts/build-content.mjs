@@ -1,6 +1,7 @@
 // Gom nội dung nguồn thành content/*.json (AD-3).
 // Chỉ script này được đọc vendor/, content-vi/ và n5_vocab.json.
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'node:fs';
+import { splitMora } from '../src/core/mora.js';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -302,6 +303,88 @@ export function buildKanaRules(rulesVi, vocab, kanaItems) {
   return { muc, cauTroTu, tuLuyen, reviewStatus: (rulesVi && rulesVi.reviewStatus) || 'draft', errors };
 }
 
+const SOUND_IDS = ['phach', 'nguyen-am', 'vo-thanh', 'n', 'r'];
+
+/**
+ * `short` có được từ `long` chỉ bằng cách bỏ phụ âm nhân đôi (っ) hoặc phần kéo dài nguyên âm không?
+ * So trên romaji: kitte→kite, okaasan→okasan, koukou→koko, heiya→heya.
+ */
+export function differsByLength(long, short) {
+  let j = 0;
+  let skipped = 0;
+  for (let i = 0; i < long.length; i++) {
+    if (j < short.length && long[i] === short[j]) {
+      j += 1;
+      continue;
+    }
+    const prev = long[i - 1];
+    const ok = long[i] === prev || (long[i] === 'u' && prev === 'o') || (long[i] === 'i' && prev === 'e') || (long[i] === 't' && long[i + 1] === 'c');
+    if (!ok) return false;
+    skipped += 1;
+  }
+  return j === short.length && skipped > 0;
+}
+const MIN_CAP_AM = 10;
+
+/** Dựng content/kana-phat-am.json: giải thích phát âm và cặp âm dễ nhầm (khác nhau ở phách dài/っ). */
+export function buildKanaSounds(soundsVi, kanaItems) {
+  const errors = [];
+  const map = new Map(kanaItems.map((k) => [k.id, k.romaji]));
+  const raw = Array.isArray(soundsVi && soundsVi.muc) ? soundsVi.muc : [];
+  const muc = raw.filter(isObj);
+  if (muc.length !== raw.length) errors.push('kana-phat-am: có mục không phải object');
+  const ids = muc.map((m) => m.id);
+  for (const id of SOUND_IDS) if (!ids.includes(id)) errors.push(`kana-phat-am thiếu mục ${id}`);
+  for (const id of ids) if (!SOUND_IDS.includes(id)) errors.push(`kana-phat-am có mục lạ: ${id}`);
+  if (new Set(ids).size !== ids.length) errors.push('kana-phat-am có mục trùng id');
+  const word = (w, where) => {
+    if (!isObj(w) || typeof w.doc !== 'string' || typeof w.nghia !== 'string' || !w.doc.trim() || !w.nghia.trim()) {
+      errors.push(`kana-phat-am ${where}: thiếu doc/nghia`);
+      return null;
+    }
+    const mora = splitMora(w.doc);
+    const romaji = romanize(w.doc, map);
+    if (!mora || !romaji) {
+      errors.push(`kana-phat-am ${where}: không đọc được "${w.doc}"`);
+      return null;
+    }
+    return { doc: w.doc, nghia: w.nghia, romaji, phach: mora };
+  };
+  const outMuc = muc.map((m) => {
+    if (!m.tieuDe || !m.giaiThich) errors.push(`kana-phat-am mục ${m.id}: thiếu tiêu đề/giải thích`);
+    const viDu = (Array.isArray(m.viDu) ? m.viDu : []).map((v) => word(v, `mục ${m.id}`)).filter(Boolean);
+    if (!viDu.length) errors.push(`kana-phat-am mục ${m.id}: thiếu ví dụ`);
+    return { id: m.id, tieuDe: m.tieuDe, giaiThich: m.giaiThich, viDu };
+  });
+  const rawCap = Array.isArray(soundsVi && soundsVi.capAm) ? soundsVi.capAm : [];
+  if (rawCap.length < MIN_CAP_AM) errors.push(`kana-phat-am cần ít nhất ${MIN_CAP_AM} cặp âm`);
+  const capAm = [];
+  const seenPairs = new Set();
+  for (const c of rawCap) {
+    if (!isObj(c)) {
+      errors.push('kana-phat-am cặp âm không phải object');
+      continue;
+    }
+    const a = word(c.a, 'cặp âm');
+    const b = word(c.b, 'cặp âm');
+    if (!a || !b) continue;
+    // cặp chỉ được khác nhau ở っ hoặc trường âm: đó là thứ bài nghe luyện
+    const [longW, shortW] = a.phach.length > b.phach.length ? [a, b] : [b, a];
+    if (a.phach.length === b.phach.length || !differsByLength(longW.romaji, shortW.romaji)) {
+      errors.push(`kana-phat-am cặp ${a.doc}/${b.doc}: phải chỉ khác nhau ở っ hoặc trường âm`);
+      continue;
+    }
+    const key = [a.doc, b.doc].sort().join('|');
+    if (seenPairs.has(key)) {
+      errors.push(`kana-phat-am cặp trùng: ${a.doc}/${b.doc}`);
+      continue;
+    }
+    seenPairs.add(key);
+    capAm.push({ a, b });
+  }
+  return { muc: outMuc, capAm, reviewStatus: (soundsVi && soundsVi.reviewStatus) || 'draft', errors };
+}
+
 /** Chạy script với thư mục gốc `root`. Trả mã thoát: 0 là thành công, 1 là có lỗi (không ghi file). */
 export function main(root = ROOT) {
   const readJson = (p) => JSON.parse(readFileSync(join(root, p), 'utf8'));
@@ -313,6 +396,7 @@ export function main(root = ROOT) {
       vocab: readJson('n5_vocab.json'),
       kanaVi: readJson('content-vi/kana.json'),
       rulesVi: readJson('content-vi/kana-quy-tac.json'),
+      soundsVi: readJson('content-vi/kana-phat-am.json'),
     };
   } catch (err) {
     console.error(`build-content: không đọc được dữ liệu nguồn: ${err.message}`);
@@ -322,7 +406,8 @@ export function main(root = ROOT) {
   const { items, errors: kanjiErrors } = buildKanji(sources, fileExists);
   const kana = buildKana(sources.kanaVi, fileExists);
   const rules = buildKanaRules(sources.rulesVi, sources.vocab, kana.items);
-  const errors = [...kanjiErrors, ...kana.errors, ...rules.errors];
+  const sounds = buildKanaSounds(sources.soundsVi, kana.items);
+  const errors = [...kanjiErrors, ...kana.errors, ...rules.errors, ...sounds.errors];
   if (errors.length) {
     console.error(`build-content: ${errors.length} lỗi`);
     for (const e of errors) console.error(`  - ${e}`);
@@ -338,6 +423,11 @@ export function main(root = ROOT) {
     join(root, 'content/kana-quy-tac.json'),
     JSON.stringify({ version: 1, reviewStatus: rules.reviewStatus, muc: rules.muc, cauTroTu: rules.cauTroTu, tuLuyen: rules.tuLuyen }, null, 1) + '\n',
   );
+  writeFileSync(
+    join(root, 'content/kana-phat-am.json'),
+    JSON.stringify({ version: 1, reviewStatus: sounds.reviewStatus, muc: sounds.muc, capAm: sounds.capAm }, null, 1) + '\n',
+  );
+  console.log(`build-content: content/kana-phat-am.json (${sounds.capAm.length} cặp âm)`);
   console.log(`build-content: content/kana-quy-tac.json (${rules.tuLuyen.length} từ luyện đọc)`);
   console.log(`build-content: content/kanji.json (${items.length} kanji), content/kana.json (${kana.items.length} kana)`);
   return 0;
