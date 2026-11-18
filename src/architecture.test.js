@@ -59,4 +59,11 @@ describe('luật kiến trúc', () => {
       }
     }
   });
+
+  it('chỉ core/progress được dùng localStorage (AD-4)', () => {
+    for (const f of files) {
+      if (rel(f) === 'core/progress.js') continue;
+      expect(/localStorage/.test(readFileSync(f, 'utf8')), `${rel(f)} dùng localStorage`).toBe(false);
+    }
+  });
 });

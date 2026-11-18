@@ -10,3 +10,9 @@
 - source_spec: `_bmad-output/implementation-artifacts/spec-1-2-gom-noi-dung-kanji.md`
   summary: Thêm test cho base mặc định của `content.assetUrl()` khi Story 1.3 gọi hàm này lần đầu.
   evidence: Hiện test luôn truyền base, nên đổi giá trị mặc định thì không test nào bắt được.
+- source_spec: `_bmad-output/implementation-artifacts/spec-1-4-luu-tien-do-sao-luu.md`
+  summary: Hiện thông báo "dữ liệu bị hỏng / app đang tạm ngừng ghi" ngay ở trang chủ, không chỉ ở màn Cài đặt.
+  evidence: Hannah thường vào học thẳng mà không mở Cài đặt, nên có thể không biết tiến độ đã bị đặt lại. Nên làm cùng Story 2.4 (trang chủ).
+- source_spec: `_bmad-output/implementation-artifacts/spec-1-4-luu-tien-do-sao-luu.md`
+  summary: Mở rộng luật kiến trúc AD-4 để bắt cả `sessionStorage`, `indexedDB` và `document.cookie`.
+  evidence: Test hiện tại chỉ dò chữ `localStorage`.

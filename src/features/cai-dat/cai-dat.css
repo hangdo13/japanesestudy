@@ -1,0 +1,9 @@
+.cai-dat__text { margin: 0; }
+/* input file ẩn, mở bằng nút "Nhập sao lưu" */
+.cai-dat__file {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
