@@ -142,7 +142,8 @@ describe('core/progress', () => {
   });
 
   it('migrate: điền phần thiếu và từ chối sai kiểu', () => {
-    expect(migrate({ schemaVersion: 1 })).toMatchObject({ settings: {}, kanji: {}, lastBackupAt: null });
+    expect(migrate({ schemaVersion: 1 })).toMatchObject({ settings: {}, kanji: {}, srs: {}, lastBackupAt: null });
+    expect(() => migrate({ schemaVersion: 1, srs: [] })).toThrow('"srs" sai kiểu');
     expect(() => migrate({ schemaVersion: 1, settings: null })).toThrow('"settings" sai kiểu');
   });
 

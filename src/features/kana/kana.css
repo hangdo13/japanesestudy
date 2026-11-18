@@ -26,3 +26,6 @@
 .kana-hero__info { display: flex; flex-direction: column; gap: var(--space-1); min-width: 0; }
 .kana-hero__info h2, .kana-hero__info p { margin: 0; }
 .kana-text { margin: 0; }
+.kana-set { width: 100%; text-align: left; font: inherit; color: inherit; cursor: pointer; }
+.kana-option { font-size: 22px; line-height: 28px; font-weight: 700; }
+.kana-practice-link { text-decoration: none; text-align: center; }

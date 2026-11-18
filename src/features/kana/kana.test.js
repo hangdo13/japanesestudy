@@ -112,3 +112,17 @@ describe('chi tiết kana', () => {
     expect(window.location.hash).toBe('#/kana');
   });
 });
+
+describe('luyện nhận diện (#/kana/luyen)', () => {
+  it('bảng chữ có nút dẫn tới màn luyện', () => {
+    const el = render(undefined);
+    expect(el.querySelector('.kana-practice-link').getAttribute('href')).toBe('#/kana/luyen');
+  });
+
+  it('param luyen mở danh sách 7 bộ luyện', () => {
+    const el = render('luyen');
+    expect(el.querySelectorAll('.kana-set')).toHaveLength(7);
+    expect(typeof el.cleanup).toBe('function');
+    el.cleanup();
+  });
+});

@@ -19,3 +19,12 @@
 - source_spec: `_bmad-output/implementation-artifacts/spec-7-1-bang-kana.md`
   summary: Thêm cặp dễ nhầm giữa kana và kanji (ロ/口, エ/工, ニ/二, カ/力).
   evidence: Đây là chỗ người mới học hay nhầm. Hiện schema `capDeNham` chỉ chấp nhận kana.
+- source_spec: `_bmad-output/implementation-artifacts/spec-7-2-luyen-nhan-dien-kana.md`
+  summary: `pickDistractors` bù đáp án sai từ toàn bảng chữ khi pool nhỏ (<4 âm khác nhau).
+  evidence: Hiện mọi bộ đủ lớn nên không lỗi; người gọi sau có thể truyền pool nhỏ.
+- source_spec: `_bmad-output/implementation-artifacts/spec-7-2-luyen-nhan-dien-kana.md`
+  summary: Một vùng `role=status` cố định cho phản hồi đúng/sai thay vì tạo mới mỗi câu.
+  evidence: VoiceOver/NVDA có thể không đọc live region được chèn kèm nội dung.
+- source_spec: `_bmad-output/implementation-artifacts/spec-7-2-luyen-nhan-dien-kana.md`
+  summary: Dạng câu "chữ này là hiragana hay katakana?" cho cặp cùng âm khác bảng (へ/ヘ, り/リ).
+  evidence: Luật đáp án khác âm loại các cặp này khỏi câu trắc nghiệm.

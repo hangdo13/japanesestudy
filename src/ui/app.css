@@ -69,3 +69,8 @@ body {
 
 /* Link bọc cả một khối (vd. dòng kt-item): giữ màu chữ, bỏ gạch chân */
 .app-link-plain { color: inherit; text-decoration: none; }
+
+/* Câu hỏi trắc nghiệm (ui/quiz.js) */
+.app-quiz__prompt { margin: 0 0 var(--space-2); }
+
+.app-sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
