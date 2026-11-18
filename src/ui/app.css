@@ -1,6 +1,9 @@
 /* Khung app Kotoba: TopBar ở trên, nội dung cuộn, BottomNav dính đáy.
    Chỉ dùng biến trong tokens.css (AD-9). */
 
+/* Thuộc tính hidden luôn thắng display của component (vd. .kt-btn là inline-flex) */
+[hidden] { display: none !important; }
+
 body {
   /* bundle.css thêm padding cho trang preview; app tự quản lý khoảng cách */
   padding: 0;

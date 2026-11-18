@@ -134,6 +134,42 @@ describe('màn Cài đặt: lỗi và dữ liệu hỏng', () => {
   });
 });
 
+describe('hạn mức kanji mới', () => {
+  it('chọn 8 thì lưu settings.kanjiMoiMoiNgay = 8', () => {
+    const { root, store } = setup();
+    const select = root.querySelector('select');
+    expect(select.value).toBe('5');
+    expect(select.options).toHaveLength(10);
+    select.value = '8';
+    select.dispatchEvent(new Event('change'));
+    expect(store.get().settings.kanjiMoiMoiNgay).toBe(8);
+    expect(root.textContent).toContain('Đã lưu: 8 kanji mới mỗi ngày.');
+  });
+});
+
+describe('hạn mức kanji mới: đồng bộ và lỗi', () => {
+  it('nhập sao lưu có hạn mức 3 thì ô chọn hiện 3 (nghe progress:changed trên window)', async () => {
+    const store = createProgress({ storage: memoryStorage(), now, events: window });
+    const root = document.createElement('div');
+    document.body.replaceChildren(root);
+    const cleanup = mount(root, {}, { progress: store, confirm: () => Promise.resolve(true), download: vi.fn(), now });
+    pickFile(root, JSON.stringify({ schemaVersion: 1, settings: { kanjiMoiMoiNgay: 3 } }));
+    await vi.waitFor(() => expect(root.querySelector('select').value).toBe('3'));
+    cleanup();
+  });
+
+  it('lưu hạn mức lỗi thì báo lỗi, không báo đã lưu', () => {
+    const { root } = setup({ storage: memoryStorage({}, { failSet: true }) });
+    const select = root.querySelector('select');
+    select.value = '8';
+    select.dispatchEvent(new Event('change'));
+    const statuses = [...root.querySelectorAll('[role=status]')].map((s) => s.textContent).join(' ');
+    expect(statuses).toContain('Không lưu được');
+    expect(statuses).not.toContain('Đã lưu');
+    expect(select.value).toBe('5');
+  });
+});
+
 describe('downloadText', () => {
   it('tạo link tải đúng tên file từ blob', async () => {
     const { downloadText } = await import('./index.js');

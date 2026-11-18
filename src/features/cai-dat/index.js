@@ -1,5 +1,6 @@
 import './cai-dat.css';
 import { progress as defaultProgress, CHANGED_EVENT } from '../../core/progress.js';
+import { kanjiMoiLimit, MIN_KANJI_MOI, MAX_KANJI_MOI } from '../../core/growth.js';
 import { toHash } from '../../core/router.js';
 import { confirmDialog as defaultConfirm } from '../../ui/confirm-dialog.js';
 
@@ -145,6 +146,36 @@ export function mount(root, _params, deps = {}) {
     );
   }
 
+  // --- Học mỗi ngày ---
+  const daily = el('section', 'kt-card kt-stack');
+  const dailyHead = el('div', 'kt-sechead');
+  dailyHead.append(el('h2', null, 'Học mỗi ngày'));
+  const row = el('label', 'kt-row cai-dat__field');
+  row.append(el('span', 'cai-dat__label', 'Số kanji mới mỗi ngày'));
+  const select = el('select', 'kt-select');
+  select.setAttribute('aria-label', 'Số kanji mới mỗi ngày');
+  for (let n = MIN_KANJI_MOI; n <= MAX_KANJI_MOI; n++) {
+    const opt = el('option', null, String(n));
+    opt.value = String(n);
+    select.append(opt);
+  }
+  const renderLimit = () => {
+    select.value = String(kanjiMoiLimit(store.get().settings));
+  };
+  renderLimit();
+  const dailyStatus = el('p', 'kt-muted cai-dat__text');
+  dailyStatus.setAttribute('role', 'status');
+  select.addEventListener('change', () => {
+    const value = kanjiMoiLimit({ kanjiMoiMoiNgay: select.value });
+    const res = store.update((d) => {
+      d.settings.kanjiMoiMoiNgay = value;
+    });
+    dailyStatus.textContent = res.ok ? `Đã lưu: ${value} kanji mới mỗi ngày.` : res.error;
+    renderLimit();
+  });
+  row.append(select);
+  daily.append(dailyHead, row, dailyStatus);
+
   // --- Giới thiệu ---
   const about = el('section', 'kt-card');
   const aboutHead = el('div', 'kt-sechead');
@@ -154,10 +185,14 @@ export function mount(root, _params, deps = {}) {
   aboutHead.append(link);
   about.append(aboutHead);
 
-  wrap.append(card, about);
+  wrap.append(card, daily, about);
   root.append(wrap);
 
-  const onChanged = () => renderLast();
+  const onChanged = () => {
+    renderLast();
+    renderLimit();
+    dailyStatus.textContent = '';
+  };
   window.addEventListener(CHANGED_EVENT, onChanged);
   return () => {
     unmounted = true;

@@ -1,4 +1,6 @@
 .cai-dat__text { margin: 0; }
+.cai-dat__field { justify-content: space-between; }
+.cai-dat__label { flex: 1; }
 /* input file ẩn, mở bằng nút "Nhập sao lưu" */
 .cai-dat__file {
   position: absolute;

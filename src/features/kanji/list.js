@@ -1,5 +1,6 @@
 import { kanji } from '../../core/content.js';
 import { toHash } from '../../core/router.js';
+import { HOC_MOI } from './routes.js';
 
 export function renderList() {
   const wrap = document.createElement('div');
@@ -13,6 +14,11 @@ export function renderList() {
   count.className = 'kt-chip kt-chip--kanji';
   count.textContent = `${kanji().length} chữ`;
   head.append(h2, count);
+
+  const learn = document.createElement('a');
+  learn.className = 'kt-btn kt-btn--primary kt-btn--block kanji-learn-link';
+  learn.href = toHash('kanji', HOC_MOI);
+  learn.textContent = 'Học chữ mới hôm nay';
 
   const grid = document.createElement('div');
   grid.className = 'kanji-grid';
@@ -41,6 +47,6 @@ export function renderList() {
     grid.append(a);
   }
 
-  wrap.append(head, grid);
+  wrap.append(head, learn, grid);
   return wrap;
 }

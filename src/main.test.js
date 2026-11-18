@@ -56,4 +56,11 @@ describe('start(): nối route với tính năng thật', () => {
     await flush();
     expect(document.querySelector('.app-main').textContent).toContain('NHẬT');
   });
+
+  it('route #/kanji/hoc-moi mở màn học chữ mới', async () => {
+    localStorage.clear();
+    window.location.hash = toHash('kanji', 'hoc-moi');
+    await flush();
+    expect(document.querySelector('.app-main .kt-session')).not.toBeNull();
+  });
 });
