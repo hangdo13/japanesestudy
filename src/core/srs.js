@@ -41,9 +41,15 @@ export function toStored(card) {
 export async function reviewCard(stored, correct, now = new Date()) {
   const s = await getScheduler();
   // thẻ hỏng (dueAt không đọc được) thì làm lại từ đầu thay vì kẹt mãi
-  const card = isValidCard(stored) ? fromStored(stored) : s.newCard({ now });
-  const { card: next } = s.review({ card, grade: correct ? Rating.Good : Rating.Again, now });
-  return toStored(next);
+  const grade = correct ? Rating.Good : Rating.Again;
+  if (isValidCard(stored)) {
+    try {
+      return toStored(s.review({ card: fromStored(stored), grade, now }).card);
+    } catch {
+      // thẻ thiếu trường (bản sao lưu cũ, sửa tay): ts-fsrs từ chối → làm lại thẻ mới
+    }
+  }
+  return toStored(s.review({ card: s.newCard({ now }), grade, now }).card);
 }
 
 /** Tạo thẻ mới (chưa ôn lần nào), đến hạn ngay. */

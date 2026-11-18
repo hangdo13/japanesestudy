@@ -11,6 +11,7 @@ const EXPECTED = {
   'hoc-ngay': 'Học ngay sắp có',
   'luyen-tap': 'Học theo lộ trình N5',
   kana: 'Bảng chữ cái',
+  'on-tap': 'Chưa có thẻ kanji để ôn',
   'cai-dat': 'Sao lưu tiến độ',
   'gioi-thieu': 'Nguồn nội dung',
 };

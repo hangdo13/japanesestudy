@@ -35,3 +35,37 @@ describe('renderQuizSession', () => {
     expect(onClose).toHaveBeenCalled();
   });
 });
+
+describe('renderQuizSession: bước tự dựng và focus lần đầu', () => {
+  it('render: answer chỉ tính một lần; focus câu đầu sau khi gắn vào trang', async () => {
+    const onAnswer = vi.fn();
+    let answerFn;
+    const node = renderQuizSession({
+      title: 'T',
+      questions: [{ id: 1 }, { id: 2 }],
+      toQuestion: (q) =>
+        q.id === 1
+          ? {
+              render: (answer) => {
+                answerFn = answer;
+                const d = document.createElement('div');
+                d.className = 'kt-deck';
+                d.tabIndex = 0;
+                return d;
+              },
+            }
+          : { prompt: 'Hỏi', options: ['a', 'b'], answer: 0 },
+      onAnswer,
+      onClose: () => {},
+      renderResult: () => document.createElement('section'),
+    });
+    document.body.replaceChildren(node);
+    await Promise.resolve();
+    expect(document.activeElement.className).toBe('kt-deck');
+    answerFn(true);
+    answerFn(false);
+    expect(onAnswer).toHaveBeenCalledTimes(1);
+    expect(node.querySelector('.kt-count').textContent).toBe('2 / 2');
+    expect(document.activeElement.classList.contains('kt-option')).toBe(true);
+  });
+});

@@ -10,6 +10,12 @@ function el(tag, className, text) {
   if (text != null) n.textContent = text;
   return n;
 }
+/** Focus `n`; nếu phiên chưa gắn vào trang (lần đầu) thì đợi gắn xong. */
+function focusSoon(n) {
+  if (!n) return;
+  if (n.isConnected) n.focus();
+  else queueMicrotask(() => n.isConnected && n.focus());
+}
 function hydrate(node) {
   if (globalThis.Kotoba && typeof globalThis.Kotoba.hydrate === 'function') globalThis.Kotoba.hydrate(node);
 }
@@ -18,7 +24,8 @@ function hydrate(node) {
  * @param {object} o
  * @param {string} o.title  nhãn vùng phiên (cho trình đọc màn hình)
  * @param {object[]} o.questions
- * @param {(q: object) => { prompt: Node|string, options: (Node|string)[], answer: number, explain?: Function }} o.toQuestion
+ * @param {(q: object) => ({ prompt: Node|string, options: (Node|string)[], answer: number, explain?: Function } | { render: (answer: (correct: boolean) => void) => Node })} o.toQuestion
+ *   Trả `render` cho bước tự dựng (vd. Flashcard): gọi `answer(correct)` một lần để chấm và sang bước sau.
  * @param {(q: object, correct: boolean) => void} [o.onAnswer]
  * @param {() => void} o.onClose
  * @param {(r: { score: number, total: number, wrong: object[] }) => Node} o.renderResult
@@ -61,32 +68,39 @@ export function renderQuizSession({ title, questions, toQuestion, onAnswer, onCl
       head.hidden = true;
       const result = renderResult({ score, total: questions.length, wrong });
       body.replaceChildren(result);
+      hydrate(body);
       const h = result.querySelector('h2');
       if (h) {
         h.tabIndex = -1;
-        h.focus();
+        focusSoon(h);
       }
       return;
     }
     const q = questions[i];
     const spec = toQuestion(q);
-    body.replaceChildren(
-      renderQuestion({
-        ...spec,
-        onAnswer: (correct) => {
-          if (correct) score += 1;
-          else wrong.push(q);
-          if (onAnswer) onAnswer(q, correct);
-        },
-        onNext: () => {
-          i += 1;
-          ask();
-        },
-      }),
-    );
+    const record = (correct) => {
+      if (correct) score += 1;
+      else wrong.push(q);
+      if (onAnswer) onAnswer(q, correct);
+    };
+    const advance = () => {
+      i += 1;
+      ask();
+    };
+    if (typeof spec.render === 'function') {
+      let used = false;
+      body.replaceChildren(
+        spec.render((correct) => {
+          if (used) return;
+          used = true;
+          record(correct);
+          advance();
+        }),
+      );
+    } else body.replaceChildren(renderQuestion({ ...spec, onAnswer: record, onNext: advance }));
     hydrate(body);
-    const first = body.querySelector('.kt-option');
-    if (first) first.focus();
+    // bước tự lo focus (vd. bài nghe focus nút "Nghe lại") thì trả `autoFocus: false`
+    if (spec.autoFocus !== false) focusSoon(body.querySelector('.kt-option, .kt-deck'));
   };
 
   hydrate(head);

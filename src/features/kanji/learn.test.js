@@ -131,3 +131,29 @@ it('app.css có luật [hidden] để nút "Đã học xong" thật sự ẩn tr
   const { join } = await import('node:path');
   expect(readFileSync(join(process.cwd(), 'src/ui/app.css'), 'utf8')).toMatch(/\[hidden\]\s*\{\s*display:\s*none\s*!important/);
 });
+
+describe('đưa chữ vừa học vào lịch ôn (Story 2.1)', () => {
+  const finish = (view) => {
+    for (let i = 0; i < 5; i++) view.swipe('right');
+    [...view.node.querySelectorAll('button')].find((b) => b.textContent === 'Đã học xong').click();
+  };
+  it('bấm "Đã học xong" tạo 15 thẻ kanji-nghia/doc/chu cho 5 chữ', async () => {
+    const { view, progress } = setup();
+    finish(view);
+    await view.cardsDone;
+    const keys = Object.keys(progress.get().srs).sort();
+    expect(keys).toHaveLength(15);
+    for (const id of ['一', '二', '三', '四', '五'])
+      for (const kind of ['kanji-nghia', 'kanji-doc', 'kanji-chu']) expect(keys).toContain(`${kind}:${id}`);
+  });
+  it('không lưu được thẻ thì vẫn hiện GoalComplete và báo lỗi', async () => {
+    const real = createProgress({ storage: memoryStorage(), now, events: new EventTarget() });
+    let calls = 0;
+    const store = { get: real.get, update: (fn) => (++calls === 1 ? real.update(fn) : { ok: false, error: 'Bộ nhớ đầy' }) };
+    const { view } = setup({ store });
+    finish(view);
+    await view.cardsDone;
+    expect(view.node.textContent).toContain('Xong gói kanji hôm nay!');
+    expect(view.node.querySelector('[role=status]').textContent).toContain('Bộ nhớ đầy');
+  });
+});

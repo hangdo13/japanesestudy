@@ -216,6 +216,7 @@ export function renderSounds(deps = {}) {
             return s;
           };
           return {
+            autoFocus: false,
             prompt,
             options: q.options.map(option),
             answer: q.answer,

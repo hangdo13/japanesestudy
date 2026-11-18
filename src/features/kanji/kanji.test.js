@@ -34,6 +34,8 @@ describe('màn danh sách', () => {
     expect(tiles[0].getAttribute('aria-label')).toContain('chưa duyệt');
     const learn = [...el.querySelectorAll('a.kt-btn')].find((a) => a.textContent === 'Học chữ mới hôm nay');
     expect(learn.getAttribute('href')).toBe('#/kanji/hoc-moi');
+    const review = [...el.querySelectorAll('a.kt-btn')].find((a) => a.textContent === 'Ôn kanji đến hạn');
+    expect(review.getAttribute('href')).toBe('#/on-tap/kanji');
   });
 });
 

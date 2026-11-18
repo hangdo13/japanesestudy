@@ -33,6 +33,12 @@ describe('core/srs', () => {
     expect(c.reps).toBe(1);
   });
 
+  it('thẻ thiếu trường ts-fsrs cần (vd. stabilityFast) thì làm lại thẻ mới, không ném lỗi', async () => {
+    const c = await reviewCard({ dueAt: '2026-01-01T00:00:00Z', stability: 0, difficulty: 0, state: 0, reps: 3 }, true, T0);
+    expect(c.reps).toBe(1);
+    expect(Date.parse(c.dueAt)).toBeGreaterThan(T0.getTime());
+  });
+
   it('dueIds lọc theo tiền tố và sắp sớm nhất trước', () => {
     const srs = {
       'kana:い': { dueAt: '2026-11-18T09:00:00Z' },

@@ -1,5 +1,7 @@
 import { toHash } from '../../core/router.js';
 import { kanji } from '../../core/content.js';
+import { progress as defaultProgress } from '../../core/progress.js';
+import { dueKanjiCards, missingKanjiCards, MAX_PER_SESSION } from '../../core/kanji-review.js';
 
 /** Mục lục các phần học theo lộ trình N5. Phần chưa có thì ghi "Sắp có". */
 const PHAN = [
@@ -10,7 +12,19 @@ const PHAN = [
   { title: 'Luyện nghe', sub: 'Sắp có', icon: 'mic', skill: 'speaking' },
 ];
 
-export function mount(root) {
+/** Số thẻ kanji cần ôn bây giờ (gồm thẻ sắp được tạo cho chữ đã học). */
+export function kanjiReviewCount(data, now = new Date()) {
+  const known = new Set(kanji().map((k) => k.id));
+  return dueKanjiCards(data, known, now).length + missingKanjiCards(data, known).length;
+}
+
+export function mount(root, _params, deps = {}) {
+  const store = deps.progress || defaultProgress();
+  const n = kanjiReviewCount(store.get(), (deps.now || (() => new Date()))());
+  const phan = [
+    { title: 'Ôn kanji', sub: n ? `${n} thẻ cần ôn${n > MAX_PER_SESSION ? `, mỗi phiên ${MAX_PER_SESSION}` : ''}` : 'Chưa có thẻ đến hạn', glyph: '復', skill: 'kanji', hash: toHash('on-tap', 'kanji') },
+    ...PHAN,
+  ];
   const wrap = document.createElement('div');
   wrap.className = 'kt-stack';
   const head = document.createElement('div');
@@ -21,7 +35,7 @@ export function mount(root) {
 
   const list = document.createElement('div');
   list.className = 'kt-list';
-  for (const p of PHAN) {
+  for (const p of phan) {
     const item = document.createElement(p.hash ? 'a' : 'div');
     item.className = 'kt-item';
     if (p.hash) {

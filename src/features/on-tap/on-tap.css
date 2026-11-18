@@ -1,0 +1,15 @@
+/* Ôn tập. Chỉ dùng token (AD-9). */
+.review-option { font-size: 20px; line-height: 28px; font-weight: 700; }
+.review-option--kanji { font-size: 28px; line-height: 36px; }
+.review-word { font-size: 40px; line-height: 48px; }
+.review-hint__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: var(--space-2);
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
