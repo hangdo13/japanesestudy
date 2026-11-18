@@ -50,4 +50,13 @@ describe('luật kiến trúc', () => {
       expect(src.match(/\b(rgb|rgba|hsl|hsla)\(/g), rel(f)).toBeNull();
     }
   });
+
+  it('tính năng và lõi không đọc thẳng dữ liệu nguồn (AD-3)', () => {
+    for (const f of files) {
+      const src = readFileSync(f, 'utf8');
+      for (const bad of ['vendor/', 'content-vi/', 'n5_vocab']) {
+        expect(src.includes(bad), `${rel(f)} nhắc tới ${bad}`).toBe(false);
+      }
+    }
+  });
 });

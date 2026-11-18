@@ -7,9 +7,13 @@
     "node": ">=22.22.2"
   },
   "scripts": {
+    "build:content": "node scripts/build-content.mjs",
+    "predev": "npm run build:content",
     "dev": "vite",
+    "prebuild": "npm run build:content",
     "build": "vite build",
     "preview": "vite preview",
+    "pretest": "npm run build:content",
     "test": "vitest run"
   },
   "devDependencies": {

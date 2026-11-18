@@ -1,0 +1,638 @@
+{
+  "一": {
+    "hanViet": "NHẤT",
+    "nghia": "một",
+    "cauGoiNho": "Một nét ngang duy nhất, như giơ một ngón tay nằm ngang: số một.",
+    "reviewStatus": "draft"
+  },
+  "二": {
+    "hanViet": "NHỊ",
+    "nghia": "hai",
+    "cauGoiNho": "Hai nét ngang xếp chồng: số hai.",
+    "reviewStatus": "draft"
+  },
+  "三": {
+    "hanViet": "TAM",
+    "nghia": "ba",
+    "cauGoiNho": "Ba nét ngang xếp chồng: số ba.",
+    "reviewStatus": "draft"
+  },
+  "四": {
+    "hanViet": "TỨ",
+    "nghia": "bốn",
+    "cauGoiNho": "Một khung vuông 囗 có bốn góc, bên trong có hai chân 儿: số bốn.",
+    "reviewStatus": "draft"
+  },
+  "五": {
+    "hanViet": "NGŨ",
+    "nghia": "năm",
+    "cauGoiNho": "Hai nét ngang trên và dưới kẹp một khung gấp khúc ở giữa, như năm ngón tay nắm lại thành nắm đấm.",
+    "reviewStatus": "draft"
+  },
+  "六": {
+    "hanViet": "LỤC",
+    "nghia": "sáu",
+    "cauGoiNho": "Một chiếc mũ 亠 đội trên hai chân toả ra 八: người đội mũ đứng dang chân, sáu nét gọn gàng là số sáu.",
+    "reviewStatus": "draft"
+  },
+  "七": {
+    "hanViet": "THẤT",
+    "nghia": "bảy",
+    "cauGoiNho": "Một nét ngang bị một nét móc cắt ngang, giống số 7 lộn ngược.",
+    "reviewStatus": "draft"
+  },
+  "八": {
+    "hanViet": "BÁT",
+    "nghia": "tám",
+    "cauGoiNho": "Hai nét toả ra hai bên như cánh cửa mở rộng; tám là số \"phát\", toả ra rộng.",
+    "reviewStatus": "draft"
+  },
+  "九": {
+    "hanViet": "CỬU",
+    "nghia": "chín",
+    "cauGoiNho": "Nét phẩy 丿 cộng với nét móc 乙 dài: còn thiếu một chút nữa là đủ mười.",
+    "reviewStatus": "draft"
+  },
+  "十": {
+    "hanViet": "THẬP",
+    "nghia": "mười",
+    "cauGoiNho": "Dấu cộng: một ngang một dọc, đủ thập phương, số mười.",
+    "reviewStatus": "draft"
+  },
+  "百": {
+    "hanViet": "BÁCH",
+    "nghia": "trăm",
+    "cauGoiNho": "Số một 一 đặt trên chữ trắng 白: một trăm tờ giấy trắng.",
+    "reviewStatus": "draft"
+  },
+  "千": {
+    "hanViet": "THIÊN",
+    "nghia": "nghìn",
+    "cauGoiNho": "Nét phẩy 丿 đặt trên số mười 十: mười trăm, một nghìn.",
+    "reviewStatus": "draft"
+  },
+  "万": {
+    "hanViet": "VẠN",
+    "nghia": "mười nghìn",
+    "cauGoiNho": "Một nét ngang trên cùng, bên dưới là nét móc dài vươn xa: vạn, rất nhiều.",
+    "reviewStatus": "draft"
+  },
+  "円": {
+    "hanViet": "VIÊN",
+    "nghia": "yên (tiền Nhật), tròn",
+    "cauGoiNho": "Một khung cửa 冂 có vật ở trong: đồng xu yên tròn trong ví.",
+    "reviewStatus": "draft"
+  },
+  "日": {
+    "hanViet": "NHẬT",
+    "nghia": "mặt trời, ngày",
+    "cauGoiNho": "Khung chữ nhật có một vạch ở giữa: mặt trời có tâm, mỗi lần mọc là một ngày.",
+    "reviewStatus": "draft"
+  },
+  "月": {
+    "hanViet": "NGUYỆT",
+    "nghia": "mặt trăng, tháng",
+    "cauGoiNho": "Hình trăng lưỡi liềm kéo dài; trăng tròn khuyết một vòng là một tháng.",
+    "reviewStatus": "draft"
+  },
+  "火": {
+    "hanViet": "HỎA",
+    "nghia": "lửa",
+    "cauGoiNho": "Ngọn lửa bốc lên ở giữa, hai tia lửa bắn ra hai bên.",
+    "reviewStatus": "draft"
+  },
+  "水": {
+    "hanViet": "THỦY",
+    "nghia": "nước",
+    "cauGoiNho": "Dòng nước chảy ở giữa, các giọt nước bắn sang hai bên.",
+    "reviewStatus": "draft"
+  },
+  "木": {
+    "hanViet": "MỘC",
+    "nghia": "cây, gỗ",
+    "cauGoiNho": "Thân cây dọc, cành ngang, hai rễ toả xuống đất.",
+    "reviewStatus": "draft"
+  },
+  "金": {
+    "hanViet": "KIM",
+    "nghia": "vàng, tiền",
+    "cauGoiNho": "Người 人 và vua 王 có thêm hạt 丶: những hạt vàng trong mỏ của vua.",
+    "reviewStatus": "draft"
+  },
+  "土": {
+    "hanViet": "THỔ",
+    "nghia": "đất",
+    "cauGoiNho": "Mầm cây 十 nhô lên khỏi mặt đất 一.",
+    "reviewStatus": "draft"
+  },
+  "曜": {
+    "hanViet": "DIỆU",
+    "nghia": "ngày trong tuần",
+    "cauGoiNho": "Mặt trời 日 bên trái, chim 隹 có cánh 羽 bên phải: chim bay qua mặt trời mỗi ngày trong tuần.",
+    "reviewStatus": "draft"
+  },
+  "年": {
+    "hanViet": "NIÊN",
+    "nghia": "năm",
+    "cauGoiNho": "Người gánh lúa đi qua một mùa gặt: mỗi lần gặt là một năm.",
+    "reviewStatus": "draft"
+  },
+  "時": {
+    "hanViet": "THỜI",
+    "nghia": "giờ, thời gian",
+    "cauGoiNho": "Mặt trời 日 bên cạnh ngôi chùa 寺: chùa gõ chuông theo giờ mặt trời.",
+    "reviewStatus": "draft"
+  },
+  "分": {
+    "hanViet": "PHÂN",
+    "nghia": "phút, chia",
+    "cauGoiNho": "Con dao 刀 chia đôi 八: chia nhỏ ra. Chia một giờ thành từng phần nhỏ là phút (分), chia hiểu cặn kẽ là hiểu (分かる).",
+    "reviewStatus": "draft"
+  },
+  "半": {
+    "hanViet": "BÁN",
+    "nghia": "một nửa",
+    "cauGoiNho": "Một nét dọc chẻ đôi mọi thứ chính giữa: một nửa.",
+    "reviewStatus": "draft"
+  },
+  "今": {
+    "hanViet": "KIM",
+    "nghia": "bây giờ",
+    "cauGoiNho": "Mái nhà 人 che lên một vật 一: ngay lúc này mọi người đang tụ dưới mái.",
+    "reviewStatus": "draft"
+  },
+  "毎": {
+    "hanViet": "MỖI",
+    "nghia": "mỗi",
+    "cauGoiNho": "Người 人 trên chữ mẹ 母: mẹ chăm con mỗi ngày.",
+    "reviewStatus": "draft"
+  },
+  "週": {
+    "hanViet": "CHU",
+    "nghia": "tuần",
+    "cauGoiNho": "Bộ đi 辶 vòng quanh chữ chu 周 (vòng): đi hết một vòng bảy ngày là một tuần.",
+    "reviewStatus": "draft"
+  },
+  "午": {
+    "hanViet": "NGỌ",
+    "nghia": "buổi trưa",
+    "cauGoiNho": "Giống chữ bò 牛 nhưng không có sừng: giờ Ngọ là giữa trưa.",
+    "reviewStatus": "draft"
+  },
+  "何": {
+    "hanViet": "HÀ",
+    "nghia": "cái gì",
+    "cauGoiNho": "Người 亻 đứng cạnh chữ \"có thể\" 可: người ấy có thể là ai, là cái gì?",
+    "reviewStatus": "draft"
+  },
+  "人": {
+    "hanViet": "NHÂN",
+    "nghia": "người",
+    "cauGoiNho": "Hai chân bước đi: một người.",
+    "reviewStatus": "draft"
+  },
+  "男": {
+    "hanViet": "NAM",
+    "nghia": "nam, đàn ông",
+    "cauGoiNho": "Ruộng 田 trên, sức 力 dưới: người dùng sức cày ruộng là đàn ông.",
+    "reviewStatus": "draft"
+  },
+  "女": {
+    "hanViet": "NỮ",
+    "nghia": "nữ, phụ nữ",
+    "cauGoiNho": "Dáng người phụ nữ ngồi khoanh tay duyên dáng.",
+    "reviewStatus": "draft"
+  },
+  "子": {
+    "hanViet": "TỬ",
+    "nghia": "con, trẻ con",
+    "cauGoiNho": "Em bé quấn tã, hai tay dang ra.",
+    "reviewStatus": "draft"
+  },
+  "父": {
+    "hanViet": "PHỤ",
+    "nghia": "bố",
+    "cauGoiNho": "Hai cây gậy bắt chéo dưới hai nét: bố cầm công cụ lao động.",
+    "reviewStatus": "draft"
+  },
+  "母": {
+    "hanViet": "MẪU",
+    "nghia": "mẹ",
+    "cauGoiNho": "Hình người mẹ có hai chấm là bầu sữa nuôi con.",
+    "reviewStatus": "draft"
+  },
+  "友": {
+    "hanViet": "HỮU",
+    "nghia": "bạn",
+    "cauGoiNho": "Hai bàn tay ナ và 又 nắm lấy nhau: bạn bè.",
+    "reviewStatus": "draft"
+  },
+  "先": {
+    "hanViet": "TIÊN",
+    "nghia": "trước",
+    "cauGoiNho": "Chân người 儿 bước lên trước: đi trước, tiên phong (先生 = thầy giáo).",
+    "reviewStatus": "draft"
+  },
+  "生": {
+    "hanViet": "SINH",
+    "nghia": "sống, sinh ra",
+    "cauGoiNho": "Mầm cây mọc lên từ đất: sự sống.",
+    "reviewStatus": "draft"
+  },
+  "手": {
+    "hanViet": "THỦ",
+    "nghia": "tay",
+    "cauGoiNho": "Bàn tay với các ngón và cổ tay.",
+    "reviewStatus": "draft"
+  },
+  "足": {
+    "hanViet": "TÚC",
+    "nghia": "chân",
+    "cauGoiNho": "Cái miệng 口 là đầu gối, phía dưới là bàn chân 止 đang dừng.",
+    "reviewStatus": "draft"
+  },
+  "目": {
+    "hanViet": "MỤC",
+    "nghia": "mắt",
+    "cauGoiNho": "Con mắt dựng đứng, bên trong có tròng mắt.",
+    "reviewStatus": "draft"
+  },
+  "口": {
+    "hanViet": "KHẨU",
+    "nghia": "miệng",
+    "cauGoiNho": "Hình cái miệng há ra hình vuông.",
+    "reviewStatus": "draft"
+  },
+  "力": {
+    "hanViet": "LỰC",
+    "nghia": "sức lực",
+    "cauGoiNho": "Cánh tay gồng cơ bắp.",
+    "reviewStatus": "draft"
+  },
+  "学": {
+    "hanViet": "HỌC",
+    "nghia": "học",
+    "cauGoiNho": "Đứa trẻ 子 ngồi dưới mái trường 冖, ánh sáng ツ chiếu xuống: đi học.",
+    "reviewStatus": "draft"
+  },
+  "校": {
+    "hanViet": "HIỆU",
+    "nghia": "trường học",
+    "cauGoiNho": "Cây 木 bên cạnh chữ giao 交 (giao lưu): nơi có cây và mọi người gặp nhau là trường.",
+    "reviewStatus": "draft"
+  },
+  "本": {
+    "hanViet": "BẢN",
+    "nghia": "sách, gốc",
+    "cauGoiNho": "Cây 木 có vạch đánh dấu ở gốc: nguồn gốc; sách là gốc của tri thức.",
+    "reviewStatus": "draft"
+  },
+  "語": {
+    "hanViet": "NGỮ",
+    "nghia": "ngôn ngữ, từ",
+    "cauGoiNho": "Lời nói 言 của tôi 吾: ngôn ngữ.",
+    "reviewStatus": "draft"
+  },
+  "国": {
+    "hanViet": "QUỐC",
+    "nghia": "đất nước",
+    "cauGoiNho": "Viên ngọc 玉 được bao bọc trong biên giới 囗: đất nước.",
+    "reviewStatus": "draft"
+  },
+  "会": {
+    "hanViet": "HỘI",
+    "nghia": "gặp, hội",
+    "cauGoiNho": "Mọi người 人 tụ lại dưới mây 云: hội họp.",
+    "reviewStatus": "draft"
+  },
+  "社": {
+    "hanViet": "XÃ",
+    "nghia": "công ty, đền thờ",
+    "cauGoiNho": "Bàn thờ 礻 đứng cạnh đất 土: ngày xưa là đền thờ thần đất, nơi dân làng tụ họp; nay 会社 là công ty, nơi mọi người tụ về làm việc.",
+    "reviewStatus": "draft"
+  },
+  "員": {
+    "hanViet": "VIÊN",
+    "nghia": "thành viên",
+    "cauGoiNho": "Cái miệng 口 trên vỏ sò 貝 (tiền): người ăn lương, nhân viên.",
+    "reviewStatus": "draft"
+  },
+  "大": {
+    "hanViet": "ĐẠI",
+    "nghia": "to, lớn",
+    "cauGoiNho": "Người dang rộng hai tay: to lớn.",
+    "reviewStatus": "draft"
+  },
+  "中": {
+    "hanViet": "TRUNG",
+    "nghia": "giữa, trong",
+    "cauGoiNho": "Một nét đâm thẳng vào giữa cái hộp 口: ở giữa.",
+    "reviewStatus": "draft"
+  },
+  "小": {
+    "hanViet": "TIỂU",
+    "nghia": "nhỏ",
+    "cauGoiNho": "Một nét nhỏ ở giữa, hai chấm nhỏ hai bên: bé nhỏ.",
+    "reviewStatus": "draft"
+  },
+  "上": {
+    "hanViet": "THƯỢNG",
+    "nghia": "trên",
+    "cauGoiNho": "Vạch nhỏ nằm trên đường chân trời: phía trên.",
+    "reviewStatus": "draft"
+  },
+  "下": {
+    "hanViet": "HẠ",
+    "nghia": "dưới",
+    "cauGoiNho": "Vạch nhỏ treo dưới đường ngang: phía dưới.",
+    "reviewStatus": "draft"
+  },
+  "左": {
+    "hanViet": "TẢ",
+    "nghia": "trái",
+    "cauGoiNho": "Bàn tay ナ cầm thước thợ 工: tay trái giữ thước.",
+    "reviewStatus": "draft"
+  },
+  "右": {
+    "hanViet": "HỮU",
+    "nghia": "phải",
+    "cauGoiNho": "Bàn tay ナ đưa lên miệng 口: tay phải dùng để ăn.",
+    "reviewStatus": "draft"
+  },
+  "前": {
+    "hanViet": "TIỀN",
+    "nghia": "trước",
+    "cauGoiNho": "Hai sừng 丷 trên thuyền 月 có con dao 刂: mũi thuyền rẽ nước đi phía trước.",
+    "reviewStatus": "draft"
+  },
+  "後": {
+    "hanViet": "HẬU",
+    "nghia": "sau",
+    "cauGoiNho": "Bước chân 彳 với sợi chỉ nhỏ 幺 và chân đi chậm 夂: lẽo đẽo theo sau.",
+    "reviewStatus": "draft"
+  },
+  "外": {
+    "hanViet": "NGOẠI",
+    "nghia": "ngoài",
+    "cauGoiNho": "Buổi tối 夕 đi bói 卜: chuyện ở bên ngoài.",
+    "reviewStatus": "draft"
+  },
+  "東": {
+    "hanViet": "ĐÔNG",
+    "nghia": "phía đông",
+    "cauGoiNho": "Mặt trời 日 mọc sau thân cây 木: phương đông.",
+    "reviewStatus": "draft"
+  },
+  "西": {
+    "hanViet": "TÂY",
+    "nghia": "phía tây",
+    "cauGoiNho": "Chim về tổ khi mặt trời lặn ở phía tây.",
+    "reviewStatus": "draft"
+  },
+  "南": {
+    "hanViet": "NAM",
+    "nghia": "phía nam",
+    "cauGoiNho": "Mái lều có số mười ở trên: miền nam ấm áp.",
+    "reviewStatus": "draft"
+  },
+  "北": {
+    "hanViet": "BẮC",
+    "nghia": "phía bắc",
+    "cauGoiNho": "Hai người quay lưng vào nhau tránh gió bấc phương bắc.",
+    "reviewStatus": "draft"
+  },
+  "間": {
+    "hanViet": "GIAN",
+    "nghia": "khoảng giữa",
+    "cauGoiNho": "Mặt trời 日 lọt qua khe giữa hai cánh cổng 門: khoảng giữa, thời gian.",
+    "reviewStatus": "draft"
+  },
+  "山": {
+    "hanViet": "SƠN",
+    "nghia": "núi",
+    "cauGoiNho": "Ba đỉnh núi nhô lên.",
+    "reviewStatus": "draft"
+  },
+  "川": {
+    "hanViet": "XUYÊN",
+    "nghia": "sông",
+    "cauGoiNho": "Ba dòng nước chảy song song.",
+    "reviewStatus": "draft"
+  },
+  "田": {
+    "hanViet": "ĐIỀN",
+    "nghia": "ruộng",
+    "cauGoiNho": "Thửa ruộng chia bốn ô vuông.",
+    "reviewStatus": "draft"
+  },
+  "雨": {
+    "hanViet": "VŨ",
+    "nghia": "mưa",
+    "cauGoiNho": "Hạt mưa rơi từ đám mây dưới bầu trời.",
+    "reviewStatus": "draft"
+  },
+  "天": {
+    "hanViet": "THIÊN",
+    "nghia": "trời",
+    "cauGoiNho": "Trên đầu người to lớn 大 còn một tầng nữa 一: bầu trời.",
+    "reviewStatus": "draft"
+  },
+  "気": {
+    "hanViet": "KHÍ",
+    "nghia": "khí, tinh thần",
+    "cauGoiNho": "Hơi khí 气 bốc lên lan toả: khí trời, tâm trạng (元気).",
+    "reviewStatus": "draft"
+  },
+  "花": {
+    "hanViet": "HOA",
+    "nghia": "hoa",
+    "cauGoiNho": "Cỏ 艹 thay đổi 化 thành hoa.",
+    "reviewStatus": "draft"
+  },
+  "空": {
+    "hanViet": "KHÔNG",
+    "nghia": "bầu trời, trống",
+    "cauGoiNho": "Cái hang 穴 trống rỗng phía trên công trình 工: khoảng không, bầu trời.",
+    "reviewStatus": "draft"
+  },
+  "電": {
+    "hanViet": "ĐIỆN",
+    "nghia": "điện",
+    "cauGoiNho": "Mưa 雨 trên ruộng 田 có tia sét: điện.",
+    "reviewStatus": "draft"
+  },
+  "車": {
+    "hanViet": "XA",
+    "nghia": "xe",
+    "cauGoiNho": "Nhìn từ trên xuống: thùng xe ở giữa, trục và hai bánh xe.",
+    "reviewStatus": "draft"
+  },
+  "道": {
+    "hanViet": "ĐẠO",
+    "nghia": "đường",
+    "cauGoiNho": "Cái đầu 首 bước đi 辶: con đường mình đi.",
+    "reviewStatus": "draft"
+  },
+  "店": {
+    "hanViet": "ĐIẾM",
+    "nghia": "cửa hàng",
+    "cauGoiNho": "Mái hiên 广 che chỗ bói toán 占: quầy hàng.",
+    "reviewStatus": "draft"
+  },
+  "駅": {
+    "hanViet": "DỊCH",
+    "nghia": "nhà ga",
+    "cauGoiNho": "Con ngựa 馬 dừng nghỉ ở trạm: ngày xưa là trạm ngựa, nay là nhà ga.",
+    "reviewStatus": "draft"
+  },
+  "食": {
+    "hanViet": "THỰC",
+    "nghia": "ăn",
+    "cauGoiNho": "Mái nhà che trên nồi cơm đầy: ăn uống.",
+    "reviewStatus": "draft"
+  },
+  "飲": {
+    "hanViet": "ẨM",
+    "nghia": "uống",
+    "cauGoiNho": "Đồ ăn 飠 bên cạnh người há miệng 欠: uống.",
+    "reviewStatus": "draft"
+  },
+  "見": {
+    "hanViet": "KIẾN",
+    "nghia": "nhìn",
+    "cauGoiNho": "Con mắt 目 đặt trên đôi chân 儿: đi nhìn ngắm.",
+    "reviewStatus": "draft"
+  },
+  "聞": {
+    "hanViet": "VĂN",
+    "nghia": "nghe",
+    "cauGoiNho": "Cái tai 耳 ghé vào cánh cổng 門: nghe ngóng.",
+    "reviewStatus": "draft"
+  },
+  "読": {
+    "hanViet": "ĐỘC",
+    "nghia": "đọc",
+    "cauGoiNho": "Lời nói 言 bên cạnh chữ bán 売: đọc to như người bán hàng rao.",
+    "reviewStatus": "draft"
+  },
+  "書": {
+    "hanViet": "THƯ",
+    "nghia": "viết",
+    "cauGoiNho": "Bàn tay cầm bút 聿 viết lên miệng nói 曰: ghi lại lời nói thành chữ, là viết.",
+    "reviewStatus": "draft"
+  },
+  "話": {
+    "hanViet": "THOẠI",
+    "nghia": "nói chuyện",
+    "cauGoiNho": "Lời nói 言 bên cạnh cái lưỡi 舌: nói chuyện.",
+    "reviewStatus": "draft"
+  },
+  "来": {
+    "hanViet": "LAI",
+    "nghia": "đến",
+    "cauGoiNho": "Cây lúa trĩu bông: mùa gặt đã đến.",
+    "reviewStatus": "draft"
+  },
+  "行": {
+    "hanViet": "HÀNH",
+    "nghia": "đi",
+    "cauGoiNho": "Ngã tư đường: bước chân trái 彳 và phải 亍 đi qua.",
+    "reviewStatus": "draft"
+  },
+  "出": {
+    "hanViet": "XUẤT",
+    "nghia": "ra",
+    "cauGoiNho": "Hai ngọn núi chồng lên nhau, mầm cây nhô ra ngoài.",
+    "reviewStatus": "draft"
+  },
+  "入": {
+    "hanViet": "NHẬP",
+    "nghia": "vào",
+    "cauGoiNho": "Một người cúi đầu bước vào trong.",
+    "reviewStatus": "draft"
+  },
+  "立": {
+    "hanViet": "LẬP",
+    "nghia": "đứng",
+    "cauGoiNho": "Người đứng thẳng trên mặt đất.",
+    "reviewStatus": "draft"
+  },
+  "休": {
+    "hanViet": "HƯU",
+    "nghia": "nghỉ",
+    "cauGoiNho": "Người 亻 dựa vào cây 木: nghỉ ngơi.",
+    "reviewStatus": "draft"
+  },
+  "言": {
+    "hanViet": "NGÔN",
+    "nghia": "nói, lời",
+    "cauGoiNho": "Những lời thoát ra từ cái miệng 口.",
+    "reviewStatus": "draft"
+  },
+  "買": {
+    "hanViet": "MÃI",
+    "nghia": "mua",
+    "cauGoiNho": "Cái lưới 罒 đựng vỏ sò 貝 (tiền): đi mua hàng.",
+    "reviewStatus": "draft"
+  },
+  "高": {
+    "hanViet": "CAO",
+    "nghia": "cao, đắt",
+    "cauGoiNho": "Ngôi tháp nhiều tầng cao vút. Thứ gì \"cao giá\" thì đắt: 高い vừa là cao vừa là đắt.",
+    "reviewStatus": "draft"
+  },
+  "安": {
+    "hanViet": "AN",
+    "nghia": "rẻ, yên ổn",
+    "cauGoiNho": "Người phụ nữ 女 ở yên dưới mái nhà 宀: bình yên. Lòng đã yên thì giá cũng \"dễ chịu\": 安い là rẻ.",
+    "reviewStatus": "draft"
+  },
+  "新": {
+    "hanViet": "TÂN",
+    "nghia": "mới",
+    "cauGoiNho": "Đứng 立 trên cây 木, dùng rìu 斤 chặt gỗ mới.",
+    "reviewStatus": "draft"
+  },
+  "古": {
+    "hanViet": "CỔ",
+    "nghia": "cũ",
+    "cauGoiNho": "Mười 十 cái miệng 口 kể lại: chuyện cũ được truyền miệng qua nhiều đời.",
+    "reviewStatus": "draft"
+  },
+  "長": {
+    "hanViet": "TRƯỜNG",
+    "nghia": "dài, trưởng",
+    "cauGoiNho": "Người có mái tóc dài: lâu năm, người đứng đầu.",
+    "reviewStatus": "draft"
+  },
+  "白": {
+    "hanViet": "BẠCH",
+    "nghia": "trắng",
+    "cauGoiNho": "Mặt trời 日 có một tia sáng 丿: ánh sáng trắng.",
+    "reviewStatus": "draft"
+  },
+  "名": {
+    "hanViet": "DANH",
+    "nghia": "tên",
+    "cauGoiNho": "Buổi tối 夕 không nhìn thấy nhau phải gọi bằng miệng 口: gọi tên.",
+    "reviewStatus": "draft"
+  },
+  "番": {
+    "hanViet": "PHIÊN",
+    "nghia": "số thứ tự, lượt",
+    "cauGoiNho": "Hạt giống 釆 gieo lần lượt trên ruộng 田: lượt, số thứ tự.",
+    "reviewStatus": "draft"
+  },
+  "号": {
+    "hanViet": "HIỆU",
+    "nghia": "số hiệu",
+    "cauGoiNho": "Cái miệng 口 hô to số thứ tự: số hiệu.",
+    "reviewStatus": "draft"
+  },
+  "私": {
+    "hanViet": "TƯ",
+    "nghia": "tôi, riêng tư",
+    "cauGoiNho": "Bó lúa 禾 của riêng mình 厶: của tôi.",
+    "reviewStatus": "draft"
+  }
+}

@@ -1,0 +1,4222 @@
+{
+ "entries": [
+  {
+   "glyph": "一",
+   "lesson_order": 1,
+   "on": [
+    "イチ",
+    "イツ"
+   ],
+   "kun": [
+    "ひと"
+   ],
+   "radical_decomposition": [
+    "一"
+   ],
+   "stroke_count": 1,
+   "examples": [
+    {
+     "form": "一",
+     "reading": "いち",
+     "gloss": "one"
+    },
+    {
+     "form": "十一",
+     "reading": "じゅういち",
+     "gloss": "eleven"
+    },
+    {
+     "form": "一月",
+     "reading": "いちがつ",
+     "gloss": "January"
+    },
+    {
+     "form": "一万",
+     "reading": "いちまん",
+     "gloss": "ten thousand"
+    },
+    {
+     "form": "一つ",
+     "reading": "ひとつ",
+     "gloss": "one (thing)"
+    },
+    {
+     "form": "一人",
+     "reading": "ひとり",
+     "gloss": "one person"
+    },
+    {
+     "form": "一日",
+     "reading": "ついたち",
+     "gloss": "1st of the month"
+    },
+    {
+     "form": "一番",
+     "reading": "いちばん",
+     "gloss": "most, number one"
+    },
+    {
+     "form": "一人で",
+     "reading": "ひとりで",
+     "gloss": "alone"
+    }
+   ],
+   "lookalikes": [
+    "三",
+    "二",
+    "十"
+   ]
+  },
+  {
+   "glyph": "二",
+   "lesson_order": 2,
+   "on": [
+    "ニ"
+   ],
+   "kun": [
+    "ふた"
+   ],
+   "radical_decomposition": [
+    "一",
+    "一"
+   ],
+   "stroke_count": 2,
+   "examples": [
+    {
+     "form": "二",
+     "reading": "に",
+     "gloss": "two"
+    },
+    {
+     "form": "二つ",
+     "reading": "ふたつ",
+     "gloss": "two"
+    },
+    {
+     "form": "二十",
+     "reading": "にじゅう",
+     "gloss": "twenty"
+    },
+    {
+     "form": "二人",
+     "reading": "ふたり",
+     "gloss": "two people"
+    },
+    {
+     "form": "二日",
+     "reading": "ふつか",
+     "gloss": "2nd / two days"
+    },
+    {
+     "form": "二月",
+     "reading": "にがつ",
+     "gloss": "February"
+    },
+    {
+     "form": "二十日",
+     "reading": "はつか",
+     "gloss": "20th / twenty days"
+    },
+    {
+     "form": "十二月",
+     "reading": "じゅうにがつ",
+     "gloss": "December"
+    }
+   ],
+   "lookalikes": [
+    "一",
+    "三",
+    "四"
+   ]
+  },
+  {
+   "glyph": "三",
+   "lesson_order": 3,
+   "on": [
+    "サン"
+   ],
+   "kun": [
+    "み"
+   ],
+   "radical_decomposition": [
+    "一",
+    "一",
+    "一"
+   ],
+   "stroke_count": 3,
+   "examples": [
+    {
+     "form": "三",
+     "reading": "さん",
+     "gloss": "three"
+    },
+    {
+     "form": "三つ",
+     "reading": "みっつ",
+     "gloss": "three"
+    },
+    {
+     "form": "三月",
+     "reading": "さんがつ",
+     "gloss": "March"
+    },
+    {
+     "form": "三日",
+     "reading": "みっか",
+     "gloss": "3rd / three days"
+    }
+   ],
+   "lookalikes": [
+    "一",
+    "二",
+    "四",
+    "川"
+   ]
+  },
+  {
+   "glyph": "四",
+   "lesson_order": 4,
+   "on": [
+    "シ"
+   ],
+   "kun": [
+    "よ",
+    "よん"
+   ],
+   "radical_decomposition": [
+    "囗",
+    "儿"
+   ],
+   "stroke_count": 5,
+   "examples": [
+    {
+     "form": "四",
+     "reading": "し / よん",
+     "gloss": "four"
+    },
+    {
+     "form": "四つ",
+     "reading": "よっつ",
+     "gloss": "four"
+    },
+    {
+     "form": "四月",
+     "reading": "しがつ",
+     "gloss": "April"
+    },
+    {
+     "form": "四日",
+     "reading": "よっか",
+     "gloss": "4th / four days"
+    }
+   ],
+   "lookalikes": [
+    "三",
+    "二",
+    "西"
+   ]
+  },
+  {
+   "glyph": "五",
+   "lesson_order": 5,
+   "on": [
+    "ゴ"
+   ],
+   "kun": [
+    "いつ"
+   ],
+   "radical_decomposition": [
+    "一",
+    "丁",
+    "一"
+   ],
+   "stroke_count": 4,
+   "examples": [
+    {
+     "form": "五",
+     "reading": "ご",
+     "gloss": "five"
+    },
+    {
+     "form": "五月",
+     "reading": "ごがつ",
+     "gloss": "May"
+    },
+    {
+     "form": "五つ",
+     "reading": "いつつ",
+     "gloss": "five"
+    },
+    {
+     "form": "五日",
+     "reading": "いつか",
+     "gloss": "5th / five days"
+    }
+   ],
+   "lookalikes": [
+    "七",
+    "六"
+   ]
+  },
+  {
+   "glyph": "六",
+   "lesson_order": 6,
+   "on": [
+    "ロク"
+   ],
+   "kun": [
+    "む"
+   ],
+   "radical_decomposition": [
+    "亠",
+    "八"
+   ],
+   "stroke_count": 4,
+   "examples": [
+    {
+     "form": "六",
+     "reading": "ろく",
+     "gloss": "six"
+    },
+    {
+     "form": "六つ",
+     "reading": "むっつ",
+     "gloss": "six"
+    },
+    {
+     "form": "六月",
+     "reading": "ろくがつ",
+     "gloss": "June"
+    },
+    {
+     "form": "六日",
+     "reading": "むいか",
+     "gloss": "6th / six days"
+    }
+   ],
+   "lookalikes": [
+    "七",
+    "九",
+    "五"
+   ]
+  },
+  {
+   "glyph": "七",
+   "lesson_order": 7,
+   "on": [
+    "シチ"
+   ],
+   "kun": [
+    "なな",
+    "なの"
+   ],
+   "radical_decomposition": [
+    "七"
+   ],
+   "stroke_count": 2,
+   "examples": [
+    {
+     "form": "七",
+     "reading": "しち / なな",
+     "gloss": "seven"
+    },
+    {
+     "form": "七月",
+     "reading": "しちがつ",
+     "gloss": "July"
+    },
+    {
+     "form": "七つ",
+     "reading": "ななつ",
+     "gloss": "seven"
+    },
+    {
+     "form": "七日",
+     "reading": "なのか",
+     "gloss": "7th / seven days"
+    }
+   ],
+   "lookalikes": [
+    "九",
+    "五",
+    "六"
+   ]
+  },
+  {
+   "glyph": "八",
+   "lesson_order": 8,
+   "on": [
+    "ハチ"
+   ],
+   "kun": [
+    "や",
+    "よう"
+   ],
+   "radical_decomposition": [
+    "八"
+   ],
+   "stroke_count": 2,
+   "examples": [
+    {
+     "form": "八",
+     "reading": "はち",
+     "gloss": "eight"
+    },
+    {
+     "form": "八つ",
+     "reading": "やっつ",
+     "gloss": "eight"
+    },
+    {
+     "form": "八月",
+     "reading": "はちがつ",
+     "gloss": "August"
+    },
+    {
+     "form": "八日",
+     "reading": "ようか",
+     "gloss": "8th / eight days"
+    }
+   ],
+   "lookalikes": [
+    "人",
+    "入"
+   ]
+  },
+  {
+   "glyph": "九",
+   "lesson_order": 9,
+   "on": [
+    "キュウ",
+    "ク"
+   ],
+   "kun": [
+    "ここの"
+   ],
+   "radical_decomposition": [
+    "丿",
+    "乙"
+   ],
+   "stroke_count": 2,
+   "examples": [
+    {
+     "form": "九",
+     "reading": "きゅう / く",
+     "gloss": "nine"
+    },
+    {
+     "form": "九つ",
+     "reading": "ここのつ",
+     "gloss": "nine"
+    },
+    {
+     "form": "九月",
+     "reading": "くがつ",
+     "gloss": "September"
+    },
+    {
+     "form": "九日",
+     "reading": "ここのか",
+     "gloss": "9th / nine days"
+    }
+   ],
+   "lookalikes": [
+    "七",
+    "六",
+    "力",
+    "万"
+   ]
+  },
+  {
+   "glyph": "十",
+   "lesson_order": 10,
+   "on": [
+    "ジュウ",
+    "ジッ"
+   ],
+   "kun": [
+    "とお",
+    "と"
+   ],
+   "radical_decomposition": [
+    "十"
+   ],
+   "stroke_count": 2,
+   "examples": [
+    {
+     "form": "十",
+     "reading": "じゅう",
+     "gloss": "ten"
+    },
+    {
+     "form": "十一",
+     "reading": "じゅういち",
+     "gloss": "eleven"
+    },
+    {
+     "form": "二十",
+     "reading": "にじゅう",
+     "gloss": "twenty"
+    },
+    {
+     "form": "十日",
+     "reading": "とおか",
+     "gloss": "10th / ten days"
+    },
+    {
+     "form": "十月",
+     "reading": "じゅうがつ",
+     "gloss": "October"
+    },
+    {
+     "form": "十一月",
+     "reading": "じゅういちがつ",
+     "gloss": "November"
+    },
+    {
+     "form": "十二月",
+     "reading": "じゅうにがつ",
+     "gloss": "December"
+    },
+    {
+     "form": "二十日",
+     "reading": "はつか",
+     "gloss": "20th / twenty days"
+    }
+   ],
+   "lookalikes": [
+    "一",
+    "千"
+   ]
+  },
+  {
+   "glyph": "百",
+   "lesson_order": 11,
+   "on": [
+    "ヒャク"
+   ],
+   "kun": [],
+   "radical_decomposition": [
+    "一",
+    "白"
+   ],
+   "stroke_count": 6,
+   "examples": [
+    {
+     "form": "百",
+     "reading": "ひゃく",
+     "gloss": "hundred"
+    },
+    {
+     "form": "三百",
+     "reading": "さんびゃく",
+     "gloss": "three hundred"
+    },
+    {
+     "form": "何百",
+     "reading": "なんびゃく",
+     "gloss": "how many hundreds"
+    }
+   ],
+   "lookalikes": [
+    "白"
+   ]
+  },
+  {
+   "glyph": "千",
+   "lesson_order": 12,
+   "on": [
+    "セン"
+   ],
+   "kun": [
+    "ち"
+   ],
+   "radical_decomposition": [
+    "丿",
+    "十"
+   ],
+   "stroke_count": 3,
+   "examples": [
+    {
+     "form": "千",
+     "reading": "せん",
+     "gloss": "thousand"
+    },
+    {
+     "form": "千円",
+     "reading": "せんえん",
+     "gloss": "1000 yen"
+    },
+    {
+     "form": "何千",
+     "reading": "なんぜん",
+     "gloss": "how many thousands"
+    }
+   ],
+   "lookalikes": [
+    "十",
+    "午"
+   ]
+  },
+  {
+   "glyph": "万",
+   "lesson_order": 13,
+   "on": [
+    "マン"
+   ],
+   "kun": [],
+   "radical_decomposition": [
+    "一",
+    "万"
+   ],
+   "stroke_count": 3,
+   "examples": [
+    {
+     "form": "万",
+     "reading": "まん",
+     "gloss": "ten thousand"
+    },
+    {
+     "form": "一万",
+     "reading": "いちまん",
+     "gloss": "ten thousand"
+    },
+    {
+     "form": "何万",
+     "reading": "なんまん",
+     "gloss": "how many tens of thousands"
+    }
+   ],
+   "lookalikes": [
+    "力",
+    "九"
+   ]
+  },
+  {
+   "glyph": "円",
+   "lesson_order": 14,
+   "on": [
+    "エン"
+   ],
+   "kun": [],
+   "radical_decomposition": [
+    "冂",
+    "土"
+   ],
+   "stroke_count": 4,
+   "examples": [
+    {
+     "form": "円",
+     "reading": "えん",
+     "gloss": "yen"
+    },
+    {
+     "form": "百円",
+     "reading": "ひゃくえん",
+     "gloss": "100 yen"
+    },
+    {
+     "form": "何円",
+     "reading": "なんえん",
+     "gloss": "how many yen"
+    }
+   ],
+   "lookalikes": [
+    "田",
+    "員"
+   ]
+  },
+  {
+   "glyph": "日",
+   "lesson_order": 15,
+   "on": [
+    "ニチ",
+    "ジツ"
+   ],
+   "kun": [
+    "ひ",
+    "-び",
+    "-か"
+   ],
+   "radical_decomposition": [
+    "日"
+   ],
+   "stroke_count": 4,
+   "examples": [
+    {
+     "form": "日",
+     "reading": "ひ",
+     "gloss": "day"
+    },
+    {
+     "form": "今日",
+     "reading": "きょう",
+     "gloss": "today"
+    },
+    {
+     "form": "日本",
+     "reading": "にほん / にっぽん",
+     "gloss": "Japan"
+    },
+    {
+     "form": "何曜日",
+     "reading": "なんようび",
+     "gloss": "what day of the week"
+    },
+    {
+     "form": "何日",
+     "reading": "なんにち",
+     "gloss": "what day"
+    },
+    {
+     "form": "日曜日",
+     "reading": "にちようび",
+     "gloss": "Sunday"
+    },
+    {
+     "form": "日本人",
+     "reading": "にほんじん",
+     "gloss": "Japanese (person)"
+    },
+    {
+     "form": "日本語",
+     "reading": "にほんご",
+     "gloss": "Japanese (language)"
+    },
+    {
+     "form": "一日",
+     "reading": "ついたち",
+     "gloss": "1st of the month"
+    },
+    {
+     "form": "七日",
+     "reading": "なのか",
+     "gloss": "7th / seven days"
+    },
+    {
+     "form": "三日",
+     "reading": "みっか",
+     "gloss": "3rd / three days"
+    },
+    {
+     "form": "九日",
+     "reading": "ここのか",
+     "gloss": "9th / nine days"
+    }
+   ],
+   "lookalikes": [
+    "口",
+    "月",
+    "白",
+    "目",
+    "曜"
+   ]
+  },
+  {
+   "glyph": "月",
+   "lesson_order": 16,
+   "on": [
+    "ゲツ",
+    "ガツ"
+   ],
+   "kun": [
+    "つき"
+   ],
+   "radical_decomposition": [
+    "月"
+   ],
+   "stroke_count": 4,
+   "examples": [
+    {
+     "form": "月",
+     "reading": "つき",
+     "gloss": "month, moon"
+    },
+    {
+     "form": "五月",
+     "reading": "ごがつ",
+     "gloss": "May"
+    },
+    {
+     "form": "何月",
+     "reading": "なんがつ",
+     "gloss": "what month"
+    },
+    {
+     "form": "月曜日",
+     "reading": "げつようび",
+     "gloss": "Monday"
+    },
+    {
+     "form": "一月",
+     "reading": "いちがつ",
+     "gloss": "January"
+    },
+    {
+     "form": "七月",
+     "reading": "しちがつ",
+     "gloss": "July"
+    },
+    {
+     "form": "三月",
+     "reading": "さんがつ",
+     "gloss": "March"
+    },
+    {
+     "form": "九月",
+     "reading": "くがつ",
+     "gloss": "September"
+    },
+    {
+     "form": "二月",
+     "reading": "にがつ",
+     "gloss": "February"
+    },
+    {
+     "form": "今月",
+     "reading": "こんげつ",
+     "gloss": "this month"
+    }
+   ],
+   "lookalikes": [
+    "口",
+    "日",
+    "目",
+    "曜"
+   ]
+  },
+  {
+   "glyph": "火",
+   "lesson_order": 17,
+   "on": [
+    "カ"
+   ],
+   "kun": [
+    "ひ"
+   ],
+   "radical_decomposition": [
+    "火"
+   ],
+   "stroke_count": 4,
+   "examples": [
+    {
+     "form": "火",
+     "reading": "ひ",
+     "gloss": "fire"
+    },
+    {
+     "form": "火曜日",
+     "reading": "かようび",
+     "gloss": "Tuesday"
+    },
+    {
+     "form": "花火",
+     "reading": "はなび",
+     "gloss": "fireworks"
+    }
+   ],
+   "lookalikes": [
+    "木",
+    "水"
+   ]
+  },
+  {
+   "glyph": "水",
+   "lesson_order": 18,
+   "on": [
+    "スイ"
+   ],
+   "kun": [
+    "みず"
+   ],
+   "radical_decomposition": [
+    "水"
+   ],
+   "stroke_count": 4,
+   "examples": [
+    {
+     "form": "水",
+     "reading": "みず",
+     "gloss": "water (cold)"
+    },
+    {
+     "form": "水曜日",
+     "reading": "すいようび",
+     "gloss": "Wednesday"
+    },
+    {
+     "form": "水道",
+     "reading": "すいどう",
+     "gloss": "water supply / tap water"
+    }
+   ],
+   "lookalikes": [
+    "火"
+   ]
+  },
+  {
+   "glyph": "木",
+   "lesson_order": 19,
+   "on": [
+    "モク",
+    "ボク"
+   ],
+   "kun": [
+    "き",
+    "こ-"
+   ],
+   "radical_decomposition": [
+    "木"
+   ],
+   "stroke_count": 4,
+   "examples": [
+    {
+     "form": "木",
+     "reading": "き",
+     "gloss": "tree"
+    },
+    {
+     "form": "木曜日",
+     "reading": "もくようび",
+     "gloss": "Thursday"
+    },
+    {
+     "form": "大木",
+     "reading": "たいぼく",
+     "gloss": "big tree"
+    }
+   ],
+   "lookalikes": [
+    "本",
+    "火"
+   ]
+  },
+  {
+   "glyph": "金",
+   "lesson_order": 20,
+   "on": [
+    "キン",
+    "コン"
+   ],
+   "kun": [
+    "かね",
+    "かな-"
+   ],
+   "radical_decomposition": [
+    "人",
+    "王",
+    "丶"
+   ],
+   "stroke_count": 8,
+   "examples": [
+    {
+     "form": "お金",
+     "reading": "おかね",
+     "gloss": "money"
+    },
+    {
+     "form": "金曜日",
+     "reading": "きんようび",
+     "gloss": "Friday"
+    }
+   ],
+   "lookalikes": [
+    "今",
+    "会",
+    "食"
+   ]
+  },
+  {
+   "glyph": "土",
+   "lesson_order": 21,
+   "on": [
+    "ド",
+    "ト"
+   ],
+   "kun": [
+    "つち"
+   ],
+   "radical_decomposition": [
+    "十",
+    "一"
+   ],
+   "stroke_count": 3,
+   "examples": [
+    {
+     "form": "土曜日",
+     "reading": "どようび",
+     "gloss": "Saturday"
+    },
+    {
+     "form": "土",
+     "reading": "つち",
+     "gloss": "soil, earth (kun)"
+    },
+    {
+     "form": "土の上",
+     "reading": "つちのうえ",
+     "gloss": "on top of the dirt / on the ground"
+    }
+   ],
+   "lookalikes": [
+    "上"
+   ]
+  },
+  {
+   "glyph": "曜",
+   "lesson_order": 22,
+   "on": [
+    "ヨウ"
+   ],
+   "kun": [],
+   "radical_decomposition": [
+    "日",
+    "羽",
+    "隹"
+   ],
+   "stroke_count": 18,
+   "examples": [
+    {
+     "form": "月曜日",
+     "reading": "げつようび",
+     "gloss": "Monday"
+    },
+    {
+     "form": "金曜日",
+     "reading": "きんようび",
+     "gloss": "Friday"
+    },
+    {
+     "form": "日曜日",
+     "reading": "にちようび",
+     "gloss": "Sunday"
+    },
+    {
+     "form": "何曜日",
+     "reading": "なんようび",
+     "gloss": "what day of the week"
+    },
+    {
+     "form": "火曜日",
+     "reading": "かようび",
+     "gloss": "Tuesday"
+    },
+    {
+     "form": "土曜日",
+     "reading": "どようび",
+     "gloss": "Saturday"
+    },
+    {
+     "form": "木曜日",
+     "reading": "もくようび",
+     "gloss": "Thursday"
+    },
+    {
+     "form": "水曜日",
+     "reading": "すいようび",
+     "gloss": "Wednesday"
+    }
+   ],
+   "lookalikes": [
+    "日",
+    "月"
+   ]
+  },
+  {
+   "glyph": "年",
+   "lesson_order": 23,
+   "on": [
+    "ネン"
+   ],
+   "kun": [
+    "とし"
+   ],
+   "radical_decomposition": [
+    "一",
+    "丨",
+    "干"
+   ],
+   "stroke_count": 6,
+   "examples": [
+    {
+     "form": "年",
+     "reading": "とし / ねん",
+     "gloss": "year"
+    },
+    {
+     "form": "今年",
+     "reading": "ことし",
+     "gloss": "this year"
+    },
+    {
+     "form": "来年",
+     "reading": "らいねん",
+     "gloss": "next year"
+    },
+    {
+     "form": "毎年",
+     "reading": "まいとし / まいねん",
+     "gloss": "every year (まいとし is more common in conversation; まいねん in formal/written contexts)"
+    }
+   ],
+   "lookalikes": [
+    "毎"
+   ]
+  },
+  {
+   "glyph": "時",
+   "lesson_order": 24,
+   "on": [
+    "ジ"
+   ],
+   "kun": [
+    "とき"
+   ],
+   "radical_decomposition": [
+    "日",
+    "寺"
+   ],
+   "stroke_count": 10,
+   "examples": [
+    {
+     "form": "何時",
+     "reading": "なんじ",
+     "gloss": "what time"
+    },
+    {
+     "form": "時々",
+     "reading": "ときどき",
+     "gloss": "sometimes"
+    },
+    {
+     "form": "時間",
+     "reading": "じかん",
+     "gloss": "time, hour"
+    }
+   ],
+   "lookalikes": [
+    "間"
+   ]
+  },
+  {
+   "glyph": "分",
+   "lesson_order": 25,
+   "on": [
+    "ブン",
+    "フン",
+    "ブ"
+   ],
+   "kun": [
+    "わ"
+   ],
+   "radical_decomposition": [
+    "八",
+    "刀"
+   ],
+   "stroke_count": 4,
+   "examples": [
+    {
+     "form": "分",
+     "reading": "ふん / ぷん",
+     "gloss": "minute(s)"
+    },
+    {
+     "form": "分かる",
+     "reading": "わかる",
+     "gloss": "to understand"
+    },
+    {
+     "form": "半分",
+     "reading": "はんぶん",
+     "gloss": "half"
+    },
+    {
+     "form": "気分",
+     "reading": "きぶん",
+     "gloss": "mood / feeling"
+    },
+    {
+     "form": "十分",
+     "reading": "じゅうぶん",
+     "gloss": "enough / sufficient"
+    }
+   ],
+   "lookalikes": [
+    "半"
+   ]
+  },
+  {
+   "glyph": "半",
+   "lesson_order": 26,
+   "on": [
+    "ハン"
+   ],
+   "kun": [
+    "なか"
+   ],
+   "radical_decomposition": [
+    "丷",
+    "一",
+    "十"
+   ],
+   "stroke_count": 5,
+   "examples": [
+    {
+     "form": "半",
+     "reading": "はん",
+     "gloss": "half (past)"
+    },
+    {
+     "form": "半分",
+     "reading": "はんぶん",
+     "gloss": "half"
+    },
+    {
+     "form": "半年",
+     "reading": "はんとし",
+     "gloss": "half a year"
+    }
+   ],
+   "lookalikes": [
+    "分"
+   ]
+  },
+  {
+   "glyph": "今",
+   "lesson_order": 27,
+   "on": [
+    "コン"
+   ],
+   "kun": [
+    "いま"
+   ],
+   "radical_decomposition": [
+    "人",
+    "丶",
+    "一"
+   ],
+   "stroke_count": 4,
+   "examples": [
+    {
+     "form": "今",
+     "reading": "いま",
+     "gloss": "now"
+    },
+    {
+     "form": "今日",
+     "reading": "きょう",
+     "gloss": "today"
+    },
+    {
+     "form": "今週",
+     "reading": "こんしゅう",
+     "gloss": "this week"
+    },
+    {
+     "form": "今月",
+     "reading": "こんげつ",
+     "gloss": "this month"
+    },
+    {
+     "form": "今年",
+     "reading": "ことし",
+     "gloss": "this year"
+    }
+   ],
+   "lookalikes": [
+    "会",
+    "金"
+   ]
+  },
+  {
+   "glyph": "毎",
+   "lesson_order": 28,
+   "on": [
+    "マイ"
+   ],
+   "kun": [],
+   "radical_decomposition": [
+    "人",
+    "母"
+   ],
+   "stroke_count": 6,
+   "examples": [
+    {
+     "form": "毎日",
+     "reading": "まいにち",
+     "gloss": "every day"
+    },
+    {
+     "form": "毎週",
+     "reading": "まいしゅう",
+     "gloss": "every week"
+    },
+    {
+     "form": "毎月",
+     "reading": "まいつき",
+     "gloss": "every month"
+    },
+    {
+     "form": "毎年",
+     "reading": "まいとし / まいねん",
+     "gloss": "every year (まいとし is more common in conversation; まいねん in formal/written contexts)"
+    }
+   ],
+   "lookalikes": [
+    "年"
+   ]
+  },
+  {
+   "glyph": "週",
+   "lesson_order": 29,
+   "on": [
+    "シュウ"
+   ],
+   "kun": [],
+   "radical_decomposition": [
+    "辶",
+    "周"
+   ],
+   "stroke_count": 11,
+   "examples": [
+    {
+     "form": "週",
+     "reading": "しゅう",
+     "gloss": "week"
+    },
+    {
+     "form": "先週",
+     "reading": "せんしゅう",
+     "gloss": "last week"
+    },
+    {
+     "form": "今週",
+     "reading": "こんしゅう",
+     "gloss": "this week"
+    },
+    {
+     "form": "来週",
+     "reading": "らいしゅう",
+     "gloss": "next week"
+    },
+    {
+     "form": "毎週",
+     "reading": "まいしゅう",
+     "gloss": "every week"
+    }
+   ],
+   "lookalikes": [
+    "道"
+   ]
+  },
+  {
+   "glyph": "午",
+   "lesson_order": 30,
+   "on": [
+    "ゴ"
+   ],
+   "kun": [],
+   "radical_decomposition": [
+    "丿",
+    "十"
+   ],
+   "stroke_count": 4,
+   "examples": [
+    {
+     "form": "午前",
+     "reading": "ごぜん",
+     "gloss": "A.M."
+    },
+    {
+     "form": "午後",
+     "reading": "ごご",
+     "gloss": "P.M."
+    },
+    {
+     "form": "午後三時",
+     "reading": "ごごさんじ",
+     "gloss": "3 p.m. (3 o'clock in the afternoon)"
+    }
+   ],
+   "lookalikes": [
+    "千"
+   ]
+  },
+  {
+   "glyph": "何",
+   "lesson_order": 31,
+   "on": [
+    "カ"
+   ],
+   "kun": [
+    "なに",
+    "なん"
+   ],
+   "radical_decomposition": [
+    "亻",
+    "可"
+   ],
+   "stroke_count": 7,
+   "examples": [
+    {
+     "form": "何",
+     "reading": "なに / なん",
+     "gloss": "what"
+    },
+    {
+     "form": "何日",
+     "reading": "なんにち",
+     "gloss": "what day"
+    },
+    {
+     "form": "何時",
+     "reading": "なんじ",
+     "gloss": "what time"
+    },
+    {
+     "form": "何曜日",
+     "reading": "なんようび",
+     "gloss": "what day of the week"
+    },
+    {
+     "form": "何月",
+     "reading": "なんがつ",
+     "gloss": "what month"
+    },
+    {
+     "form": "何で",
+     "reading": "なんで",
+     "gloss": "why, by what means"
+    }
+   ],
+   "lookalikes": []
+  },
+  {
+   "glyph": "人",
+   "lesson_order": 32,
+   "on": [
+    "ジン",
+    "ニン"
+   ],
+   "kun": [
+    "ひと"
+   ],
+   "radical_decomposition": [
+    "人"
+   ],
+   "stroke_count": 2,
+   "examples": [
+    {
+     "form": "人",
+     "reading": "ひと",
+     "gloss": "person"
+    },
+    {
+     "form": "大人",
+     "reading": "おとな",
+     "gloss": "adult"
+    },
+    {
+     "form": "外国人",
+     "reading": "がいこくじん",
+     "gloss": "foreigner"
+    },
+    {
+     "form": "一人",
+     "reading": "ひとり",
+     "gloss": "one person"
+    },
+    {
+     "form": "二人",
+     "reading": "ふたり",
+     "gloss": "two people"
+    },
+    {
+     "form": "一人で",
+     "reading": "ひとりで",
+     "gloss": "alone"
+    },
+    {
+     "form": "日本人",
+     "reading": "にほんじん",
+     "gloss": "Japanese (person)"
+    },
+    {
+     "form": "スペイン人",
+     "reading": "スペインじん",
+     "gloss": "Spanish person"
+    }
+   ],
+   "lookalikes": [
+    "入",
+    "八",
+    "大"
+   ]
+  },
+  {
+   "glyph": "男",
+   "lesson_order": 33,
+   "on": [
+    "ダン",
+    "ナン"
+   ],
+   "kun": [
+    "おとこ"
+   ],
+   "radical_decomposition": [
+    "田",
+    "力"
+   ],
+   "stroke_count": 7,
+   "examples": [
+    {
+     "form": "男",
+     "reading": "おとこ",
+     "gloss": "man"
+    },
+    {
+     "form": "男の子",
+     "reading": "おとこのこ",
+     "gloss": "boy"
+    },
+    {
+     "form": "男子",
+     "reading": "だんし",
+     "gloss": "boy / male"
+    }
+   ],
+   "lookalikes": [
+    "女",
+    "子"
+   ]
+  },
+  {
+   "glyph": "女",
+   "lesson_order": 34,
+   "on": [
+    "ジョ",
+    "ニョ"
+   ],
+   "kun": [
+    "おんな",
+    "め"
+   ],
+   "radical_decomposition": [
+    "女"
+   ],
+   "stroke_count": 3,
+   "examples": [
+    {
+     "form": "女",
+     "reading": "おんな",
+     "gloss": "woman"
+    },
+    {
+     "form": "女の子",
+     "reading": "おんなのこ",
+     "gloss": "girl"
+    },
+    {
+     "form": "女子",
+     "reading": "じょし",
+     "gloss": "girl / female"
+    }
+   ],
+   "lookalikes": [
+    "子",
+    "男"
+   ]
+  },
+  {
+   "glyph": "子",
+   "lesson_order": 35,
+   "on": [
+    "シ",
+    "ス"
+   ],
+   "kun": [
+    "こ"
+   ],
+   "radical_decomposition": [
+    "子"
+   ],
+   "stroke_count": 3,
+   "examples": [
+    {
+     "form": "男の子",
+     "reading": "おとこのこ",
+     "gloss": "boy"
+    },
+    {
+     "form": "女の子",
+     "reading": "おんなのこ",
+     "gloss": "girl"
+    },
+    {
+     "form": "子ども",
+     "reading": "こども",
+     "gloss": "child (often written こども in everyday text)"
+    }
+   ],
+   "lookalikes": [
+    "女",
+    "男"
+   ]
+  },
+  {
+   "glyph": "父",
+   "lesson_order": 36,
+   "on": [
+    "フ"
+   ],
+   "kun": [
+    "ちち"
+   ],
+   "radical_decomposition": [
+    "父"
+   ],
+   "stroke_count": 4,
+   "examples": [
+    {
+     "form": "父",
+     "reading": "ちち",
+     "gloss": "father (own)"
+    },
+    {
+     "form": "お父さん",
+     "reading": "おとうさん",
+     "gloss": "father (someone else's / address form)"
+    },
+    {
+     "form": "父母",
+     "reading": "ふぼ",
+     "gloss": "parents (father and mother; formal)"
+    }
+   ],
+   "lookalikes": [
+    "母"
+   ]
+  },
+  {
+   "glyph": "母",
+   "lesson_order": 37,
+   "on": [
+    "ボ"
+   ],
+   "kun": [
+    "はは"
+   ],
+   "radical_decomposition": [
+    "母"
+   ],
+   "stroke_count": 5,
+   "examples": [
+    {
+     "form": "母",
+     "reading": "はは",
+     "gloss": "mother (own)"
+    },
+    {
+     "form": "お母さん",
+     "reading": "おかあさん",
+     "gloss": "mother (someone else's / address form)"
+    },
+    {
+     "form": "母校",
+     "reading": "ぼこう",
+     "gloss": "alma mater (one's school)"
+    }
+   ],
+   "lookalikes": [
+    "父"
+   ]
+  },
+  {
+   "glyph": "友",
+   "lesson_order": 38,
+   "on": [
+    "ユウ"
+   ],
+   "kun": [
+    "とも"
+   ],
+   "radical_decomposition": [
+    "ナ",
+    "又"
+   ],
+   "stroke_count": 4,
+   "examples": [
+    {
+     "form": "友だち",
+     "reading": "ともだち",
+     "gloss": "friend"
+    },
+    {
+     "form": "友",
+     "reading": "とも",
+     "gloss": "friend (kun)"
+    },
+    {
+     "form": "友人",
+     "reading": "ゆうじん",
+     "gloss": "friend (formal)"
+    },
+    {
+     "form": "学友",
+     "reading": "がくゆう",
+     "gloss": "school friend"
+    }
+   ],
+   "lookalikes": [
+    "名"
+   ]
+  },
+  {
+   "glyph": "先",
+   "lesson_order": 39,
+   "on": [
+    "セン"
+   ],
+   "kun": [
+    "さき"
+   ],
+   "radical_decomposition": [
+    "牛",
+    "儿"
+   ],
+   "stroke_count": 6,
+   "examples": [
+    {
+     "form": "先",
+     "reading": "さき",
+     "gloss": "earlier, ahead, previous"
+    },
+    {
+     "form": "先週",
+     "reading": "せんしゅう",
+     "gloss": "last week"
+    },
+    {
+     "form": "先月",
+     "reading": "せんげつ",
+     "gloss": "last month"
+    },
+    {
+     "form": "先生",
+     "reading": "せんせい",
+     "gloss": "teacher, doctor"
+    }
+   ],
+   "lookalikes": [
+    "生"
+   ]
+  },
+  {
+   "glyph": "生",
+   "lesson_order": 40,
+   "on": [
+    "セイ"
+   ],
+   "kun": [
+    "い",
+    "う"
+   ],
+   "radical_decomposition": [
+    "生"
+   ],
+   "stroke_count": 5,
+   "examples": [
+    {
+     "form": "学生",
+     "reading": "がくせい",
+     "gloss": "student"
+    },
+    {
+     "form": "先生",
+     "reading": "せんせい",
+     "gloss": "teacher, doctor"
+    },
+    {
+     "form": "生まれる",
+     "reading": "うまれる",
+     "gloss": "to be born"
+    },
+    {
+     "form": "高校生",
+     "reading": "こうこうせい",
+     "gloss": "high school student"
+    }
+   ],
+   "lookalikes": [
+    "先"
+   ]
+  },
+  {
+   "glyph": "手",
+   "lesson_order": 41,
+   "on": [
+    "シュ"
+   ],
+   "kun": [
+    "て"
+   ],
+   "radical_decomposition": [
+    "手"
+   ],
+   "stroke_count": 4,
+   "examples": [
+    {
+     "form": "手",
+     "reading": "て",
+     "gloss": "hand"
+    },
+    {
+     "form": "上手",
+     "reading": "じょうず",
+     "gloss": "skilful, good at"
+    },
+    {
+     "form": "手がみ",
+     "reading": "てがみ",
+     "gloss": "letter (correspondence)"
+    },
+    {
+     "form": "手本",
+     "reading": "てほん",
+     "gloss": "model / example"
+    },
+    {
+     "form": "人手",
+     "reading": "ひとで",
+     "gloss": "helping hand / labour"
+    }
+   ],
+   "lookalikes": [
+    "足"
+   ]
+  },
+  {
+   "glyph": "足",
+   "lesson_order": 42,
+   "on": [
+    "ソク"
+   ],
+   "kun": [
+    "あし"
+   ],
+   "radical_decomposition": [
+    "口",
+    "止"
+   ],
+   "stroke_count": 7,
+   "examples": [
+    {
+     "form": "足",
+     "reading": "あし",
+     "gloss": "foot, leg"
+    },
+    {
+     "form": "一足",
+     "reading": "いっそく",
+     "gloss": "one pair (footwear)"
+    },
+    {
+     "form": "足あと",
+     "reading": "あしあと",
+     "gloss": "footprints (足跡; 跡 written in kana per K-1)"
+    },
+    {
+     "form": "手足",
+     "reading": "てあし",
+     "gloss": "hands and feet / limbs"
+    }
+   ],
+   "lookalikes": [
+    "手"
+   ]
+  },
+  {
+   "glyph": "目",
+   "lesson_order": 43,
+   "on": [
+    "モク"
+   ],
+   "kun": [
+    "め"
+   ],
+   "radical_decomposition": [
+    "目"
+   ],
+   "stroke_count": 5,
+   "examples": [
+    {
+     "form": "目",
+     "reading": "め",
+     "gloss": "eye"
+    },
+    {
+     "form": "三日目",
+     "reading": "みっかめ",
+     "gloss": "the third day"
+    },
+    {
+     "form": "目上",
+     "reading": "めうえ",
+     "gloss": "one's superior / elder"
+    },
+    {
+     "form": "目下",
+     "reading": "めした",
+     "gloss": "one's subordinate / junior"
+    }
+   ],
+   "lookalikes": [
+    "口",
+    "日",
+    "月",
+    "白"
+   ]
+  },
+  {
+   "glyph": "口",
+   "lesson_order": 44,
+   "on": [
+    "コウ"
+   ],
+   "kun": [
+    "くち"
+   ],
+   "radical_decomposition": [
+    "口"
+   ],
+   "stroke_count": 3,
+   "examples": [
+    {
+     "form": "入り口",
+     "reading": "いりぐち",
+     "gloss": "entrance"
+    },
+    {
+     "form": "出口",
+     "reading": "でぐち",
+     "gloss": "exit"
+    },
+    {
+     "form": "口",
+     "reading": "くち",
+     "gloss": "mouth"
+    },
+    {
+     "form": "入口",
+     "reading": "いりぐち",
+     "gloss": "entrance"
+    }
+   ],
+   "lookalikes": [
+    "日",
+    "月",
+    "白",
+    "目",
+    "号"
+   ]
+  },
+  {
+   "glyph": "力",
+   "lesson_order": 45,
+   "on": [
+    "リョク",
+    "リキ"
+   ],
+   "kun": [
+    "ちから"
+   ],
+   "radical_decomposition": [
+    "力"
+   ],
+   "stroke_count": 2,
+   "examples": [
+    {
+     "form": "力",
+     "reading": "ちから",
+     "gloss": "power, strength"
+    },
+    {
+     "form": "力もち",
+     "reading": "ちからもち",
+     "gloss": "strong person"
+    },
+    {
+     "form": "人力",
+     "reading": "じんりき",
+     "gloss": "human power"
+    },
+    {
+     "form": "力学",
+     "reading": "りきがく",
+     "gloss": "mechanics / dynamics"
+    }
+   ],
+   "lookalikes": [
+    "九",
+    "万"
+   ]
+  },
+  {
+   "glyph": "学",
+   "lesson_order": 46,
+   "on": [
+    "ガク"
+   ],
+   "kun": [
+    "まな"
+   ],
+   "radical_decomposition": [
+    "ツ",
+    "冖",
+    "子"
+   ],
+   "stroke_count": 8,
+   "examples": [
+    {
+     "form": "学校",
+     "reading": "がっこう",
+     "gloss": "school"
+    },
+    {
+     "form": "学生",
+     "reading": "がくせい",
+     "gloss": "student"
+    },
+    {
+     "form": "大学",
+     "reading": "だいがく",
+     "gloss": "university"
+    }
+   ],
+   "lookalikes": [
+    "校"
+   ]
+  },
+  {
+   "glyph": "校",
+   "lesson_order": 47,
+   "on": [
+    "コウ"
+   ],
+   "kun": [],
+   "radical_decomposition": [
+    "木",
+    "交"
+   ],
+   "stroke_count": 10,
+   "examples": [
+    {
+     "form": "学校",
+     "reading": "がっこう",
+     "gloss": "school"
+    },
+    {
+     "form": "高校",
+     "reading": "こうこう",
+     "gloss": "high school"
+    },
+    {
+     "form": "高校生",
+     "reading": "こうこうせい",
+     "gloss": "high school student"
+    }
+   ],
+   "lookalikes": [
+    "学"
+   ]
+  },
+  {
+   "glyph": "本",
+   "lesson_order": 48,
+   "on": [
+    "ホン"
+   ],
+   "kun": [
+    "もと"
+   ],
+   "radical_decomposition": [
+    "木",
+    "一"
+   ],
+   "stroke_count": 5,
+   "examples": [
+    {
+     "form": "本",
+     "reading": "ほん",
+     "gloss": "book (also a counter for long, thin objects)"
+    },
+    {
+     "form": "日本",
+     "reading": "にほん / にっぽん",
+     "gloss": "Japan"
+    },
+    {
+     "form": "日本語",
+     "reading": "にほんご",
+     "gloss": "Japanese (language)"
+    },
+    {
+     "form": "日本人",
+     "reading": "にほんじん",
+     "gloss": "Japanese (person)"
+    }
+   ],
+   "lookalikes": [
+    "木"
+   ]
+  },
+  {
+   "glyph": "語",
+   "lesson_order": 49,
+   "on": [
+    "ゴ"
+   ],
+   "kun": [],
+   "radical_decomposition": [
+    "言",
+    "吾"
+   ],
+   "stroke_count": 14,
+   "examples": [
+    {
+     "form": "外国語",
+     "reading": "がいこくご",
+     "gloss": "foreign language"
+    },
+    {
+     "form": "中国語",
+     "reading": "ちゅうごくご",
+     "gloss": "Chinese (language)"
+    },
+    {
+     "form": "日本語",
+     "reading": "にほんご",
+     "gloss": "Japanese (language)"
+    }
+   ],
+   "lookalikes": [
+    "書",
+    "言",
+    "話",
+    "読"
+   ]
+  },
+  {
+   "glyph": "国",
+   "lesson_order": 50,
+   "on": [
+    "コク"
+   ],
+   "kun": [
+    "くに"
+   ],
+   "radical_decomposition": [
+    "囗",
+    "玉"
+   ],
+   "stroke_count": 8,
+   "examples": [
+    {
+     "form": "国",
+     "reading": "くに",
+     "gloss": "country"
+    },
+    {
+     "form": "中国",
+     "reading": "ちゅうごく",
+     "gloss": "China"
+    },
+    {
+     "form": "外国",
+     "reading": "がいこく",
+     "gloss": "foreign country"
+    },
+    {
+     "form": "外国人",
+     "reading": "がいこくじん",
+     "gloss": "foreigner"
+    },
+    {
+     "form": "中国語",
+     "reading": "ちゅうごくご",
+     "gloss": "Chinese (language)"
+    },
+    {
+     "form": "外国語",
+     "reading": "がいこくご",
+     "gloss": "foreign language"
+    }
+   ],
+   "lookalikes": [
+    "社"
+   ]
+  },
+  {
+   "glyph": "会",
+   "lesson_order": 51,
+   "on": [
+    "カイ",
+    "エ"
+   ],
+   "kun": [
+    "あ"
+   ],
+   "radical_decomposition": [
+    "人",
+    "云"
+   ],
+   "stroke_count": 6,
+   "examples": [
+    {
+     "form": "会社",
+     "reading": "かいしゃ",
+     "gloss": "company"
+    },
+    {
+     "form": "会う",
+     "reading": "あう",
+     "gloss": "to meet"
+    },
+    {
+     "form": "会社員",
+     "reading": "かいしゃいん",
+     "gloss": "company employee"
+    },
+    {
+     "form": "会話",
+     "reading": "かいわ",
+     "gloss": "conversation"
+    }
+   ],
+   "lookalikes": [
+    "今",
+    "金"
+   ]
+  },
+  {
+   "glyph": "社",
+   "lesson_order": 52,
+   "on": [
+    "シャ"
+   ],
+   "kun": [],
+   "radical_decomposition": [
+    "礻",
+    "土"
+   ],
+   "stroke_count": 7,
+   "examples": [
+    {
+     "form": "会社",
+     "reading": "かいしゃ",
+     "gloss": "company"
+    },
+    {
+     "form": "会社員",
+     "reading": "かいしゃいん",
+     "gloss": "company employee"
+    },
+    {
+     "form": "社長",
+     "reading": "しゃちょう",
+     "gloss": "company president"
+    }
+   ],
+   "lookalikes": [
+    "国"
+   ]
+  },
+  {
+   "glyph": "員",
+   "lesson_order": 53,
+   "on": [
+    "イン"
+   ],
+   "kun": [],
+   "radical_decomposition": [
+    "口",
+    "貝"
+   ],
+   "stroke_count": 10,
+   "examples": [
+    {
+     "form": "店員",
+     "reading": "てんいん",
+     "gloss": "shop clerk"
+    },
+    {
+     "form": "駅員",
+     "reading": "えきいん",
+     "gloss": "station staff"
+    },
+    {
+     "form": "会社員",
+     "reading": "かいしゃいん",
+     "gloss": "company employee"
+    },
+    {
+     "form": "会員",
+     "reading": "かいいん",
+     "gloss": "member"
+    }
+   ],
+   "lookalikes": [
+    "買",
+    "円"
+   ]
+  },
+  {
+   "glyph": "大",
+   "lesson_order": 54,
+   "on": [
+    "ダイ",
+    "タイ"
+   ],
+   "kun": [
+    "おお"
+   ],
+   "radical_decomposition": [
+    "大"
+   ],
+   "stroke_count": 3,
+   "examples": [
+    {
+     "form": "大人",
+     "reading": "おとな",
+     "gloss": "adult"
+    },
+    {
+     "form": "大学",
+     "reading": "だいがく",
+     "gloss": "university"
+    },
+    {
+     "form": "大きい",
+     "reading": "おおきい",
+     "gloss": "big"
+    },
+    {
+     "form": "大きな",
+     "reading": "おおきな",
+     "gloss": "big (variant adjectival form of 大きい)"
+    }
+   ],
+   "lookalikes": [
+    "人"
+   ]
+  },
+  {
+   "glyph": "中",
+   "lesson_order": 55,
+   "on": [
+    "チュウ"
+   ],
+   "kun": [
+    "なか"
+   ],
+   "radical_decomposition": [
+    "口",
+    "丨"
+   ],
+   "stroke_count": 4,
+   "examples": [
+    {
+     "form": "中",
+     "reading": "なか",
+     "gloss": "inside, middle"
+    },
+    {
+     "form": "中国",
+     "reading": "ちゅうごく",
+     "gloss": "China"
+    },
+    {
+     "form": "中国語",
+     "reading": "ちゅうごくご",
+     "gloss": "Chinese (language)"
+    },
+    {
+     "form": "中学校",
+     "reading": "ちゅうがっこう",
+     "gloss": "junior high school"
+    }
+   ],
+   "lookalikes": [
+    "上",
+    "下"
+   ]
+  },
+  {
+   "glyph": "小",
+   "lesson_order": 56,
+   "on": [
+    "ショウ"
+   ],
+   "kun": [
+    "ちい",
+    "こ-",
+    "お-"
+   ],
+   "radical_decomposition": [
+    "小"
+   ],
+   "stroke_count": 3,
+   "examples": [
+    {
+     "form": "小さい",
+     "reading": "ちいさい",
+     "gloss": "small"
+    },
+    {
+     "form": "小学校",
+     "reading": "しょうがっこう",
+     "gloss": "elementary school"
+    },
+    {
+     "form": "小川",
+     "reading": "こがわ",
+     "gloss": "small stream / brook (also a common surname)"
+    }
+   ],
+   "lookalikes": [
+    "川"
+   ]
+  },
+  {
+   "glyph": "上",
+   "lesson_order": 57,
+   "on": [
+    "ジョウ"
+   ],
+   "kun": [
+    "うえ",
+    "あ"
+   ],
+   "radical_decomposition": [
+    "上"
+   ],
+   "stroke_count": 3,
+   "examples": [
+    {
+     "form": "上",
+     "reading": "うえ",
+     "gloss": "top, above"
+    },
+    {
+     "form": "上手",
+     "reading": "じょうず",
+     "gloss": "skillful, good at"
+    },
+    {
+     "form": "上下",
+     "reading": "じょうげ",
+     "gloss": "top and bottom / up and down"
+    }
+   ],
+   "lookalikes": [
+    "下",
+    "中",
+    "土"
+   ]
+  },
+  {
+   "glyph": "下",
+   "lesson_order": 58,
+   "on": [
+    "カ",
+    "ゲ"
+   ],
+   "kun": [
+    "した",
+    "さ"
+   ],
+   "radical_decomposition": [
+    "下"
+   ],
+   "stroke_count": 3,
+   "examples": [
+    {
+     "form": "下",
+     "reading": "した",
+     "gloss": "under, below"
+    },
+    {
+     "form": "下手",
+     "reading": "へた",
+     "gloss": "unskillful, bad at"
+    },
+    {
+     "form": "下山",
+     "reading": "げざん",
+     "gloss": "descending a mountain"
+    }
+   ],
+   "lookalikes": [
+    "上",
+    "中"
+   ]
+  },
+  {
+   "glyph": "左",
+   "lesson_order": 59,
+   "on": [
+    "サ"
+   ],
+   "kun": [
+    "ひだり"
+   ],
+   "radical_decomposition": [
+    "ナ",
+    "工"
+   ],
+   "stroke_count": 5,
+   "examples": [
+    {
+     "form": "左",
+     "reading": "ひだり",
+     "gloss": "left"
+    },
+    {
+     "form": "左手",
+     "reading": "ひだりて",
+     "gloss": "left hand"
+    },
+    {
+     "form": "左右",
+     "reading": "さゆう",
+     "gloss": "left and right"
+    }
+   ],
+   "lookalikes": [
+    "右"
+   ]
+  },
+  {
+   "glyph": "右",
+   "lesson_order": 60,
+   "on": [
+    "ウ",
+    "ユウ"
+   ],
+   "kun": [
+    "みぎ"
+   ],
+   "radical_decomposition": [
+    "ナ",
+    "口"
+   ],
+   "stroke_count": 5,
+   "examples": [
+    {
+     "form": "右",
+     "reading": "みぎ",
+     "gloss": "right"
+    },
+    {
+     "form": "右手",
+     "reading": "みぎて",
+     "gloss": "right hand"
+    },
+    {
+     "form": "右上",
+     "reading": "みぎうえ",
+     "gloss": "upper right"
+    }
+   ],
+   "lookalikes": [
+    "左"
+   ]
+  },
+  {
+   "glyph": "前",
+   "lesson_order": 61,
+   "on": [
+    "ゼン"
+   ],
+   "kun": [
+    "まえ"
+   ],
+   "radical_decomposition": [
+    "丷",
+    "一",
+    "月",
+    "刂"
+   ],
+   "stroke_count": 9,
+   "examples": [
+    {
+     "form": "前",
+     "reading": "まえ",
+     "gloss": "before, in front"
+    },
+    {
+     "form": "午前",
+     "reading": "ごぜん",
+     "gloss": "A.M."
+    },
+    {
+     "form": "名前",
+     "reading": "なまえ",
+     "gloss": "name"
+    }
+   ],
+   "lookalikes": [
+    "後"
+   ]
+  },
+  {
+   "glyph": "後",
+   "lesson_order": 62,
+   "on": [
+    "ゴ",
+    "コウ"
+   ],
+   "kun": [
+    "うし",
+    "あと",
+    "のち"
+   ],
+   "radical_decomposition": [
+    "彳",
+    "幺",
+    "夂"
+   ],
+   "stroke_count": 9,
+   "examples": [
+    {
+     "form": "午後",
+     "reading": "ごご",
+     "gloss": "P.M."
+    },
+    {
+     "form": "後で",
+     "reading": "あとで",
+     "gloss": "later"
+    },
+    {
+     "form": "後ろ",
+     "reading": "うしろ",
+     "gloss": "back, behind"
+    },
+    {
+     "form": "後",
+     "reading": "あと",
+     "gloss": "after / later (時間的に後で)"
+    }
+   ],
+   "lookalikes": [
+    "前"
+   ]
+  },
+  {
+   "glyph": "外",
+   "lesson_order": 63,
+   "on": [
+    "ガイ"
+   ],
+   "kun": [
+    "そと"
+   ],
+   "radical_decomposition": [
+    "夕",
+    "卜"
+   ],
+   "stroke_count": 5,
+   "examples": [
+    {
+     "form": "外",
+     "reading": "そと",
+     "gloss": "outside"
+    },
+    {
+     "form": "外国",
+     "reading": "がいこく",
+     "gloss": "foreign country"
+    },
+    {
+     "form": "外国人",
+     "reading": "がいこくじん",
+     "gloss": "foreigner"
+    },
+    {
+     "form": "外国語",
+     "reading": "がいこくご",
+     "gloss": "foreign language"
+    }
+   ],
+   "lookalikes": [
+    "間"
+   ]
+  },
+  {
+   "glyph": "東",
+   "lesson_order": 64,
+   "on": [
+    "トウ"
+   ],
+   "kun": [
+    "ひがし"
+   ],
+   "radical_decomposition": [
+    "木",
+    "日"
+   ],
+   "stroke_count": 8,
+   "examples": [
+    {
+     "form": "東",
+     "reading": "ひがし",
+     "gloss": "east"
+    },
+    {
+     "form": "東口",
+     "reading": "ひがしぐち",
+     "gloss": "east exit"
+    },
+    {
+     "form": "中東",
+     "reading": "ちゅうとう",
+     "gloss": "Middle East (geographic region)"
+    }
+   ],
+   "lookalikes": [
+    "北",
+    "南",
+    "西"
+   ]
+  },
+  {
+   "glyph": "西",
+   "lesson_order": 65,
+   "on": [
+    "セイ",
+    "サイ"
+   ],
+   "kun": [
+    "にし"
+   ],
+   "radical_decomposition": [
+    "西"
+   ],
+   "stroke_count": 6,
+   "examples": [
+    {
+     "form": "西",
+     "reading": "にし",
+     "gloss": "west"
+    },
+    {
+     "form": "西口",
+     "reading": "にしぐち",
+     "gloss": "west exit"
+    },
+    {
+     "form": "西日",
+     "reading": "にしび",
+     "gloss": "westerly sun (afternoon sunlight)"
+    }
+   ],
+   "lookalikes": [
+    "北",
+    "南",
+    "四",
+    "東"
+   ]
+  },
+  {
+   "glyph": "南",
+   "lesson_order": 66,
+   "on": [
+    "ナン"
+   ],
+   "kun": [
+    "みなみ"
+   ],
+   "radical_decomposition": [
+    "南"
+   ],
+   "stroke_count": 9,
+   "examples": [
+    {
+     "form": "南",
+     "reading": "みなみ",
+     "gloss": "south"
+    },
+    {
+     "form": "南口",
+     "reading": "みなみぐち",
+     "gloss": "south exit"
+    },
+    {
+     "form": "南北",
+     "reading": "なんぼく",
+     "gloss": "north and south (axis)"
+    }
+   ],
+   "lookalikes": [
+    "北",
+    "東",
+    "西"
+   ]
+  },
+  {
+   "glyph": "北",
+   "lesson_order": 67,
+   "on": [
+    "ホク"
+   ],
+   "kun": [
+    "きた"
+   ],
+   "radical_decomposition": [
+    "北"
+   ],
+   "stroke_count": 5,
+   "examples": [
+    {
+     "form": "北",
+     "reading": "きた",
+     "gloss": "north"
+    },
+    {
+     "form": "北口",
+     "reading": "きたぐち",
+     "gloss": "north exit"
+    },
+    {
+     "form": "南北",
+     "reading": "なんぼく",
+     "gloss": "north and south (axis)"
+    }
+   ],
+   "lookalikes": [
+    "南",
+    "東",
+    "西"
+   ]
+  },
+  {
+   "glyph": "間",
+   "lesson_order": 68,
+   "on": [
+    "カン",
+    "ケン"
+   ],
+   "kun": [
+    "あいだ",
+    "ま"
+   ],
+   "radical_decomposition": [
+    "門",
+    "日"
+   ],
+   "stroke_count": 12,
+   "examples": [
+    {
+     "form": "時間",
+     "reading": "じかん",
+     "gloss": "time, hour"
+    },
+    {
+     "form": "一時間",
+     "reading": "いちじかん",
+     "gloss": "one hour"
+    },
+    {
+     "form": "人間",
+     "reading": "にんげん",
+     "gloss": "human being"
+    }
+   ],
+   "lookalikes": [
+    "外",
+    "時"
+   ]
+  },
+  {
+   "glyph": "山",
+   "lesson_order": 69,
+   "on": [
+    "サン"
+   ],
+   "kun": [
+    "やま"
+   ],
+   "radical_decomposition": [
+    "山"
+   ],
+   "stroke_count": 3,
+   "examples": [
+    {
+     "form": "山",
+     "reading": "やま",
+     "gloss": "mountain"
+    },
+    {
+     "form": "火山",
+     "reading": "かざん",
+     "gloss": "volcano"
+    },
+    {
+     "form": "山道",
+     "reading": "やまみち",
+     "gloss": "mountain path / trail"
+    }
+   ],
+   "lookalikes": [
+    "出"
+   ]
+  },
+  {
+   "glyph": "川",
+   "lesson_order": 70,
+   "on": [
+    "セン"
+   ],
+   "kun": [
+    "かわ"
+   ],
+   "radical_decomposition": [
+    "川"
+   ],
+   "stroke_count": 3,
+   "examples": [
+    {
+     "form": "川",
+     "reading": "かわ",
+     "gloss": "river"
+    },
+    {
+     "form": "小川",
+     "reading": "おがわ",
+     "gloss": "small stream / Ogawa (surname)"
+    },
+    {
+     "form": "川口",
+     "reading": "かわぐち",
+     "gloss": "mouth of a river"
+    }
+   ],
+   "lookalikes": [
+    "三",
+    "小"
+   ]
+  },
+  {
+   "glyph": "田",
+   "lesson_order": 71,
+   "on": [
+    "デン"
+   ],
+   "kun": [
+    "た"
+   ],
+   "radical_decomposition": [
+    "田"
+   ],
+   "stroke_count": 5,
+   "examples": [
+    {
+     "form": "田",
+     "reading": "た",
+     "gloss": "rice field"
+    },
+    {
+     "form": "田中",
+     "reading": "たなか",
+     "gloss": "Tanaka (surname)"
+    },
+    {
+     "form": "水田",
+     "reading": "すいでん",
+     "gloss": "rice paddy"
+    }
+   ],
+   "lookalikes": [
+    "円",
+    "番"
+   ]
+  },
+  {
+   "glyph": "雨",
+   "lesson_order": 72,
+   "on": [
+    "ウ"
+   ],
+   "kun": [
+    "あめ"
+   ],
+   "radical_decomposition": [
+    "雨"
+   ],
+   "stroke_count": 8,
+   "examples": [
+    {
+     "form": "雨",
+     "reading": "あめ",
+     "gloss": "rain"
+    },
+    {
+     "form": "大雨",
+     "reading": "おおあめ",
+     "gloss": "heavy rain"
+    },
+    {
+     "form": "小雨",
+     "reading": "こさめ",
+     "gloss": "light rain / drizzle"
+    }
+   ],
+   "lookalikes": [
+    "電"
+   ]
+  },
+  {
+   "glyph": "天",
+   "lesson_order": 73,
+   "on": [
+    "テン"
+   ],
+   "kun": [
+    "あめ",
+    "あま-"
+   ],
+   "radical_decomposition": [
+    "一",
+    "大"
+   ],
+   "stroke_count": 4,
+   "examples": [
+    {
+     "form": "天気",
+     "reading": "てんき",
+     "gloss": "weather"
+    },
+    {
+     "form": "天ぷら",
+     "reading": "てんぷら",
+     "gloss": "tempura"
+    },
+    {
+     "form": "天の川",
+     "reading": "あまのがわ",
+     "gloss": "the Milky Way (lit. river of heaven)"
+    }
+   ],
+   "lookalikes": [
+    "気"
+   ]
+  },
+  {
+   "glyph": "気",
+   "lesson_order": 74,
+   "on": [
+    "キ",
+    "ケ"
+   ],
+   "kun": [],
+   "radical_decomposition": [
+    "气",
+    "〆"
+   ],
+   "stroke_count": 6,
+   "examples": [
+    {
+     "form": "電気",
+     "reading": "でんき",
+     "gloss": "electricity, light"
+    },
+    {
+     "form": "天気",
+     "reading": "てんき",
+     "gloss": "weather"
+    },
+    {
+     "form": "気もち",
+     "reading": "きもち",
+     "gloss": "feeling / mood (気持ち; 持 in kana per K-1)"
+    }
+   ],
+   "lookalikes": [
+    "天"
+   ]
+  },
+  {
+   "glyph": "花",
+   "lesson_order": 75,
+   "on": [
+    "カ"
+   ],
+   "kun": [
+    "はな"
+   ],
+   "radical_decomposition": [
+    "艹",
+    "化"
+   ],
+   "stroke_count": 7,
+   "examples": [
+    {
+     "form": "花",
+     "reading": "はな",
+     "gloss": "flower"
+    },
+    {
+     "form": "花見",
+     "reading": "はなみ",
+     "gloss": "flower viewing (cherry blossom)"
+    },
+    {
+     "form": "花火",
+     "reading": "はなび",
+     "gloss": "fireworks"
+    }
+   ],
+   "lookalikes": [
+    "空"
+   ]
+  },
+  {
+   "glyph": "空",
+   "lesson_order": 76,
+   "on": [
+    "クウ"
+   ],
+   "kun": [
+    "そら",
+    "あ",
+    "から"
+   ],
+   "radical_decomposition": [
+    "穴",
+    "工"
+   ],
+   "stroke_count": 8,
+   "examples": [
+    {
+     "form": "空",
+     "reading": "そら",
+     "gloss": "sky"
+    },
+    {
+     "form": "空気",
+     "reading": "くうき",
+     "gloss": "air"
+    },
+    {
+     "form": "大空",
+     "reading": "おおぞら",
+     "gloss": "wide-open sky"
+    }
+   ],
+   "lookalikes": [
+    "花"
+   ]
+  },
+  {
+   "glyph": "電",
+   "lesson_order": 77,
+   "on": [
+    "デン"
+   ],
+   "kun": [],
+   "radical_decomposition": [
+    "雨",
+    "田"
+   ],
+   "stroke_count": 13,
+   "examples": [
+    {
+     "form": "電気",
+     "reading": "でんき",
+     "gloss": "light"
+    },
+    {
+     "form": "電話",
+     "reading": "でんわ",
+     "gloss": "telephone"
+    },
+    {
+     "form": "電車",
+     "reading": "でんしゃ",
+     "gloss": "train (electric)"
+    },
+    {
+     "form": "電話番号",
+     "reading": "でんわばんごう",
+     "gloss": "phone number"
+    },
+    {
+     "form": "電話する",
+     "reading": "でんわする",
+     "gloss": "to telephone"
+    }
+   ],
+   "lookalikes": [
+    "車",
+    "雨"
+   ]
+  },
+  {
+   "glyph": "車",
+   "lesson_order": 78,
+   "on": [
+    "シャ"
+   ],
+   "kun": [
+    "くるま"
+   ],
+   "radical_decomposition": [
+    "車"
+   ],
+   "stroke_count": 7,
+   "examples": [
+    {
+     "form": "車",
+     "reading": "くるま",
+     "gloss": "car"
+    },
+    {
+     "form": "電車",
+     "reading": "でんしゃ",
+     "gloss": "train (electric)"
+    },
+    {
+     "form": "車道",
+     "reading": "しゃどう",
+     "gloss": "road for vehicles"
+    }
+   ],
+   "lookalikes": [
+    "電"
+   ]
+  },
+  {
+   "glyph": "道",
+   "lesson_order": 79,
+   "on": [
+    "ドウ"
+   ],
+   "kun": [
+    "みち"
+   ],
+   "radical_decomposition": [
+    "辶",
+    "首"
+   ],
+   "stroke_count": 12,
+   "examples": [
+    {
+     "form": "道",
+     "reading": "みち",
+     "gloss": "road, way"
+    },
+    {
+     "form": "車道",
+     "reading": "しゃどう",
+     "gloss": "road for vehicles"
+    },
+    {
+     "form": "山道",
+     "reading": "やまみち",
+     "gloss": "mountain path / trail"
+    }
+   ],
+   "lookalikes": [
+    "週"
+   ]
+  },
+  {
+   "glyph": "店",
+   "lesson_order": 80,
+   "on": [
+    "テン"
+   ],
+   "kun": [
+    "みせ"
+   ],
+   "radical_decomposition": [
+    "广",
+    "占"
+   ],
+   "stroke_count": 8,
+   "examples": [
+    {
+     "form": "お店",
+     "reading": "おみせ",
+     "gloss": "shop"
+    },
+    {
+     "form": "店員",
+     "reading": "てんいん",
+     "gloss": "shop clerk"
+    },
+    {
+     "form": "本店",
+     "reading": "ほんてん",
+     "gloss": "head store / main branch"
+    }
+   ],
+   "lookalikes": [
+    "駅"
+   ]
+  },
+  {
+   "glyph": "駅",
+   "lesson_order": 81,
+   "on": [
+    "エキ"
+   ],
+   "kun": [],
+   "radical_decomposition": [
+    "馬",
+    "尺"
+   ],
+   "stroke_count": 14,
+   "examples": [
+    {
+     "form": "駅",
+     "reading": "えき",
+     "gloss": "station"
+    },
+    {
+     "form": "駅員",
+     "reading": "えきいん",
+     "gloss": "station staff"
+    },
+    {
+     "form": "駅前",
+     "reading": "えきまえ",
+     "gloss": "in front of the station"
+    }
+   ],
+   "lookalikes": [
+    "店"
+   ]
+  },
+  {
+   "glyph": "食",
+   "lesson_order": 82,
+   "on": [
+    "ショク"
+   ],
+   "kun": [
+    "た",
+    "く"
+   ],
+   "radical_decomposition": [
+    "食"
+   ],
+   "stroke_count": 9,
+   "examples": [
+    {
+     "form": "食べる",
+     "reading": "たべる",
+     "gloss": "to eat"
+    },
+    {
+     "form": "食べもの",
+     "reading": "たべもの",
+     "gloss": "food"
+    },
+    {
+     "form": "食前",
+     "reading": "しょくぜん",
+     "gloss": "before a meal (e.g. medicine instructions)"
+    }
+   ],
+   "lookalikes": [
+    "飲",
+    "金"
+   ]
+  },
+  {
+   "glyph": "飲",
+   "lesson_order": 83,
+   "on": [
+    "イン"
+   ],
+   "kun": [
+    "の"
+   ],
+   "radical_decomposition": [
+    "飠",
+    "欠"
+   ],
+   "stroke_count": 12,
+   "examples": [
+    {
+     "form": "飲む",
+     "reading": "のむ",
+     "gloss": "to drink"
+    },
+    {
+     "form": "飲みもの",
+     "reading": "のみもの",
+     "gloss": "drink, beverage"
+    },
+    {
+     "form": "飲み水",
+     "reading": "のみみず",
+     "gloss": "drinking water"
+    }
+   ],
+   "lookalikes": [
+    "食"
+   ]
+  },
+  {
+   "glyph": "見",
+   "lesson_order": 84,
+   "on": [
+    "ケン"
+   ],
+   "kun": [
+    "み"
+   ],
+   "radical_decomposition": [
+    "目",
+    "儿"
+   ],
+   "stroke_count": 7,
+   "examples": [
+    {
+     "form": "見る",
+     "reading": "みる",
+     "gloss": "to see, to watch"
+    },
+    {
+     "form": "見せる",
+     "reading": "みせる",
+     "gloss": "to show"
+    },
+    {
+     "form": "見おくる",
+     "reading": "みおくる",
+     "gloss": "to see off (見送る; 送 in kana per K-1)"
+    }
+   ],
+   "lookalikes": [
+    "聞"
+   ]
+  },
+  {
+   "glyph": "聞",
+   "lesson_order": 85,
+   "on": [
+    "ブン",
+    "モン"
+   ],
+   "kun": [
+    "き"
+   ],
+   "radical_decomposition": [
+    "門",
+    "耳"
+   ],
+   "stroke_count": 14,
+   "examples": [
+    {
+     "form": "新聞",
+     "reading": "しんぶん",
+     "gloss": "newspaper"
+    },
+    {
+     "form": "聞く",
+     "reading": "きく",
+     "gloss": "to listen, to ask"
+    },
+    {
+     "form": "聞こえる",
+     "reading": "きこえる",
+     "gloss": "be audible / can be heard (intransitive of 聞く)"
+    },
+    {
+     "form": "聞き手",
+     "reading": "ききて",
+     "gloss": "listener"
+    }
+   ],
+   "lookalikes": [
+    "見"
+   ]
+  },
+  {
+   "glyph": "読",
+   "lesson_order": 86,
+   "on": [
+    "ドク"
+   ],
+   "kun": [
+    "よ"
+   ],
+   "radical_decomposition": [
+    "言",
+    "売"
+   ],
+   "stroke_count": 14,
+   "examples": [
+    {
+     "form": "読む",
+     "reading": "よむ",
+     "gloss": "to read"
+    },
+    {
+     "form": "読みかた",
+     "reading": "よみかた",
+     "gloss": "way of reading; reading (of a kanji)"
+    },
+    {
+     "form": "読みもの",
+     "reading": "よみもの",
+     "gloss": "reading material (読み物; 物 in kana per K-1)"
+    }
+   ],
+   "lookalikes": [
+    "書",
+    "言",
+    "話",
+    "語"
+   ]
+  },
+  {
+   "glyph": "書",
+   "lesson_order": 87,
+   "on": [
+    "ショ"
+   ],
+   "kun": [
+    "か"
+   ],
+   "radical_decomposition": [
+    "書"
+   ],
+   "stroke_count": 10,
+   "examples": [
+    {
+     "form": "書く",
+     "reading": "かく",
+     "gloss": "to write"
+    },
+    {
+     "form": "書きかた",
+     "reading": "かきかた",
+     "gloss": "way of writing"
+    },
+    {
+     "form": "読み書き",
+     "reading": "よみかき",
+     "gloss": "reading and writing"
+    }
+   ],
+   "lookalikes": [
+    "言",
+    "話",
+    "語",
+    "読"
+   ]
+  },
+  {
+   "glyph": "話",
+   "lesson_order": 88,
+   "on": [
+    "ワ"
+   ],
+   "kun": [
+    "はな",
+    "はなし"
+   ],
+   "radical_decomposition": [
+    "言",
+    "舌"
+   ],
+   "stroke_count": 13,
+   "examples": [
+    {
+     "form": "話",
+     "reading": "はなし",
+     "gloss": "story, talk"
+    },
+    {
+     "form": "話す",
+     "reading": "はなす",
+     "gloss": "to speak"
+    },
+    {
+     "form": "電話",
+     "reading": "でんわ",
+     "gloss": "telephone"
+    },
+    {
+     "form": "電話番号",
+     "reading": "でんわばんごう",
+     "gloss": "phone number"
+    },
+    {
+     "form": "電話する",
+     "reading": "でんわする",
+     "gloss": "to telephone"
+    }
+   ],
+   "lookalikes": [
+    "書",
+    "言",
+    "語",
+    "読"
+   ]
+  },
+  {
+   "glyph": "来",
+   "lesson_order": 89,
+   "on": [
+    "ライ"
+   ],
+   "kun": [
+    "く",
+    "きた"
+   ],
+   "radical_decomposition": [
+    "一",
+    "米"
+   ],
+   "stroke_count": 7,
+   "examples": [
+    {
+     "form": "来る",
+     "reading": "くる",
+     "gloss": "to come"
+    },
+    {
+     "form": "来週",
+     "reading": "らいしゅう",
+     "gloss": "next week"
+    },
+    {
+     "form": "来年",
+     "reading": "らいねん",
+     "gloss": "next year"
+    },
+    {
+     "form": "来月",
+     "reading": "らいげつ",
+     "gloss": "next month"
+    }
+   ],
+   "lookalikes": [
+    "行"
+   ]
+  },
+  {
+   "glyph": "行",
+   "lesson_order": 90,
+   "on": [
+    "コウ",
+    "ギョウ",
+    "アン"
+   ],
+   "kun": [
+    "い",
+    "ゆ",
+    "おこな"
+   ],
+   "radical_decomposition": [
+    "彳",
+    "亍"
+   ],
+   "stroke_count": 6,
+   "examples": [
+    {
+     "form": "行く",
+     "reading": "いく",
+     "gloss": "to go"
+    },
+    {
+     "form": "行きかた",
+     "reading": "いきかた",
+     "gloss": "way of going / how to get there"
+    },
+    {
+     "form": "行き先",
+     "reading": "いきさき",
+     "gloss": "destination"
+    }
+   ],
+   "lookalikes": [
+    "来"
+   ]
+  },
+  {
+   "glyph": "出",
+   "lesson_order": 91,
+   "on": [
+    "シュツ",
+    "スイ"
+   ],
+   "kun": [
+    "で",
+    "だ"
+   ],
+   "radical_decomposition": [
+    "出"
+   ],
+   "stroke_count": 5,
+   "examples": [
+    {
+     "form": "出る",
+     "reading": "でる",
+     "gloss": "to leave, to go out"
+    },
+    {
+     "form": "出かける",
+     "reading": "でかける",
+     "gloss": "to go out"
+    },
+    {
+     "form": "出口",
+     "reading": "でぐち",
+     "gloss": "exit"
+    }
+   ],
+   "lookalikes": [
+    "山"
+   ]
+  },
+  {
+   "glyph": "入",
+   "lesson_order": 92,
+   "on": [
+    "ニュウ"
+   ],
+   "kun": [
+    "はい",
+    "い"
+   ],
+   "radical_decomposition": [
+    "入"
+   ],
+   "stroke_count": 2,
+   "examples": [
+    {
+     "form": "入る",
+     "reading": "はいる",
+     "gloss": "to enter (Group 1 exception - looks like Group 2)"
+    },
+    {
+     "form": "入れる",
+     "reading": "いれる",
+     "gloss": "to put in"
+    },
+    {
+     "form": "入口",
+     "reading": "いりぐち",
+     "gloss": "entrance"
+    }
+   ],
+   "lookalikes": [
+    "人",
+    "八"
+   ]
+  },
+  {
+   "glyph": "立",
+   "lesson_order": 93,
+   "on": [
+    "リツ",
+    "リュウ"
+   ],
+   "kun": [
+    "た"
+   ],
+   "radical_decomposition": [
+    "立"
+   ],
+   "stroke_count": 5,
+   "examples": [
+    {
+     "form": "立つ",
+     "reading": "たつ",
+     "gloss": "to stand"
+    },
+    {
+     "form": "立ち上がる",
+     "reading": "たちあがる",
+     "gloss": "to stand up"
+    },
+    {
+     "form": "立ち入り",
+     "reading": "たちいり",
+     "gloss": "entry / entering (often \"立入禁止\" = no entry)"
+    }
+   ],
+   "lookalikes": [
+    "休"
+   ]
+  },
+  {
+   "glyph": "休",
+   "lesson_order": 94,
+   "on": [
+    "キュウ"
+   ],
+   "kun": [
+    "やす"
+   ],
+   "radical_decomposition": [
+    "亻",
+    "木"
+   ],
+   "stroke_count": 6,
+   "examples": [
+    {
+     "form": "休む",
+     "reading": "やすむ",
+     "gloss": "to rest"
+    },
+    {
+     "form": "休み",
+     "reading": "やすみ",
+     "gloss": "holiday, rest, day off"
+    },
+    {
+     "form": "休み中",
+     "reading": "やすみちゅう",
+     "gloss": "on a break / during a holiday"
+    }
+   ],
+   "lookalikes": [
+    "立"
+   ]
+  },
+  {
+   "glyph": "言",
+   "lesson_order": 95,
+   "on": [
+    "ゲン",
+    "ゴン"
+   ],
+   "kun": [
+    "い",
+    "こと"
+   ],
+   "radical_decomposition": [
+    "言"
+   ],
+   "stroke_count": 7,
+   "examples": [
+    {
+     "form": "言う",
+     "reading": "いう",
+     "gloss": "to say"
+    },
+    {
+     "form": "言いかた",
+     "reading": "いいかた",
+     "gloss": "way of saying, expression"
+    },
+    {
+     "form": "一言",
+     "reading": "ひとこと",
+     "gloss": "a word / a brief comment"
+    }
+   ],
+   "lookalikes": [
+    "書",
+    "話",
+    "語",
+    "読"
+   ]
+  },
+  {
+   "glyph": "買",
+   "lesson_order": 96,
+   "on": [
+    "バイ"
+   ],
+   "kun": [
+    "か"
+   ],
+   "radical_decomposition": [
+    "四",
+    "貝"
+   ],
+   "stroke_count": 12,
+   "examples": [
+    {
+     "form": "買う",
+     "reading": "かう",
+     "gloss": "to buy"
+    },
+    {
+     "form": "買いもの",
+     "reading": "かいもの",
+     "gloss": "shopping"
+    },
+    {
+     "form": "買い手",
+     "reading": "かいて",
+     "gloss": "buyer / purchaser"
+    }
+   ],
+   "lookalikes": [
+    "員"
+   ]
+  },
+  {
+   "glyph": "高",
+   "lesson_order": 97,
+   "on": [
+    "コウ"
+   ],
+   "kun": [
+    "たか"
+   ],
+   "radical_decomposition": [
+    "高"
+   ],
+   "stroke_count": 10,
+   "examples": [
+    {
+     "form": "高校",
+     "reading": "こうこう",
+     "gloss": "high school"
+    },
+    {
+     "form": "高い",
+     "reading": "たかい",
+     "gloss": "high, tall, expensive"
+    },
+    {
+     "form": "高校生",
+     "reading": "こうこうせい",
+     "gloss": "high school student"
+    }
+   ],
+   "lookalikes": [
+    "安"
+   ]
+  },
+  {
+   "glyph": "安",
+   "lesson_order": 98,
+   "on": [
+    "アン"
+   ],
+   "kun": [
+    "やす"
+   ],
+   "radical_decomposition": [
+    "宀",
+    "女"
+   ],
+   "stroke_count": 6,
+   "examples": [
+    {
+     "form": "安い",
+     "reading": "やすい",
+     "gloss": "cheap"
+    },
+    {
+     "form": "安く",
+     "reading": "やすく",
+     "gloss": "cheaply (adverb)"
+    },
+    {
+     "form": "大安",
+     "reading": "たいあん",
+     "gloss": "auspicious / lucky day (per Japanese calendar)"
+    }
+   ],
+   "lookalikes": [
+    "高"
+   ]
+  },
+  {
+   "glyph": "新",
+   "lesson_order": 99,
+   "on": [
+    "シン"
+   ],
+   "kun": [
+    "あたら",
+    "あら",
+    "にい-"
+   ],
+   "radical_decomposition": [
+    "立",
+    "木",
+    "斤"
+   ],
+   "stroke_count": 13,
+   "examples": [
+    {
+     "form": "新聞",
+     "reading": "しんぶん",
+     "gloss": "newspaper"
+    },
+    {
+     "form": "新しい",
+     "reading": "あたらしい",
+     "gloss": "new"
+    },
+    {
+     "form": "新年",
+     "reading": "しんねん",
+     "gloss": "new year (the calendar new year)"
+    }
+   ],
+   "lookalikes": [
+    "古"
+   ]
+  },
+  {
+   "glyph": "古",
+   "lesson_order": 100,
+   "on": [
+    "コ"
+   ],
+   "kun": [
+    "ふる"
+   ],
+   "radical_decomposition": [
+    "十",
+    "口"
+   ],
+   "stroke_count": 5,
+   "examples": [
+    {
+     "form": "古い",
+     "reading": "ふるい",
+     "gloss": "old (not for people)"
+    },
+    {
+     "form": "古本",
+     "reading": "ふるほん",
+     "gloss": "second-hand book"
+    },
+    {
+     "form": "中古",
+     "reading": "ちゅうこ",
+     "gloss": "second-hand / used"
+    }
+   ],
+   "lookalikes": [
+    "新"
+   ]
+  },
+  {
+   "glyph": "長",
+   "lesson_order": 101,
+   "on": [
+    "チョウ"
+   ],
+   "kun": [
+    "なが"
+   ],
+   "radical_decomposition": [
+    "長"
+   ],
+   "stroke_count": 8,
+   "examples": [
+    {
+     "form": "長い",
+     "reading": "ながい",
+     "gloss": "long"
+    },
+    {
+     "form": "長さ",
+     "reading": "ながさ",
+     "gloss": "length"
+    },
+    {
+     "form": "社長",
+     "reading": "しゃちょう",
+     "gloss": "company president"
+    }
+   ],
+   "lookalikes": []
+  },
+  {
+   "glyph": "白",
+   "lesson_order": 102,
+   "on": [
+    "ハク",
+    "ビャク"
+   ],
+   "kun": [
+    "しろ",
+    "しら-"
+   ],
+   "radical_decomposition": [
+    "丿",
+    "日"
+   ],
+   "stroke_count": 5,
+   "examples": [
+    {
+     "form": "白",
+     "reading": "しろ",
+     "gloss": "white (noun)"
+    },
+    {
+     "form": "白い",
+     "reading": "しろい",
+     "gloss": "white (adj)"
+    },
+    {
+     "form": "白人",
+     "reading": "はくじん",
+     "gloss": "white person"
+    }
+   ],
+   "lookalikes": [
+    "口",
+    "日",
+    "百",
+    "目"
+   ]
+  },
+  {
+   "glyph": "名",
+   "lesson_order": 103,
+   "on": [
+    "メイ",
+    "ミョウ"
+   ],
+   "kun": [
+    "な"
+   ],
+   "radical_decomposition": [
+    "夕",
+    "口"
+   ],
+   "stroke_count": 6,
+   "examples": [
+    {
+     "form": "名前",
+     "reading": "なまえ",
+     "gloss": "name"
+    },
+    {
+     "form": "名人",
+     "reading": "めいじん",
+     "gloss": "expert / master"
+    },
+    {
+     "form": "大名",
+     "reading": "だいみょう",
+     "gloss": "feudal lord (historical, Edo period)"
+    }
+   ],
+   "lookalikes": [
+    "友"
+   ]
+  },
+  {
+   "glyph": "番",
+   "lesson_order": 104,
+   "on": [
+    "バン"
+   ],
+   "kun": [],
+   "radical_decomposition": [
+    "釆",
+    "田"
+   ],
+   "stroke_count": 12,
+   "examples": [
+    {
+     "form": "番",
+     "reading": "ばん",
+     "gloss": "number, ordinal"
+    },
+    {
+     "form": "番号",
+     "reading": "ばんごう",
+     "gloss": "number"
+    },
+    {
+     "form": "一番",
+     "reading": "いちばん",
+     "gloss": "most, number one"
+    },
+    {
+     "form": "電話番号",
+     "reading": "でんわばんごう",
+     "gloss": "phone number"
+    }
+   ],
+   "lookalikes": [
+    "田"
+   ]
+  },
+  {
+   "glyph": "号",
+   "lesson_order": 105,
+   "on": [
+    "ゴウ"
+   ],
+   "kun": [],
+   "radical_decomposition": [
+    "口",
+    "丂"
+   ],
+   "stroke_count": 5,
+   "examples": [
+    {
+     "form": "番号",
+     "reading": "ばんごう",
+     "gloss": "number"
+    },
+    {
+     "form": "電話番号",
+     "reading": "でんわばんごう",
+     "gloss": "phone number"
+    },
+    {
+     "form": "年号",
+     "reading": "ねんごう",
+     "gloss": "era name (e.g. 令和)"
+    }
+   ],
+   "lookalikes": [
+    "口"
+   ]
+  },
+  {
+   "glyph": "私",
+   "lesson_order": 106,
+   "on": [],
+   "kun": [
+    "わたし"
+   ],
+   "radical_decomposition": [
+    "禾",
+    "厶"
+   ],
+   "stroke_count": 7,
+   "examples": [
+    {
+     "form": "私",
+     "reading": "わたし",
+     "gloss": "I, me"
+    },
+    {
+     "form": "私たち",
+     "reading": "わたしたち",
+     "gloss": "we"
+    },
+    {
+     "form": "私語",
+     "reading": "しご",
+     "gloss": "private talk / whispering"
+    }
+   ],
+   "lookalikes": []
+  }
+ ]
+}
