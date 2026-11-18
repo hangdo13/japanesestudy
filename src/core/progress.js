@@ -211,6 +211,18 @@ export function createProgress({ storage, now = () => new Date(), events } = {})
   return api;
 }
 
+/** Xin trình duyệt giữ dữ liệu lâu dài (không bị dọn khi thiếu chỗ). Không bắt buộc thành công. */
+export function requestPersistentStorage(nav = typeof navigator !== 'undefined' ? navigator : null) {
+  try {
+    if (nav && nav.storage && typeof nav.storage.persist === 'function') {
+      return Promise.resolve(nav.storage.persist()).catch(() => false);
+    }
+  } catch {
+    /* bỏ qua */
+  }
+  return Promise.resolve(false);
+}
+
 let defaultInstance = null;
 
 /** Kho tiến độ dùng chung của app. */

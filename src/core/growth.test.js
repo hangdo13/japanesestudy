@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { newKanjiToday, kanjiMoiLimit, clampInt } from './growth.js';
+import { newKanjiToday, kanjiMoiLimit, clampInt, backupDue, shouldShowInstallGuide } from './growth.js';
 
 const ALL = ['一', '二', '三', '四', '五', '六', '七', '八'].map((id) => ({ id }));
 const TODAY = '2026-11-18';
@@ -56,5 +56,40 @@ describe('kanjiMoiLimit', () => {
     expect(kanjiMoiLimit({ kanjiMoiMoiNgay: null })).toBe(5);
     expect(kanjiMoiLimit({ kanjiMoiMoiNgay: '' })).toBe(5);
     expect(clampInt(3.6, 1, 10, 5)).toBe(4);
+  });
+});
+
+
+describe('backupDue', () => {
+  const now = new Date('2026-11-25T10:00:00Z');
+  it('sao lưu cách đây 7 ngày trở lên thì đến hạn', () => {
+    expect(backupDue({ lastBackupAt: '2026-11-18T10:00:00Z' }, now)).toBe(true);
+    expect(backupDue({ lastBackupAt: '2026-11-19T10:00:00Z' }, now)).toBe(false);
+  });
+  it('chưa sao lưu: tính từ ngày bắt đầu dùng app', () => {
+    expect(backupDue({ lastBackupAt: null, createdAt: '2026-11-18T09:00:00Z' }, now)).toBe(true);
+    expect(backupDue({ lastBackupAt: null, createdAt: '2026-11-24T09:00:00Z' }, now)).toBe(false);
+  });
+  it('thiếu cả hai mốc thì nhắc luôn cho an toàn', () => {
+    expect(backupDue({}, now)).toBe(true);
+    expect(backupDue(undefined, now)).toBe(true);
+  });
+  it('mốc ở tương lai hoặc không phải chuỗi', () => {
+    expect(backupDue({ lastBackupAt: '2027-01-01T00:00:00Z' }, now)).toBe(true);
+    expect(shouldShowInstallGuide({ isIos: true, isStandalone: false, dismissedAt: '2027-01-01T00:00:00Z', now })).toBe(true);
+    expect(shouldShowInstallGuide({ isIos: true, isStandalone: false, dismissedAt: 2026, now })).toBe(true);
+  });
+});
+
+describe('shouldShowInstallGuide', () => {
+  const now = new Date('2026-11-25T10:00:00Z');
+  it('chỉ hiện trên iOS khi chưa mở từ màn hình chính', () => {
+    expect(shouldShowInstallGuide({ isIos: true, isStandalone: false, now })).toBe(true);
+    expect(shouldShowInstallGuide({ isIos: true, isStandalone: true, now })).toBe(false);
+    expect(shouldShowInstallGuide({ isIos: false, isStandalone: false, now })).toBe(false);
+  });
+  it('bấm Để sau thì 7 ngày sau mới hiện lại', () => {
+    expect(shouldShowInstallGuide({ isIos: true, isStandalone: false, dismissedAt: '2026-11-20T10:00:00Z', now })).toBe(false);
+    expect(shouldShowInstallGuide({ isIos: true, isStandalone: false, dismissedAt: '2026-11-18T10:00:00Z', now })).toBe(true);
   });
 });

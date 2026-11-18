@@ -27,7 +27,14 @@ jobs:
       - run: npm test
       - run: npm run build
       - name: Kiểm tra đường dẫn con /japanesestudy/
-        run: grep -q '/japanesestudy/assets/' dist/index.html
+        run: |
+          grep -q '/japanesestudy/assets/' dist/index.html
+          grep -q '/japanesestudy/manifest.webmanifest' dist/index.html
+          grep -q '/japanesestudy/icons/apple-touch-icon.png' dist/index.html
+          test -f dist/manifest.webmanifest
+          test -f dist/icons/apple-touch-icon.png
+          test -f dist/icons/icon-192.png
+          test -f dist/icons/icon-512.png
       - uses: actions/configure-pages@v6
       - uses: actions/upload-pages-artifact@v5
         with:

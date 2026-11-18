@@ -5,6 +5,7 @@ import './ui/components/bundle.js';
 
 import { startTheme } from './core/theme.js';
 import { createRouter, toHash } from './core/router.js';
+import { requestPersistentStorage } from './core/progress.js';
 
 import * as home from './features/home/index.js';
 import * as kanji from './features/kanji/index.js';
@@ -83,6 +84,7 @@ export function buildShell(root) {
 
 export function start(root = document.getElementById('app')) {
   startTheme();
+  requestPersistentStorage();
   const { main, setActive, shell } = buildShell(root);
   const router = createRouter({
     outlet: main,

@@ -36,3 +36,32 @@ export function newKanjiToday(data, allKanji, today) {
     remainingTotal: notYet.length,
   };
 }
+
+export const DAYS_7_MS = 7 * 24 * 60 * 60 * 1000;
+
+const toTime = (iso) => {
+  const t = typeof iso === 'string' && iso ? Date.parse(iso) : NaN;
+  return Number.isFinite(t) ? t : null;
+};
+
+/**
+ * Đã đến lúc nhắc sao lưu chưa: lần sao lưu gần nhất cách đây ≥ 7 ngày,
+ * hoặc chưa sao lưu lần nào và đã dùng app ≥ 7 ngày.
+ */
+export function backupDue(data, now) {
+  const t = now.getTime();
+  const last = toTime(data && data.lastBackupAt);
+  // mốc ở tương lai (đồng hồ máy bị chỉnh lùi) thì coi như cần sao lưu
+  if (last != null) return last > t || t - last >= DAYS_7_MS;
+  const created = toTime(data && data.createdAt);
+  // không biết bắt đầu dùng từ bao giờ thì nhắc luôn cho an toàn
+  if (created == null) return true;
+  return t - created >= DAYS_7_MS;
+}
+
+/** Có nên hiện hướng dẫn thêm vào màn hình chính không. */
+export function shouldShowInstallGuide({ isIos, isStandalone, dismissedAt, now }) {
+  if (!isIos || isStandalone) return false;
+  const d = toTime(dismissedAt);
+  return d == null || d > now.getTime() || now.getTime() - d >= DAYS_7_MS;
+}
