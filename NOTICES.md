@@ -12,7 +12,7 @@ Kotoba dùng lại nội dung từ các nguồn sau, theo đúng giấy phép c�
 
 - Nguồn: https://kanjivg.tagaini.net/ (https://github.com/KanjiVG/kanjivg)
 - Giấy phép: Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0), © 2009–2011 Ulrich Apel. Toàn văn: https://creativecommons.org/licenses/by-sa/3.0/
-- Dùng cho: hình SVG thứ tự nét của kanji. Các file SVG giữ nguyên giấy phép CC BY-SA 3.0. Phần còn lại của Kotoba không chịu giấy phép này.
+- Dùng cho: hình SVG thứ tự nét của kanji (`public/kanji/svg/`, qua JLPTSuccess) và của hiragana/katakana (`public/kana/svg/`, tải trực tiếp từ kho KanjiVG). Các file SVG giữ nguyên giấy phép CC BY-SA 3.0. Phần còn lại của Kotoba không chịu giấy phép này.
 
 ## VOICEVOX
 

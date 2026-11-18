@@ -1,4 +1,4 @@
-import { assetUrl } from '../../core/content.js';
+import { assetUrl } from '../core/content.js';
 
 /**
  * KanjiVG khai báo tiền tố kvg: trong DTD. Bỏ DTD, prolog và comment,

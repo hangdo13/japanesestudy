@@ -1,0 +1,28 @@
+/* Bảng kana. Chỉ dùng token (AD-9). */
+.kana-tabs { gap: var(--space-2); }
+.kana-tabs .kt-chip { cursor: pointer; text-decoration: none; }
+.kana-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: var(--space-2);
+}
+.kana-grid--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.kana-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-1);
+  padding: var(--space-2) 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  color: inherit;
+  text-decoration: none;
+}
+.kana-cell--empty { border-color: transparent; background: transparent; }
+.kana-cell__glyph { font-family: var(--font-jp); font-size: 22px; line-height: 28px; font-weight: 700; }
+.kana-cell__romaji { font-size: 12px; line-height: 14px; color: var(--ink-muted); }
+.kana-hero { display: flex; align-items: center; gap: var(--space-5); }
+.kana-hero__info { display: flex; flex-direction: column; gap: var(--space-1); min-width: 0; }
+.kana-hero__info h2, .kana-hero__info p { margin: 0; }
+.kana-text { margin: 0; }

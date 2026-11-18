@@ -55,3 +55,17 @@ body {
 .app-dialog__box h2,
 .app-dialog__box p { margin: 0; }
 .app-dialog__actions { justify-content: flex-end; }
+
+/* Nét viết KanjiVG (ui/strokes.js), dùng cho kanji và kana */
+.kanji-strokes {
+  width: 50%;
+  margin: 0 auto;
+  color: var(--ink);
+}
+.kanji-strokes svg { display: block; width: 100%; height: auto; }
+.kanji-strokes svg [style*="stroke"],
+.kanji-strokes svg path { stroke: currentColor !important; }
+.kanji-strokes svg text { fill: var(--ink-muted) !important; }
+
+/* Link bọc cả một khối (vd. dòng kt-item): giữ màu chữ, bỏ gạch chân */
+.app-link-plain { color: inherit; text-decoration: none; }

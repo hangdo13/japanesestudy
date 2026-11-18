@@ -27,10 +27,30 @@ Mọi file `content/*.json` đều do `scripts/build-content.mjs` sinh ra. **Kh�
 
 Đường dẫn file trong `public/` được ghép với `import.meta.env.BASE_URL` qua `content.assetUrl()`.
 
+## `content/kana.json`
+
+```json
+{ "version": 1, "reviewStatus": "draft", "items": [ Kana, ... ], "capDeNham": [["シ","ツ"], ...] }
+```
+
+| Trường | Kiểu | Ý nghĩa |
+| --- | --- | --- |
+| `id` | string | Chữ kana, có thể gồm 2 ký tự (`きゃ`, `ティ`) |
+| `script` | `"hiragana"` \| `"katakana"` | Bảng chữ |
+| `romaji` | string | Phiên âm Hepburn (shi, chi, tsu, fu, ji) |
+| `nhom` | `"co-ban"` \| `"duc"` \| `"ban-duc"` \| `"ghep"` \| `"mo-rong"` | Nhóm trong bảng |
+| `hang` | string | Hàng để dựng bảng: `a`, `k`, `s`… (cơ bản), `g`, `z`, `d`, `b`, `p` (đục/bán đục), `ky`, `sh`… (ghép), `n2` (riêng ん/ン), `ext` (mở rộng) |
+| `cot` | `"a"`…`"o"` \| null | Cột nguyên âm. Bắt buộc với nhóm cơ bản/đục/bán đục, `null` với nhóm mở rộng |
+| `ghiChu` | string \| null | Ghi chú cách đọc |
+| `svg` | string \| null | SVG nét viết trong `public/` (chỉ có ở chữ đơn) |
+
+Ở cấp gốc: `reviewStatus` (`draft` \| `approved`) áp dụng cho cả file; `capDeNham` là danh sách nhóm (mỗi nhóm có ít nhất 2 chữ khác nhau) các kana dễ nhầm, kể cả nhầm giữa hiragana và katakana. Một số romaji trùng nhau có chủ ý (ぢ/じ = ji, づ/ず = zu, ウォ/ヲ = wo); có ghi chú trong `ghiChu`.
+
 ## Nguồn
 
 - `vendor/jlptsuccess/kanji.json`: dữ liệu gốc (MIT)
 - `content-vi/kanji.json`: `{ "<chữ>": { hanViet, nghia, cauGoiNho, reviewStatus } }`
 - `n5_vocab.json`: từ vựng N5 kèm nghĩa tiếng Việt
-- `public/kanji/svg/`: SVG thứ tự nét của KanjiVG (CC BY-SA 3.0)
+- `public/kanji/svg/`, `public/kana/svg/`: SVG thứ tự nét của KanjiVG (CC BY-SA 3.0)
+- `content-vi/kana.json`: bảng kana, romaji, ghi chú, cặp dễ nhầm (AI soạn)
 - `public/audio/kanji/`: audio cách đọc (VOICEVOX:春日部つむぎ, do JLPTSuccess tạo)

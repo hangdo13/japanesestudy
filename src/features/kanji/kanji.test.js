@@ -3,7 +3,7 @@ import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { mount } from './index.js';
 import { playAudio, createPlayer } from './detail.js';
-import { renderStrokes, cleanKanjiVg } from './strokes.js';
+import { renderStrokes, cleanKanjiVg } from '../../ui/strokes.js';
 
 afterEach(() => {
   window.location.hash = '';

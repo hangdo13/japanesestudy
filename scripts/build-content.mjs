@@ -104,6 +104,68 @@ export function buildKanji({ jlpt, vi, vocab }, fileExists) {
   return { items, errors };
 }
 
+const KANA_NHOM = ['co-ban', 'duc', 'ban-duc', 'ghep', 'mo-rong'];
+const KANA_LUOI = ['co-ban', 'duc', 'ban-duc']; // các nhóm dựng thành lưới 5 cột
+const NGUYEN_AM = ['a', 'i', 'u', 'e', 'o'];
+
+/**
+ * Hàm thuần: gom kana. Chữ đơn bắt buộc có SVG nét viết (KanjiVG); chữ ghép thì không.
+ * @param {{items: object[], capDeNham: string[][], reviewStatus?: string}} vi
+ */
+export function buildKana(vi, fileExists) {
+  const errors = [];
+  const items = Array.isArray(vi && vi.items) ? vi.items : [];
+  if (!items.length) errors.push('content-vi/kana.json không có mục nào');
+  const reviewStatus = (vi && vi.reviewStatus) || 'draft';
+  if (!REVIEW.has(reviewStatus)) errors.push(`kana: reviewStatus không hợp lệ "${reviewStatus}"`);
+  const ids = new Set();
+  const cells = new Set();
+  const out = [];
+  for (const raw of items) {
+    if (!raw || typeof raw.id !== 'string' || !raw.id) {
+      errors.push('kana: có mục thiếu id');
+      continue;
+    }
+    const k = { ...raw, id: raw.id.normalize('NFC') };
+    if (ids.has(k.id)) errors.push(`kana bị trùng: ${k.id} (${k.script})`);
+    ids.add(k.id);
+    if (KANA_LUOI.includes(k.nhom)) {
+      if (!k.hang || !NGUYEN_AM.includes(k.cot)) errors.push(`${k.id}: hang/cot không hợp lệ để dựng bảng`);
+      const key = `${k.script}:${k.nhom}:${k.hang}:${k.cot}`;
+      if (cells.has(key)) errors.push(`${k.id}: trùng ô ${k.hang}/${k.cot} trong bảng`);
+      cells.add(key);
+    }
+    if (k.ghiChu != null && typeof k.ghiChu !== 'string') errors.push(`${k.id}: ghiChu phải là chuỗi`);
+    if (!k.romaji || typeof k.romaji !== 'string') errors.push(`${k.id}: thiếu romaji`);
+    if (!['hiragana', 'katakana'].includes(k.script)) errors.push(`${k.id}: script không hợp lệ`);
+    if (!KANA_NHOM.includes(k.nhom)) errors.push(`${k.id}: nhom không hợp lệ "${k.nhom}"`);
+    const single = [...k.id].length === 1;
+    const svg = single ? `kana/svg/${k.id}.svg` : null;
+    if (svg && !fileExists(svg)) errors.push(`${k.id}: thiếu file SVG ${svg}`);
+    out.push({
+      id: k.id,
+      script: k.script,
+      romaji: k.romaji,
+      nhom: k.nhom,
+      hang: k.hang,
+      cot: k.cot ?? null,
+      ghiChu: k.ghiChu ?? null,
+      svg,
+    });
+  }
+  const known = new Set(out.map((k) => k.id));
+  const pairs = (vi && vi.capDeNham) ?? [];
+  if (!Array.isArray(pairs)) errors.push('capDeNham phải là mảng');
+  for (const group of Array.isArray(pairs) ? pairs : []) {
+    if (!Array.isArray(group) || group.length < 2 || new Set(group).size !== group.length) {
+      errors.push(`nhóm capDeNham không hợp lệ: ${JSON.stringify(group)}`);
+      continue;
+    }
+    for (const g of group) if (!known.has(g)) errors.push(`capDeNham có chữ lạ: ${g}`);
+  }
+  return { items: out, capDeNham: Array.isArray(pairs) ? pairs : [], reviewStatus, errors };
+}
+
 /** Chạy script với thư mục gốc `root`. Trả mã thoát: 0 là thành công, 1 là có lỗi (không ghi file). */
 export function main(root = ROOT) {
   const readJson = (p) => JSON.parse(readFileSync(join(root, p), 'utf8'));
@@ -113,12 +175,16 @@ export function main(root = ROOT) {
       jlpt: readJson('vendor/jlptsuccess/kanji.json'),
       vi: readJson('content-vi/kanji.json'),
       vocab: readJson('n5_vocab.json'),
+      kanaVi: readJson('content-vi/kana.json'),
     };
   } catch (err) {
     console.error(`build-content: không đọc được dữ liệu nguồn: ${err.message}`);
     return 1;
   }
-  const { items, errors } = buildKanji(sources, (p) => existsSync(join(root, 'public', p)));
+  const fileExists = (p) => existsSync(join(root, 'public', p));
+  const { items, errors: kanjiErrors } = buildKanji(sources, fileExists);
+  const kana = buildKana(sources.kanaVi, fileExists);
+  const errors = [...kanjiErrors, ...kana.errors];
   if (errors.length) {
     console.error(`build-content: ${errors.length} lỗi`);
     for (const e of errors) console.error(`  - ${e}`);
@@ -126,7 +192,11 @@ export function main(root = ROOT) {
   }
   mkdirSync(join(root, 'content'), { recursive: true });
   writeFileSync(join(root, 'content/kanji.json'), JSON.stringify({ version: 1, items }, null, 1) + '\n');
-  console.log(`build-content: content/kanji.json (${items.length} kanji)`);
+  writeFileSync(
+    join(root, 'content/kana.json'),
+    JSON.stringify({ version: 1, reviewStatus: kana.reviewStatus, items: kana.items, capDeNham: kana.capDeNham }, null, 1) + '\n',
+  );
+  console.log(`build-content: content/kanji.json (${items.length} kanji), content/kana.json (${kana.items.length} kana)`);
   return 0;
 }
 

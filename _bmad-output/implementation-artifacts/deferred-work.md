@@ -16,3 +16,6 @@
 - source_spec: `_bmad-output/implementation-artifacts/spec-1-4-luu-tien-do-sao-luu.md`
   summary: Mở rộng luật kiến trúc AD-4 để bắt cả `sessionStorage`, `indexedDB` và `document.cookie`.
   evidence: Test hiện tại chỉ dò chữ `localStorage`.
+- source_spec: `_bmad-output/implementation-artifacts/spec-7-1-bang-kana.md`
+  summary: Thêm cặp dễ nhầm giữa kana và kanji (ロ/口, エ/工, ニ/二, カ/力).
+  evidence: Đây là chỗ người mới học hay nhầm. Hiện schema `capDeNham` chỉ chấp nhận kana.

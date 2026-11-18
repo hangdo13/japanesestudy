@@ -9,6 +9,7 @@ import { requestPersistentStorage } from './core/progress.js';
 
 import * as home from './features/home/index.js';
 import * as kanji from './features/kanji/index.js';
+import * as kanaFeature from './features/kana/index.js';
 import * as hocNgay from './features/hoc-ngay/index.js';
 import * as luyenTap from './features/luyen-tap/index.js';
 import * as caiDat from './features/cai-dat/index.js';
@@ -91,6 +92,7 @@ export function start(root = document.getElementById('app')) {
     features: {
       '': home,
       kanji,
+      kana: kanaFeature,
       'hoc-ngay': hocNgay,
       'luyen-tap': luyenTap,
       'cai-dat': caiDat,

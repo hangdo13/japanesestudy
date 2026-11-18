@@ -1,6 +1,6 @@
 import { kanjiById, assetUrl } from '../../core/content.js';
 import { toHash } from '../../core/router.js';
-import { renderStrokes } from './strokes.js';
+import { renderStrokes } from '../../ui/strokes.js';
 
 function el(tag, className, text) {
   const n = document.createElement(tag);

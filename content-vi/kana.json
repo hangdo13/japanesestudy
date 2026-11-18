@@ -1,0 +1,1994 @@
+{
+ "version": 1,
+ "reviewStatus": "draft",
+ "items": [
+  {
+   "id": "あ",
+   "script": "hiragana",
+   "romaji": "a",
+   "nhom": "co-ban",
+   "hang": "a",
+   "cot": "a"
+  },
+  {
+   "id": "い",
+   "script": "hiragana",
+   "romaji": "i",
+   "nhom": "co-ban",
+   "hang": "a",
+   "cot": "i"
+  },
+  {
+   "id": "う",
+   "script": "hiragana",
+   "romaji": "u",
+   "nhom": "co-ban",
+   "hang": "a",
+   "cot": "u"
+  },
+  {
+   "id": "え",
+   "script": "hiragana",
+   "romaji": "e",
+   "nhom": "co-ban",
+   "hang": "a",
+   "cot": "e"
+  },
+  {
+   "id": "お",
+   "script": "hiragana",
+   "romaji": "o",
+   "nhom": "co-ban",
+   "hang": "a",
+   "cot": "o"
+  },
+  {
+   "id": "か",
+   "script": "hiragana",
+   "romaji": "ka",
+   "nhom": "co-ban",
+   "hang": "k",
+   "cot": "a"
+  },
+  {
+   "id": "き",
+   "script": "hiragana",
+   "romaji": "ki",
+   "nhom": "co-ban",
+   "hang": "k",
+   "cot": "i"
+  },
+  {
+   "id": "く",
+   "script": "hiragana",
+   "romaji": "ku",
+   "nhom": "co-ban",
+   "hang": "k",
+   "cot": "u"
+  },
+  {
+   "id": "け",
+   "script": "hiragana",
+   "romaji": "ke",
+   "nhom": "co-ban",
+   "hang": "k",
+   "cot": "e"
+  },
+  {
+   "id": "こ",
+   "script": "hiragana",
+   "romaji": "ko",
+   "nhom": "co-ban",
+   "hang": "k",
+   "cot": "o"
+  },
+  {
+   "id": "さ",
+   "script": "hiragana",
+   "romaji": "sa",
+   "nhom": "co-ban",
+   "hang": "s",
+   "cot": "a"
+  },
+  {
+   "id": "し",
+   "script": "hiragana",
+   "romaji": "shi",
+   "nhom": "co-ban",
+   "hang": "s",
+   "cot": "i",
+   "ghiChu": "đọc \"shi\", không phải \"si\""
+  },
+  {
+   "id": "す",
+   "script": "hiragana",
+   "romaji": "su",
+   "nhom": "co-ban",
+   "hang": "s",
+   "cot": "u"
+  },
+  {
+   "id": "せ",
+   "script": "hiragana",
+   "romaji": "se",
+   "nhom": "co-ban",
+   "hang": "s",
+   "cot": "e"
+  },
+  {
+   "id": "そ",
+   "script": "hiragana",
+   "romaji": "so",
+   "nhom": "co-ban",
+   "hang": "s",
+   "cot": "o"
+  },
+  {
+   "id": "た",
+   "script": "hiragana",
+   "romaji": "ta",
+   "nhom": "co-ban",
+   "hang": "t",
+   "cot": "a"
+  },
+  {
+   "id": "ち",
+   "script": "hiragana",
+   "romaji": "chi",
+   "nhom": "co-ban",
+   "hang": "t",
+   "cot": "i",
+   "ghiChu": "đọc \"chi\""
+  },
+  {
+   "id": "つ",
+   "script": "hiragana",
+   "romaji": "tsu",
+   "nhom": "co-ban",
+   "hang": "t",
+   "cot": "u",
+   "ghiChu": "đọc \"tsu\""
+  },
+  {
+   "id": "て",
+   "script": "hiragana",
+   "romaji": "te",
+   "nhom": "co-ban",
+   "hang": "t",
+   "cot": "e"
+  },
+  {
+   "id": "と",
+   "script": "hiragana",
+   "romaji": "to",
+   "nhom": "co-ban",
+   "hang": "t",
+   "cot": "o"
+  },
+  {
+   "id": "な",
+   "script": "hiragana",
+   "romaji": "na",
+   "nhom": "co-ban",
+   "hang": "n",
+   "cot": "a"
+  },
+  {
+   "id": "に",
+   "script": "hiragana",
+   "romaji": "ni",
+   "nhom": "co-ban",
+   "hang": "n",
+   "cot": "i"
+  },
+  {
+   "id": "ぬ",
+   "script": "hiragana",
+   "romaji": "nu",
+   "nhom": "co-ban",
+   "hang": "n",
+   "cot": "u"
+  },
+  {
+   "id": "ね",
+   "script": "hiragana",
+   "romaji": "ne",
+   "nhom": "co-ban",
+   "hang": "n",
+   "cot": "e"
+  },
+  {
+   "id": "の",
+   "script": "hiragana",
+   "romaji": "no",
+   "nhom": "co-ban",
+   "hang": "n",
+   "cot": "o"
+  },
+  {
+   "id": "は",
+   "script": "hiragana",
+   "romaji": "ha",
+   "nhom": "co-ban",
+   "hang": "h",
+   "cot": "a",
+   "ghiChu": "khi làm trợ từ đọc là \"wa\""
+  },
+  {
+   "id": "ひ",
+   "script": "hiragana",
+   "romaji": "hi",
+   "nhom": "co-ban",
+   "hang": "h",
+   "cot": "i"
+  },
+  {
+   "id": "ふ",
+   "script": "hiragana",
+   "romaji": "fu",
+   "nhom": "co-ban",
+   "hang": "h",
+   "cot": "u",
+   "ghiChu": "đọc gần \"fu\", môi không chạm răng"
+  },
+  {
+   "id": "へ",
+   "script": "hiragana",
+   "romaji": "he",
+   "nhom": "co-ban",
+   "hang": "h",
+   "cot": "e",
+   "ghiChu": "khi làm trợ từ đọc là \"e\""
+  },
+  {
+   "id": "ほ",
+   "script": "hiragana",
+   "romaji": "ho",
+   "nhom": "co-ban",
+   "hang": "h",
+   "cot": "o"
+  },
+  {
+   "id": "ま",
+   "script": "hiragana",
+   "romaji": "ma",
+   "nhom": "co-ban",
+   "hang": "m",
+   "cot": "a"
+  },
+  {
+   "id": "み",
+   "script": "hiragana",
+   "romaji": "mi",
+   "nhom": "co-ban",
+   "hang": "m",
+   "cot": "i"
+  },
+  {
+   "id": "む",
+   "script": "hiragana",
+   "romaji": "mu",
+   "nhom": "co-ban",
+   "hang": "m",
+   "cot": "u"
+  },
+  {
+   "id": "め",
+   "script": "hiragana",
+   "romaji": "me",
+   "nhom": "co-ban",
+   "hang": "m",
+   "cot": "e"
+  },
+  {
+   "id": "も",
+   "script": "hiragana",
+   "romaji": "mo",
+   "nhom": "co-ban",
+   "hang": "m",
+   "cot": "o"
+  },
+  {
+   "id": "や",
+   "script": "hiragana",
+   "romaji": "ya",
+   "nhom": "co-ban",
+   "hang": "y",
+   "cot": "a"
+  },
+  {
+   "id": "ゆ",
+   "script": "hiragana",
+   "romaji": "yu",
+   "nhom": "co-ban",
+   "hang": "y",
+   "cot": "u"
+  },
+  {
+   "id": "よ",
+   "script": "hiragana",
+   "romaji": "yo",
+   "nhom": "co-ban",
+   "hang": "y",
+   "cot": "o"
+  },
+  {
+   "id": "ら",
+   "script": "hiragana",
+   "romaji": "ra",
+   "nhom": "co-ban",
+   "hang": "r",
+   "cot": "a"
+  },
+  {
+   "id": "り",
+   "script": "hiragana",
+   "romaji": "ri",
+   "nhom": "co-ban",
+   "hang": "r",
+   "cot": "i"
+  },
+  {
+   "id": "る",
+   "script": "hiragana",
+   "romaji": "ru",
+   "nhom": "co-ban",
+   "hang": "r",
+   "cot": "u"
+  },
+  {
+   "id": "れ",
+   "script": "hiragana",
+   "romaji": "re",
+   "nhom": "co-ban",
+   "hang": "r",
+   "cot": "e"
+  },
+  {
+   "id": "ろ",
+   "script": "hiragana",
+   "romaji": "ro",
+   "nhom": "co-ban",
+   "hang": "r",
+   "cot": "o"
+  },
+  {
+   "id": "わ",
+   "script": "hiragana",
+   "romaji": "wa",
+   "nhom": "co-ban",
+   "hang": "w",
+   "cot": "a"
+  },
+  {
+   "id": "を",
+   "script": "hiragana",
+   "romaji": "wo",
+   "nhom": "co-ban",
+   "hang": "w",
+   "cot": "o",
+   "ghiChu": "đọc \"o\", chỉ dùng làm trợ từ"
+  },
+  {
+   "id": "ん",
+   "script": "hiragana",
+   "romaji": "n",
+   "nhom": "co-ban",
+   "hang": "n2",
+   "cot": "a",
+   "ghiChu": "âm mũi, đổi theo âm đứng sau (m/n/ng)"
+  },
+  {
+   "id": "が",
+   "script": "hiragana",
+   "romaji": "ga",
+   "nhom": "duc",
+   "hang": "g",
+   "cot": "a"
+  },
+  {
+   "id": "ぎ",
+   "script": "hiragana",
+   "romaji": "gi",
+   "nhom": "duc",
+   "hang": "g",
+   "cot": "i"
+  },
+  {
+   "id": "ぐ",
+   "script": "hiragana",
+   "romaji": "gu",
+   "nhom": "duc",
+   "hang": "g",
+   "cot": "u"
+  },
+  {
+   "id": "げ",
+   "script": "hiragana",
+   "romaji": "ge",
+   "nhom": "duc",
+   "hang": "g",
+   "cot": "e"
+  },
+  {
+   "id": "ご",
+   "script": "hiragana",
+   "romaji": "go",
+   "nhom": "duc",
+   "hang": "g",
+   "cot": "o"
+  },
+  {
+   "id": "ざ",
+   "script": "hiragana",
+   "romaji": "za",
+   "nhom": "duc",
+   "hang": "z",
+   "cot": "a"
+  },
+  {
+   "id": "じ",
+   "script": "hiragana",
+   "romaji": "ji",
+   "nhom": "duc",
+   "hang": "z",
+   "cot": "i"
+  },
+  {
+   "id": "ず",
+   "script": "hiragana",
+   "romaji": "zu",
+   "nhom": "duc",
+   "hang": "z",
+   "cot": "u"
+  },
+  {
+   "id": "ぜ",
+   "script": "hiragana",
+   "romaji": "ze",
+   "nhom": "duc",
+   "hang": "z",
+   "cot": "e"
+  },
+  {
+   "id": "ぞ",
+   "script": "hiragana",
+   "romaji": "zo",
+   "nhom": "duc",
+   "hang": "z",
+   "cot": "o"
+  },
+  {
+   "id": "だ",
+   "script": "hiragana",
+   "romaji": "da",
+   "nhom": "duc",
+   "hang": "d",
+   "cot": "a"
+  },
+  {
+   "id": "ぢ",
+   "script": "hiragana",
+   "romaji": "ji",
+   "nhom": "duc",
+   "hang": "d",
+   "cot": "i",
+   "ghiChu": "đọc giống じ/ジ (ji), rất ít dùng"
+  },
+  {
+   "id": "づ",
+   "script": "hiragana",
+   "romaji": "zu",
+   "nhom": "duc",
+   "hang": "d",
+   "cot": "u",
+   "ghiChu": "đọc giống ず/ズ (zu), rất ít dùng"
+  },
+  {
+   "id": "で",
+   "script": "hiragana",
+   "romaji": "de",
+   "nhom": "duc",
+   "hang": "d",
+   "cot": "e"
+  },
+  {
+   "id": "ど",
+   "script": "hiragana",
+   "romaji": "do",
+   "nhom": "duc",
+   "hang": "d",
+   "cot": "o"
+  },
+  {
+   "id": "ば",
+   "script": "hiragana",
+   "romaji": "ba",
+   "nhom": "duc",
+   "hang": "b",
+   "cot": "a"
+  },
+  {
+   "id": "び",
+   "script": "hiragana",
+   "romaji": "bi",
+   "nhom": "duc",
+   "hang": "b",
+   "cot": "i"
+  },
+  {
+   "id": "ぶ",
+   "script": "hiragana",
+   "romaji": "bu",
+   "nhom": "duc",
+   "hang": "b",
+   "cot": "u"
+  },
+  {
+   "id": "べ",
+   "script": "hiragana",
+   "romaji": "be",
+   "nhom": "duc",
+   "hang": "b",
+   "cot": "e"
+  },
+  {
+   "id": "ぼ",
+   "script": "hiragana",
+   "romaji": "bo",
+   "nhom": "duc",
+   "hang": "b",
+   "cot": "o"
+  },
+  {
+   "id": "ぱ",
+   "script": "hiragana",
+   "romaji": "pa",
+   "nhom": "ban-duc",
+   "hang": "p",
+   "cot": "a"
+  },
+  {
+   "id": "ぴ",
+   "script": "hiragana",
+   "romaji": "pi",
+   "nhom": "ban-duc",
+   "hang": "p",
+   "cot": "i"
+  },
+  {
+   "id": "ぷ",
+   "script": "hiragana",
+   "romaji": "pu",
+   "nhom": "ban-duc",
+   "hang": "p",
+   "cot": "u"
+  },
+  {
+   "id": "ぺ",
+   "script": "hiragana",
+   "romaji": "pe",
+   "nhom": "ban-duc",
+   "hang": "p",
+   "cot": "e"
+  },
+  {
+   "id": "ぽ",
+   "script": "hiragana",
+   "romaji": "po",
+   "nhom": "ban-duc",
+   "hang": "p",
+   "cot": "o"
+  },
+  {
+   "id": "きゃ",
+   "script": "hiragana",
+   "romaji": "kya",
+   "nhom": "ghep",
+   "hang": "ky",
+   "cot": "a"
+  },
+  {
+   "id": "きゅ",
+   "script": "hiragana",
+   "romaji": "kyu",
+   "nhom": "ghep",
+   "hang": "ky",
+   "cot": "u"
+  },
+  {
+   "id": "きょ",
+   "script": "hiragana",
+   "romaji": "kyo",
+   "nhom": "ghep",
+   "hang": "ky",
+   "cot": "o"
+  },
+  {
+   "id": "しゃ",
+   "script": "hiragana",
+   "romaji": "sha",
+   "nhom": "ghep",
+   "hang": "sh",
+   "cot": "a"
+  },
+  {
+   "id": "しゅ",
+   "script": "hiragana",
+   "romaji": "shu",
+   "nhom": "ghep",
+   "hang": "sh",
+   "cot": "u"
+  },
+  {
+   "id": "しょ",
+   "script": "hiragana",
+   "romaji": "sho",
+   "nhom": "ghep",
+   "hang": "sh",
+   "cot": "o"
+  },
+  {
+   "id": "ちゃ",
+   "script": "hiragana",
+   "romaji": "cha",
+   "nhom": "ghep",
+   "hang": "ch",
+   "cot": "a"
+  },
+  {
+   "id": "ちゅ",
+   "script": "hiragana",
+   "romaji": "chu",
+   "nhom": "ghep",
+   "hang": "ch",
+   "cot": "u"
+  },
+  {
+   "id": "ちょ",
+   "script": "hiragana",
+   "romaji": "cho",
+   "nhom": "ghep",
+   "hang": "ch",
+   "cot": "o"
+  },
+  {
+   "id": "にゃ",
+   "script": "hiragana",
+   "romaji": "nya",
+   "nhom": "ghep",
+   "hang": "ny",
+   "cot": "a"
+  },
+  {
+   "id": "にゅ",
+   "script": "hiragana",
+   "romaji": "nyu",
+   "nhom": "ghep",
+   "hang": "ny",
+   "cot": "u"
+  },
+  {
+   "id": "にょ",
+   "script": "hiragana",
+   "romaji": "nyo",
+   "nhom": "ghep",
+   "hang": "ny",
+   "cot": "o"
+  },
+  {
+   "id": "ひゃ",
+   "script": "hiragana",
+   "romaji": "hya",
+   "nhom": "ghep",
+   "hang": "hy",
+   "cot": "a"
+  },
+  {
+   "id": "ひゅ",
+   "script": "hiragana",
+   "romaji": "hyu",
+   "nhom": "ghep",
+   "hang": "hy",
+   "cot": "u"
+  },
+  {
+   "id": "ひょ",
+   "script": "hiragana",
+   "romaji": "hyo",
+   "nhom": "ghep",
+   "hang": "hy",
+   "cot": "o"
+  },
+  {
+   "id": "みゃ",
+   "script": "hiragana",
+   "romaji": "mya",
+   "nhom": "ghep",
+   "hang": "my",
+   "cot": "a"
+  },
+  {
+   "id": "みゅ",
+   "script": "hiragana",
+   "romaji": "myu",
+   "nhom": "ghep",
+   "hang": "my",
+   "cot": "u"
+  },
+  {
+   "id": "みょ",
+   "script": "hiragana",
+   "romaji": "myo",
+   "nhom": "ghep",
+   "hang": "my",
+   "cot": "o"
+  },
+  {
+   "id": "りゃ",
+   "script": "hiragana",
+   "romaji": "rya",
+   "nhom": "ghep",
+   "hang": "ry",
+   "cot": "a"
+  },
+  {
+   "id": "りゅ",
+   "script": "hiragana",
+   "romaji": "ryu",
+   "nhom": "ghep",
+   "hang": "ry",
+   "cot": "u"
+  },
+  {
+   "id": "りょ",
+   "script": "hiragana",
+   "romaji": "ryo",
+   "nhom": "ghep",
+   "hang": "ry",
+   "cot": "o"
+  },
+  {
+   "id": "ぎゃ",
+   "script": "hiragana",
+   "romaji": "gya",
+   "nhom": "ghep",
+   "hang": "gy",
+   "cot": "a"
+  },
+  {
+   "id": "ぎゅ",
+   "script": "hiragana",
+   "romaji": "gyu",
+   "nhom": "ghep",
+   "hang": "gy",
+   "cot": "u"
+  },
+  {
+   "id": "ぎょ",
+   "script": "hiragana",
+   "romaji": "gyo",
+   "nhom": "ghep",
+   "hang": "gy",
+   "cot": "o"
+  },
+  {
+   "id": "じゃ",
+   "script": "hiragana",
+   "romaji": "ja",
+   "nhom": "ghep",
+   "hang": "j",
+   "cot": "a"
+  },
+  {
+   "id": "じゅ",
+   "script": "hiragana",
+   "romaji": "ju",
+   "nhom": "ghep",
+   "hang": "j",
+   "cot": "u"
+  },
+  {
+   "id": "じょ",
+   "script": "hiragana",
+   "romaji": "jo",
+   "nhom": "ghep",
+   "hang": "j",
+   "cot": "o"
+  },
+  {
+   "id": "びゃ",
+   "script": "hiragana",
+   "romaji": "bya",
+   "nhom": "ghep",
+   "hang": "by",
+   "cot": "a"
+  },
+  {
+   "id": "びゅ",
+   "script": "hiragana",
+   "romaji": "byu",
+   "nhom": "ghep",
+   "hang": "by",
+   "cot": "u"
+  },
+  {
+   "id": "びょ",
+   "script": "hiragana",
+   "romaji": "byo",
+   "nhom": "ghep",
+   "hang": "by",
+   "cot": "o"
+  },
+  {
+   "id": "ぴゃ",
+   "script": "hiragana",
+   "romaji": "pya",
+   "nhom": "ghep",
+   "hang": "py",
+   "cot": "a"
+  },
+  {
+   "id": "ぴゅ",
+   "script": "hiragana",
+   "romaji": "pyu",
+   "nhom": "ghep",
+   "hang": "py",
+   "cot": "u"
+  },
+  {
+   "id": "ぴょ",
+   "script": "hiragana",
+   "romaji": "pyo",
+   "nhom": "ghep",
+   "hang": "py",
+   "cot": "o"
+  },
+  {
+   "id": "ア",
+   "script": "katakana",
+   "romaji": "a",
+   "nhom": "co-ban",
+   "hang": "a",
+   "cot": "a"
+  },
+  {
+   "id": "イ",
+   "script": "katakana",
+   "romaji": "i",
+   "nhom": "co-ban",
+   "hang": "a",
+   "cot": "i"
+  },
+  {
+   "id": "ウ",
+   "script": "katakana",
+   "romaji": "u",
+   "nhom": "co-ban",
+   "hang": "a",
+   "cot": "u"
+  },
+  {
+   "id": "エ",
+   "script": "katakana",
+   "romaji": "e",
+   "nhom": "co-ban",
+   "hang": "a",
+   "cot": "e"
+  },
+  {
+   "id": "オ",
+   "script": "katakana",
+   "romaji": "o",
+   "nhom": "co-ban",
+   "hang": "a",
+   "cot": "o"
+  },
+  {
+   "id": "カ",
+   "script": "katakana",
+   "romaji": "ka",
+   "nhom": "co-ban",
+   "hang": "k",
+   "cot": "a"
+  },
+  {
+   "id": "キ",
+   "script": "katakana",
+   "romaji": "ki",
+   "nhom": "co-ban",
+   "hang": "k",
+   "cot": "i"
+  },
+  {
+   "id": "ク",
+   "script": "katakana",
+   "romaji": "ku",
+   "nhom": "co-ban",
+   "hang": "k",
+   "cot": "u"
+  },
+  {
+   "id": "ケ",
+   "script": "katakana",
+   "romaji": "ke",
+   "nhom": "co-ban",
+   "hang": "k",
+   "cot": "e"
+  },
+  {
+   "id": "コ",
+   "script": "katakana",
+   "romaji": "ko",
+   "nhom": "co-ban",
+   "hang": "k",
+   "cot": "o"
+  },
+  {
+   "id": "サ",
+   "script": "katakana",
+   "romaji": "sa",
+   "nhom": "co-ban",
+   "hang": "s",
+   "cot": "a"
+  },
+  {
+   "id": "シ",
+   "script": "katakana",
+   "romaji": "shi",
+   "nhom": "co-ban",
+   "hang": "s",
+   "cot": "i",
+   "ghiChu": "đọc \"shi\", không phải \"si\""
+  },
+  {
+   "id": "ス",
+   "script": "katakana",
+   "romaji": "su",
+   "nhom": "co-ban",
+   "hang": "s",
+   "cot": "u"
+  },
+  {
+   "id": "セ",
+   "script": "katakana",
+   "romaji": "se",
+   "nhom": "co-ban",
+   "hang": "s",
+   "cot": "e"
+  },
+  {
+   "id": "ソ",
+   "script": "katakana",
+   "romaji": "so",
+   "nhom": "co-ban",
+   "hang": "s",
+   "cot": "o"
+  },
+  {
+   "id": "タ",
+   "script": "katakana",
+   "romaji": "ta",
+   "nhom": "co-ban",
+   "hang": "t",
+   "cot": "a"
+  },
+  {
+   "id": "チ",
+   "script": "katakana",
+   "romaji": "chi",
+   "nhom": "co-ban",
+   "hang": "t",
+   "cot": "i",
+   "ghiChu": "đọc \"chi\""
+  },
+  {
+   "id": "ツ",
+   "script": "katakana",
+   "romaji": "tsu",
+   "nhom": "co-ban",
+   "hang": "t",
+   "cot": "u",
+   "ghiChu": "đọc \"tsu\""
+  },
+  {
+   "id": "テ",
+   "script": "katakana",
+   "romaji": "te",
+   "nhom": "co-ban",
+   "hang": "t",
+   "cot": "e"
+  },
+  {
+   "id": "ト",
+   "script": "katakana",
+   "romaji": "to",
+   "nhom": "co-ban",
+   "hang": "t",
+   "cot": "o"
+  },
+  {
+   "id": "ナ",
+   "script": "katakana",
+   "romaji": "na",
+   "nhom": "co-ban",
+   "hang": "n",
+   "cot": "a"
+  },
+  {
+   "id": "ニ",
+   "script": "katakana",
+   "romaji": "ni",
+   "nhom": "co-ban",
+   "hang": "n",
+   "cot": "i"
+  },
+  {
+   "id": "ヌ",
+   "script": "katakana",
+   "romaji": "nu",
+   "nhom": "co-ban",
+   "hang": "n",
+   "cot": "u"
+  },
+  {
+   "id": "ネ",
+   "script": "katakana",
+   "romaji": "ne",
+   "nhom": "co-ban",
+   "hang": "n",
+   "cot": "e"
+  },
+  {
+   "id": "ノ",
+   "script": "katakana",
+   "romaji": "no",
+   "nhom": "co-ban",
+   "hang": "n",
+   "cot": "o"
+  },
+  {
+   "id": "ハ",
+   "script": "katakana",
+   "romaji": "ha",
+   "nhom": "co-ban",
+   "hang": "h",
+   "cot": "a"
+  },
+  {
+   "id": "ヒ",
+   "script": "katakana",
+   "romaji": "hi",
+   "nhom": "co-ban",
+   "hang": "h",
+   "cot": "i"
+  },
+  {
+   "id": "フ",
+   "script": "katakana",
+   "romaji": "fu",
+   "nhom": "co-ban",
+   "hang": "h",
+   "cot": "u",
+   "ghiChu": "đọc gần \"fu\", môi không chạm răng"
+  },
+  {
+   "id": "ヘ",
+   "script": "katakana",
+   "romaji": "he",
+   "nhom": "co-ban",
+   "hang": "h",
+   "cot": "e"
+  },
+  {
+   "id": "ホ",
+   "script": "katakana",
+   "romaji": "ho",
+   "nhom": "co-ban",
+   "hang": "h",
+   "cot": "o"
+  },
+  {
+   "id": "マ",
+   "script": "katakana",
+   "romaji": "ma",
+   "nhom": "co-ban",
+   "hang": "m",
+   "cot": "a"
+  },
+  {
+   "id": "ミ",
+   "script": "katakana",
+   "romaji": "mi",
+   "nhom": "co-ban",
+   "hang": "m",
+   "cot": "i"
+  },
+  {
+   "id": "ム",
+   "script": "katakana",
+   "romaji": "mu",
+   "nhom": "co-ban",
+   "hang": "m",
+   "cot": "u"
+  },
+  {
+   "id": "メ",
+   "script": "katakana",
+   "romaji": "me",
+   "nhom": "co-ban",
+   "hang": "m",
+   "cot": "e"
+  },
+  {
+   "id": "モ",
+   "script": "katakana",
+   "romaji": "mo",
+   "nhom": "co-ban",
+   "hang": "m",
+   "cot": "o"
+  },
+  {
+   "id": "ヤ",
+   "script": "katakana",
+   "romaji": "ya",
+   "nhom": "co-ban",
+   "hang": "y",
+   "cot": "a"
+  },
+  {
+   "id": "ユ",
+   "script": "katakana",
+   "romaji": "yu",
+   "nhom": "co-ban",
+   "hang": "y",
+   "cot": "u"
+  },
+  {
+   "id": "ヨ",
+   "script": "katakana",
+   "romaji": "yo",
+   "nhom": "co-ban",
+   "hang": "y",
+   "cot": "o"
+  },
+  {
+   "id": "ラ",
+   "script": "katakana",
+   "romaji": "ra",
+   "nhom": "co-ban",
+   "hang": "r",
+   "cot": "a"
+  },
+  {
+   "id": "リ",
+   "script": "katakana",
+   "romaji": "ri",
+   "nhom": "co-ban",
+   "hang": "r",
+   "cot": "i"
+  },
+  {
+   "id": "ル",
+   "script": "katakana",
+   "romaji": "ru",
+   "nhom": "co-ban",
+   "hang": "r",
+   "cot": "u"
+  },
+  {
+   "id": "レ",
+   "script": "katakana",
+   "romaji": "re",
+   "nhom": "co-ban",
+   "hang": "r",
+   "cot": "e"
+  },
+  {
+   "id": "ロ",
+   "script": "katakana",
+   "romaji": "ro",
+   "nhom": "co-ban",
+   "hang": "r",
+   "cot": "o"
+  },
+  {
+   "id": "ワ",
+   "script": "katakana",
+   "romaji": "wa",
+   "nhom": "co-ban",
+   "hang": "w",
+   "cot": "a"
+  },
+  {
+   "id": "ヲ",
+   "script": "katakana",
+   "romaji": "wo",
+   "nhom": "co-ban",
+   "hang": "w",
+   "cot": "o",
+   "ghiChu": "đọc \"o\", hầu như không dùng"
+  },
+  {
+   "id": "ン",
+   "script": "katakana",
+   "romaji": "n",
+   "nhom": "co-ban",
+   "hang": "n2",
+   "cot": "a",
+   "ghiChu": "âm mũi, đổi theo âm đứng sau (m/n/ng)"
+  },
+  {
+   "id": "ガ",
+   "script": "katakana",
+   "romaji": "ga",
+   "nhom": "duc",
+   "hang": "g",
+   "cot": "a"
+  },
+  {
+   "id": "ギ",
+   "script": "katakana",
+   "romaji": "gi",
+   "nhom": "duc",
+   "hang": "g",
+   "cot": "i"
+  },
+  {
+   "id": "グ",
+   "script": "katakana",
+   "romaji": "gu",
+   "nhom": "duc",
+   "hang": "g",
+   "cot": "u"
+  },
+  {
+   "id": "ゲ",
+   "script": "katakana",
+   "romaji": "ge",
+   "nhom": "duc",
+   "hang": "g",
+   "cot": "e"
+  },
+  {
+   "id": "ゴ",
+   "script": "katakana",
+   "romaji": "go",
+   "nhom": "duc",
+   "hang": "g",
+   "cot": "o"
+  },
+  {
+   "id": "ザ",
+   "script": "katakana",
+   "romaji": "za",
+   "nhom": "duc",
+   "hang": "z",
+   "cot": "a"
+  },
+  {
+   "id": "ジ",
+   "script": "katakana",
+   "romaji": "ji",
+   "nhom": "duc",
+   "hang": "z",
+   "cot": "i"
+  },
+  {
+   "id": "ズ",
+   "script": "katakana",
+   "romaji": "zu",
+   "nhom": "duc",
+   "hang": "z",
+   "cot": "u"
+  },
+  {
+   "id": "ゼ",
+   "script": "katakana",
+   "romaji": "ze",
+   "nhom": "duc",
+   "hang": "z",
+   "cot": "e"
+  },
+  {
+   "id": "ゾ",
+   "script": "katakana",
+   "romaji": "zo",
+   "nhom": "duc",
+   "hang": "z",
+   "cot": "o"
+  },
+  {
+   "id": "ダ",
+   "script": "katakana",
+   "romaji": "da",
+   "nhom": "duc",
+   "hang": "d",
+   "cot": "a"
+  },
+  {
+   "id": "ヂ",
+   "script": "katakana",
+   "romaji": "ji",
+   "nhom": "duc",
+   "hang": "d",
+   "cot": "i",
+   "ghiChu": "đọc giống じ/ジ (ji), rất ít dùng"
+  },
+  {
+   "id": "ヅ",
+   "script": "katakana",
+   "romaji": "zu",
+   "nhom": "duc",
+   "hang": "d",
+   "cot": "u",
+   "ghiChu": "đọc giống ず/ズ (zu), rất ít dùng"
+  },
+  {
+   "id": "デ",
+   "script": "katakana",
+   "romaji": "de",
+   "nhom": "duc",
+   "hang": "d",
+   "cot": "e"
+  },
+  {
+   "id": "ド",
+   "script": "katakana",
+   "romaji": "do",
+   "nhom": "duc",
+   "hang": "d",
+   "cot": "o"
+  },
+  {
+   "id": "バ",
+   "script": "katakana",
+   "romaji": "ba",
+   "nhom": "duc",
+   "hang": "b",
+   "cot": "a"
+  },
+  {
+   "id": "ビ",
+   "script": "katakana",
+   "romaji": "bi",
+   "nhom": "duc",
+   "hang": "b",
+   "cot": "i"
+  },
+  {
+   "id": "ブ",
+   "script": "katakana",
+   "romaji": "bu",
+   "nhom": "duc",
+   "hang": "b",
+   "cot": "u"
+  },
+  {
+   "id": "ベ",
+   "script": "katakana",
+   "romaji": "be",
+   "nhom": "duc",
+   "hang": "b",
+   "cot": "e"
+  },
+  {
+   "id": "ボ",
+   "script": "katakana",
+   "romaji": "bo",
+   "nhom": "duc",
+   "hang": "b",
+   "cot": "o"
+  },
+  {
+   "id": "パ",
+   "script": "katakana",
+   "romaji": "pa",
+   "nhom": "ban-duc",
+   "hang": "p",
+   "cot": "a"
+  },
+  {
+   "id": "ピ",
+   "script": "katakana",
+   "romaji": "pi",
+   "nhom": "ban-duc",
+   "hang": "p",
+   "cot": "i"
+  },
+  {
+   "id": "プ",
+   "script": "katakana",
+   "romaji": "pu",
+   "nhom": "ban-duc",
+   "hang": "p",
+   "cot": "u"
+  },
+  {
+   "id": "ペ",
+   "script": "katakana",
+   "romaji": "pe",
+   "nhom": "ban-duc",
+   "hang": "p",
+   "cot": "e"
+  },
+  {
+   "id": "ポ",
+   "script": "katakana",
+   "romaji": "po",
+   "nhom": "ban-duc",
+   "hang": "p",
+   "cot": "o"
+  },
+  {
+   "id": "キャ",
+   "script": "katakana",
+   "romaji": "kya",
+   "nhom": "ghep",
+   "hang": "ky",
+   "cot": "a"
+  },
+  {
+   "id": "キュ",
+   "script": "katakana",
+   "romaji": "kyu",
+   "nhom": "ghep",
+   "hang": "ky",
+   "cot": "u"
+  },
+  {
+   "id": "キョ",
+   "script": "katakana",
+   "romaji": "kyo",
+   "nhom": "ghep",
+   "hang": "ky",
+   "cot": "o"
+  },
+  {
+   "id": "シャ",
+   "script": "katakana",
+   "romaji": "sha",
+   "nhom": "ghep",
+   "hang": "sh",
+   "cot": "a"
+  },
+  {
+   "id": "シュ",
+   "script": "katakana",
+   "romaji": "shu",
+   "nhom": "ghep",
+   "hang": "sh",
+   "cot": "u"
+  },
+  {
+   "id": "ショ",
+   "script": "katakana",
+   "romaji": "sho",
+   "nhom": "ghep",
+   "hang": "sh",
+   "cot": "o"
+  },
+  {
+   "id": "チャ",
+   "script": "katakana",
+   "romaji": "cha",
+   "nhom": "ghep",
+   "hang": "ch",
+   "cot": "a"
+  },
+  {
+   "id": "チュ",
+   "script": "katakana",
+   "romaji": "chu",
+   "nhom": "ghep",
+   "hang": "ch",
+   "cot": "u"
+  },
+  {
+   "id": "チョ",
+   "script": "katakana",
+   "romaji": "cho",
+   "nhom": "ghep",
+   "hang": "ch",
+   "cot": "o"
+  },
+  {
+   "id": "ニャ",
+   "script": "katakana",
+   "romaji": "nya",
+   "nhom": "ghep",
+   "hang": "ny",
+   "cot": "a"
+  },
+  {
+   "id": "ニュ",
+   "script": "katakana",
+   "romaji": "nyu",
+   "nhom": "ghep",
+   "hang": "ny",
+   "cot": "u"
+  },
+  {
+   "id": "ニョ",
+   "script": "katakana",
+   "romaji": "nyo",
+   "nhom": "ghep",
+   "hang": "ny",
+   "cot": "o"
+  },
+  {
+   "id": "ヒャ",
+   "script": "katakana",
+   "romaji": "hya",
+   "nhom": "ghep",
+   "hang": "hy",
+   "cot": "a"
+  },
+  {
+   "id": "ヒュ",
+   "script": "katakana",
+   "romaji": "hyu",
+   "nhom": "ghep",
+   "hang": "hy",
+   "cot": "u"
+  },
+  {
+   "id": "ヒョ",
+   "script": "katakana",
+   "romaji": "hyo",
+   "nhom": "ghep",
+   "hang": "hy",
+   "cot": "o"
+  },
+  {
+   "id": "ミャ",
+   "script": "katakana",
+   "romaji": "mya",
+   "nhom": "ghep",
+   "hang": "my",
+   "cot": "a"
+  },
+  {
+   "id": "ミュ",
+   "script": "katakana",
+   "romaji": "myu",
+   "nhom": "ghep",
+   "hang": "my",
+   "cot": "u"
+  },
+  {
+   "id": "ミョ",
+   "script": "katakana",
+   "romaji": "myo",
+   "nhom": "ghep",
+   "hang": "my",
+   "cot": "o"
+  },
+  {
+   "id": "リャ",
+   "script": "katakana",
+   "romaji": "rya",
+   "nhom": "ghep",
+   "hang": "ry",
+   "cot": "a"
+  },
+  {
+   "id": "リュ",
+   "script": "katakana",
+   "romaji": "ryu",
+   "nhom": "ghep",
+   "hang": "ry",
+   "cot": "u"
+  },
+  {
+   "id": "リョ",
+   "script": "katakana",
+   "romaji": "ryo",
+   "nhom": "ghep",
+   "hang": "ry",
+   "cot": "o"
+  },
+  {
+   "id": "ギャ",
+   "script": "katakana",
+   "romaji": "gya",
+   "nhom": "ghep",
+   "hang": "gy",
+   "cot": "a"
+  },
+  {
+   "id": "ギュ",
+   "script": "katakana",
+   "romaji": "gyu",
+   "nhom": "ghep",
+   "hang": "gy",
+   "cot": "u"
+  },
+  {
+   "id": "ギョ",
+   "script": "katakana",
+   "romaji": "gyo",
+   "nhom": "ghep",
+   "hang": "gy",
+   "cot": "o"
+  },
+  {
+   "id": "ジャ",
+   "script": "katakana",
+   "romaji": "ja",
+   "nhom": "ghep",
+   "hang": "j",
+   "cot": "a"
+  },
+  {
+   "id": "ジュ",
+   "script": "katakana",
+   "romaji": "ju",
+   "nhom": "ghep",
+   "hang": "j",
+   "cot": "u"
+  },
+  {
+   "id": "ジョ",
+   "script": "katakana",
+   "romaji": "jo",
+   "nhom": "ghep",
+   "hang": "j",
+   "cot": "o"
+  },
+  {
+   "id": "ビャ",
+   "script": "katakana",
+   "romaji": "bya",
+   "nhom": "ghep",
+   "hang": "by",
+   "cot": "a"
+  },
+  {
+   "id": "ビュ",
+   "script": "katakana",
+   "romaji": "byu",
+   "nhom": "ghep",
+   "hang": "by",
+   "cot": "u"
+  },
+  {
+   "id": "ビョ",
+   "script": "katakana",
+   "romaji": "byo",
+   "nhom": "ghep",
+   "hang": "by",
+   "cot": "o"
+  },
+  {
+   "id": "ピャ",
+   "script": "katakana",
+   "romaji": "pya",
+   "nhom": "ghep",
+   "hang": "py",
+   "cot": "a"
+  },
+  {
+   "id": "ピュ",
+   "script": "katakana",
+   "romaji": "pyu",
+   "nhom": "ghep",
+   "hang": "py",
+   "cot": "u"
+  },
+  {
+   "id": "ピョ",
+   "script": "katakana",
+   "romaji": "pyo",
+   "nhom": "ghep",
+   "hang": "py",
+   "cot": "o"
+  },
+  {
+   "id": "ティ",
+   "script": "katakana",
+   "romaji": "ti",
+   "nhom": "mo-rong",
+   "hang": "ext",
+   "cot": null,
+   "ghiChu": "dùng cho từ mượn tiếng nước ngoài"
+  },
+  {
+   "id": "ディ",
+   "script": "katakana",
+   "romaji": "di",
+   "nhom": "mo-rong",
+   "hang": "ext",
+   "cot": null,
+   "ghiChu": "dùng cho từ mượn tiếng nước ngoài"
+  },
+  {
+   "id": "ファ",
+   "script": "katakana",
+   "romaji": "fa",
+   "nhom": "mo-rong",
+   "hang": "ext",
+   "cot": null,
+   "ghiChu": "dùng cho từ mượn tiếng nước ngoài"
+  },
+  {
+   "id": "フィ",
+   "script": "katakana",
+   "romaji": "fi",
+   "nhom": "mo-rong",
+   "hang": "ext",
+   "cot": null,
+   "ghiChu": "dùng cho từ mượn tiếng nước ngoài"
+  },
+  {
+   "id": "フェ",
+   "script": "katakana",
+   "romaji": "fe",
+   "nhom": "mo-rong",
+   "hang": "ext",
+   "cot": null,
+   "ghiChu": "dùng cho từ mượn tiếng nước ngoài"
+  },
+  {
+   "id": "フォ",
+   "script": "katakana",
+   "romaji": "fo",
+   "nhom": "mo-rong",
+   "hang": "ext",
+   "cot": null,
+   "ghiChu": "dùng cho từ mượn tiếng nước ngoài"
+  },
+  {
+   "id": "ウィ",
+   "script": "katakana",
+   "romaji": "wi",
+   "nhom": "mo-rong",
+   "hang": "ext",
+   "cot": null,
+   "ghiChu": "dùng cho từ mượn tiếng nước ngoài"
+  },
+  {
+   "id": "ウェ",
+   "script": "katakana",
+   "romaji": "we",
+   "nhom": "mo-rong",
+   "hang": "ext",
+   "cot": null,
+   "ghiChu": "dùng cho từ mượn tiếng nước ngoài"
+  },
+  {
+   "id": "ウォ",
+   "script": "katakana",
+   "romaji": "wo",
+   "nhom": "mo-rong",
+   "hang": "ext",
+   "cot": null,
+   "ghiChu": "đọc \"wo\" như ヲ, dùng cho từ mượn (ウォッチ)"
+  },
+  {
+   "id": "チェ",
+   "script": "katakana",
+   "romaji": "che",
+   "nhom": "mo-rong",
+   "hang": "ext",
+   "cot": null,
+   "ghiChu": "dùng cho từ mượn tiếng nước ngoài"
+  },
+  {
+   "id": "シェ",
+   "script": "katakana",
+   "romaji": "she",
+   "nhom": "mo-rong",
+   "hang": "ext",
+   "cot": null,
+   "ghiChu": "dùng cho từ mượn tiếng nước ngoài"
+  },
+  {
+   "id": "ジェ",
+   "script": "katakana",
+   "romaji": "je",
+   "nhom": "mo-rong",
+   "hang": "ext",
+   "cot": null,
+   "ghiChu": "dùng cho từ mượn tiếng nước ngoài"
+  },
+  {
+   "id": "トゥ",
+   "script": "katakana",
+   "romaji": "tu",
+   "nhom": "mo-rong",
+   "hang": "ext",
+   "cot": null,
+   "ghiChu": "dùng cho từ mượn tiếng nước ngoài"
+  },
+  {
+   "id": "ドゥ",
+   "script": "katakana",
+   "romaji": "du",
+   "nhom": "mo-rong",
+   "hang": "ext",
+   "cot": null,
+   "ghiChu": "dùng cho từ mượn tiếng nước ngoài"
+  },
+  {
+   "id": "ヴ",
+   "script": "katakana",
+   "romaji": "vu",
+   "nhom": "mo-rong",
+   "hang": "ext",
+   "cot": null,
+   "ghiChu": "dùng cho từ mượn tiếng nước ngoài"
+  },
+  {
+   "id": "ヴァ",
+   "script": "katakana",
+   "romaji": "va",
+   "nhom": "mo-rong",
+   "hang": "ext",
+   "cot": null,
+   "ghiChu": "dùng cho từ mượn tiếng nước ngoài"
+  },
+  {
+   "id": "ヴィ",
+   "script": "katakana",
+   "romaji": "vi",
+   "nhom": "mo-rong",
+   "hang": "ext",
+   "cot": null,
+   "ghiChu": "dùng cho từ mượn tiếng nước ngoài"
+  },
+  {
+   "id": "ヴェ",
+   "script": "katakana",
+   "romaji": "ve",
+   "nhom": "mo-rong",
+   "hang": "ext",
+   "cot": null,
+   "ghiChu": "dùng cho từ mượn tiếng nước ngoài"
+  },
+  {
+   "id": "ヴォ",
+   "script": "katakana",
+   "romaji": "vo",
+   "nhom": "mo-rong",
+   "hang": "ext",
+   "cot": null,
+   "ghiChu": "dùng cho từ mượn tiếng nước ngoài"
+  },
+  {
+   "id": "イェ",
+   "script": "katakana",
+   "romaji": "ye",
+   "nhom": "mo-rong",
+   "hang": "ext",
+   "cot": null,
+   "ghiChu": "dùng cho từ mượn tiếng nước ngoài"
+  },
+  {
+   "id": "デュ",
+   "script": "katakana",
+   "romaji": "dyu",
+   "nhom": "mo-rong",
+   "hang": "ext",
+   "cot": null,
+   "ghiChu": "dùng cho từ mượn tiếng nước ngoài"
+  },
+  {
+   "id": "フュ",
+   "script": "katakana",
+   "romaji": "fyu",
+   "nhom": "mo-rong",
+   "hang": "ext",
+   "cot": null,
+   "ghiChu": "dùng cho từ mượn tiếng nước ngoài"
+  }
+ ],
+ "capDeNham": [
+  [
+   "シ",
+   "ツ"
+  ],
+  [
+   "ソ",
+   "ン"
+  ],
+  [
+   "ク",
+   "ケ"
+  ],
+  [
+   "ぬ",
+   "め"
+  ],
+  [
+   "わ",
+   "ね",
+   "れ"
+  ],
+  [
+   "さ",
+   "ち"
+  ],
+  [
+   "る",
+   "ろ"
+  ],
+  [
+   "は",
+   "ほ"
+  ],
+  [
+   "い",
+   "り"
+  ],
+  [
+   "あ",
+   "お"
+  ],
+  [
+   "ウ",
+   "ワ",
+   "フ"
+  ],
+  [
+   "コ",
+   "ユ"
+  ],
+  [
+   "チ",
+   "テ"
+  ],
+  [
+   "ア",
+   "マ"
+  ],
+  [
+   "シ",
+   "ミ"
+  ],
+  [
+   "き",
+   "さ"
+  ],
+  [
+   "へ",
+   "ヘ"
+  ],
+  [
+   "り",
+   "リ"
+  ],
+  [
+   "か",
+   "カ"
+  ],
+  [
+   "き",
+   "キ"
+  ],
+  [
+   "も",
+   "モ"
+  ],
+  [
+   "こ",
+   "に"
+  ],
+  [
+   "け",
+   "は"
+  ],
+  [
+   "ら",
+   "ち"
+  ],
+  [
+   "ノ",
+   "メ"
+  ],
+  [
+   "ヌ",
+   "ス"
+  ]
+ ]
+}

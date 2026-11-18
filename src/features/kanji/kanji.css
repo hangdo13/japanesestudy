@@ -26,12 +26,3 @@
 .kanji-ex__line { margin: 0; }
 .kanji-learn__status { margin: 0; }
 .kanji-learn-link { text-decoration: none; text-align: center; }
-.kanji-strokes {
-  width: 50%;
-  margin: 0 auto;
-  color: var(--ink);
-}
-.kanji-strokes svg { display: block; width: 100%; height: auto; }
-.kanji-strokes svg [style*="stroke"],
-.kanji-strokes svg path { stroke: currentColor !important; }
-.kanji-strokes svg text { fill: var(--ink-muted) !important; }
