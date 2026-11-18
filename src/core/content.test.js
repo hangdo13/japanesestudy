@@ -1,4 +1,4 @@
-import { it, expect } from 'vitest';
+import { it, expect, vi } from 'vitest';
 import { kanji, kanjiById, assetUrl } from './content.js';
 
 it('đọc kanji qua core/content', () => {
@@ -18,4 +18,12 @@ it('dữ liệu dùng chung bị đóng băng sâu', () => {
   const nhat = kanjiById('日');
   expect(Object.isFrozen(nhat.viDu)).toBe(true);
   expect(Object.isFrozen(nhat.on[0])).toBe(true);
+});
+
+it('assetUrl mặc định dùng BASE_URL của bản build (/japanesestudy/)', async () => {
+  vi.stubEnv('BASE_URL', '/japanesestudy/');
+  vi.resetModules();
+  const mod = await import('./content.js');
+  expect(mod.assetUrl('kanji/svg/日.svg')).toBe('/japanesestudy/kanji/svg/%E6%97%A5.svg');
+  vi.unstubAllEnvs();
 });

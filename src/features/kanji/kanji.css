@@ -1,0 +1,35 @@
+/* Màn Kanji. Chỉ dùng token (AD-9). */
+.kanji-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-3);
+}
+.kanji-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-1);
+  padding: var(--space-2) 0;
+  color: inherit;
+  text-decoration: none;
+  border-radius: var(--radius-md);
+}
+.kanji-hero {
+  display: flex;
+  align-items: center;
+  gap: var(--space-5);
+}
+.kanji-hero__info { display: flex; flex-direction: column; gap: var(--space-1); min-width: 0; }
+.kanji-hero__info h2 { margin: 0; }
+.kanji-hero__info p { margin: 0; }
+.kanji-list--flush { gap: 0; }
+.kanji-ex__line { margin: 0; }
+.kanji-strokes {
+  width: 50%;
+  margin: 0 auto;
+  color: var(--ink);
+}
+.kanji-strokes svg { display: block; width: 100%; height: auto; }
+.kanji-strokes svg [style*="stroke"],
+.kanji-strokes svg path { stroke: currentColor !important; }
+.kanji-strokes svg text { fill: var(--ink-muted) !important; }

@@ -7,7 +7,7 @@ const flush = () => new Promise((r) => setTimeout(r, 0));
 // Nội dung thật mà mỗi route phải hiện, đi qua bảng feature trong start()
 const EXPECTED = {
   '': 'Trang chủ sắp có',
-  kanji: 'Kanji sắp có',
+  kanji: 'Kanji N5',
   'hoc-ngay': 'Học ngay sắp có',
   'luyen-tap': 'Luyện tập sắp có',
   'cai-dat': 'Cài đặt sắp có',
@@ -48,5 +48,11 @@ describe('start(): nối route với tính năng thật', () => {
     const tab = document.querySelector('[data-route="cai-dat"]');
     expect(tab.getAttribute('aria-current')).toBe('page');
     expect(document.querySelector('.kt-topbar__title').textContent).toBe('Giới thiệu');
+  });
+
+  it('route chi tiết #/kanji/日 đi qua router tới trang chi tiết', async () => {
+    window.location.hash = toHash('kanji', '日');
+    await flush();
+    expect(document.querySelector('.app-main').textContent).toContain('NHẬT');
   });
 });
