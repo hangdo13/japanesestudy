@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sơ đồ kiến trúc Kotoba</title>
+<style>
+  :root { --bg:#fbfaf7; --ink:#2b2a28; --muted:#6b6862; --line:#e4e0d8; --accent:#c2410c; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#1c1b19; --ink:#ece9e3; --muted:#a39f97; --line:#3a3833; --accent:#fb923c; } }
+  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width:860px; margin:0 auto; padding:32px 20px 64px; }
+  h1 { font-size:1.6rem; margin:0 0 4px; }
+  .sub { color:var(--muted); margin:0 0 28px; }
+  h2 { font-size:1.15rem; margin:36px 0 8px; }
+  p { margin:6px 0 12px; }
+  .card { border:1px solid var(--line); border-radius:12px; padding:16px; margin:12px 0 8px; overflow-x:auto; }
+  ul { padding-left:20px; } li { margin:4px 0; }
+  b { color:var(--accent); font-weight:600; }
+  .err { color:var(--muted); font-size:.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Kotoba được xây như thế nào</h1>
+  <p class="sub">Sơ đồ để Hannah tự xem lại · 18/11/2026 · đi kèm ARCHITECTURE-SPINE.md</p>
+
+  <h2>1. App gồm những tầng nào</h2>
+  <p>Mỗi tầng chỉ làm việc của nó. Mũi tên nghĩa là "được dùng". Các tính năng <b>không gọi thẳng vào nhau</b>, mọi thứ chung đều đi qua tầng lõi.</p>
+  <div class="card"><pre class="mermaid">
+flowchart TD
+  subgraph TN["Tính năng (mỗi cái một nhóm story)"]
+    H["Trang chủ"]; K["Kanji"]; R["Cách đọc"]; O["Ôn tập"]; N["Luyện nghe"]; T["Thi thử"]; C["Cây học tập"]
+  end
+  subgraph LOI["Lõi (dùng chung)"]
+    CT["content<br/>đọc nội dung"]; P["progress<br/>nơi DUY NHẤT lưu tiến độ"]; S["srs<br/>lịch ôn (FSRS)"]; SC["study-clock<br/>đồng hồ học thật"]; G["growth<br/>tính cây, thẻ đến hạn"]
+  end
+  UI["Giao diện Kotoba UI + Pyon"]
+  TN --> LOI
+  TN --> UI
+  CT --> JSON[("Nội dung JSON")]
+  P --> LS[("Bộ nhớ trình duyệt<br/>trên iPhone")]
+  </pre></div>
+
+  <h2>2. Nội dung đi từ đâu tới app</h2>
+  <p>Nội dung được gom <b>một lần lúc build</b>. App không bao giờ đọc thẳng dữ liệu của người khác.</p>
+  <div class="card"><pre class="mermaid">
+flowchart LR
+  A["718 từ vựng của bạn"] --> B["Script gom nội dung"]
+  J["JLPTSuccess (MIT)<br/>kanji, nghe, đề"] --> B
+  V["Tiếng Việt do AI soạn<br/>Hannah duyệt"] --> B
+  B --> C["Nội dung JSON + audio"]
+  C --> D["Build bằng Vite"]
+  D -->|"đẩy code lên GitHub"| E["GitHub Pages"]
+  E --> F["iPhone: mở từ màn hình chính"]
+  </pre></div>
+
+  <h2>3. Một buổi học chạy thế nào</h2>
+  <div class="card"><pre class="mermaid">
+sequenceDiagram
+  participant Ha as Hannah
+  participant O as Ôn tập
+  participant SC as Đồng hồ học
+  participant P as progress
+  participant C as Cây
+  Ha->>O: Lật thẻ, trả lời
+  O->>SC: Báo "đang học"
+  O->>P: Lưu lịch ôn mới của thẻ
+  SC->>P: Cộng giây học thật (dừng nếu 60 giây không bấm)
+  Ha->>C: Mở trang chủ
+  C->>P: Đọc lịch sử giờ học
+  C-->>Ha: Cây cao thêm (héo nếu 7 ngày không học)
+  </pre></div>
+
+  <h2>Ba điều cần nhớ</h2>
+  <ul>
+    <li><b>Luôn mở Kotoba từ biểu tượng trên màn hình chính iPhone.</b> Nếu mở trong tab Safari thường và bỏ 7 ngày, Safari có thể xoá hết tiến độ.</li>
+    <li><b>Xuất file sao lưu mỗi tuần.</b> App sẽ nhắc bạn.</li>
+    <li><b>Phần tiếng Việt do AI soạn có trạng thái "chưa duyệt" hoặc "đã duyệt".</b> Bạn duyệt dần trong lúc học.</li>
+  </ul>
+  <p class="err" id="err" hidden>Sơ đồ chưa hiện được vì không tải được thư viện vẽ. Hãy thử mở lại trang.</p>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.1/mermaid.min.js"></script>
+<script>
+  try {
+    var dark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    mermaid.initialize({ startOnLoad: true, theme: dark ? 'dark' : 'neutral', securityLevel: 'strict' });
+  } catch (e) { document.getElementById('err').hidden = false; }
+</script>
+</body>
+</html>

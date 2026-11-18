@@ -1,0 +1,75 @@
+# STATUS DEFINITIONS:
+# ==================
+# Epic Status:
+#   - backlog: Epic not yet started
+#   - in-progress: Epic actively being worked on
+#   - done: All stories in epic completed
+
+# Story Status:
+#   - backlog: Story only exists in epic file
+#   - ready-for-dev: Story file created, ready for development
+#   - in-progress: Developer actively working on implementation
+#   - review: Implementation complete, ready for review
+#   - done: Story completed
+
+# Retrospective Status:
+#   - optional: Can be completed but not required
+#   - done: Retrospective has been completed
+
+# Action Item Status:
+#   - open: Committed during a retrospective, not yet addressed
+#   - in-progress: Actively being worked on
+#   - done: Completed
+
+# WORKFLOW NOTES:
+# ===============
+# - Epic transitions to 'in-progress' automatically when its first story starts (via build's sprint sync)
+# - Stories can be worked in parallel if team capacity allows
+# - Developer typically creates the next story after the previous one is 'done' to incorporate learnings
+# - Dev moves story to 'review', then runs code-review (fresh context, different LLM recommended)
+# - Retrospective appends its action items to action_items; the status view surfaces open ones
+generated: 11-18-2026 14:41
+last_updated: 11-18-2026 14:41
+project: japanesestudy
+project_key: NOKEY
+tracking_system: file-system
+story_location: _bmad-output/implementation-artifacts
+development_status:
+  epic-1: backlog
+  1-1-dựng-app-kotoba-và-đưa-lên-github-pages: backlog
+  1-2-gom-nội-dung-kanji-n5-với-phần-tiếng-việt-do-ai-soạn: backlog
+  1-3-xem-danh-sách-và-trang-chi-tiết-kanji: backlog
+  1-4-lưu-tiến-độ-và-sao-lưu-ra-file: backlog
+  1-5-học-gói-kanji-mới-mỗi-ngày: backlog
+  1-6-thêm-kotoba-vào-màn-hình-chính-iphone: backlog
+  epic-1-retrospective: optional
+
+  epic-2: backlog
+  2-1-ôn-kanji-theo-lịch-fsrs-3-chiều: backlog
+  2-2-ôn-718-từ-vựng-n5-có-phát-âm: backlog
+  2-3-ghi-lại-thời-gian-học-thực: backlog
+  2-4-trang-chủ-việc-hôm-nay: backlog
+  2-5-đếm-ngược-ngày-thi-và-nhắc-đăng-ký: backlog
+  epic-2-retrospective: optional
+
+  epic-3: backlog
+  3-1-bảng-cách-đọc-bất-quy-tắc: backlog
+  3-2-luyện-cách-đọc-và-đưa-ngoại-lệ-vào-lịch-ôn: backlog
+  epic-3-retrospective: optional
+
+  epic-4: backlog
+  4-1-gom-nội-dung-bài-nghe: backlog
+  4-2-màn-hình-luyện-nghe: backlog
+  epic-4-retrospective: optional
+
+  epic-5: backlog
+  5-1-gom-ngân-hàng-câu-hỏi-thi-thử: backlog
+  5-2-làm-đề-thi-thử-30-phút-không-bấm-giờ: backlog
+  5-3-kết-quả-thi-thử-quy-đổi-điểm-và-đưa-câu-sai-vào-lịch-ôn: backlog
+  epic-5-retrospective: optional
+
+  epic-6: backlog
+  6-1-luật-mọc-và-héo-của-cây: backlog
+  6-2-cây-trên-trang-chủ-và-màn-hình-cây: backlog
+  6-3-hiệu-ứng-cây-mọc-và-pyon-tưới-cây-sau-phiên-học: backlog
+  epic-6-retrospective: optional
