@@ -1,0 +1,137 @@
+/* Kotoba UI — generated from tokens.json */
+:root, [data-theme="light"] {
+  --bg: #f6f5fd;
+  --surface: #ffffff;
+  --surface-sunken: #f0effa;
+  --surface-tint: #eeebff;
+  --line: #e8e6f5;
+  --line-strong: #d6d2ef;
+  --ink: #1e1d33;
+  --ink-muted: #64647e;
+  --ink-subtle: #8a8aa3;
+  --primary: #917eff;
+  --primary-strong: #705af2;
+  --on-primary: #ffffff;
+  --primary-soft: #f0edff;
+  --primary-ink: #5b45d9;
+  --blue: #6b9cff;
+  --blue-strong: #3b6fe0;
+  --on-blue: #ffffff;
+  --blue-soft: #eaf1ff;
+  --blue-ink: #2a64c4;
+  --peach: #ff9f68;
+  --peach-soft: #fff0e6;
+  --peach-ink: #a14a12;
+  --sakura: #ffb6cb;
+  --sakura-soft: #fff0f4;
+  --sakura-ink: #b23a63;
+  --green: #28d873;
+  --on-green: #0d2a1b;
+  --green-soft: #e7fbef;
+  --green-ink: #0f7a3b;
+  --danger: #c02a30;
+  --danger-soft: #fde8e8;
+  --skill-vocab: #3fa9f5;
+  --skill-vocab-soft: #e3f3fd;
+  --skill-vocab-ink: #1b6aa5;
+  --skill-grammar: #6e7cff;
+  --skill-grammar-soft: #eceeff;
+  --skill-grammar-ink: #4a4fd0;
+  --skill-kanji: #ff6fb5;
+  --skill-kanji-soft: #ffe9f4;
+  --skill-kanji-ink: #b0327a;
+  --skill-speaking: #2ec4a0;
+  --skill-speaking-soft: #e0f7f1;
+  --skill-speaking-ink: #0f7a68;
+  --shadow-card: 0 1px 2px rgba(30,29,51,0.04), 0 6px 20px rgba(30,29,51,0.05);
+  --shadow-raised: 0 2px 4px rgba(30,29,51,0.05), 0 16px 32px rgba(30,29,51,0.08);
+  --shadow-fab: 0 10px 24px rgba(112,90,242,0.35);
+}
+[data-theme="dark"] {
+  --bg: #12111c;
+  --surface: #1a1928;
+  --surface-sunken: #222134;
+  --surface-tint: #262246;
+  --line: #2d2b42;
+  --line-strong: #3d3a58;
+  --ink: #efeefa;
+  --ink-muted: #a7a5c0;
+  --ink-subtle: #7d7b98;
+  --primary: #a796ff;
+  --primary-strong: #705af2;
+  --on-primary: #ffffff;
+  --primary-soft: #2b2350;
+  --primary-ink: #c9bdff;
+  --blue: #8fb8ff;
+  --blue-strong: #3b6fe0;
+  --on-blue: #ffffff;
+  --blue-soft: #1a2747;
+  --blue-ink: #b3cfff;
+  --peach: #ffad80;
+  --peach-soft: #3a2418;
+  --peach-ink: #ffc4a1;
+  --sakura: #ffa3bf;
+  --sakura-soft: #3a1f2a;
+  --sakura-ink: #ffc2d4;
+  --green: #33e07f;
+  --on-green: #0d2a1b;
+  --green-soft: #163a26;
+  --green-ink: #6be89c;
+  --danger: #ff7b80;
+  --danger-soft: #3a1a1e;
+  --skill-vocab: #6fc0ff;
+  --skill-vocab-soft: #132b3d;
+  --skill-vocab-ink: #9fd5ff;
+  --skill-grammar: #8e98ff;
+  --skill-grammar-soft: #1f2147;
+  --skill-grammar-ink: #bcc2ff;
+  --skill-kanji: #ff8fc6;
+  --skill-kanji-soft: #3a1a2e;
+  --skill-kanji-ink: #ffb0d6;
+  --skill-speaking: #4fd9b6;
+  --skill-speaking-soft: #12302a;
+  --skill-speaking-ink: #8ae6cf;
+  --shadow-card: 0 1px 2px rgba(0,0,0,0.4);
+  --shadow-raised: 0 8px 24px rgba(0,0,0,0.45);
+  --shadow-fab: 0 10px 24px rgba(112,90,242,0.45);
+}
+:root {
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-pill: 999px;
+  --font-sans: "Plus Jakarta Sans", "Noto Sans JP", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-jp: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", "Plus Jakarta Sans", sans-serif;
+  --text-display: 700 34px/40px var(--font-sans);
+  --text-greeting: 700 28px/34px var(--font-sans);
+  --text-stat: 700 32px/36px var(--font-sans);
+  --text-title-lg: 700 22px/28px var(--font-sans);
+  --text-title: 700 18px/24px var(--font-sans);
+  --text-title-sm: 600 15px/20px var(--font-sans);
+  --text-body: 400 15px/22px var(--font-sans);
+  --text-label: 600 14px/18px var(--font-sans);
+  --text-caption: 500 13px/18px var(--font-sans);
+  --text-micro: 600 11px/14px var(--font-sans);
+  --text-jp-hero: 700 56px/64px var(--font-jp);
+  --text-jp-body: 500 17px/28px var(--font-jp);
+}
+.display { font-family: var(--font-sans); font-size: 34px; line-height: 40px; font-weight: 700; letter-spacing: -0.02em; }
+.greeting { font-family: var(--font-sans); font-size: 28px; line-height: 34px; font-weight: 700; letter-spacing: -0.02em; }
+.stat { font-family: var(--font-sans); font-size: 32px; line-height: 36px; font-weight: 700; letter-spacing: -0.02em; }
+.title-lg { font-family: var(--font-sans); font-size: 22px; line-height: 28px; font-weight: 700; letter-spacing: -0.01em; }
+.title { font-family: var(--font-sans); font-size: 18px; line-height: 24px; font-weight: 700; letter-spacing: 0; }
+.title-sm { font-family: var(--font-sans); font-size: 15px; line-height: 20px; font-weight: 600; letter-spacing: 0; }
+.body { font-family: var(--font-sans); font-size: 15px; line-height: 22px; font-weight: 400; letter-spacing: 0; }
+.label { font-family: var(--font-sans); font-size: 14px; line-height: 18px; font-weight: 600; letter-spacing: 0; }
+.caption { font-family: var(--font-sans); font-size: 13px; line-height: 18px; font-weight: 500; letter-spacing: 0; }
+.micro { font-family: var(--font-sans); font-size: 11px; line-height: 14px; font-weight: 600; letter-spacing: 0.02em; }
+.jp-hero { font-family: var(--font-jp); font-size: 56px; line-height: 64px; font-weight: 700; letter-spacing: 0; }
+.jp-body { font-family: var(--font-jp); font-size: 17px; line-height: 28px; font-weight: 500; letter-spacing: 0; }
