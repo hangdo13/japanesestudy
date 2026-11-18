@@ -90,7 +90,7 @@ flowchart TD
 - **Prevents:** mỗi loại thẻ dùng một thuật toán hay một cách chấm điểm riêng.
 - **Rule:**
   - Mọi thẻ (kanji, từ vựng, cách đọc, câu thi sai) được lên lịch bằng `core/srs`, là lớp bọc quanh `ts-fsrs`.
-  - Mã thẻ có dạng `<loại>:<id nội dung>`, ví dụ `kanji:日`, `vocab:n5-0002`, `reading:day-01`, `mock:<question id>`.
+  - Mã thẻ có dạng `<loại>:<id nội dung>`, ví dụ `kanji-nghia:日`, `kanji-doc:日`, `kanji-chu:日`, `vocab:n5-0002`, `reading:day-01`, `mock:<question id>`. Mỗi kanji có 3 thẻ theo 3 chiều ôn.
   - Trạng thái thẻ lưu trong `progress`.
 
 ### AD-7: Thêm vào màn hình chính iPhone và nhắc sao lưu [ADOPTED]
