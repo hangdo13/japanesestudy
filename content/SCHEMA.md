@@ -67,6 +67,27 @@ Mọi file `content/*.json` đều do `scripts/build-content.mjs` sinh ra. **Kh�
 - `Muc`: `{ id, tieuDe, giaiThich, viDu: Tu[] }`. Đúng 5 mục: `phach`, `nguyen-am`, `vo-thanh`, `n`, `r`.
 - `capAm`: ít nhất 10 cặp, không trùng. Hai từ của cặp chỉ được khác nhau ở っ hoặc trường âm (kiểm tra bằng romaji: kitte/kite, koukou/koko).
 
+## `content/vocab.json`
+
+```json
+{ "version": 1, "chuDe": ["Chào hỏi, giao tiếp", ...], "items": [Tu, ...] }
+```
+
+`chuDe`: 21 chủ đề theo thứ tự lộ trình mục 5.1 rồi các nhóm bổ sung. `items`: 718 từ, theo id.
+
+| Trường | Kiểu | Ý nghĩa |
+| --- | --- | --- |
+| `id` | string | Giữ nguyên id `n5-xxxx` của n5_vocab.json (khoá thẻ `vocab:<id>`) |
+| `tu`, `tuKhac` | string, string[] | Cách viết chính và các cách viết khác (tách theo `;`/`；`). Nhiều cách viết một cách đọc thì cách viết có đuôi kana khớp cách đọc đứng đầu |
+| `doc`, `docKhac` | string, string[] | Cách đọc chính và các cách đọc khác. Có thể có `～` (phụ tố) |
+| `nghia` | string | Nghĩa tiếng Việt |
+| `loai` | string | Loại từ |
+| `chuDe`, `chuDeThuTu` | string, number | Chủ đề và thứ tự chủ đề (1–21) |
+
+## Tiến độ trên máy (`progress`, khoá `kotoba:v1`)
+
+Ngoài `settings`, `kanji`, `srs`: `tuVung: { <id>: { gioiThieu: "YYYY-MM-DD" } }` là ngày từ được học lần đầu (tính hạn mức từ mới mỗi ngày). `settings.tuMoiMoiNgay` (5/10/15/20/30, mặc định 10), `settings.tuDocKhiLat` (mặc định bật).
+
 ## Nguồn
 
 - `vendor/jlptsuccess/kanji.json`: dữ liệu gốc (MIT)

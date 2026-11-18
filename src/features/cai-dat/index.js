@@ -1,6 +1,6 @@
 import './cai-dat.css';
 import { progress as defaultProgress, CHANGED_EVENT } from '../../core/progress.js';
-import { kanjiMoiLimit, MIN_KANJI_MOI, MAX_KANJI_MOI } from '../../core/growth.js';
+import { kanjiMoiLimit, MIN_KANJI_MOI, MAX_KANJI_MOI, tuMoiLimit, TU_MOI_CHOICES, autoSpeakOnFlip } from '../../core/growth.js';
 import { toHash } from '../../core/router.js';
 import { confirmDialog as defaultConfirm } from '../../ui/confirm-dialog.js';
 
@@ -160,9 +160,11 @@ export function mount(root, _params, deps = {}) {
     select.append(opt);
   }
   const renderLimit = () => {
-    select.value = String(kanjiMoiLimit(store.get().settings));
+    const st = store.get().settings;
+    select.value = String(kanjiMoiLimit(st));
+    vSelect.value = String(tuMoiLimit(st));
+    sBox.checked = autoSpeakOnFlip(st);
   };
-  renderLimit();
   const dailyStatus = el('p', 'kt-muted cai-dat__text');
   dailyStatus.setAttribute('role', 'status');
   select.addEventListener('change', () => {
@@ -174,7 +176,42 @@ export function mount(root, _params, deps = {}) {
     renderLimit();
   });
   row.append(select);
-  daily.append(dailyHead, row, dailyStatus);
+
+  const vRow = el('label', 'kt-row cai-dat__field');
+  vRow.append(el('span', 'cai-dat__label', 'Số từ vựng mới mỗi ngày'));
+  const vSelect = el('select', 'kt-select');
+  vSelect.setAttribute('aria-label', 'Số từ vựng mới mỗi ngày');
+  for (const n of TU_MOI_CHOICES) {
+    const opt = el('option', null, String(n));
+    opt.value = String(n);
+    vSelect.append(opt);
+  }
+  vSelect.addEventListener('change', () => {
+    const value = tuMoiLimit({ tuMoiMoiNgay: Number(vSelect.value) });
+    const res = store.update((d) => {
+      d.settings.tuMoiMoiNgay = value;
+    });
+    dailyStatus.textContent = res.ok ? `Đã lưu: ${value} từ mới mỗi ngày.` : res.error;
+    renderLimit();
+  });
+  vRow.append(vSelect);
+
+  const sRow = el('label', 'kt-row cai-dat__field');
+  const sBox = el('input');
+  sBox.type = 'checkbox';
+  sBox.className = 'cai-dat__check';
+  sRow.append(el('span', 'cai-dat__label', 'Tự đọc từ khi lật thẻ'), sBox);
+  sBox.addEventListener('change', () => {
+    const on = sBox.checked;
+    const res = store.update((d) => {
+      d.settings.tuDocKhiLat = on;
+    });
+    dailyStatus.textContent = res.ok ? (on ? 'Đã bật tự đọc khi lật thẻ.' : 'Đã tắt tự đọc khi lật thẻ.') : res.error;
+    renderLimit();
+  });
+
+  daily.append(dailyHead, row, vRow, sRow, dailyStatus);
+  renderLimit();
 
   // --- Giới thiệu ---
   const about = el('section', 'kt-card');

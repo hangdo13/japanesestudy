@@ -4,7 +4,7 @@ import { readFileSync, mkdtempSync, mkdirSync, cpSync, existsSync, writeFileSync
 import { join, dirname } from 'node:path';
 import { tmpdir } from 'node:os';
 import { fileURLToPath } from 'node:url';
-import { buildKanji, buildKana, toHiragana, main, romanize, romanizeSentence, buildKanaRules, readingKinds, buildKanaSounds, differsByLength } from './build-content.mjs';
+import { buildKanji, buildKana, toHiragana, main, romanize, romanizeSentence, buildKanaRules, readingKinds, buildKanaSounds, differsByLength, buildVocab, CHU_DE } from './build-content.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const read = (p) => JSON.parse(readFileSync(join(ROOT, p), 'utf8'));
@@ -167,9 +167,20 @@ describe('main', () => {
     expect(main(dir)).toBe(0);
     expect(JSON.parse(readFileSync(join(dir, 'content/kanji.json'), 'utf8')).items).toHaveLength(106);
     expect(JSON.parse(readFileSync(join(dir, 'content/kana-quy-tac.json'), 'utf8')).muc).toHaveLength(5);
+    expect(JSON.parse(readFileSync(join(dir, 'content/vocab.json'), 'utf8')).items).toHaveLength(718);
     const sounds = JSON.parse(readFileSync(join(dir, 'content/kana-phat-am.json'), 'utf8'));
     expect(sounds.muc).toHaveLength(5);
     expect(sounds.capAm.length).toBeGreaterThanOrEqual(10);
+  });
+
+  it('từ vựng sai thì trả mã 1 và không ghi vocab.json', () => {
+    const dir = fixtureRoot();
+    cpSync(join(ROOT, 'content-vi/kanji.json'), join(dir, 'content-vi/kanji.json'));
+    const v = read('n5_vocab.json');
+    v.words[5].meaning_vi = '';
+    writeFileSync(join(dir, 'n5_vocab.json'), JSON.stringify(v));
+    expect(main(dir)).toBe(1);
+    expect(existsSync(join(dir, 'content/vocab.json'))).toBe(false);
   });
 
   it('cặp âm sai thì trả mã 1 và không ghi kana-phat-am.json', () => {
@@ -318,5 +329,37 @@ describe('buildKanaSounds', () => {
     expect(err((r) => (r.capAm = r.capAm.slice(0, 4)))).toMatch(/ít nhất 10/);
     expect(err((r) => r.capAm.push(null))).toMatch(/không phải object/);
     expect(err((r) => (r.muc[0].viDu = []))).toMatch(/thiếu ví dụ/);
+  });
+});
+
+describe('buildVocab', () => {
+  const vocab = read('n5_vocab.json');
+  it('718 từ, giữ id, tách cách đọc, đủ 21 chủ đề theo lộ trình', () => {
+    const r = buildVocab(vocab);
+    expect(r.errors).toEqual([]);
+    expect(r.items).toHaveLength(718);
+    expect(new Set(r.items.map((w) => w.chuDe)).size).toBe(21);
+    expect(CHU_DE).toHaveLength(21);
+    expect(r.items.find((w) => w.id === 'n5-0049')).toMatchObject({ tu: '行く', doc: 'いく', docKhac: ['ゆく'] });
+    expect(r.items.find((w) => w.id === 'n5-0015')).toMatchObject({ tu: '足', tuKhac: ['脚'] });
+  });
+  it('chuDeThuTu khớp CHU_DE; nguồn rỗng thì lỗi; dấu ； toàn khổ cũng tách', () => {
+    for (const w of buildVocab(vocab).items) expect(w.chuDeThuTu).toBe(CHU_DE.indexOf(w.chuDe) + 1);
+    expect(buildVocab({ words: [] }).errors.join()).toMatch(/không có từ nào/);
+    expect(buildVocab({}).errors.join()).toMatch(/không có từ nào/);
+    const v = { words: [{ ...vocab.words[43], reading: 'いい；よい' }] };
+    expect(buildVocab(v).items[0]).toMatchObject({ doc: 'いい', docKhac: ['よい'] });
+  });
+  it('báo lỗi: id trùng, id sai dạng, thiếu nghĩa, chủ đề lạ', () => {
+    const v = JSON.parse(JSON.stringify(vocab));
+    v.words.push({ ...v.words[0] });
+    v.words.push({ ...v.words[1], id: 'x' });
+    v.words[2].meaning_vi = ' ';
+    v.words[3].topic = 'Lạ';
+    const msg = buildVocab(v).errors.join('\n');
+    expect(msg).toMatch(/id trùng n5-0001/);
+    expect(msg).toMatch(/id không hợp lệ: x/);
+    expect(msg).toMatch(/thiếu từ, cách đọc hoặc nghĩa/);
+    expect(msg).toMatch(/chủ đề lạ "Lạ"/);
   });
 });

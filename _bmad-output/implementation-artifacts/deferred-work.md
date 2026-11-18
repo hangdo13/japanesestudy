@@ -34,3 +34,6 @@
 - source_spec: `_bmad-output/implementation-artifacts/spec-7-3-quy-tac-doc-kana.md`
   summary: Một hàm chung `isUnreviewed(status)` cho nhãn "chưa duyệt" (rules.js dùng !== 'approved', index.js dùng === 'draft').
   evidence: Trạng thái lạ sẽ hiện nhãn ở màn này mà không ở màn kia.
+- source_spec: `_bmad-output/implementation-artifacts/spec-2-2-on-tu-vung.md`
+  summary: Gộp `formatWhen` (on-tap/index.js và on-tap/vocab.js) vào một chỗ dùng chung.
+  evidence: Hai bản giống nhau.

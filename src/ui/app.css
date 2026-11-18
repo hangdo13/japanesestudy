@@ -77,3 +77,7 @@ body {
 
 /* Tiêu đề nhận focus bằng code (tabindex=-1) để trình đọc màn hình đọc; không cần viền focus */
 [tabindex="-1"]:focus { outline: none; }
+
+/* Từ dài trên Flashcard: thu chữ để không tràn thẻ */
+.kt-flash__glyph.app-flash__glyph--mid { font-size: 64px; line-height: 1.1; }
+.kt-flash__glyph.app-flash__glyph--long { font-size: 44px; line-height: 1.15; word-break: keep-all; overflow-wrap: anywhere; text-align: center; }
