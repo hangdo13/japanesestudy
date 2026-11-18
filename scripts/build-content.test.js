@@ -4,7 +4,7 @@ import { readFileSync, mkdtempSync, mkdirSync, cpSync, existsSync, writeFileSync
 import { join, dirname } from 'node:path';
 import { tmpdir } from 'node:os';
 import { fileURLToPath } from 'node:url';
-import { buildKanji, toHiragana, main } from './build-content.mjs';
+import { buildKanji, buildKana, toHiragana, main } from './build-content.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const read = (p) => JSON.parse(readFileSync(join(ROOT, p), 'utf8'));
@@ -104,12 +104,48 @@ describe('buildKanji', () => {
   });
 });
 
+describe('buildKana', () => {
+  const vi = () => read('content-vi/kana.json');
+  it('gom đủ 230 kana, chữ đơn có SVG, chữ ghép không có', () => {
+    const r = buildKana(vi(), () => true);
+    expect(r.errors).toEqual([]);
+    expect(r.items).toHaveLength(230);
+    expect(r.items.filter((k) => k.script === 'hiragana' && k.nhom === 'co-ban')).toHaveLength(46);
+    expect(r.items.find((k) => k.id === 'し')).toMatchObject({ romaji: 'shi', svg: 'kana/svg/し.svg' });
+    expect(r.items.find((k) => k.id === 'きゃ')).toMatchObject({ romaji: 'kya', svg: null });
+    expect(r.items.find((k) => k.id === 'ティ').nhom).toBe('mo-rong');
+  });
+  it('báo lỗi khi thiếu SVG, thiếu romaji hoặc cặp dễ nhầm có chữ lạ', () => {
+    const src = vi();
+    src.items.find((k) => k.id === 'あ').romaji = '';
+    src.capDeNham.push(['あ', '猫']);
+    const r = buildKana(src, (p) => p !== 'kana/svg/い.svg');
+    expect(r.errors).toContain('あ: thiếu romaji');
+    expect(r.errors).toContain('い: thiếu file SVG kana/svg/い.svg');
+    expect(r.errors).toContain('capDeNham có chữ lạ: 猫');
+  });
+  it('báo lỗi cấu trúc: thiếu id, trùng chữ, sai cột, nhóm dễ nhầm hỏng, reviewStatus sai', () => {
+    const src = vi();
+    src.items.push(null, { ...src.items[0] });
+    src.items.find((k) => k.id === 'か').cot = 'x';
+    src.capDeNham.push(['あ'], 'あい');
+    src.reviewStatus = 'ok';
+    const r = buildKana(src, () => true);
+    expect(r.errors).toContain('kana: có mục thiếu id');
+    expect(r.errors.some((e) => e.startsWith('kana bị trùng: あ'))).toBe(true);
+    expect(r.errors).toContain('か: hang/cot không hợp lệ để dựng bảng');
+    expect(r.errors.filter((e) => e.startsWith('nhóm capDeNham không hợp lệ'))).toHaveLength(2);
+    expect(r.errors).toContain('kana: reviewStatus không hợp lệ "ok"');
+  });
+});
+
 describe('main', () => {
   function fixtureRoot() {
     const dir = mkdtempSync(join(tmpdir(), 'kotoba-content-'));
     for (const p of ['vendor/jlptsuccess', 'content-vi']) mkdirSync(join(dir, p), { recursive: true });
     cpSync(join(ROOT, 'vendor/jlptsuccess/kanji.json'), join(dir, 'vendor/jlptsuccess/kanji.json'));
     cpSync(join(ROOT, 'n5_vocab.json'), join(dir, 'n5_vocab.json'));
+    cpSync(join(ROOT, 'content-vi/kana.json'), join(dir, 'content-vi/kana.json'));
     cpSync(join(ROOT, 'public'), join(dir, 'public'), { recursive: true });
     return dir;
   }

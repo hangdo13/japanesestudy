@@ -95,6 +95,31 @@ Cây lớn dần theo tổng thời gian học thực. Không học thì cây h�
 ### 4.7 Nhắc đăng ký thi
 - **FR-19**: App hiện đếm ngược tới ngày thi. Từ đầu tháng 3/2027, app nhắc Hannah đăng ký thi.
 
+### 4.9 Kana và phát âm *(thêm ngày 18/11, theo sprint change proposal)*
+- **FR20**: Có bảng hiragana và katakana đầy đủ: 46 chữ cơ bản, âm đục và bán đục, âm ghép, katakana mở rộng. Mỗi chữ có romaji, phát âm và thứ tự nét (KanjiVG).
+- **FR21**: Hannah luyện nhận diện kana theo hai cách: nhìn chữ chọn âm, và nghe âm chọn chữ. Có nhóm luyện riêng cho các cặp dễ nhầm (シ/ツ, ソ/ン, ぬ/め, わ/ね/れ…). Chữ hay sai được đưa vào lịch ôn.
+- **FR22**: Có phần giải thích quy tắc âm ngắt っ, trường âm (cả hiragana lẫn ー của katakana), trợ từ đọc khác chữ (は/へ/を), kèm bài đọc từ có các hiện tượng này.
+- **FR23**: Luyện phát âm theo hai dạng: đếm phách, và phân biệt cặp âm ngắn/dài, có/không có っ (ví dụ おばさん/おばあさん, きて/きって).
+
+### 4.10 Bổ sung kanji và từ vựng
+- **FR24**: Thêm 4 kanji 多 少 耳 魚, nâng tổng lên 110 chữ.
+- **FR25**: Hannah học từ vựng mới theo 21 chủ đề, mỗi ngày N từ (chỉnh được). Từ đã học được đưa vào lịch ôn.
+- **FR26**: Mở rộng FR4 và FR5 thành số đếm, đủ các trợ số từ N5, thời gian và các cách đọc đặc biệt (mục 5.2 đến 5.5 của lộ trình).
+
+### 4.11 Ngữ pháp N5
+- **FR27**: Có bài học cho trợ từ, です, chia động từ (thể ます, từ điển, て, ない, た), tính từ い/な, và các mẫu câu ở mục 6.5–6.6 của lộ trình. Mỗi mẫu có giải thích tiếng Việt, 3 câu ví dụ, và nhãn "N5/N4" khi cần.
+- **FR28**: Có bài tập ngữ pháp: điền trợ từ, chia thể có chấm tự động, sắp xếp câu (có vị trí ★).
+
+### 4.12 Đọc hiểu
+- **FR29**: Hannah luyện đọc đoạn ngắn, đoạn trung bình và bài tìm thông tin. Mỗi bài có câu hỏi và giải thích tiếng Việt.
+- **FR30**: Có bài luyện đọc kanji trong câu khi furigana bị ẩn.
+
+### 4.13 Đề thi đủ dạng
+- **FR31**: Đề thi thử có đủ 14 dạng bài. Có hai chế độ: chế độ **luyện** (rút gọn, không bấm giờ, như FR16) và chế độ **thi thật** (đủ dạng, bấm giờ 20/40/30 phút).
+
+### 4.14 Lộ trình 12 tuần
+- **FR32**: Trang chủ gợi ý việc hôm nay theo tuần hiện tại của lộ trình 12 tuần: tuần 1–2 kana và phát âm, tuần 3–6 từ vựng, kanji nhóm đầu và trợ từ, tuần 7–10 phần còn lại, tuần 11–12 mẫu câu, đọc hiểu và đề thi bấm giờ.
+
 ### 4.8 Yêu cầu chung
 - **NFR-1**: Dùng tốt trên trình duyệt điện thoại. Chỉ cần chạy khi có mạng, không yêu cầu học offline.
 - **NFR-2**: Toàn bộ giao diện và phần giải thích bằng tiếng Việt.
@@ -110,7 +135,7 @@ Cây lớn dần theo tổng thời gian học thực. Không học thì cây h�
 - Không mở rộng sang N4 trước kỳ thi.
 
 ## 6. Phạm vi bản đầu tiên
-**Hạn hoàn thành:** 30/11/2026.
+**Hạn hoàn thành:** mốc 1 vào 30/11/2026, gồm Kana & phát âm, Ôn tập và Từ vựng theo chủ đề (tuần 1–6 của lộ trình). Các phần còn lại ra dần theo thứ tự học (xem `sprint-change-proposal-2026-11-18.md`).
 
 **Có:** toàn bộ §4.1 đến §4.8. Theo quyết định của Hannah, luyện nghe và đề thi thử được gộp luôn vào bản đầu tiên.
 

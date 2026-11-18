@@ -1,6 +1,7 @@
 // Cửa duy nhất để tính năng đọc nội dung (AD-3).
 // content/*.json do scripts/build-content.mjs sinh ra trước khi chạy dev/test/build.
 import kanjiData from '../../content/kanji.json';
+import kanaData from '../../content/kana.json';
 
 /** Đóng băng sâu để không tính năng nào sửa được dữ liệu dùng chung. */
 function deepFreeze(v) {
@@ -22,6 +23,31 @@ export function kanji() {
 /** Một kanji theo chữ, hoặc null nếu không có. */
 export function kanjiById(id) {
   return kanjiMap.get(id) ?? null;
+}
+
+const kanaList = deepFreeze(kanaData.items);
+const kanaPairList = deepFreeze(kanaData.capDeNham || []);
+
+/** Trạng thái duyệt của nội dung kana (AI soạn). */
+export function kanaReviewStatus() {
+  return kanaData.reviewStatus || 'draft';
+}
+
+/** Toàn bộ kana (hiragana + katakana), theo thứ tự bảng. */
+export function kana() {
+  return kanaList;
+}
+
+/** Một kana theo chữ (ví dụ 'し', 'きゃ', 'ティ'), hoặc null. */
+export function kanaById(id) {
+  return kanaList.find((k) => k.id === id) ?? null;
+}
+
+/** Các chữ dễ nhầm với `id` (không gồm chính nó). */
+export function kanaPairs(id) {
+  const out = new Set();
+  for (const group of kanaPairList) if (group.includes(id)) group.forEach((g) => g !== id && out.add(g));
+  return [...out];
 }
 
 /** Ghép đường dẫn file trong public/ với base của app (GitHub Pages chạy ở /japanesestudy/). */

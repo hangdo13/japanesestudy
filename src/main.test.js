@@ -9,7 +9,8 @@ const EXPECTED = {
   '': 'Trang chủ sắp có',
   kanji: 'Kanji N5',
   'hoc-ngay': 'Học ngay sắp có',
-  'luyen-tap': 'Luyện tập sắp có',
+  'luyen-tap': 'Học theo lộ trình N5',
+  kana: 'Bảng chữ cái',
   'cai-dat': 'Sao lưu tiến độ',
   'gioi-thieu': 'Nguồn nội dung',
 };
@@ -62,5 +63,18 @@ describe('start(): nối route với tính năng thật', () => {
     window.location.hash = toHash('kanji', 'hoc-moi');
     await flush();
     expect(document.querySelector('.app-main .kt-session')).not.toBeNull();
+  });
+
+  it('Luyện tập → Kana mở bảng chữ cái và đánh dấu tab Luyện tập', async () => {
+    window.location.hash = toHash('luyen-tap');
+    await flush();
+    const kanaLink = [...document.querySelectorAll('.app-main a.kt-item')].find((a) => a.textContent.includes('Kana'));
+    expect(kanaLink.getAttribute('href')).toBe('#/kana');
+    kanaLink.click();
+    await vi.waitFor(() => expect(window.location.hash).toBe('#/kana'));
+    await flush();
+    expect(document.querySelector('.app-main').textContent).toContain('Bảng chữ cái');
+    expect(document.querySelector('[data-route="luyen-tap"]').getAttribute('aria-current')).toBe('page');
+    expect(document.querySelector('.kt-topbar__title').textContent).toBe('Kana');
   });
 });

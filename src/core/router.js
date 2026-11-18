@@ -8,6 +8,7 @@ import { renderEmptyState } from '../ui/empty-state.js';
 export const ROUTES = {
   '': { title: 'Kotoba', tab: '' },
   kanji: { title: 'Kanji', tab: 'kanji' },
+  kana: { title: 'Kana', tab: 'luyen-tap' },
   'hoc-ngay': { title: 'Học ngay', tab: 'hoc-ngay' },
   'luyen-tap': { title: 'Luyện tập', tab: 'luyen-tap' },
   'cai-dat': { title: 'Cài đặt', tab: 'cai-dat' },
