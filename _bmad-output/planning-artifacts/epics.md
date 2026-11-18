@@ -39,6 +39,19 @@ FR16: Hannah làm đề thi thử rút gọn khoảng 30 phút, đủ các phầ
 FR17: Sau khi nộp bài, app quy đổi điểm sang thang JLPT và ghi rõ là ước tính: điểm phần Kiến thức ngôn ngữ và Đọc hiểu trên 0–120 (điểm sàn 38), phần Nghe trên 0–60 (điểm sàn 19), tổng trên 0–180 (đỗ từ 80) và kết luận đỗ/trượt.
 FR18: Mỗi câu thi có giải thích tiếng Việt. Câu làm sai được tự động đưa vào lịch ôn.
 FR19: App đếm ngược tới ngày thi và nhắc đăng ký thi từ đầu tháng 3/2027.
+FR20: Bảng hiragana và katakana đầy đủ (cơ bản, đục, ghép, mở rộng), có romaji, phát âm và nét viết.
+FR21: Luyện nhận diện kana (nhìn chữ chọn âm, nghe âm chọn chữ), có nhóm cặp dễ nhầm, chữ sai được đưa vào lịch ôn.
+FR22: Quy tắc っ, trường âm, は/へ/を, kèm bài đọc từ.
+FR23: Luyện phát âm: đếm phách, phân biệt cặp âm ngắn/dài và có/không có っ.
+FR24: Thêm 4 kanji 多 少 耳 魚 (110 chữ).
+FR25: Học từ vựng mới theo 21 chủ đề, mỗi ngày N từ, từ đã học vào lịch ôn.
+FR26: Số đếm, trợ số từ N5 đầy đủ, thời gian, cách đọc đặc biệt.
+FR27: Bài học ngữ pháp N5 (trợ từ, です, chia động từ/tính từ, mẫu câu 6.5–6.6), giải thích tiếng Việt, 3 ví dụ, nhãn N5/N4.
+FR28: Bài tập ngữ pháp: điền trợ từ, chia thể chấm tự động, sắp xếp câu có ★.
+FR29: Luyện đọc hiểu: đoạn ngắn, trung bình, tìm thông tin, có giải thích tiếng Việt.
+FR30: Đọc kanji trong câu khi ẩn furigana.
+FR31: Đề thi thử đủ 14 dạng, có chế độ luyện (không bấm giờ) và chế độ thi thật (20/40/30 phút).
+FR32: Trang chủ gợi ý việc hôm nay theo lộ trình 12 tuần.
 
 ### Yêu cầu phi chức năng
 
@@ -101,10 +114,41 @@ FR16: Epic 5 - Đề thi thử rút gọn, không bấm giờ
 FR17: Epic 5 - Quy đổi điểm theo thang JLPT
 FR18: Epic 5 - Giải thích tiếng Việt, câu sai vào lịch ôn
 FR19: Epic 2 - Đếm ngược ngày thi, nhắc đăng ký
+FR20: Epic 7 - Bảng kana
+FR21: Epic 7 - Luyện nhận diện kana
+FR22: Epic 7 - Quy tắc っ, trường âm, は/へ/を
+FR23: Epic 7 - Luyện phát âm
+FR24: Epic 1 - Story 1.7: thêm 4 kanji
+FR25: Epic 2 - Story 2.6: từ vựng theo chủ đề
+FR26: Epic 3 - Story 3.3: số đếm, trợ số từ, thời gian
+FR27: Epic 8 - Bài học ngữ pháp
+FR28: Epic 8 - Bài tập ngữ pháp
+FR29: Epic 9 - Đọc hiểu
+FR30: Epic 9 - Đọc kanji ẩn furigana
+FR31: Epic 5 - Story 5.4: đủ 14 dạng, chế độ thi thật
+FR32: Epic 10 - Lộ trình 12 tuần
 
 ## Danh sách epic
 
-### Epic 1: Mở Kotoba trên iPhone và học kanji N5
+#### Epic 7: Kana & phát âm *(thêm 18/11, làm đầu tiên của mốc 30/11)*
+Hannah đọc và nhận diện thành thạo hiragana và katakana, nắm các quy tắc âm ngắt, trường âm và đọc trợ từ, đếm phách đúng.
+**FRs covered:** FR20, FR21, FR22, FR23
+
+### Epic 8: Ngữ pháp N5
+Hannah học trợ từ, chia động từ và tính từ, các mẫu câu N5 bằng giải thích tiếng Việt, rồi luyện bằng bài tập chấm tự động.
+**FRs covered:** FR27, FR28
+
+### Epic 9: Đọc hiểu
+Hannah luyện đọc ba dạng bài đọc của đề N5 và đọc kanji khi không có furigana.
+**FRs covered:** FR29, FR30
+
+### Epic 10: Lộ trình 12 tuần
+Trang chủ dẫn Hannah đi theo đúng thứ tự học trong lộ trình N5.
+**FRs covered:** FR32
+
+**Thứ tự làm (sprint change proposal 18/11):** Epic 7 → Epic 2 → Story 1.7 → *(mốc 30/11)* → Epic 3 → Epic 8 → Epic 9 → Epic 4 → Epic 5 → Epic 10 → Epic 6.
+
+## Epic 1: Mở Kotoba trên iPhone và học kanji N5
 Hannah mở Kotoba từ màn hình chính iPhone, xem từng kanji N5 với âm Hán Việt, câu gợi nhớ, cách đọc có audio và thứ tự nét, rồi học mỗi ngày một gói kanji mới. Tiến độ được lưu và sao lưu được. Epic này cũng dựng nền móng cho toàn bộ app: dự án Vite + Kotoba UI, tự đưa lên GitHub Pages, script gom nội dung, kho tiến độ.
 **FRs covered:** FR1, FR2 · NFR1–NFR5 · AD-1, AD-3, AD-4, AD-7, AD-9 · UX-DR1, UX-DR2, UX-DR6, UX-DR8, UX-DR11, UX-DR14
 
@@ -116,7 +160,20 @@ Mở app là thấy ngay việc cần làm hôm nay. Chạm một lần là ôn 
 Hannah xem bảng cách đọc ngày, tháng, giờ/phút và cách đếm, thấy rõ đâu là quy tắc và đâu là ngoại lệ, luyện có audio. Các ngoại lệ tự vào lịch ôn của Epic 2.
 **FRs covered:** FR4, FR5 · UX-DR12
 
-### Epic 4: Luyện nghe theo dạng đề N5
+#### Story 3.3: Số đếm, trợ số từ và thời gian đầy đủ
+
+As a Hannah,
+I want học đủ số đếm, trợ số từ và cách nói thời gian của N5,
+So that mình không mất điểm ở những câu về số và giờ.
+
+**Acceptance Criteria:**
+
+**Given** mục 5.2–5.5 của lộ trình
+**When** mở rộng `content-vi/readings.json`
+**Then** có thêm: số đếm (1–10.000, 百/千 biến âm như さんびゃく/はっぴゃく/さんぜん), đủ trợ số từ N5 (つ, 人, 本, 枚, 個, 台, 冊, 匹, 杯, 回, 階, 歳, 円), thời gian (曜日, 週/月/年 trước/này/sau, ～ごろ), cách đọc đặc biệt ở mục 5.5 (FR26)
+**And** mỗi nhóm có bảng và bài luyện như Story 3.1–3.2; ngoại lệ vào lịch ôn
+
+## Epic 4: Luyện nghe theo dạng đề N5
 Hannah luyện 50 bài nghe theo 4 dạng bài, chọn nghe tốc độ thường hoặc chậm. Lời thoại và giải thích tiếng Việt chỉ hiện sau khi đã trả lời.
 **FRs covered:** FR14, FR15 · UX-DR5
 
@@ -124,7 +181,20 @@ Hannah luyện 50 bài nghe theo 4 dạng bài, chọn nghe tốc độ thườn
 Hannah làm đề thi thử rút gọn khoảng 30 phút, không bấm giờ, gồm đủ các phần. Nộp bài xong thấy điểm quy đổi theo thang JLPT so với điểm sàn và kết luận đỗ hay trượt. Câu sai có giải thích tiếng Việt và tự vào lịch ôn.
 **FRs covered:** FR16, FR17, FR18 · UX-DR5, UX-DR13
 
-### Epic 6: Cây học tập
+#### Story 5.4: Đề thi thật đủ 14 dạng, có bấm giờ
+
+As a Hannah,
+I want làm đề thi thử giống đề thật, đủ dạng bài và có bấm giờ,
+So that mình quen áp lực thời gian trước ngày thi.
+
+**Acceptance Criteria:**
+
+**Given** ngân hàng câu hỏi gồm cả bài sắp xếp câu (Epic 8) và đọc hiểu (Epic 9)
+**When** chọn "Thi thật" ở `#/thi-thu`
+**Then** đề có đủ 14 dạng bài theo bảng mục 7 của lộ trình. Ba phần được bấm giờ 20/40/30 phút, hết giờ thì tự nộp phần đó (FR31)
+**And** chế độ "Luyện" (Story 5.2) giữ nguyên: rút gọn, không bấm giờ
+
+## Epic 6: Cây học tập
 Cây mọc theo thời gian học thực (dùng số liệu Epic 2 đã ghi), héo sau mỗi 7 ngày không học, hồi phục khi học lại. Sau mỗi phiên có hiệu ứng cây mọc và Pyon tưới cây. Cây xuất hiện ở trang chủ và có màn hình riêng. **Ưu tiên thấp nhất, được phép ra sau ngày 30/11.**
 **FRs covered:** FR9, FR11, FR12, FR13 · UX-DR10
 
@@ -305,6 +375,19 @@ So that Safari không xoá tiến độ của mình sau 7 ngày không mở tran
 **When** đối chiếu thiết kế
 **Then** chỉ dùng token và component có sẵn. Không thêm mảng màu thứ hai trong cùng một khối (AD-9)
 
+### Story 1.7: Thêm 4 kanji 多 少 耳 魚
+
+As a Hannah,
+I want có đủ 110 kanji, gồm cả 4 chữ trong lộ trình N5 mà app còn thiếu,
+So that không bỏ sót chữ nào sẽ gặp trong đề.
+
+**Acceptance Criteria:**
+
+**Given** 4 chữ 多 少 耳 魚 không có trong dữ liệu JLPTSuccess
+**When** bổ sung vào `content-vi/kanji-extra.json` (AI soạn on/kun, bộ phận, Hán Việt, nghĩa, câu gợi nhớ, `reviewStatus: "draft"`) và tải SVG KanjiVG của 4 chữ
+**Then** `content/kanji.json` có 110 chữ. 4 chữ mới đứng sau chữ cùng nhóm nghĩa theo bảng mục 4 của lộ trình (FR24)
+**And** âm đọc của 4 chữ này phát bằng `speechSynthesis` `ja-JP`, vì JLPTSuccess không có audio; script kiểm tra build vẫn báo lỗi nếu thiếu trường
+
 ## Epic 2: Ôn tập mỗi ngày từ trang chủ
 
 Mở app là thấy ngay việc cần làm hôm nay. Chạm một lần là ôn kanji theo 3 chiều và ôn 718 từ vựng, theo lịch FSRS. Thời gian học thực được ghi lại. Trang chủ có đếm ngược ngày thi và nhắc đăng ký thi.
@@ -448,6 +531,22 @@ So that mình không lỡ hạn đăng ký và có động lực học.
 **Given** đếm ngược và lời nhắc đã xong
 **When** đối chiếu thiết kế
 **Then** dùng `Chip` và `SectionHeader` có sẵn, không thêm khối `surface-tint` thứ hai (AD-9)
+
+### Story 2.6: Học từ vựng mới theo chủ đề
+
+As a Hannah,
+I want học từ mới theo từng chủ đề quen thuộc,
+So that mình học từ vựng có hệ thống như lộ trình N5.
+
+**Acceptance Criteria:**
+
+**Given** 718 từ thuộc 21 chủ đề trong `content/vocab.json`
+**When** mở `#/tu-vung`
+**Then** thấy 21 chủ đề, mỗi chủ đề là một `CourseProgressCard` với số từ đã học trên tổng, màu `skill-vocab`. Thứ tự chủ đề theo mục 5.1 của lộ trình (FR25)
+
+**Given** chọn một chủ đề
+**When** bấm "Học từ mới"
+**Then** học gói N từ (mặc định 10, chỉnh được) bằng `ui/cards/vocab`. Xem hết thì từ được ghi "đã học" và tạo thẻ `vocab:<id>` trong `core/srs`
 
 ## Epic 3: Làm chủ cách đọc bất quy tắc
 
@@ -723,3 +822,158 @@ So that mình có cảm giác được thưởng ngay sau khi học.
 **Given** các màn kết thúc phiên đã có sẵn ở các epic trước
 **When** tích hợp cây
 **Then** mọi màn đó dùng chung một component kết thúc phiên đặt ở `src/ui/`. Không tính năng nào tự import `features/tree` (AD-2, AD-8)
+
+## Epic 7: Kana & phát âm
+
+Hannah đọc và nhận diện thành thạo hiragana và katakana, nắm các quy tắc âm ngắt, trường âm và đọc trợ từ, đếm phách đúng.
+
+### Story 7.1: Bảng hiragana và katakana
+
+As a Hannah,
+I want xem hai bảng kana đầy đủ, có phát âm và nét viết,
+So that mình học chữ cái trước mọi thứ khác.
+
+**Acceptance Criteria:**
+
+**Given** `content/kana.json` do `build-content` sinh từ `content-vi/kana.json` (AI soạn romaji, hàng/cột, nhóm cơ bản/đục/ghép/mở rộng, ghi chú dễ nhầm) và SVG KanjiVG của từng kana
+**When** mở `#/kana`
+**Then** có hai tab Hiragana/Katakana. Mỗi tab có bảng 46 chữ cơ bản, âm đục và bán đục, âm ghép; katakana có thêm phần mở rộng (ティ, ファ…) (FR20)
+**And** chạm một chữ thì mở chi tiết: chữ lớn, romaji, nút phát âm (`speechSynthesis` `ja-JP`), thứ tự nét, chữ dễ nhầm
+**And** dùng đúng token và component, chữ Nhật có `kt-jp` + `lang="ja"`
+
+### Story 7.2: Luyện nhận diện kana
+
+As a Hannah,
+I want luyện nhận mặt và nghe kana đến khi thuộc,
+So that mình đọc kana không phải nghĩ.
+
+**Acceptance Criteria:**
+
+**Given** chọn một nhóm (một hàng, cả bảng, hoặc "cặp dễ nhầm")
+**When** bắt đầu luyện
+**Then** gồm 10 câu trộn hai dạng: nhìn chữ chọn romaji, và nghe âm chọn chữ (`QuizOption`, Pyon phản hồi). Nhóm "cặp dễ nhầm" có シ/ツ, ソ/ン, ぬ/め, わ/ね/れ, さ/ち, ク/ケ (FR21)
+**And** chữ trả lời sai được tạo thẻ `kana:<chữ>` trong `core/srs`. Mỗi tương tác gọi `studyClock.activity()` (khi Story 2.3 đã có)
+
+### Story 7.3: Quy tắc âm ngắt, trường âm và đọc trợ từ
+
+As a Hannah,
+I want hiểu và luyện các quy tắc đọc đặc biệt của kana,
+So that mình đọc đúng きって, おかあさん, コーヒー, は/へ/を.
+
+**Acceptance Criteria:**
+
+**Given** mục 2.4 của lộ trình
+**When** mở `#/kana/quy-tac`
+**Then** có giải thích tiếng Việt kèm ví dụ cho っ, trường âm hiragana, ー của katakana, は/へ/を khi làm trợ từ, katakana mở rộng (FR22)
+**And** có bài đọc từ: nhìn từ chọn romaji đúng, có ví dụ lấy từ `n5_vocab`
+
+### Story 7.4: Luyện phát âm: đếm phách và cặp âm
+
+As a Hannah,
+I want luyện đếm phách và phân biệt âm ngắn/dài, có/không có っ,
+So that mình nghe và nói không bị đổi nghĩa.
+
+**Acceptance Criteria:**
+
+**Given** mục 3 của lộ trình
+**When** mở `#/kana/phat-am`
+**Then** có bài đếm phách (cho từ, chọn số phách; ví dụ とうきょう = 4) và bài nghe cặp âm (nghe một từ trong cặp おばさん/おばあさん, きて/きって, ここ/こうこう… rồi chọn từ đã nghe) (FR23)
+**And** có giải thích ngắn bằng tiếng Việt về phách, nguyên âm vô thanh và ん
+
+## Epic 8: Ngữ pháp N5
+
+Hannah học trợ từ, chia động từ và tính từ, các mẫu câu N5 bằng giải thích tiếng Việt, rồi luyện bằng bài tập chấm tự động.
+
+### Story 8.1: Gom nội dung ngữ pháp N5
+
+As a Hannah,
+I want có các bài ngữ pháp N5 giải thích bằng tiếng Việt,
+So that mình hiểu ngữ pháp rõ hơn sách.
+
+**Acceptance Criteria:**
+
+**Given** `grammar.json` của JLPTSuccess (178 mẫu, MIT) và mục 6 của lộ trình
+**When** AI soạn `content-vi/grammar.json` (giải thích tiếng Việt, 3 câu ví dụ có dịch, nhãn N5/N4, `reviewStatus: "draft"`)
+**Then** `content/grammar.json` nhóm theo: trợ từ, です, động từ, tính từ, mẫu câu 6.5, mẫu câu 6.6. Mọi mẫu trong mục 6 của lộ trình đều có mặt (FR27)
+
+### Story 8.2: Màn học ngữ pháp
+
+As a Hannah,
+I want xem từng bài ngữ pháp theo nhóm,
+So that mình học có thứ tự.
+
+**Acceptance Criteria:**
+
+**Given** mở `#/ngu-phap`
+**When** chọn một nhóm rồi một mẫu
+**Then** thấy cấu trúc, giải thích tiếng Việt, 3 ví dụ (chữ Nhật + dịch, có nút phát âm), chip N5/N4, màu `skill-grammar` (文)
+
+### Story 8.3: Bài tập trợ từ và chia thể
+
+As a Hannah,
+I want làm bài điền trợ từ và chia động từ/tính từ có chấm tự động,
+So that mình dùng đúng ngữ pháp, không chỉ hiểu.
+
+**Acceptance Criteria:**
+
+**Given** một câu có chỗ trống
+**When** chọn trợ từ, hoặc chọn/gõ dạng chia
+**Then** chấm tự động. Có bảng chia thể ます/từ điển/て/ない/た cho động từ nhóm 1, 2, 3 và tính từ い/な (quy tắc chia có test). Sai thì giải thích tiếng Việt (FR28)
+
+### Story 8.4: Bài sắp xếp câu (★)
+
+As a Hannah,
+I want luyện dạng sắp xếp câu như đề thật,
+So that mình làm được câu ★ trong phần ngữ pháp.
+
+**Acceptance Criteria:**
+
+**Given** câu bị cắt thành 4 mảnh
+**When** chạm để xếp các mảnh vào ô (có cách thay thế bằng bàn phím)
+**Then** kiểm tra đúng thứ tự và hỏi mảnh ở vị trí ★ như đề thật (FR28)
+
+## Epic 9: Đọc hiểu
+
+Hannah luyện đọc ba dạng bài đọc của đề N5 và đọc kanji khi không có furigana.
+
+### Story 9.1: Luyện đọc hiểu
+
+As a Hannah,
+I want luyện đọc các đoạn ngắn, trung bình và bài tìm thông tin,
+So that mình làm được phần đọc trong đề.
+
+**Acceptance Criteria:**
+
+**Given** 54 bài đọc của JLPTSuccess (MIT), AI dịch giải thích sang tiếng Việt
+**When** mở `#/doc-hieu`
+**Then** bài được chia theo 3 dạng. Đọc xong trả lời câu hỏi, sau đó mới xem giải thích; có nút bật/tắt furigana (FR29)
+
+### Story 9.2: Đọc kanji khi ẩn furigana
+
+As a Hannah,
+I want đọc câu có kanji mà không có furigana,
+So that mình đọc được kanji trong ngữ cảnh như khi thi.
+
+**Acceptance Criteria:**
+
+**Given** câu ví dụ chỉ chứa từ N5
+**When** luyện
+**Then** câu hiện không có furigana. Hannah chọn cách đọc cho từ được gạch chân, sau đó mới hiện furigana và nghĩa. Từ sai vào lịch ôn (FR30)
+
+## Epic 10: Lộ trình 12 tuần
+
+Trang chủ dẫn Hannah đi theo đúng thứ tự học trong lộ trình N5.
+
+### Story 10.1: Việc hôm nay theo tuần của lộ trình
+
+As a Hannah,
+I want trang chủ biết mình đang ở tuần mấy và gợi ý đúng việc cần học,
+So that mình học theo lộ trình mà không phải tự sắp xếp.
+
+**Acceptance Criteria:**
+
+**Given** ngày bắt đầu lộ trình lưu trong `progress` (mặc định là ngày mở app lần đầu, chỉnh được)
+**When** mở trang chủ
+**Then** thấy "Tuần N / 12" và mục tiêu tuần đó theo mục "Thứ tự học đề xuất". `ActiveLessonCard` ưu tiên đúng loại bài của tuần (FR32)
+**And** hàm tính tuần và mục tiêu là hàm thuần trong `core/growth`, có test
+
