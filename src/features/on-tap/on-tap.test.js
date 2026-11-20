@@ -222,3 +222,14 @@ describe('hub Luyện tập', () => {
     expect(el2.textContent).toContain('30 thẻ cần ôn, mỗi phiên 20');
   });
 });
+
+describe('nối việc hôm nay (Story 2.4)', () => {
+  it('xong phiên kanji: nút "Việc tiếp theo" sang #/hoc-ngay; thẻ loại chưa đăng ký bị bỏ qua', async () => {
+    const { node, win, view } = await setup(await makeStore(['日']));
+    answer(node, true);
+    [...node.querySelectorAll('button')].find((b) => b.textContent === 'Việc tiếp theo').click();
+    await view.idle();
+    await Promise.resolve();
+    expect(win.location.hash).toBe('#/hoc-ngay');
+  });
+});

@@ -2,10 +2,12 @@ import { kanji as allKanji, kanjiById } from '../../core/content.js';
 import { progress as defaultProgress } from '../../core/progress.js';
 import { reviewCard } from '../../core/srs.js';
 import { studyClock } from '../../core/study-clock.js';
-import { ensureKanjiCards, dueKanjiCards, nextKanjiDue, buildKanjiQuestion, readingOf, onePerKanji, MAX_PER_SESSION } from '../../core/kanji-review.js';
+import { ensureKanjiCards, dueKanjiCards, nextKanjiDue, readingOf, kanjiSessionSteps } from '../../core/kanji-review.js';
+import { afterSession } from '../../core/today.js';
+import { vocab as allVocab } from '../../core/content.js';
 import { toHash } from '../../core/router.js';
 import { renderQuizSession } from '../../ui/quiz-session.js';
-import { renderKanjiCard } from '../../ui/cards/kanji.js';
+import { renderCard, hasCard } from '../../ui/cards/registry.js';
 import { renderEmptyState } from '../../ui/empty-state.js';
 import { renderGoalComplete } from '../../ui/goal-complete.js';
 import './on-tap.css';
@@ -61,6 +63,14 @@ export function renderKanjiReview(deps = {}) {
     if (K && typeof K.hydrate === 'function') K.hydrate(root);
   };
 
+  // việc kế tiếp sau phiên: tính khi đã lưu xong, để nhãn nút đúng ("Việc tiếp theo" / "Về trang chủ")
+  const next = () => afterSession(store.get(), { kanji: allKanji(), vocab: allVocab(), now: now(), canShow: hasCard }, toHash);
+  const relabel = () =>
+    saving.then(() => {
+      const b = view.querySelector('.kt-goal .kt-btn');
+      if (alive && b) b.textContent = next().label;
+    });
+
   const record = (key, correct) => {
     saving = saving.then(async () => {
       try {
@@ -95,15 +105,7 @@ export function renderKanjiReview(deps = {}) {
   };
 
   const start = () => {
-    // mỗi chữ một thẻ mỗi phiên; dựng sẵn câu hỏi và bỏ thẻ đọc/chữ không dựng được (để nguyên lịch)
-    const due = [];
-    for (const step of onePerKanji(dueKanjiCards(store.get(), known, now()))) {
-      if (due.length === MAX_PER_SESSION) break;
-      const k = kanjiById(step.id);
-      const q = step.kind === 'kanji-nghia' ? null : buildKanjiQuestion(step.kind, k, allKanji(), deps.rng);
-      if (step.kind !== 'kanji-nghia' && !q) continue;
-      due.push({ ...step, k, q });
-    }
+    const due = kanjiSessionSteps(store.get(), allKanji(), now(), { rng: deps.rng, canShow: hasCard });
     if (!due.length) return showEmpty();
     const session = renderQuizSession({
       title: 'Ôn kanji',
@@ -114,7 +116,7 @@ export function renderKanjiReview(deps = {}) {
           return {
             render: (answer) =>
               flashStep(
-                { card: renderKanjiCard(k), label: `Thẻ kanji ${k.id}`, revealText: `${k.id}: ${k.hanViet}, ${k.nghia}.` },
+                { card: renderCard('kanji', k), label: `Thẻ kanji ${k.id}`, revealText: `${k.id}: ${k.hanViet}, ${k.nghia}.` },
                 answer,
                 win,
                 (t) => (announcer.textContent = t),
@@ -151,14 +153,16 @@ export function renderKanjiReview(deps = {}) {
       onActivity: activity,
       onAnswer: (step, correct) => record(step.key, correct),
       onClose: () => go(toHash('luyen-tap')),
-      renderResult: ({ score, total }) =>
-        renderGoalComplete({
+      renderResult: ({ score, total }) => {
+        queueMicrotask(relabel);
+        return renderGoalComplete({
           title: 'Ôn kanji xong!',
           text: `Bạn vừa ôn ${total} thẻ, nhớ ${score} thẻ. Thẻ chưa nhớ sẽ quay lại sớm.`,
           chips: [{ text: `${total} thẻ`, className: 'kt-chip--kanji' }],
-          actionLabel: 'Về Luyện tập',
-          onAction: () => go(toHash('luyen-tap')),
-        }),
+          actionLabel: 'Việc tiếp theo',
+          onAction: () => saving.then(() => alive && go(next().hash)),
+        });
+      },
     });
     view.replaceChildren(session);
     hydrate();

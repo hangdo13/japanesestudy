@@ -157,3 +157,15 @@ describe('đưa chữ vừa học vào lịch ôn (Story 2.1)', () => {
     expect(view.node.querySelector('[role=status]').textContent).toContain('Bộ nhớ đầy');
   });
 });
+
+describe('nối việc hôm nay (Story 2.4)', () => {
+  it('xong gói kanji: "Việc tiếp theo" sang #/hoc-ngay sau khi tạo thẻ', async () => {
+    const { view, win } = setup();
+    for (let i = 0; i < 5; i++) view.swipe('right');
+    [...view.node.querySelectorAll('button')].find((b) => b.textContent === 'Đã học xong').click();
+    [...view.node.querySelectorAll('button')].find((b) => b.textContent === 'Việc tiếp theo').click();
+    await view.cardsDone;
+    await Promise.resolve();
+    expect(win.location.hash).toBe('#/hoc-ngay');
+  });
+});

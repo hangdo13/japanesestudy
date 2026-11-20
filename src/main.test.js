@@ -6,9 +6,9 @@ const flush = () => new Promise((r) => setTimeout(r, 0));
 
 // Nội dung thật mà mỗi route phải hiện, đi qua bảng feature trong start()
 const EXPECTED = {
-  '': 'Trang chủ sắp có',
+  '': 'Hôm nay:',
   kanji: 'Kanji N5',
-  'hoc-ngay': 'Học ngay sắp có',
+  'hoc-ngay': null, // chuyển thẳng tới việc kế tiếp (xem test riêng bên dưới)
   'luyen-tap': 'Học theo lộ trình N5',
   kana: 'Bảng chữ cái',
   'on-tap': 'Chưa có thẻ kanji để ôn',
@@ -30,10 +30,22 @@ describe('start(): nối route với tính năng thật', () => {
     expect(Object.keys(EXPECTED).sort()).toEqual(Object.keys(ROUTES).sort());
   });
 
+  it('route "hoc-ngay" chuyển sang việc kế tiếp hoặc báo xong', async () => {
+    window.location.hash = toHash('hoc-ngay');
+    await flush();
+    await flush();
+    const main = document.querySelector('.app-main');
+    const moved = window.location.hash !== '#/hoc-ngay';
+    expect(moved || main.textContent.includes('Xong việc hôm nay!')).toBe(true);
+    expect(main.textContent.trim()).not.toBe('');
+  });
+
   for (const [name, text] of Object.entries(EXPECTED)) {
+    if (text == null) continue;
     it(`route "${name || 'trang chủ'}" hiện "${text}"`, async () => {
       window.location.hash = toHash(name);
       await flush();
+      await flush(); // #/hoc-ngay chuyển tiếp thêm một lần
       const main = document.querySelector('.app-main');
       expect(main.textContent).toContain(text);
       expect(main.textContent).not.toContain('Không tìm thấy trang này');

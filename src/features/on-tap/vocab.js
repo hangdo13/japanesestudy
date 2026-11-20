@@ -1,4 +1,5 @@
-import { vocab as allVocab, vocabById } from '../../core/content.js';
+import { vocab as allVocab, vocabById, kanji as allKanji } from '../../core/content.js';
+import { afterSession } from '../../core/today.js';
 import { progress as defaultProgress, localDate } from '../../core/progress.js';
 import { reviewCard } from '../../core/srs.js';
 import { studyClock } from '../../core/study-clock.js';
@@ -6,7 +7,7 @@ import { dueVocab, newVocabToday, nextVocabDue, speakText, canSpeakWord, VOCAB_P
 import { autoSpeakOnFlip } from '../../core/growth.js';
 import { toHash } from '../../core/router.js';
 import { renderQuizSession } from '../../ui/quiz-session.js';
-import { renderVocabCard } from '../../ui/cards/vocab.js';
+import { renderCard, hasCard } from '../../ui/cards/registry.js';
 import { renderEmptyState } from '../../ui/empty-state.js';
 import { renderGoalComplete } from '../../ui/goal-complete.js';
 import { speakJa, canSpeakJapanese, onVoicesChanged } from '../../ui/speech.js';
@@ -53,6 +54,13 @@ export function renderVocabReview(deps = {}) {
   root.append(view, voiceNote, status, announcer);
   let saving = Promise.resolve();
   let noteShown = false;
+  let alive = true;
+  const next = () => afterSession(store.get(), { kanji: allKanji(), vocab: allVocab(), now: now(), canShow: hasCard }, toHash);
+  const relabel = () =>
+    saving.then(() => {
+      const b = view.querySelector('.kt-goal .kt-btn');
+      if (alive && b) b.textContent = next().label;
+    });
   const go = (hash) => {
     if (win) win.location.hash = hash;
   };
@@ -121,7 +129,8 @@ export function renderVocabReview(deps = {}) {
       .map((id) => ({ w: vocabById(id), isNew: false }));
     const day = localDate(now());
     const fresh = newVocabToday(data, allVocab(), day).pack.map((w) => ({ w, isNew: true, day }));
-    const steps = [...due, ...fresh];
+    // thẻ hiển thị qua bảng đăng ký; loại 'vocab' chưa đăng ký thì không có gì để ôn
+    const steps = hasCard('vocab') ? [...due, ...fresh] : [];
     if (!steps.length) return showEmpty();
     if (!canSpeak()) showNote();
     const auto = autoSpeakOnFlip(data.settings);
@@ -131,7 +140,7 @@ export function renderVocabReview(deps = {}) {
       questions: steps,
       toQuestion: (step) => ({
         render: (answer) => {
-          const card = renderVocabCard(step.w, {
+          const card = renderCard('vocab', step.w, {
             onPlay: () => {
               activity();
               play(step.w);
@@ -153,14 +162,16 @@ export function renderVocabReview(deps = {}) {
       onActivity: activity,
       onAnswer: (step, correct) => record(step, correct),
       onClose: () => go(toHash('luyen-tap')),
-      renderResult: ({ score, total }) =>
-        renderGoalComplete({
+      renderResult: ({ score, total }) => {
+        queueMicrotask(relabel);
+        return renderGoalComplete({
           title: 'Ôn từ vựng xong!',
           text: `Bạn vừa xem ${total} từ (${fresh.length} từ mới), nhớ ${score} từ.`,
           chips: [{ text: `${total} từ`, className: 'kt-chip--vocab' }],
-          actionLabel: 'Về Luyện tập',
-          onAction: () => go(toHash('luyen-tap')),
-        }),
+          actionLabel: 'Việc tiếp theo',
+          onAction: () => saving.then(() => alive && go(next().hash)),
+        });
+      },
     });
     view.replaceChildren(session);
     hydrate();
@@ -177,6 +188,7 @@ export function renderVocabReview(deps = {}) {
     node: root,
     idle: () => saving,
     cleanup: () => {
+      alive = false;
       if (typeof offVoices === 'function') offVoices();
       if (globalThis.speechSynthesis && typeof globalThis.speechSynthesis.cancel === 'function') globalThis.speechSynthesis.cancel();
     },

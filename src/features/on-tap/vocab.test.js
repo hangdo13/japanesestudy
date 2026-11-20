@@ -244,3 +244,15 @@ describe('ôn từ vựng: các trường hợp biên', () => {
     }
   });
 });
+
+describe('nối việc hôm nay (Story 2.4)', () => {
+  it('xong phiên từ vựng: nút "Việc tiếp theo" sang #/hoc-ngay sau khi lưu xong', async () => {
+    const store = await makeStore({ settings: { tuMoiMoiNgay: 5 } });
+    const { node, win, view } = setup(store);
+    for (let i = 0; i < 5; i++) key(node, 'ArrowRight');
+    [...node.querySelectorAll('button')].find((b) => b.textContent === 'Việc tiếp theo').click();
+    await view.idle();
+    await Promise.resolve();
+    expect(win.location.hash).toBe('#/hoc-ngay');
+  });
+});

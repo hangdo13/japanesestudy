@@ -157,3 +157,26 @@ export function buildKanjiQuestion(kind, k, all, rng = Math.random) {
   }
   return null;
 }
+
+/**
+ * Các bước của một phiên ôn kanji: thẻ đến hạn, mỗi chữ một thẻ, tối đa 20, bỏ thẻ đọc/chữ không dựng được câu.
+ * Dùng chung cho màn ôn và cho số "thẻ cần ôn" ở trang chủ để hai nơi luôn khớp nhau.
+ * @param {(kind: string) => boolean} [canShow]  loại thẻ hiển thị được (bảng đăng ký thẻ ở giao diện)
+ */
+export function kanjiSessionSteps(data, all, now = new Date(), { rng = () => 0, canShow = () => true } = {}) {
+  const known = new Set(all.map((k) => k.id));
+  const byId = new Map(all.map((k) => [k.id, k]));
+  const out = [];
+  for (const step of onePerKanji(dueKanjiCards(data, known, now))) {
+    if (out.length === MAX_PER_SESSION) break;
+    const k = byId.get(step.id);
+    if (step.kind === 'kanji-nghia') {
+      if (!canShow('kanji')) continue;
+      out.push({ ...step, k, q: null });
+      continue;
+    }
+    const q = buildKanjiQuestion(step.kind, k, all, rng);
+    if (q) out.push({ ...step, k, q });
+  }
+  return out;
+}

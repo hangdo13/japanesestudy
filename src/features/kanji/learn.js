@@ -1,7 +1,8 @@
-import { kanji as allKanji } from '../../core/content.js';
+import { kanji as allKanji, vocab as allVocab } from '../../core/content.js';
 import { progress as defaultProgress, localDate } from '../../core/progress.js';
 import { newKanjiToday } from '../../core/growth.js';
 import { ensureKanjiCards } from '../../core/kanji-review.js';
+import { afterSession } from '../../core/today.js';
 import { studyClock } from '../../core/study-clock.js';
 import { toHash } from '../../core/router.js';
 import { renderEmptyState } from '../../ui/empty-state.js';
@@ -175,13 +176,21 @@ export function renderLearn(deps = {}) {
         if (!disposed) status.textContent = 'Chưa đưa được chữ vào lịch ôn. Màn Ôn kanji sẽ thử lại.';
       });
     learnApi.cardsDone = cardsDone;
+    const nextAfter = () => afterSession(store.get(), { kanji: allKanji(), vocab: allVocab(), now: now() }, toHash);
+    cardsDone.then(() => {
+      const b = root.querySelector('.kt-goal .kt-btn');
+      if (!disposed && b) b.textContent = nextAfter().label;
+    });
     root.replaceChildren(
       renderGoalComplete({
         title: 'Xong gói kanji hôm nay!',
         text: `Bạn vừa làm quen ${pack.length} chữ: ${pack.map((k) => k.id).join(' ')}.`,
         chips: [{ text: `${pack.length} chữ mới`, className: 'kt-chip--success' }],
-        actionLabel: 'Về danh sách kanji',
-        onAction: goList,
+        actionLabel: 'Việc tiếp theo',
+        onAction: () =>
+          cardsDone.then(() => {
+            if (!disposed && win) win.location.hash = nextAfter().hash;
+          }),
       }),
       status,
     );
