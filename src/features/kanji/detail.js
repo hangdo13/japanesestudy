@@ -1,6 +1,7 @@
 import { kanjiById, assetUrl } from '../../core/content.js';
 import { toHash } from '../../core/router.js';
 import { renderStrokes } from '../../ui/strokes.js';
+import { speakJa, canSpeakJapanese, onVoicesChanged } from '../../ui/speech.js';
 
 function el(tag, className, text) {
   const n = document.createElement(tag);
@@ -26,12 +27,29 @@ function section(title, body) {
 const LOI_AUDIO = 'Không phát được âm thanh. Bấm lại thử nhé, nếu vẫn lỗi thì kiểm tra kết nối mạng.';
 
 /** Bộ phát dùng chung cho một màn: chỉ một âm phát tại một thời điểm. */
-export function createPlayer(status, AudioImpl = globalThis.Audio) {
+const KHONG_GIONG = 'Âm này chưa có file audio, cần giọng đọc tiếng Nhật của máy để nghe. Trên iPhone: Cài đặt → Trợ năng → Nội dung được đọc → Giọng nói.';
+
+/**
+ * Trình phát âm đọc kanji: file audio của JLPTSuccess, hoặc giọng tiếng Nhật của máy (speechSynthesis ja-JP)
+ * cho chữ không có audio (4 chữ thêm ở Story 1.7).
+ */
+export function createPlayer(
+  status,
+  AudioImpl = globalThis.Audio,
+  { speak = speakJa, canSpeak = canSpeakJapanese, voicesChanged = onVoicesChanged, cancelSpeech = () => globalThis.speechSynthesis && globalThis.speechSynthesis.cancel && globalThis.speechSynthesis.cancel() } = {},
+) {
   let current = null;
   let token = 0;
+  // chỉ một âm phát một lúc: dừng cả file audio lẫn giọng máy
   const stop = () => {
+    token += 1; // bỏ mọi lần phát đang chờ (vd. đang đợi giọng nạp)
     if (current && typeof current.pause === 'function') current.pause();
     current = null;
+    try {
+      cancelSpeech();
+    } catch {
+      /* trình duyệt không có speechSynthesis */
+    }
   };
   /** Phát audio. Trả Promise<boolean>: true là phát được. */
   const play = (path) => {
@@ -49,7 +67,44 @@ export function createPlayer(status, AudioImpl = globalThis.Audio) {
       return Promise.resolve(fail());
     }
   };
-  return { play, stop };
+  /** Phát một âm đọc { kana, audio }: có audio thì phát file, không thì đọc bằng giọng máy. */
+  /** Chờ giọng nạp xong (iOS/Chrome nạp danh sách giọng muộn), tối đa `ms`. */
+  const waitVoices = (ms = 1500) =>
+    new Promise((resolve) => {
+      let off = () => {};
+      const t = setTimeout(() => {
+        off();
+        resolve(false);
+      }, ms);
+      off =
+        voicesChanged(() => {
+          clearTimeout(t);
+          off();
+          resolve(true);
+        }) || (() => {});
+    });
+  const playReading = async (r) => {
+    if (r && r.audio) return play(r.audio);
+    stop();
+    const my = ++token;
+    status.textContent = '';
+    const text = r && (r.tts || r.kana);
+    if (!text) {
+      status.textContent = KHONG_GIONG;
+      return false;
+    }
+    if (!canSpeak()) await waitVoices();
+    if (my !== token) return false;
+    const fail = () => {
+      if (my === token) status.textContent = KHONG_GIONG;
+    };
+    if (!canSpeak() || speak(text, { onError: fail }) === false) {
+      fail();
+      return false;
+    }
+    return true;
+  };
+  return { play, playReading, stop };
 }
 
 /** Phát một lần (giữ cho tương thích test). */
@@ -95,7 +150,7 @@ export function renderDetail(id, deps = {}) {
   // Cách đọc
   const status = el('p', 'kt-muted');
   status.setAttribute('role', 'status');
-  const player = createPlayer(status, deps.Audio);
+  const player = createPlayer(status, deps.Audio, { speak: deps.speak, canSpeak: deps.canSpeak });
   cleanups.push(player.stop);
   const readList = el('div', 'kt-list kanji-list--flush');
   const addReading = (label, r) => {
@@ -108,7 +163,7 @@ export function renderDetail(id, deps = {}) {
     const icon = document.createElement('i');
     icon.dataset.icon = 'volume';
     btn.append(icon);
-    btn.addEventListener('click', () => player.play(r.audio));
+    btn.addEventListener('click', () => player.playReading(r));
     item.append(body, btn);
     readList.append(item);
   };

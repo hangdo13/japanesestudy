@@ -13,12 +13,12 @@ Mọi file `content/*.json` đều do `scripts/build-content.mjs` sinh ra. **Kh�
 | Trường | Kiểu | Ý nghĩa |
 | --- | --- | --- |
 | `id` | string | Chính chữ kanji, ví dụ `"日"` |
-| `thuTu` | number | Thứ tự bài học, từ 1 đến 106 |
+| `thuTu` | number | Thứ tự học, từ 1 đến 110 (106 chữ JLPTSuccess theo bài, 4 chữ thêm chen sau chữ cùng nhóm nghĩa) |
 | `hanViet` | string | Âm Hán Việt viết hoa, ví dụ `"NHẬT"` |
 | `nghia` | string | Nghĩa tiếng Việt |
 | `cauGoiNho` | string | Câu gợi nhớ tiếng Việt, dựa trên các bộ phận của chữ |
 | `boPhan` | string[] | Các bộ phận ghép thành chữ |
-| `on`, `kun` | `{ kana, audio }[]` | Âm on (katakana) và âm kun (hiragana). `audio` là đường dẫn trong `public/` |
+| `on`, `kun` | `{ kana, audio }[]` | Âm on (katakana) và âm kun (hiragana). `audio` là đường dẫn trong `public/`, hoặc `null` với 4 chữ thêm (app đọc bằng speechSynthesis ja-JP) |
 | `soNet` | number | Số nét |
 | `svg` | string | Đường dẫn SVG thứ tự nét trong `public/` (KanjiVG) |
 | `viDu` | `{ id, tu, doc, nghia }[]` | Tối đa 3 từ trong `n5_vocab.json`, `id` có dạng `n5-xxxx`. Lấy ví dụ của JLPTSuccess trước (nếu cùng cách viết có nhiều từ thì chọn theo cách đọc), sau đó đến từ n5_vocab có chứa chữ này. Có thể rỗng |
@@ -92,6 +92,7 @@ Ngoài `settings`, `kanji`, `srs`: `tuVung: { <id>: { gioiThieu: "YYYY-MM-DD" } 
 
 - `vendor/jlptsuccess/kanji.json`: dữ liệu gốc (MIT)
 - `content-vi/kanji.json`: `{ "<chữ>": { hanViet, nghia, cauGoiNho, reviewStatus } }`
+- `content-vi/kanji-extra.json`: `{ items: [{ glyph, sauChu, on, kun, boPhan, soNet, deNham, hanViet, nghia, cauGoiNho, reviewStatus }] }`. 4 chữ có trong lộ trình mục 4 nhưng không có trong JLPTSuccess (多 少 耳 魚), AI soạn. `sauChu`: chữ đứng ngay trước theo nhóm nghĩa. SVG: `public/kanji/svg/<chữ>.svg` từ KanjiVG (commit 9d7220d)
 - `n5_vocab.json`: từ vựng N5 kèm nghĩa tiếng Việt
 - `public/kanji/svg/`, `public/kana/svg/`: SVG thứ tự nét của KanjiVG (CC BY-SA 3.0)
 - `content-vi/kana-phat-am.json`: giải thích phát âm và cặp âm (AI soạn)

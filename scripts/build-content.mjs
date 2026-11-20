@@ -20,7 +20,7 @@ export function toHiragana(s) {
  * @param {{ jlpt: {entries: object[]}, vi: Record<string, object>, vocab: {words: object[]} }} sources
  * @param {(publicPath: string) => boolean} fileExists  kiểm tra file trong public/
  */
-export function buildKanji({ jlpt, vi, vocab }, fileExists) {
+export function buildKanji({ jlpt, vi, vocab, extra = { items: [] } }, fileExists) {
   const errors = [];
   const entries = [...jlpt.entries].sort((a, b) => a.lesson_order - b.lesson_order);
   const glyphs = new Set(entries.map((e) => e.glyph));
@@ -47,11 +47,83 @@ export function buildKanji({ jlpt, vi, vocab }, fileExists) {
   };
   const toViDu = (w) => ({ id: w.id, tu: w.word, doc: w.reading, nghia: w.meaning_vi });
 
-  const items = entries.map((e) => {
-    const v = vi[e.glyph] || {};
+  const items = entries.map((e) => buildOne(e, vi[e.glyph] || {}, false));
+
+  // --- Chữ thêm (Story 1.7): có trong lộ trình nhưng không có trong JLPTSuccess ---
+  const extraItems = Array.isArray(extra && extra.items) ? extra.items : [];
+  const byGlyph = new Map(items.map((k) => [k.id, k]));
+  const extraGlyphs = new Set();
+  const KATA = /^[\u30a0-\u30ff]+$/u;
+  const HIRA = /^[\u3040-\u309f]+$/u;
+  const valid = [];
+  for (const x of extraItems) {
+    if (!x || typeof x.glyph !== 'string' || !x.glyph) {
+      errors.push('kanji-extra: có mục thiếu glyph');
+      continue;
+    }
+    if (extraGlyphs.has(x.glyph)) {
+      errors.push(`kanji-extra: ${x.glyph} bị trùng trong content-vi/kanji-extra.json`);
+      continue;
+    }
+    extraGlyphs.add(x.glyph);
+    if (byGlyph.has(x.glyph)) {
+      errors.push(`kanji-extra: ${x.glyph} đã có trong JLPTSuccess`);
+      continue;
+    }
+    const bad = ['on', 'kun', 'boPhan', 'deNham'].filter((f) => !Array.isArray(x[f]));
+    for (const f of bad) errors.push(`${x.glyph}: thiếu "${f}" trong content-vi/kanji-extra.json`);
+    if (bad.length) continue;
+    if (!x.on.length && !x.kun.length) errors.push(`${x.glyph}: cần ít nhất một âm on hoặc kun`);
+    for (const r of x.on) if (typeof r !== 'string' || !KATA.test(r)) errors.push(`${x.glyph}: âm on "${r}" phải là katakana`);
+    for (const r of x.kun) if (typeof r !== 'string' || !HIRA.test(r)) errors.push(`${x.glyph}: âm kun "${r}" phải là hiragana`);
+    const e = {
+      glyph: x.glyph,
+      on: x.on,
+      kun: x.kun,
+      radical_decomposition: x.boPhan,
+      stroke_count: x.soNet,
+      examples: [],
+      lookalikes: x.deNham,
+    };
+    const k = buildOne(e, x, true);
+    byGlyph.set(k.id, k);
+    valid.push(x);
+  }
+  // xếp chữ thêm ngay sau chữ cùng nhóm nghĩa (sauChu); lặp tới khi không xếp thêm được (少 sau 多 dù 少 đứng trước trong file)
+  const ordered = [...items];
+  let left = [...valid];
+  for (let moved = true; moved && left.length; ) {
+    moved = false;
+    left = left.filter((x) => {
+      const at = ordered.findIndex((k) => k.id === x.sauChu);
+      if (at < 0) return true;
+      ordered.splice(at + 1, 0, byGlyph.get(x.glyph));
+      moved = true;
+      return false;
+    });
+  }
+  for (const x of left) errors.push(`${x.glyph}: "sauChu" ${x.sauChu} không có trong danh sách kanji`);
+  const all = new Set(ordered.map((k) => k.id));
+  // chữ dễ nhầm của chữ thêm phải là kanji trong danh sách; và nối hai chiều (少 ↔ 小)
+  for (const x of valid) {
+    for (const g of x.deNham) if (!all.has(g)) errors.push(`${x.glyph}: chữ dễ nhầm "${g}" không có trong danh sách kanji`);
+    for (const g of x.deNham) {
+      const other = byGlyph.get(g);
+      if (other && !other.deNham.includes(x.glyph)) other.deNham.push(x.glyph);
+    }
+  }
+  for (const k of ordered) k.deNham = k.deNham.filter((g) => all.has(g));
+  ordered.forEach((k, i) => {
+    k.thuTu = i + 1;
+  });
+  if (ordered.length !== SO_KANJI_N5 + extraItems.length) errors.push(`kanji: cần ${SO_KANJI_N5 + extraItems.length} chữ, có ${ordered.length}`);
+  return { items: ordered, errors };
+
+  function buildOne(e, v, isExtra) {
+    const src = isExtra ? 'content-vi/kanji-extra.json' : 'content-vi/kanji.json';
     for (const field of ['hanViet', 'nghia', 'cauGoiNho']) {
       if (typeof v[field] !== 'string' || !v[field].trim()) {
-        errors.push(`${e.glyph}: thiếu "${field}" trong content-vi/kanji.json`);
+        errors.push(`${e.glyph}: thiếu "${field}" trong ${src}`);
       }
     }
     if (typeof v.hanViet === 'string' && v.hanViet !== v.hanViet.toUpperCase()) {
@@ -61,8 +133,11 @@ export function buildKanji({ jlpt, vi, vocab }, fileExists) {
     const reviewStatus = v.reviewStatus || 'draft';
     if (!REVIEW.has(reviewStatus)) errors.push(`${e.glyph}: reviewStatus không hợp lệ "${reviewStatus}"`);
 
+    // chữ thêm không có audio (JLPTSuccess không có): audio null, app đọc bằng speechSynthesis ja-JP
     const readings = (kind) =>
       (e[kind] || []).map((r) => {
+        // tts: cách đọc cả từ khi âm kun chỉ là gốc (すく → すくない), để giọng máy đọc ra từ có nghĩa
+        if (isExtra) return { kana: r, audio: null, tts: (v.docNoi && v.docNoi[r]) || r };
         const audio = `audio/kanji/${e.glyph}-${kind}-${toHiragana(r)}.mp3`;
         if (!fileExists(audio)) errors.push(`${e.glyph}: thiếu file audio ${audio}`);
         return { kana: r, audio };
@@ -83,7 +158,7 @@ export function buildKanji({ jlpt, vi, vocab }, fileExists) {
     for (const ex of e.examples || []) push(matchExample(ex));
     for (const w of vocab.words) if ((w.kanji || []).includes(e.glyph)) push(w);
 
-    const deNham = [...new Set(e.lookalikes || [])].filter((g) => g !== e.glyph && glyphs.has(g));
+    const deNham = [...new Set(e.lookalikes || [])].filter((g) => g !== e.glyph);
 
     return {
       id: e.glyph,
@@ -100,9 +175,7 @@ export function buildKanji({ jlpt, vi, vocab }, fileExists) {
       deNham,
       reviewStatus,
     };
-  });
-
-  return { items, errors };
+  }
 }
 
 const KANA_NHOM = ['co-ban', 'duc', 'ban-duc', 'ghep', 'mo-rong'];
@@ -462,6 +535,7 @@ export function main(root = ROOT) {
     sources = {
       jlpt: readJson('vendor/jlptsuccess/kanji.json'),
       vi: readJson('content-vi/kanji.json'),
+      extra: readJson('content-vi/kanji-extra.json'),
       vocab: readJson('n5_vocab.json'),
       kanaVi: readJson('content-vi/kana.json'),
       rulesVi: readJson('content-vi/kana-quy-tac.json'),

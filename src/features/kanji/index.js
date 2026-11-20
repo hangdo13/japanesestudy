@@ -1,5 +1,6 @@
 import './kanji.css';
 import { renderEmptyState } from '../../ui/empty-state.js';
+import { kanji } from '../../core/content.js';
 import { toHash } from '../../core/router.js';
 import { renderList } from './list.js';
 import { renderDetail } from './detail.js';
@@ -26,7 +27,7 @@ export function mount(el, { param } = {}, deps = {}) {
   el.append(
     renderEmptyState({
       title: 'Không tìm thấy chữ này',
-      text: 'Chữ này không có trong 106 kanji N5.',
+      text: `Chữ này không có trong ${kanji().length} kanji N5.`,
       actionLabel: 'Về danh sách kanji',
       onAction: () => {
         window.location.hash = toHash('kanji');

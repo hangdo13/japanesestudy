@@ -76,12 +76,12 @@ describe('học gói kanji mới', () => {
     expect([...view.node.querySelectorAll('.kt-flash')].map((c) => c.dataset.id)).toEqual(['五', '四']);
   });
 
-  it('học hết 106 chữ thì báo đã học hết', () => {
+  it('học hết 110 chữ thì báo đã học hết', () => {
     const store = createProgress({ storage: memoryStorage(), now, events: new EventTarget() });
     store.update((d) => {
       for (const k of kanji()) d.kanji[k.id] = { gioiThieu: '2026-11-01' };
     });
-    expect(setup({ store }).view.node.textContent).toContain('học hết 106 kanji');
+    expect(setup({ store }).view.node.textContent).toContain('học hết 110 kanji');
   });
 
   it('đường vuốt thật qua Kotoba.swipeDeck: onSwipe đẩy tiến độ tới nút Đã học xong', () => {

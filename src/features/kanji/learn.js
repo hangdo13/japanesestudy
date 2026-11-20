@@ -77,7 +77,7 @@ export function renderLearn(deps = {}) {
 
   const status = el('p', 'kt-muted kanji-learn__status');
   status.setAttribute('role', 'status');
-  const player = createPlayer(status, deps.Audio);
+  const player = createPlayer(status, deps.Audio, { speak: deps.speak, canSpeak: deps.canSpeak });
 
   // Chồng thẻ: thẻ trên cùng là phần tử cuối
   const deck = el('div', 'kt-deck');
@@ -90,7 +90,7 @@ export function renderLearn(deps = {}) {
     renderKanjiCard(k, {
       onPlay: (r) => {
         activity();
-        player.play(r.audio);
+        player.playReading(r);
       },
     }),
   );

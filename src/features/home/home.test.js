@@ -143,8 +143,8 @@ describe('trang chủ: việc hôm nay (Story 2.4)', () => {
     expect(stats).toHaveLength(2);
     expect(stats[0].querySelector('.kt-stat__value').textContent).toBe('7phút');
     expect(stats[0].getAttribute('aria-label')).toBe('Học hôm nay: 7 phút');
-    expect(stats[1].getAttribute('aria-label')).toBe('Kanji đã học: 1 trên 106');
-    expect(stats[1].querySelector('.kt-stat__value').textContent).toBe('1/106');
+    expect(stats[1].getAttribute('aria-label')).toBe('Kanji đã học: 1 trên 110');
+    expect(stats[1].querySelector('.kt-stat__value').textContent).toBe('1/110');
     expect(stats[1].querySelector('.kt-stat__icon--blue')).not.toBeNull();
   });
 
@@ -168,7 +168,7 @@ describe('trang chủ: việc hôm nay (Story 2.4)', () => {
       d.kanji['一'] = { gioiThieu: '2026-11-01' };
     });
     const c = root.querySelector('.kt-course');
-    expect(c.querySelector('.kt-course__count').textContent).toBe('1/106 chữ');
+    expect(c.querySelector('.kt-course__count').textContent).toBe('1/110 chữ');
     expect(c.querySelector('.kt-seg').getAttribute('aria-valuenow')).toBe('1');
   });
 
