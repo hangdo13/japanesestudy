@@ -1,6 +1,7 @@
 import { kanaSounds, kanaRules } from '../../core/content.js';
 import { buildMoraSession, buildPairSession } from '../../core/sound-quiz.js';
 import { toHash } from '../../core/router.js';
+import { studyClock } from '../../core/study-clock.js';
 import { renderQuizSession } from '../../ui/quiz-session.js';
 import { speakJa, canSpeakJapanese, onVoicesChanged } from '../../ui/speech.js';
 
@@ -35,6 +36,7 @@ export function renderSounds(deps = {}) {
   const data = kanaSounds();
   const speak = deps.speak || speakJa;
   const can = deps.canSpeak || canSpeakJapanese;
+  const activity = deps.activity || (() => studyClock().activity());
   const root = el('div', 'kt-stack');
   const voiceBound = []; // [element, kind] cần đồng bộ khi giọng thay đổi
   let moraBtn = null;
@@ -59,7 +61,10 @@ export function renderSounds(deps = {}) {
     const i = document.createElement('i');
     i.dataset.icon = 'volume';
     b.append(i);
-    b.addEventListener('click', () => speak(text));
+    b.addEventListener('click', () => {
+      activity();
+      speak(text);
+    });
     voiceBound.push([b, 'hide']);
     return b;
   };
@@ -154,6 +159,7 @@ export function renderSounds(deps = {}) {
     const render = result(startMora, 'mora');
     root.replaceChildren(
       renderQuizSession({
+        onActivity: activity,
         title: 'Đếm phách',
         questions,
         toQuestion: (q) => {
@@ -184,6 +190,7 @@ export function renderSounds(deps = {}) {
     const render = result(startPairs, 'pair');
     root.replaceChildren(
       renderQuizSession({
+        onActivity: activity,
         title: 'Nghe cặp âm',
         questions,
         toQuestion: (q) => {
@@ -200,7 +207,10 @@ export function renderSounds(deps = {}) {
           };
           const again = el('button', 'kt-btn kt-btn--soft kt-btn--sm', 'Nghe lại');
           again.type = 'button';
-          again.addEventListener('click', play);
+          again.addEventListener('click', () => {
+            activity();
+            play();
+          });
           row.append(el('span', null, 'Nghe và chọn từ bạn nghe được'), again);
           prompt.append(row, status);
           // đọc sau khi câu đã gắn vào trang: vùng status mới thông báo được, và focus ở Nghe lại

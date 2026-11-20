@@ -1,6 +1,7 @@
 import { kanji as allKanji, kanjiById } from '../../core/content.js';
 import { progress as defaultProgress } from '../../core/progress.js';
 import { reviewCard } from '../../core/srs.js';
+import { studyClock } from '../../core/study-clock.js';
 import { ensureKanjiCards, dueKanjiCards, nextKanjiDue, buildKanjiQuestion, readingOf, onePerKanji, MAX_PER_SESSION } from '../../core/kanji-review.js';
 import { toHash } from '../../core/router.js';
 import { renderQuizSession } from '../../ui/quiz-session.js';
@@ -40,6 +41,7 @@ export function renderKanjiReview(deps = {}) {
   const now = deps.now || (() => new Date());
   const win = deps.win || globalThis.window;
   const review = deps.scheduleReview || reviewCard;
+  const activity = deps.activity || (() => studyClock().activity());
   const known = new Set(allKanji().map((k) => k.id));
   const root = el('div', 'kt-stack');
   const view = el('div', 'kt-stack');
@@ -116,6 +118,7 @@ export function renderKanjiReview(deps = {}) {
                 answer,
                 win,
                 (t) => (announcer.textContent = t),
+                activity,
               ),
           };
         if (step.kind === 'kanji-doc') {
@@ -145,6 +148,7 @@ export function renderKanjiReview(deps = {}) {
           },
         };
       },
+      onActivity: activity,
       onAnswer: (step, correct) => record(step.key, correct),
       onClose: () => go(toHash('luyen-tap')),
       renderResult: ({ score, total }) =>

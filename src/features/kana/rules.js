@@ -1,6 +1,7 @@
 import { kanaRules } from '../../core/content.js';
 import { buildReadingSession } from '../../core/reading-quiz.js';
 import { toHash } from '../../core/router.js';
+import { studyClock } from '../../core/study-clock.js';
 import { renderQuizSession } from '../../ui/quiz-session.js';
 import { speakJa, canSpeakJapanese, onVoicesChanged } from '../../ui/speech.js';
 
@@ -30,6 +31,7 @@ export function renderRules(deps = {}) {
   const rules = kanaRules();
   const speak = deps.speak || speakJa;
   const can = deps.canSpeak || canSpeakJapanese;
+  const activity = deps.activity || (() => studyClock().activity());
   const root = el('div', 'kt-stack');
   const speakButtons = [];
 
@@ -40,7 +42,10 @@ export function renderRules(deps = {}) {
     const i = document.createElement('i');
     i.dataset.icon = 'volume';
     b.append(i);
-    b.addEventListener('click', () => speak(text));
+    b.addEventListener('click', () => {
+      activity();
+      speak(text);
+    });
     speakButtons.push(b);
     return b;
   };
@@ -92,6 +97,7 @@ export function renderRules(deps = {}) {
   function startSession() {
     const questions = buildReadingSession(rules, { rng: deps.rng });
     const session = renderQuizSession({
+      onActivity: activity,
       title: 'Luyện đọc từ',
       questions,
       toQuestion: (q) => {

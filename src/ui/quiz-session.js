@@ -28,11 +28,12 @@ function hydrate(node) {
  * @param {(q: object) => ({ prompt: Node|string, options: (Node|string)[], answer: number, explain?: Function } | { render: (answer: (correct: boolean) => void) => Node })} o.toQuestion
  *   Trả `render` cho bước tự dựng (vd. Flashcard): gọi `answer(correct)` một lần để chấm và sang bước sau.
  * @param {(q: object, correct: boolean) => void} [o.onAnswer]
+ * @param {() => void} [o.onActivity]  gọi khi người học trả lời hoặc bấm Tiếp tục (đồng hồ học)
  * @param {() => void} o.onClose
  * @param {(r: { score: number, total: number, wrong: object[] }) => Node} o.renderResult
  * @returns {HTMLElement}
  */
-export function renderQuizSession({ title, questions, toQuestion, onAnswer, onClose, renderResult, skill = 'kanji' }) {
+export function renderQuizSession({ title, questions, toQuestion, onAnswer, onActivity, onClose, renderResult, skill = 'kanji' }) {
   const head = el('div', 'kt-session__head');
   const close = el('button', 'kt-iconbtn kt-iconbtn--sm');
   close.type = 'button';
@@ -80,6 +81,7 @@ export function renderQuizSession({ title, questions, toQuestion, onAnswer, onCl
     const q = questions[i];
     const spec = toQuestion(q);
     const record = (correct) => {
+      if (onActivity) onActivity();
       if (correct) score += 1;
       else wrong.push(q);
       if (onAnswer) onAnswer(q, correct);
@@ -98,7 +100,17 @@ export function renderQuizSession({ title, questions, toQuestion, onAnswer, onCl
           advance();
         }),
       );
-    } else body.replaceChildren(renderQuestion({ ...spec, onAnswer: record, onNext: advance }));
+    } else
+      body.replaceChildren(
+        renderQuestion({
+          ...spec,
+          onAnswer: record,
+          onNext: () => {
+            if (onActivity) onActivity();
+            advance();
+          },
+        }),
+      );
     hydrate(body);
     // bước tự lo focus (vd. bài nghe focus nút "Nghe lại") thì trả `autoFocus: false`
     if (spec.autoFocus !== false) focusSoon(body.querySelector('.kt-option, .kt-deck'));

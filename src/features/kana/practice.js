@@ -1,6 +1,7 @@
 import { kana, kanaById, kanaPairs } from '../../core/content.js';
 import { progress as defaultProgress } from '../../core/progress.js';
 import { reviewCard, dueIds, isValidCard } from '../../core/srs.js';
+import { studyClock } from '../../core/study-clock.js';
 import { buildSession } from '../../core/kana-quiz.js';
 import { toHash } from '../../core/router.js';
 import { renderQuestion } from '../../ui/quiz.js';
@@ -79,6 +80,7 @@ export function renderPractice(deps = {}) {
   const canSpeak = deps.canSpeak || canSpeakJapanese;
   const speak = deps.speak || speakJa;
   const review = deps.scheduleReview || reviewCard;
+  const activity = deps.activity || (() => studyClock().activity());
   const root = el('div', 'kt-stack');
   const view = el('div', 'kt-stack');
   // dòng báo lỗi nằm ngoài phiên, để vẫn thấy khi đã quay về danh sách bộ
@@ -177,7 +179,10 @@ export function renderPractice(deps = {}) {
           prompt = el('span', 'kt-row');
           const play = el('button', 'kt-btn kt-btn--soft kt-btn--sm', 'Nghe lại');
           play.type = 'button';
-          play.addEventListener('click', () => speak(q.target.id));
+          play.addEventListener('click', () => {
+            activity();
+            speak(q.target.id);
+          });
           prompt.append(el('span', null, 'Nghe và chọn chữ đúng'), play);
         }
       }
@@ -199,11 +204,13 @@ export function renderPractice(deps = {}) {
             return s;
           },
           onAnswer: (correct) => {
+            activity();
             if (correct) score += 1;
             else wrong.push(q.target);
             record(q.target, correct);
           },
           onNext: () => {
+            activity();
             i += 1;
             ask();
           },

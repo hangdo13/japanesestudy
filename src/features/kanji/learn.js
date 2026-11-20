@@ -2,6 +2,7 @@ import { kanji as allKanji } from '../../core/content.js';
 import { progress as defaultProgress, localDate } from '../../core/progress.js';
 import { newKanjiToday } from '../../core/growth.js';
 import { ensureKanjiCards } from '../../core/kanji-review.js';
+import { studyClock } from '../../core/study-clock.js';
 import { toHash } from '../../core/router.js';
 import { renderEmptyState } from '../../ui/empty-state.js';
 import { renderGoalComplete } from '../../ui/goal-complete.js';
@@ -30,6 +31,7 @@ export function renderLearn(deps = {}) {
   const now = deps.now || (() => new Date());
   const win = deps.win || window;
   const today = localDate(now());
+  const activity = deps.activity || (() => studyClock().activity());
   const { pack, introducedToday, remainingTotal } = newKanjiToday(store.get(), allKanji(), today);
   const goList = () => {
     win.location.hash = toHash('kanji');
@@ -83,7 +85,28 @@ export function renderLearn(deps = {}) {
     'aria-label',
     'Thẻ kanji mới. Phím cách: lật thẻ. Mũi tên trái hoặc phải: sang thẻ tiếp theo.',
   );
-  const cards = pack.map((k) => renderKanjiCard(k, { onPlay: (r) => player.play(r.audio) }));
+  const cards = pack.map((k) =>
+    renderKanjiCard(k, {
+      onPlay: (r) => {
+        activity();
+        player.play(r.audio);
+      },
+    }),
+  );
+  // lật thẻ cũng là tương tác học (đọc mặt sau lâu không bị tính là rảnh)
+  const observers = [];
+  if (typeof MutationObserver === 'function') {
+    for (const c of cards) {
+      let open = false;
+      const o = new MutationObserver(() => {
+        const now2 = c.classList.contains('is-revealed');
+        if (now2 && !open && c.isConnected) activity();
+        open = now2;
+      });
+      o.observe(c, { attributes: true, attributeFilter: ['class'] });
+      observers.push(o);
+    }
+  }
   for (let i = cards.length - 1; i >= 0; i--) deck.append(cards[i]);
 
   const hint = el('div', 'kt-swipe-hint');
@@ -109,6 +132,7 @@ export function renderLearn(deps = {}) {
 
   const onSwiped = (card) => {
     if (disposed || !card || !card.isConnected) return;
+    activity();
     card.remove();
     seen += 1;
     player.stop();
@@ -181,6 +205,7 @@ export function renderLearn(deps = {}) {
     },
     cleanup: () => {
       disposed = true;
+      for (const o of observers) o.disconnect();
       player.stop();
     },
   };

@@ -29,6 +29,7 @@ export function emptyData(nowIso) {
     kanji: {},
     srs: {},
     tuVung: {},
+    hocGiay: {},
   };
 }
 
@@ -40,10 +41,14 @@ export class NewerVersionError extends Error {}
 /** Kiểm tra hình dạng dữ liệu bản hiện tại; điền phần thiếu, ném lỗi nếu sai kiểu. */
 export function normalize(d) {
   const out = { ...d };
-  for (const key of ['settings', 'kanji', 'srs', 'tuVung']) {
+  for (const key of ['settings', 'kanji', 'srs', 'tuVung', 'hocGiay']) {
     if (out[key] === undefined) out[key] = {};
     else if (!isPlainObject(out[key])) throw new Error(`File sao lưu không hợp lệ: "${key}" sai kiểu dữ liệu.`);
   }
+  // giờ học: chỉ giữ khoá ngày hợp lệ với số giây hữu hạn ≥ 0
+  out.hocGiay = Object.fromEntries(
+    Object.entries(out.hocGiay).filter(([k, v]) => /^\d{4}-\d{2}-\d{2}$/.test(k) && Number.isFinite(v) && v >= 0),
+  );
   if (out.lastBackupAt === undefined) out.lastBackupAt = null;
   if (out.lastBackupAt !== null && typeof out.lastBackupAt !== 'string') {
     throw new Error('File sao lưu không hợp lệ: "lastBackupAt" sai kiểu dữ liệu.');

@@ -1,6 +1,7 @@
 import { vocab as allVocab, vocabById } from '../../core/content.js';
 import { progress as defaultProgress, localDate } from '../../core/progress.js';
 import { reviewCard } from '../../core/srs.js';
+import { studyClock } from '../../core/study-clock.js';
 import { dueVocab, newVocabToday, nextVocabDue, speakText, canSpeakWord, VOCAB_PREFIX, MAX_REVIEW } from '../../core/vocab-review.js';
 import { autoSpeakOnFlip } from '../../core/growth.js';
 import { toHash } from '../../core/router.js';
@@ -38,6 +39,7 @@ export function renderVocabReview(deps = {}) {
   const review = deps.scheduleReview || reviewCard;
   const canSpeak = deps.canSpeak || canSpeakJapanese;
   const speak = deps.speak || speakJa;
+  const activity = deps.activity || (() => studyClock().activity());
   const known = new Set(allVocab().map((w) => w.id));
   const root = el('div', 'kt-stack');
   const view = el('div', 'kt-stack');
@@ -129,7 +131,11 @@ export function renderVocabReview(deps = {}) {
       questions: steps,
       toQuestion: (step) => ({
         render: (answer) => {
-          const card = renderVocabCard(step.w, { onPlay: () => play(step.w), canPlay: !!canSpeak() && canSpeakWord(step.w) });
+          const card = renderVocabCard(step.w, {
+            onPlay: () => {
+              activity();
+              play(step.w);
+            }, canPlay: !!canSpeak() && canSpeakWord(step.w) });
           if (!canSpeakWord(step.w)) card.querySelector('[data-role=play]').dataset.never = '1';
           if (step.isNew) card.querySelector('.kt-flash__top .kt-chip').textContent = 'Từ mới';
           return flashStep(
@@ -138,11 +144,13 @@ export function renderVocabReview(deps = {}) {
             win,
             (t) => (announcer.textContent = t),
             () => {
+              activity();
               if (auto && canSpeak()) play(step.w);
             },
           );
         },
       }),
+      onActivity: activity,
       onAnswer: (step, correct) => record(step, correct),
       onClose: () => go(toHash('luyen-tap')),
       renderResult: ({ score, total }) =>

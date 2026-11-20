@@ -37,3 +37,6 @@
 - source_spec: `_bmad-output/implementation-artifacts/spec-2-2-on-tu-vung.md`
   summary: Gộp `formatWhen` (on-tap/index.js và on-tap/vocab.js) vào một chỗ dùng chung.
   evidence: Hai bản giống nhau.
+- source_spec: `_bmad-output/implementation-artifacts/spec-2-3-dong-ho-hoc.md`
+  summary: Test tính năng tiêm `activity` no-op (hoặc test setup tạo đồng hồ giả) để không dùng singleton thật.
+  evidence: Singleton thật ghi vào progress mặc định và giữ setInterval trong các file test.
