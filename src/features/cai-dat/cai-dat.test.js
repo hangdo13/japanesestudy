@@ -237,3 +237,88 @@ describe('cài đặt từ vựng (Story 2.2)', () => {
     expect(root.textContent).toContain('Đã tắt tự đọc khi lật thẻ.');
   });
 });
+
+describe('cài đặt kỳ thi (Story 2.5)', () => {
+  it('ngày thi mặc định 2027-07-04; đổi thì lưu; ngày sai thì về mặc định và báo', () => {
+    const { root, store } = setup();
+    const input = root.querySelector('input[type=date]');
+    expect(input.value).toBe('2027-07-04');
+    input.value = '2027-12-05';
+    input.dispatchEvent(new Event('change'));
+    expect(store.get().settings.ngayThi).toBe('2027-12-05');
+    expect(root.textContent).toContain('Đã lưu ngày thi: 05/12/2027.');
+    input.value = '';
+    input.dispatchEvent(new Event('change'));
+    expect(store.get().settings.ngayThi).toBeUndefined();
+    expect(input.value).toBe('2027-07-04');
+    expect(root.textContent).toContain('Ngày không hợp lệ, dùng ngày mặc định 04/07/2027.');
+  });
+  it('đánh dấu / bỏ đánh dấu đã đăng ký thi', () => {
+    const { root, store } = setup();
+    const box = [...root.querySelectorAll('input[type=checkbox]')].find((b) => b.closest('label').textContent.includes('Đã đăng ký thi'));
+    expect(box.checked).toBe(false);
+    box.checked = true;
+    box.dispatchEvent(new Event('change'));
+    expect(store.get().settings.daDangKyThi).toBe('2027-07-04');
+    box.checked = false;
+    box.dispatchEvent(new Event('change'));
+    expect(store.get().settings.daDangKyThi).toBeUndefined();
+    expect(root.textContent).toContain('Trang chủ sẽ nhắc lại');
+  });
+});
+
+describe('cài đặt kỳ thi: chi tiết (review 2.5)', () => {
+  it('mở Cài đặt khi đã đăng ký kỳ này: ô được tích; min/max cho ô ngày', () => {
+    const storage = memoryStorage();
+    const pre = createProgress({ storage, now, events: new EventTarget() });
+    pre.update((d) => {
+      d.settings.daDangKyThi = '2027-07-04';
+    });
+    const { root } = setup({ storage });
+    const box = [...root.querySelectorAll('input[type=checkbox]')].find((b) => b.closest('label').textContent.includes('Đã đăng ký thi'));
+    expect(box.checked).toBe(true);
+    const input = root.querySelector('input[type=date]');
+    expect(input.min).toMatch(/^\d{4}-\d{2}-\d{2}$/);
+    expect(input.max > input.min).toBe(true);
+  });
+  it('đang gõ dở (ô đang focus, giá trị chưa hợp lệ) thì không nhảy về mặc định; rời ô mới đặt lại', () => {
+    const { root, store } = setup();
+    const input = root.querySelector('input[type=date]');
+    input.value = '2027-12-05';
+    input.dispatchEvent(new Event('change'));
+    input.focus();
+    input.value = '';
+    input.dispatchEvent(new Event('change'));
+    expect(store.get().settings.ngayThi).toBe('2027-12-05');
+    expect(root.textContent).toContain('Nhập đủ ngày, tháng, năm');
+    input.blur();
+    input.dispatchEvent(new Event('blur'));
+    expect(store.get().settings.ngayThi).toBeUndefined();
+    expect(input.value).toBe('2027-07-04');
+  });
+  it('dữ liệu đổi từ nơi khác (nhập sao lưu) thì ô ngày cập nhật', () => {
+    const { root, store } = setup();
+    store.update((d) => {
+      d.settings.ngayThi = '2027-12-05';
+    });
+    window.dispatchEvent(new Event('progress:changed'));
+    expect(root.querySelector('input[type=date]').value).toBe('2027-12-05');
+  });
+  it('lưu lỗi thì báo lỗi, không báo đã lưu', () => {
+    const storage = memoryStorage();
+    const real = createProgress({ storage, now, events: new EventTarget() });
+    const store = { ...real, get: real.get, update: () => ({ ok: false, error: 'Bộ nhớ đầy' }), recoveredFromCorrupt: false, writeBlocked: null };
+    const root = document.createElement('div');
+    document.body.replaceChildren(root);
+    mount(root, {}, { progress: store, confirm: vi.fn(), download: vi.fn(), now });
+    const input = root.querySelector('input[type=date]');
+    input.value = '2027-12-05';
+    input.dispatchEvent(new Event('change'));
+    expect(root.textContent).toContain('Bộ nhớ đầy');
+    expect(root.textContent).not.toContain('Đã lưu ngày thi');
+    const box = [...root.querySelectorAll('input[type=checkbox]')].find((b) => b.closest('label').textContent.includes('Đã đăng ký thi'));
+    box.checked = true;
+    box.dispatchEvent(new Event('change'));
+    expect(root.textContent).not.toContain('Đã đánh dấu');
+  });
+});

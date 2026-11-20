@@ -40,3 +40,6 @@
 - source_spec: `_bmad-output/implementation-artifacts/spec-2-3-dong-ho-hoc.md`
   summary: Test tính năng tiêm `activity` no-op (hoặc test setup tạo đồng hồ giả) để không dùng singleton thật.
   evidence: Singleton thật ghi vào progress mặc định và giữ setInterval trong các file test.
+- source_spec: `_bmad-output/implementation-artifacts/spec-2-5-dem-nguoc-ngay-thi.md`
+  summary: Chạy một phần test ngày tháng trong múi giờ có giờ mùa hè (vd. TZ=America/New_York) ở CI.
+  evidence: Máy và CI ở múi không có DST nên test DST không thể sai.

@@ -4,7 +4,7 @@ import { kanji as allKanji, vocab as allVocab } from '../../core/content.js';
 import { dueToday, summarize, studyStreak, weekDays, learnedCounts } from '../../core/today.js';
 import { hasCard } from '../../ui/cards/registry.js';
 import { minutesOn } from '../../core/study-clock.js';
-import { backupDue, shouldShowInstallGuide } from '../../core/growth.js';
+import { backupDue, shouldShowInstallGuide, examDay, daysUntilExam, registrationReminderDue, registrationClosesDay, formatDay } from '../../core/growth.js';
 import { detectPlatform } from '../../core/platform.js';
 import { toHash } from '../../core/router.js';
 
@@ -101,6 +101,85 @@ function renderGreeting(now, due, minutes) {
   }
   g.append(h1, p);
   return g;
+}
+
+/** Trang JLPT của Japan Foundation Việt Nam (lịch thi, đăng ký). */
+export const JF_VN_JLPT = 'https://hn.jpf.go.jp/category/japanese-language/japanese-language-test-jlpt-basic';
+
+/** Lỗi lưu "Đã đăng ký" gần nhất, giữ qua các lần dựng lại trang. */
+let registerError = '';
+
+/** SectionHeader + Chip đếm ngược tới ngày thi. */
+function renderCountdown(settings, now) {
+  const n = daysUntilExam(settings, now);
+  const wrap = el('section', 'kt-stack home__exam-wrap');
+  const head = el('div', 'kt-sechead home__exam');
+  const h2 = el('h2', null, `JLPT N5 · ${formatDay(examDay(settings))}`);
+  h2.id = 'home-exam-title';
+  h2.tabIndex = -1;
+  wrap.setAttribute('aria-labelledby', h2.id);
+  const chip = el('span', `kt-chip ${n >= 0 ? 'kt-chip--primary' : 'kt-chip--outline'}`);
+  chip.textContent = n > 0 ? `Còn ${n} ngày` : n === 0 ? 'Hôm nay thi! Chúc bạn thi tốt' : 'Kỳ thi đã qua';
+  head.append(h2, chip);
+  wrap.append(head);
+  if (n <= 0) {
+    const a = el('a', 'kt-link', n === 0 ? 'Thi xong? Đặt ngày thi tiếp theo trong Cài đặt' : 'Đổi ngày thi trong Cài đặt');
+    a.href = toHash('cai-dat');
+    wrap.append(a);
+  }
+  const live = el('p', 'app-sr-only');
+  live.setAttribute('role', 'status');
+  live.dataset.role = 'exam-status';
+  wrap.append(live);
+  return wrap;
+}
+
+/** Thẻ nhắc đăng ký thi (từ 1/3 với kỳ tháng 7). */
+function renderRegistrationReminder(store, settings, now, root) {
+  const m = Number(examDay(settings).slice(5, 7));
+  const [cy, cm] = registrationClosesDay(settings).split('-').map(Number);
+  const late = now.getTime() >= new Date(cy, cm - 1, 1).getTime();
+  // chỉ nói khung tháng quen thuộc cho kỳ tháng 7 / tháng 12; tháng khác không bịa lịch
+  const usual = m === 7 ? 'Đăng ký thi JLPT tháng 7 thường mở tháng 3–4 và nhanh kín chỗ (có đợt hết chỗ chỉ sau vài tuần). ' : m === 12 ? 'Đăng ký thi JLPT tháng 12 thường mở tháng 8–9 và nhanh kín chỗ. ' : '';
+  const text = el(
+    'p',
+    'home__text',
+    late
+      ? 'Khung đăng ký thường lệ có thể đã qua. Kiểm tra lại trang JLPT của Japan Foundation Việt Nam; nếu đã đăng ký, bấm "Đã đăng ký".'
+      : `${usual}Xem lịch và cách đăng ký ở trang JLPT của Japan Foundation Việt Nam.`,
+  );
+  const link = el('a', 'kt-btn kt-btn--soft kt-btn--sm', 'Mở trang JLPT');
+  link.append(el('span', 'app-sr-only', ' (mở tab mới)'));
+  link.href = JF_VN_JLPT;
+  link.target = '_blank';
+  link.rel = 'noopener';
+  const done = el('button', 'kt-btn kt-btn--primary kt-btn--sm', 'Đã đăng ký');
+  done.type = 'button';
+  const status = el('p', 'kt-muted home__text', registerError);
+  status.setAttribute('role', 'status');
+  const row = el('div', 'kt-row');
+  row.append(link, done);
+  const c = card('Đến lúc đăng ký thi', text, row, status);
+  c.dataset.notice = 'register';
+  done.addEventListener('click', () => {
+    const day = examDay(settings);
+    const res = store.update((d) => {
+      d.settings.daDangKyThi = day;
+    });
+    if (res.ok) {
+      registerError = '';
+      // đưa focus về tiêu đề kỳ thi trước khi gỡ thẻ, và báo đã lưu
+      const h2 = root.querySelector('#home-exam-title');
+      const live = root.querySelector('[data-role="exam-status"]');
+      if (live) live.textContent = 'Đã lưu: đã đăng ký thi.';
+      if (h2) h2.focus();
+      c.remove();
+    } else {
+      registerError = res.error;
+      status.textContent = res.error;
+    }
+  });
+  return c;
 }
 
 /** ActiveLessonCard: khối surface-tint duy nhất trên màn. */
@@ -275,7 +354,9 @@ function render(host, deps) {
     course('kanji', '字', 'Kanji N5', 'Đã thuộc cả nghĩa, cách đọc và mặt chữ', counts.kanjiThuoc, counts.kanjiTong, 'chữ', toHash('kanji')),
     course('vocab', '語', 'Từ vựng N5', 'Đã thuộc', counts.tuThuoc, counts.tuTong, 'từ', toHash('luyen-tap')),
   );
-  wrap.append(renderGreeting(now, due, minutes), renderToday(due, go), stats, renderStreak(studyStreak(data, now), weekDays(data, now)), courses);
+  wrap.append(renderGreeting(now, due, minutes), renderCountdown(data.settings, now));
+  if (registrationReminderDue(data.settings, now)) wrap.append(renderRegistrationReminder(store, data.settings, now, wrap));
+  wrap.append(renderToday(due, go), stats, renderStreak(studyStreak(data, now), weekDays(data, now)), courses);
   host.replaceChildren(wrap);
   const K = win && win.Kotoba;
   if (K && typeof K.hydrate === 'function') K.hydrate(wrap);

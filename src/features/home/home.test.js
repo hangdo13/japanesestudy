@@ -251,3 +251,78 @@ describe('trang chủ: chi tiết (review 2.4)', () => {
     expect(root.querySelector('.kt-greeting h1').textContent).toContain('buổi sáng');
   });
 });
+
+describe('trang chủ: kỳ thi (Story 2.5)', () => {
+  function homeAt(now, mutate = () => {}) {
+    const store = createProgress({ storage: memoryStorage(), now: () => now, events: new EventTarget() });
+    store.update((d) => {
+      d.createdAt = '2026-11-01T00:00:00Z';
+      d.lastBackupAt = now.toISOString();
+      mutate(d);
+    });
+    const root = document.createElement('div');
+    document.body.replaceChildren(root);
+    mount(root, {}, { progress: store, now: () => now, win: { location: { hash: '' } }, events: new EventTarget(), platform: { isIos: false, isStandalone: true } });
+    return { root, store };
+  }
+  it('đếm ngược mặc định: "JLPT N5 · 04/07/2027" + chip "Còn 226 ngày", chưa nhắc đăng ký', () => {
+    const { root } = homeAt(new Date(2026, 10, 20, 9));
+    const head = root.querySelector('.home__exam');
+    expect(head.querySelector('h2').textContent).toBe('JLPT N5 · 04/07/2027');
+    expect(head.querySelector('.kt-chip').textContent).toBe('Còn 226 ngày');
+    expect(root.querySelector('[data-notice="register"]')).toBeNull();
+    expect(root.querySelectorAll('.kt-lesson, .kt-hero, .kt-card--tinted')).toHaveLength(1);
+  });
+  it('từ 01/03/2027: nhắc đăng ký có link Japan Foundation (tab mới), bấm "Đã đăng ký" thì ẩn và lưu', () => {
+    const { root, store } = homeAt(new Date(2027, 2, 1, 8));
+    const n = root.querySelector('[data-notice="register"]');
+    expect(n.textContent).toContain('thường mở tháng 3–4 và nhanh kín chỗ');
+    expect(root.querySelectorAll('.kt-lesson, .kt-hero, .kt-card--tinted')).toHaveLength(1);
+    expect(root.querySelector('.home__exam-wrap').getAttribute('aria-labelledby')).toBe('home-exam-title');
+    expect(n.querySelector('a').textContent).toContain('(mở tab mới)');
+    const a = n.querySelector('a');
+    expect(a.href).toContain('jpf.go.jp');
+    expect(a.target).toBe('_blank');
+    expect(a.rel).toBe('noopener');
+    [...n.querySelectorAll('button')].find((b) => b.textContent === 'Đã đăng ký').click();
+    expect(root.querySelector('[data-notice="register"]')).toBeNull();
+    expect(store.get().settings.daDangKyThi).toBe('2027-07-04');
+    expect(document.activeElement.id).toBe('home-exam-title');
+    expect(root.querySelector('[data-role="exam-status"]').textContent).toBe('Đã lưu: đã đăng ký thi.');
+    const again = homeAt(new Date(2027, 2, 2, 8), (d) => (d.settings.daDangKyThi = '2027-07-04'));
+    expect(again.root.querySelector('[data-notice="register"]')).toBeNull();
+  });
+  it('lưu lỗi thì báo, vẫn hiện nhắc', () => {
+    const real = createProgress({ storage: memoryStorage(), now: () => new Date(2027, 2, 5), events: new EventTarget() });
+    real.update((d) => {
+      d.createdAt = '2026-11-01T00:00:00Z';
+      d.lastBackupAt = new Date(2027, 2, 5).toISOString();
+    });
+    const store = { get: real.get, update: () => ({ ok: false, error: 'Bộ nhớ đầy' }), writeBlocked: null, recoveredFromCorrupt: false };
+    const root = document.createElement('div');
+    mount(root, {}, { progress: store, now: () => new Date(2027, 2, 5), win: { location: { hash: '' } }, events: new EventTarget(), platform: { isIos: false, isStandalone: true } });
+    const n = root.querySelector('[data-notice="register"]');
+    [...n.querySelectorAll('button')].find((b) => b.textContent === 'Đã đăng ký').click();
+    expect(root.querySelector('[data-notice="register"]').textContent).toContain('Bộ nhớ đầy');
+  });
+  it('hôm nay thi / đã qua', () => {
+    const examDay = homeAt(new Date(2027, 6, 4, 7)).root;
+    expect(examDay.querySelector('.home__exam .kt-chip').textContent).toBe('Hôm nay thi! Chúc bạn thi tốt');
+    expect(examDay.querySelector('a[href="#/cai-dat"]').textContent).toContain('Đặt ngày thi tiếp theo');
+    const past = homeAt(new Date(2027, 6, 10)).root;
+    expect(past.querySelector('.home__exam .kt-chip').textContent).toBe('Kỳ thi đã qua');
+    expect(past.querySelector('a[href="#/cai-dat"]').textContent).toBe('Đổi ngày thi trong Cài đặt');
+    expect(past.querySelector('[data-notice="register"]')).toBeNull();
+  });
+  it('ngày thi tuỳ chỉnh', () => {
+    const { root } = homeAt(new Date(2027, 10, 1), (d) => (d.settings.ngayThi = '2027-12-05'));
+    expect(root.querySelector('.home__exam h2').textContent).toBe('JLPT N5 · 05/12/2027');
+    expect(root.querySelector('.home__exam .kt-chip').textContent).toBe('Còn 34 ngày');
+    // 1/11 đã qua khung tháng 8–9 của kỳ tháng 12
+    expect(root.querySelector('[data-notice="register"]').textContent).toContain('Khung đăng ký thường lệ có thể đã qua');
+    const sep = homeAt(new Date(2027, 8, 1), (d) => (d.settings.ngayThi = '2027-12-05')).root;
+    expect(sep.querySelector('[data-notice="register"]').textContent).toContain('JLPT tháng 12 thường mở tháng 8–9');
+    const jan = homeAt(new Date(2027, 9, 1), (d) => (d.settings.ngayThi = '2028-01-10')).root;
+    expect(jan.querySelector('[data-notice="register"]').textContent).not.toMatch(/thường mở tháng/);
+  });
+});
