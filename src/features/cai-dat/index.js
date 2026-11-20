@@ -1,6 +1,7 @@
 import './cai-dat.css';
 import { progress as defaultProgress, CHANGED_EVENT } from '../../core/progress.js';
-import { kanjiMoiLimit, MIN_KANJI_MOI, MAX_KANJI_MOI, tuMoiLimit, TU_MOI_CHOICES, autoSpeakOnFlip } from '../../core/growth.js';
+import { kanjiMoiLimit, MIN_KANJI_MOI, MAX_KANJI_MOI, tuMoiLimit, TU_MOI_CHOICES, autoSpeakOnFlip, examDay, isValidDay, isRegistered, formatDay, DEFAULT_EXAM_DAY } from '../../core/growth.js';
+import { localDate } from '../../core/progress.js';
 import { toHash } from '../../core/router.js';
 import { confirmDialog as defaultConfirm } from '../../ui/confirm-dialog.js';
 
@@ -213,6 +214,73 @@ export function mount(root, _params, deps = {}) {
   daily.append(dailyHead, row, vRow, sRow, dailyStatus);
   renderLimit();
 
+  // --- Kỳ thi ---
+  const exam = el('section', 'kt-card kt-stack');
+  const examHead = el('div', 'kt-sechead');
+  examHead.append(el('h2', null, 'Kỳ thi'));
+  const dRow = el('label', 'kt-row cai-dat__field');
+  dRow.append(el('span', 'cai-dat__label', 'Ngày thi'));
+  const dInput = el('input', 'kt-select cai-dat__date');
+  dInput.type = 'date';
+  dInput.setAttribute('aria-label', 'Ngày thi');
+  {
+    const t = (deps.now || (() => new Date()))();
+    dInput.min = localDate(t);
+    dInput.max = localDate(new Date(t.getFullYear() + 5, t.getMonth(), t.getDate()));
+  }
+  dRow.append(dInput);
+  const rRow = el('label', 'kt-row cai-dat__field');
+  const rBox = el('input');
+  rBox.type = 'checkbox';
+  rBox.className = 'cai-dat__check';
+  rRow.append(el('span', 'cai-dat__label', 'Đã đăng ký thi'), rBox);
+  const examStatus = el('p', 'kt-muted cai-dat__text');
+  examStatus.setAttribute('role', 'status');
+  const renderExam = () => {
+    const st = store.get().settings;
+    // đang gõ ngày thì không ghi đè ô nhập
+    if (document.activeElement !== dInput) dInput.value = examDay(st);
+    rBox.checked = isRegistered(st);
+  };
+  const resetDate = () => {
+    const res = store.update((d) => {
+      delete d.settings.ngayThi;
+    });
+    examStatus.textContent = res.ok ? `Ngày không hợp lệ, dùng ngày mặc định ${formatDay(DEFAULT_EXAM_DAY)}.` : res.error;
+    dInput.value = examDay(store.get().settings);
+  };
+  dInput.addEventListener('change', () => {
+    const v = dInput.value;
+    if (isValidDay(v)) {
+      const res = store.update((d) => {
+        d.settings.ngayThi = v;
+      });
+      examStatus.textContent = res.ok ? `Đã lưu ngày thi: ${formatDay(v)}.` : res.error;
+      renderExam();
+      return;
+    }
+    // đang gõ dở (Chrome báo change từng phần) thì chờ, không nhảy về mặc định
+    if (document.activeElement === dInput) {
+      examStatus.textContent = 'Nhập đủ ngày, tháng, năm (năm 2024–2100).';
+      return;
+    }
+    resetDate();
+  });
+  dInput.addEventListener('blur', () => {
+    if (!isValidDay(dInput.value)) resetDate();
+  });
+  rBox.addEventListener('change', () => {
+    const on = rBox.checked;
+    const res = store.update((d) => {
+      if (on) d.settings.daDangKyThi = examDay(d.settings);
+      else delete d.settings.daDangKyThi;
+    });
+    examStatus.textContent = res.ok ? (on ? 'Đã đánh dấu: đã đăng ký thi.' : 'Đã bỏ đánh dấu đăng ký thi. Trang chủ sẽ nhắc lại khi tới mùa đăng ký.') : res.error;
+    renderExam();
+  });
+  exam.append(examHead, dRow, rRow, examStatus);
+  renderExam();
+
   // --- Giới thiệu ---
   const about = el('section', 'kt-card');
   const aboutHead = el('div', 'kt-sechead');
@@ -222,12 +290,13 @@ export function mount(root, _params, deps = {}) {
   aboutHead.append(link);
   about.append(aboutHead);
 
-  wrap.append(card, daily, about);
+  wrap.append(card, daily, exam, about);
   root.append(wrap);
 
   const onChanged = () => {
     renderLast();
     renderLimit();
+    renderExam();
     dailyStatus.textContent = '';
   };
   window.addEventListener(CHANGED_EVENT, onChanged);

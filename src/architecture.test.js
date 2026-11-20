@@ -66,4 +66,12 @@ describe('luật kiến trúc', () => {
       expect(/localStorage/.test(readFileSync(f, 'utf8')), `${rel(f)} dùng localStorage`).toBe(false);
     }
   });
+
+  it('chỉ core/study-clock được đếm giờ học (AD-5)', () => {
+    // giờ học chỉ study-clock ghi; progress kiểm tra hình dạng; nơi khác đọc qua minutesOn()
+    for (const f of files) {
+      if (['core/study-clock.js', 'core/progress.js'].includes(rel(f))) continue;
+      expect(/hocGiay/.test(readFileSync(f, 'utf8')), `${rel(f)} đụng tới hocGiay`).toBe(false);
+    }
+  });
 });

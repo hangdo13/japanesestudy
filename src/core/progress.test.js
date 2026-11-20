@@ -144,6 +144,9 @@ describe('core/progress', () => {
   it('migrate: điền phần thiếu và từ chối sai kiểu', () => {
     expect(migrate({ schemaVersion: 1 })).toMatchObject({ settings: {}, kanji: {}, srs: {}, tuVung: {}, lastBackupAt: null });
     expect(() => migrate({ schemaVersion: 1, tuVung: [] })).toThrow('"tuVung" sai kiểu');
+    expect(migrate({ schemaVersion: 1 }).hocGiay).toEqual({});
+    expect(() => migrate({ schemaVersion: 1, hocGiay: [] })).toThrow('"hocGiay" sai kiểu');
+    expect(migrate({ schemaVersion: 1, hocGiay: { '2026-11-18': 120, '2026-11-19': -5, abc: 10, '2026-11-20': 'x' } }).hocGiay).toEqual({ '2026-11-18': 120 });
     expect(() => migrate({ schemaVersion: 1, srs: [] })).toThrow('"srs" sai kiểu');
     expect(() => migrate({ schemaVersion: 1, settings: null })).toThrow('"settings" sai kiểu');
   });
