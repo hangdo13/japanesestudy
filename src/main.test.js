@@ -12,6 +12,7 @@ const EXPECTED = {
   'luyen-tap': 'Học theo lộ trình N5',
   kana: 'Bảng chữ cái',
   'on-tap': 'Chưa có thẻ kanji để ôn',
+  'tu-vung': 'Từ vựng theo chủ đề',
   'cai-dat': 'Sao lưu tiến độ',
   'gioi-thieu': 'Nguồn nội dung',
 };
@@ -28,6 +29,15 @@ describe('start(): nối route với tính năng thật', () => {
 
   it('mọi route trong ROUTES đều có nội dung mong đợi', () => {
     expect(Object.keys(EXPECTED).sort()).toEqual(Object.keys(ROUTES).sort());
+  });
+
+  it('route #/tu-vung/1 mở trang chủ đề, giữ tab Luyện tập', async () => {
+    window.location.hash = toHash('tu-vung', '1');
+    await flush();
+    const main = document.querySelector('.app-main');
+    expect(main.textContent).toContain('Danh sách từ');
+    expect(main.querySelector('.kt-course h2').textContent).toBe('Chào hỏi, giao tiếp');
+    expect(document.querySelector('[aria-current="page"]').textContent).toContain('Luyện tập');
   });
 
   it('route "hoc-ngay" chuyển sang việc kế tiếp hoặc báo xong', async () => {

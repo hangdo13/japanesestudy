@@ -1,4 +1,6 @@
-// Bước Flashcard dùng chung cho các màn ôn (kanji, từ vựng).
+// Bước Flashcard dùng chung (ôn kanji, ôn từ vựng, học từ theo chủ đề). Chỉ giao diện, không đụng dữ liệu.
+import './flash-step.css';
+
 function el(tag, className, text) {
   const n = document.createElement(tag);
   if (className) n.className = className;

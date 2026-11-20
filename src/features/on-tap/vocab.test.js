@@ -119,6 +119,8 @@ describe('ôn từ vựng', () => {
     mountHub(hub, {}, { progress: store, now });
     const a = [...hub.querySelectorAll('a')].find((x) => x.getAttribute('href') === '#/on-tap/tu-vung');
     expect(a.textContent).toContain('1 từ cần ôn · 10 từ mới');
+    const topics = [...hub.querySelectorAll('a')].find((x) => x.getAttribute('href') === '#/tu-vung');
+    expect(topics.textContent).toContain('718 từ, 21 chủ đề');
   });
 });
 

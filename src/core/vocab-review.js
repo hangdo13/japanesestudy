@@ -55,3 +55,33 @@ export function speakText(w) {
 export function canSpeakWord(w) {
   return [...speakText(w)].length >= 2;
 }
+
+/** Từ đã học: có ngày giới thiệu hoặc đã có thẻ ôn. */
+export function isLearned(data, id) {
+  return !!((data && data.tuVung && data.tuVung[id] && data.tuVung[id].gioiThieu) || (data && data.srs && data.srs[VOCAB_PREFIX + id]));
+}
+
+/**
+ * Thống kê theo chủ đề, theo thứ tự lộ trình.
+ * @returns {{ thuTu: number, chuDe: string, tong: number, daHoc: number }[]}
+ */
+export function topicStats(data, words, topics) {
+  return topics.map((chuDe, i) => {
+    const list = words.filter((w) => w.chuDeThuTu === i + 1);
+    return { thuTu: i + 1, chuDe, tong: list.length, daHoc: list.filter((w) => isLearned(data, w.id)).length };
+  });
+}
+
+/**
+ * Gói học từ mới của một chủ đề: các từ chưa học, theo id, trong phần còn lại của hạn mức
+ * "từ mới mỗi ngày" (hạn mức chung với phiên ôn: từ học ở đâu cũng tính).
+ * @param {string} today YYYY-MM-DD theo giờ trên máy
+ * @returns {{ pack: object[], left: number, limit: number }}  left: số từ chưa học của chủ đề
+ */
+export function topicPack(data, words, thuTu, today) {
+  const limit = tuMoiLimit((data && data.settings) || {});
+  const seen = (data && data.tuVung) || {};
+  const introducedToday = Object.values(seen).filter((s) => s && s.gioiThieu === today).length;
+  const notYet = words.filter((w) => w.chuDeThuTu === thuTu && !isLearned(data, w.id)).sort((a, b) => a.id.localeCompare(b.id));
+  return { pack: notYet.slice(0, Math.max(0, limit - introducedToday)), left: notYet.length, limit };
+}

@@ -11,7 +11,7 @@ import { renderCard, hasCard } from '../../ui/cards/registry.js';
 import { renderEmptyState } from '../../ui/empty-state.js';
 import { renderGoalComplete } from '../../ui/goal-complete.js';
 import './on-tap.css';
-import { flashStep } from './flash.js';
+import { flashStep } from '../../ui/flash-step.js';
 import { renderVocabReview, TU_VUNG } from './vocab.js';
 
 export const KANJI = 'kanji';
