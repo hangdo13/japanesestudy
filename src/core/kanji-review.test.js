@@ -114,3 +114,20 @@ describe('câu trắc nghiệm', () => {
     expect(buildKanjiQuestion('kanji-chu', kanji()[0], kanji().slice(0, 2))).toBeNull();
   });
 });
+
+describe('4 chữ thêm (Story 1.7) trong ôn tập', () => {
+  it('có thẻ ôn như chữ khác và dựng được câu đọc/chữ', async () => {
+    const s = store();
+    s.update((d) => {
+      for (const g of ['耳', '魚', '多', '少']) d.kanji[g] = { gioiThieu: '2026-11-19' };
+    });
+    expect(await ensureKanjiCards(s, known, T0)).toEqual({ ok: true, created: 12 });
+    for (const g of ['耳', '魚', '多', '少']) {
+      const k = kanjiById(g);
+      const doc = buildKanjiQuestion('kanji-doc', k, kanji(), seededRng(1));
+      const chu = buildKanjiQuestion('kanji-chu', k, kanji(), seededRng(1));
+      expect(doc.options).toHaveLength(4);
+      expect(chu.options).toContain(g);
+    }
+  });
+});

@@ -3,7 +3,7 @@
 import { localDate } from './progress.js';
 import { missingKanjiCards, kanjiSessionSteps, MAX_PER_SESSION, KANJI_KINDS } from './kanji-review.js';
 import { minutesOn } from './study-clock.js';
-import { dueVocab, newVocabToday, MAX_REVIEW, VOCAB_PREFIX } from './vocab-review.js';
+import { dueVocab, newVocabToday, isLearned, MAX_REVIEW, VOCAB_PREFIX } from './vocab-review.js';
 import { newKanjiToday } from './growth.js';
 
 /** Số giây học thực tối thiểu để một ngày được tính là ngày học. */
@@ -103,7 +103,7 @@ export function learnedCounts(data, { kanji, vocab }) {
   const hoc = kanji.filter((k) => data.kanji && data.kanji[k.id] && data.kanji[k.id].gioiThieu).length;
   const thuoc = kanji.filter((k) => KANJI_KINDS.every((kind) => srs[`${kind}:${k.id}`] && srs[`${kind}:${k.id}`].state === REVIEW)).length;
   const tuThuoc = vocab.filter((w) => srs[VOCAB_PREFIX + w.id] && srs[VOCAB_PREFIX + w.id].state === REVIEW).length;
-  const tuHoc = vocab.filter((w) => (data.tuVung && data.tuVung[w.id] && data.tuVung[w.id].gioiThieu) || srs[VOCAB_PREFIX + w.id]).length;
+  const tuHoc = vocab.filter((w) => isLearned(data, w.id)).length;
   return { kanjiHoc: hoc, kanjiThuoc: thuoc, kanjiTong: kanji.length, tuHoc, tuThuoc, tuTong: vocab.length };
 }
 

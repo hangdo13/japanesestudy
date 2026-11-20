@@ -352,7 +352,8 @@ function render(host, deps) {
   const courses = el('div', 'kt-stack');
   courses.append(
     course('kanji', '字', 'Kanji N5', 'Đã thuộc cả nghĩa, cách đọc và mặt chữ', counts.kanjiThuoc, counts.kanjiTong, 'chữ', toHash('kanji')),
-    course('vocab', '語', 'Từ vựng N5', 'Đã thuộc', counts.tuThuoc, counts.tuTong, 'từ', toHash('luyen-tap')),
+    // cùng cách đếm "đã học" với trang chủ đề mà thẻ này dẫn tới
+    course('vocab', '語', 'Từ vựng N5', 'Đã học, theo 21 chủ đề', counts.tuHoc, counts.tuTong, 'từ', toHash('tu-vung')),
   );
   wrap.append(renderGreeting(now, due, minutes), renderCountdown(data.settings, now));
   if (registrationReminderDue(data.settings, now)) wrap.append(renderRegistrationReminder(store, data.settings, now, wrap));

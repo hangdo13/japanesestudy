@@ -2,7 +2,7 @@ import { it, expect, vi } from 'vitest';
 import { kanji, kanjiById, assetUrl } from './content.js';
 
 it('đọc kanji qua core/content', () => {
-  expect(kanji()).toHaveLength(106);
+  expect(kanji()).toHaveLength(110);
   expect(kanjiById('日').hanViet).toBe('NHẬT');
   expect(kanjiById('猫')).toBeNull();
 });

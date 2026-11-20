@@ -12,17 +12,18 @@ const real = () => ({
   jlpt: read('vendor/jlptsuccess/kanji.json'),
   vi: read('content-vi/kanji.json'),
   vocab: read('n5_vocab.json'),
+  extra: read('content-vi/kanji-extra.json'),
 });
 const allFiles = () => true;
 
 describe('buildKanji', () => {
-  it('gom đủ 106 kanji theo thứ tự bài học, không lỗi, kể cả khi vendor bị xáo trộn', () => {
+  it('gom đủ 110 kanji (106 + 4 chữ thêm) theo thứ tự, không lỗi, kể cả khi vendor bị xáo trộn', () => {
     const src = real();
     src.jlpt.entries.reverse();
     const { items, errors } = buildKanji(src, allFiles);
     expect(errors).toEqual([]);
-    expect(items).toHaveLength(106);
-    expect(items.map((k) => k.thuTu)).toEqual(Array.from({ length: 106 }, (_, i) => i + 1));
+    expect(items).toHaveLength(110);
+    expect(items.map((k) => k.thuTu)).toEqual(Array.from({ length: 110 }, (_, i) => i + 1));
     for (const k of items) {
       expect(k.hanViet && k.nghia && k.cauGoiNho).toBeTruthy();
       expect(['draft', 'approved']).toContain(k.reviewStatus);
@@ -147,6 +148,7 @@ describe('main', () => {
     cpSync(join(ROOT, 'n5_vocab.json'), join(dir, 'n5_vocab.json'));
     cpSync(join(ROOT, 'content-vi/kana.json'), join(dir, 'content-vi/kana.json'));
     cpSync(join(ROOT, 'content-vi/kana-quy-tac.json'), join(dir, 'content-vi/kana-quy-tac.json'));
+    cpSync(join(ROOT, 'content-vi/kanji-extra.json'), join(dir, 'content-vi/kanji-extra.json'));
     cpSync(join(ROOT, 'content-vi/kana-phat-am.json'), join(dir, 'content-vi/kana-phat-am.json'));
     cpSync(join(ROOT, 'public'), join(dir, 'public'), { recursive: true });
     return dir;
@@ -165,7 +167,7 @@ describe('main', () => {
     const dir = fixtureRoot();
     cpSync(join(ROOT, 'content-vi/kanji.json'), join(dir, 'content-vi/kanji.json'));
     expect(main(dir)).toBe(0);
-    expect(JSON.parse(readFileSync(join(dir, 'content/kanji.json'), 'utf8')).items).toHaveLength(106);
+    expect(JSON.parse(readFileSync(join(dir, 'content/kanji.json'), 'utf8')).items).toHaveLength(110);
     expect(JSON.parse(readFileSync(join(dir, 'content/kana-quy-tac.json'), 'utf8')).muc).toHaveLength(5);
     expect(JSON.parse(readFileSync(join(dir, 'content/vocab.json'), 'utf8')).items).toHaveLength(718);
     const sounds = JSON.parse(readFileSync(join(dir, 'content/kana-phat-am.json'), 'utf8'));
@@ -361,5 +363,80 @@ describe('buildVocab', () => {
     expect(msg).toMatch(/id không hợp lệ: x/);
     expect(msg).toMatch(/thiếu từ, cách đọc hoặc nghĩa/);
     expect(msg).toMatch(/chủ đề lạ "Lạ"/);
+  });
+});
+
+describe('4 chữ thêm (Story 1.7)', () => {
+  const ids = (items) => items.map((k) => k.id);
+  it('đứng sau chữ cùng nhóm nghĩa: 耳 sau 口, 魚 sau 空, 多 少 sau 長; audio null; có ví dụ từ n5_vocab', () => {
+    const { items, errors } = buildKanji(real(), allFiles);
+    expect(errors).toEqual([]);
+    const at = (g) => ids(items).indexOf(g);
+    expect(at('耳')).toBe(at('口') + 1);
+    expect(at('魚')).toBe(at('空') + 1);
+    expect(at('多')).toBe(at('長') + 1);
+    expect(at('少')).toBe(at('多') + 1);
+    const sakana = items.find((k) => k.id === '魚');
+    expect(sakana).toMatchObject({ hanViet: 'NGƯ', soNet: 11, reviewStatus: 'draft', svg: 'kanji/svg/魚.svg' });
+    expect(sakana.kun.map((r) => r.audio)).toEqual([null, null]);
+    expect(sakana.viDu.map((v) => v.tu)).toContain('魚');
+    expect(items.find((k) => k.id === '少').deNham).toEqual(['小']);
+  });
+  it('thiếu trường / trùng chữ có sẵn / sauChu lạ / thiếu SVG thì báo lỗi', () => {
+    const err = (mut, files = allFiles) => {
+      const src = real();
+      mut(src.extra.items);
+      return buildKanji(src, files).errors.join('\n');
+    };
+    expect(err((x) => delete x[0].cauGoiNho)).toMatch(/耳: thiếu "cauGoiNho" trong content-vi\/kanji-extra.json/);
+    expect(err((x) => x.push({ ...x[0], glyph: '日' }))).toMatch(/日 đã có trong JLPTSuccess/);
+    expect(err((x) => (x[1].sauChu = '龍'))).toMatch(/魚: "sauChu" 龍 không có/);
+    expect(err((x) => delete x[2].on)).toMatch(/多: thiếu "on"/);
+    expect(err(() => {}, (p) => p !== 'kanji/svg/耳.svg')).toMatch(/耳: thiếu file SVG/);
+  });
+  it('chữ dễ nhầm lạ thì báo; nối hai chiều 小↔少 目↔耳 名↔多', () => {
+    const src = real();
+    src.extra.items[3].deNham = ['小', '龍'];
+    const { items, errors } = buildKanji(src, allFiles);
+    expect(errors.join('\n')).toMatch(/少: chữ dễ nhầm "龍"/);
+    const by = (g) => items.find((k) => k.id === g);
+    expect(by('少').deNham).toEqual(['小']);
+    const ok = buildKanji(real(), allFiles).items;
+    const by2 = (g) => ok.find((k) => k.id === g);
+    expect(by2('小').deNham).toContain('少');
+    expect(by2('目').deNham).toContain('耳');
+    expect(by2('名').deNham).toContain('多');
+  });
+  it('không phụ thuộc thứ tự trong file (少 trước 多 vẫn xếp đúng); thiếu glyph / trùng trong file / sai bảng chữ / kiểu sai thì báo, không crash', () => {
+    const src = real();
+    src.extra.items.reverse();
+    const r = buildKanji(src, allFiles);
+    expect(r.errors).toEqual([]);
+    const ids = r.items.map((k) => k.id);
+    expect(ids.indexOf('少')).toBe(ids.indexOf('多') + 1);
+    const err = (mut) => {
+      const s2 = real();
+      mut(s2.extra.items);
+      return buildKanji(s2, allFiles).errors.join('\n');
+    };
+    expect(err((x) => x.push({ sauChu: '一' }))).toMatch(/có mục thiếu glyph/);
+    expect(err((x) => x.push({ ...x[0] }))).toMatch(/耳 bị trùng trong content-vi\/kanji-extra.json/);
+    expect(err((x) => (x[0].on = ['じ']))).toMatch(/âm on "じ" phải là katakana/);
+    expect(err((x) => (x[0].kun = ['ミミ']))).toMatch(/âm kun "ミミ" phải là hiragana/);
+    expect(err((x) => (x[0].on = 'ジ'))).toMatch(/耳: thiếu "on"/);
+  });
+  it('4 chữ đều có ví dụ thật trong n5_vocab; âm kun gốc có cách đọc cả từ cho giọng máy', () => {
+    const vocabIds = new Set(read('n5_vocab.json').words.map((w) => w.id));
+    const { items } = buildKanji(real(), allFiles);
+    for (const g of ['多', '少', '耳', '魚']) {
+      const k = items.find((x) => x.id === g);
+      expect(k.viDu.length).toBeGreaterThan(0);
+      for (const v of k.viDu) expect(vocabIds.has(v.id)).toBe(true);
+    }
+    expect(items.find((x) => x.id === '少').kun.map((r) => r.tts)).toEqual(['すくない', 'すこし']);
+    expect(items.find((x) => x.id === '耳').kun[0].tts).toBe('みみ');
+  });
+  it('SVG KanjiVG của 4 chữ có trong public/', () => {
+    for (const g of ['多', '少', '耳', '魚']) expect(existsSync(join(ROOT, 'public/kanji/svg', `${g}.svg`))).toBe(true);
   });
 });

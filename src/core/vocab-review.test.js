@@ -81,3 +81,30 @@ describe('thẻ đến hạn', () => {
     expect(canSpeakWord({ doc: 'お～' })).toBe(false);
   });
 });
+
+import { topicStats, topicPack, isLearned } from './vocab-review.js';
+
+describe('từ vựng theo chủ đề', () => {
+  it('21 chủ đề theo thứ tự lộ trình, tổng 718, đếm đã học', () => {
+    const data = { tuVung: { 'n5-0001': { gioiThieu: '2026-11-20' } }, srs: {} };
+    const s = topicStats(data, vocab(), vocabTopics());
+    expect(s).toHaveLength(21);
+    expect(s[0]).toMatchObject({ thuTu: 1, chuDe: 'Chào hỏi, giao tiếp', daHoc: 1 });
+    expect(s.reduce((a, t) => a + t.tong, 0)).toBe(718);
+  });
+  it('gói học: từ chưa học của chủ đề, theo id, tối đa hạn mức', () => {
+    const first = vocab().filter((w) => w.chuDeThuTu === 1).sort((a, b) => a.id.localeCompare(b.id));
+    const data = { settings: { tuMoiMoiNgay: 5 }, tuVung: { [first[0].id]: { gioiThieu: '2026-11-01' } }, srs: { [`vocab:${first[1].id}`]: {} } };
+    const { pack, left } = topicPack(data, vocab(), 1, '2026-11-20');
+    expect(pack.map((w) => w.id)).toEqual(first.slice(2, 7).map((w) => w.id));
+    expect(left).toBe(first.length - 2);
+    expect(isLearned(data, first[1].id)).toBe(true);
+    expect(topicPack(data, vocab(), 99, '2026-11-20').pack).toEqual([]);
+  });
+  it('hạn mức chung trong ngày: từ đã học hôm nay (ở đâu cũng tính) trừ vào gói', () => {
+    const other = vocab().filter((w) => w.chuDeThuTu === 2).slice(0, 3);
+    const data = { settings: { tuMoiMoiNgay: 5 }, tuVung: Object.fromEntries(other.map((w) => [w.id, { gioiThieu: '2026-11-20' }])), srs: {} };
+    expect(topicPack(data, vocab(), 1, '2026-11-20').pack).toHaveLength(2);
+    expect(topicPack(data, vocab(), 1, '2026-11-21').pack).toHaveLength(5);
+  });
+});

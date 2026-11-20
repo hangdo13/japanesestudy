@@ -11,7 +11,7 @@ import { renderCard, hasCard } from '../../ui/cards/registry.js';
 import { renderEmptyState } from '../../ui/empty-state.js';
 import { renderGoalComplete } from '../../ui/goal-complete.js';
 import { speakJa, canSpeakJapanese, onVoicesChanged } from '../../ui/speech.js';
-import { flashStep } from './flash.js';
+import { flashStep } from '../../ui/flash-step.js';
 
 export const TU_VUNG = 'tu-vung';
 const NO_VOICE = 'Máy chưa có giọng đọc tiếng Nhật nên chưa phát âm được. Trên iPhone: Cài đặt → Trợ năng → Nội dung được đọc → Giọng nói, tải giọng tiếng Nhật.';

@@ -143,8 +143,8 @@ describe('trang chủ: việc hôm nay (Story 2.4)', () => {
     expect(stats).toHaveLength(2);
     expect(stats[0].querySelector('.kt-stat__value').textContent).toBe('7phút');
     expect(stats[0].getAttribute('aria-label')).toBe('Học hôm nay: 7 phút');
-    expect(stats[1].getAttribute('aria-label')).toBe('Kanji đã học: 1 trên 106');
-    expect(stats[1].querySelector('.kt-stat__value').textContent).toBe('1/106');
+    expect(stats[1].getAttribute('aria-label')).toBe('Kanji đã học: 1 trên 110');
+    expect(stats[1].querySelector('.kt-stat__value').textContent).toBe('1/110');
     expect(stats[1].querySelector('.kt-stat__icon--blue')).not.toBeNull();
   });
 
@@ -168,7 +168,7 @@ describe('trang chủ: việc hôm nay (Story 2.4)', () => {
       d.kanji['一'] = { gioiThieu: '2026-11-01' };
     });
     const c = root.querySelector('.kt-course');
-    expect(c.querySelector('.kt-course__count').textContent).toBe('1/106 chữ');
+    expect(c.querySelector('.kt-course__count').textContent).toBe('1/110 chữ');
     expect(c.querySelector('.kt-seg').getAttribute('aria-valuenow')).toBe('1');
   });
 
@@ -223,13 +223,14 @@ describe('trang chủ: chi tiết (review 2.4)', () => {
   it('hôm nay đã học: ô hôm nay vừa is-done vừa is-today; 717/718 không hiện 100%', () => {
     const { root } = homeWith((d) => {
       d.hocGiay['2026-11-20'] = 120;
-      for (const w of vocab().slice(0, 717)) d.srs[`vocab:${w.id}`] = { dueAt: '2030-01-01T00:00:00Z', state: 2 };
+      for (const w of vocab().slice(0, 717)) d.tuVung[w.id] = { gioiThieu: '2026-11-01' };
     });
     const today = root.querySelector('.kt-day[aria-current="date"]');
     expect(today.classList.contains('is-done')).toBe(true);
     expect(today.classList.contains('is-today')).toBe(true);
     expect(today.getAttribute('role')).toBe('img');
     const vocabCourse = root.querySelectorAll('.kt-course')[1];
+    expect(vocabCourse.getAttribute('href')).toBe('#/tu-vung');
     expect(vocabCourse.querySelector('.kt-pct').textContent).toBe('99%');
     expect(vocabCourse.querySelectorAll('.kt-seg i.on')).toHaveLength(19);
   });

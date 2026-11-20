@@ -1,0 +1,100 @@
+{
+  "nguon": "AI soạn (Claude), chưa duyệt. 4 chữ có trong lộ trình N5 mục 4 nhưng không có trong JLPTSuccess. Âm đọc theo KANJIDIC2; số nét theo KanjiVG. docNoi: cách đọc cả từ cho giọng máy khi âm kun chỉ là gốc (すく → すくない).",
+  "items": [
+    {
+      "glyph": "耳",
+      "sauChu": "口",
+      "on": [
+        "ジ"
+      ],
+      "kun": [
+        "みみ"
+      ],
+      "boPhan": [
+        "耳"
+      ],
+      "soNet": 6,
+      "deNham": [
+        "目"
+      ],
+      "hanViet": "NHĨ",
+      "nghia": "tai",
+      "cauGoiNho": "Vành tai nhìn nghiêng: khung cao có các nếp gấp bên trong, giống 目 nhưng chân kéo dài ra.",
+      "reviewStatus": "draft"
+    },
+    {
+      "glyph": "魚",
+      "sauChu": "空",
+      "on": [
+        "ギョ"
+      ],
+      "kun": [
+        "うお",
+        "さかな"
+      ],
+      "boPhan": [
+        "⺈",
+        "田",
+        "灬"
+      ],
+      "soNet": 11,
+      "deNham": [],
+      "hanViet": "NGƯ",
+      "nghia": "con cá",
+      "cauGoiNho": "Đầu cá nhọn ở trên, thân có vảy ô vuông như ruộng 田, bốn chấm dưới là đuôi và vây.",
+      "reviewStatus": "draft"
+    },
+    {
+      "glyph": "多",
+      "sauChu": "長",
+      "on": [
+        "タ"
+      ],
+      "kun": [
+        "おお"
+      ],
+      "boPhan": [
+        "夕",
+        "夕"
+      ],
+      "soNet": 6,
+      "deNham": [
+        "名"
+      ],
+      "hanViet": "ĐA",
+      "nghia": "nhiều",
+      "cauGoiNho": "Hai buổi tối 夕 chồng lên nhau: tối này qua tối khác, ngày càng nhiều.",
+      "reviewStatus": "draft",
+      "docNoi": {
+        "おお": "おおい"
+      }
+    },
+    {
+      "glyph": "少",
+      "sauChu": "多",
+      "on": [
+        "ショウ"
+      ],
+      "kun": [
+        "すく",
+        "すこ"
+      ],
+      "boPhan": [
+        "小",
+        "丿"
+      ],
+      "soNet": 4,
+      "deNham": [
+        "小"
+      ],
+      "hanViet": "THIỂU",
+      "nghia": "ít, một chút",
+      "cauGoiNho": "Chữ nhỏ 小 thêm một nét phẩy 丿 quét xuống bên dưới: nhỏ lại còn bị kéo bớt đi, thành ít.",
+      "reviewStatus": "draft",
+      "docNoi": {
+        "すく": "すくない",
+        "すこ": "すこし"
+      }
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 import { toHash } from '../../core/router.js';
-import { kanji, vocab } from '../../core/content.js';
+import { kanji, vocab, vocabTopics } from '../../core/content.js';
 import { localDate } from '../../core/progress.js';
 import { dueVocab, newVocabToday, MAX_REVIEW } from '../../core/vocab-review.js';
 import { progress as defaultProgress } from '../../core/progress.js';
@@ -9,7 +9,7 @@ import { dueKanjiCards, missingKanjiCards, MAX_PER_SESSION } from '../../core/ka
 const PHAN = [
   { title: 'Kana & phát âm', sub: 'Hiragana, katakana, quy tắc đọc', glyph: 'あ', skill: 'kanji', hash: toHash('kana') },
   { title: 'Kanji N5', sub: `${kanji().length} chữ, âm Hán Việt, câu gợi nhớ`, glyph: '字', skill: 'kanji', hash: toHash('kanji') },
-  { title: 'Từ vựng', sub: 'Sắp có', glyph: '語', skill: 'vocab' },
+  { title: 'Từ vựng N5 theo chủ đề', sub: `${vocab().length} từ, ${vocabTopics().length} chủ đề theo lộ trình`, glyph: '語', skill: 'vocab', hash: toHash('tu-vung') },
   { title: 'Ngữ pháp', sub: 'Sắp có', glyph: '文', skill: 'grammar' },
   { title: 'Luyện nghe', sub: 'Sắp có', icon: 'mic', skill: 'speaking' },
 ];

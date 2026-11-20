@@ -105,6 +105,6 @@ describe('tuần và số đã học', () => {
     d.kanji['二'] = { gioiThieu: '2026-11-01' };
     d.srs['vocab:n5-0001'] = { state: 2 };
     d.tuVung['n5-0002'] = { gioiThieu: '2026-11-20' };
-    expect(learnedCounts(d, ctx)).toEqual({ kanjiHoc: 2, kanjiThuoc: 1, kanjiTong: 106, tuHoc: 2, tuThuoc: 1, tuTong: 718 });
+    expect(learnedCounts(d, ctx)).toEqual({ kanjiHoc: 2, kanjiThuoc: 1, kanjiTong: 110, tuHoc: 2, tuThuoc: 1, tuTong: 718 });
   });
 });

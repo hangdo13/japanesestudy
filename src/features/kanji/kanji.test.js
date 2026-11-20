@@ -22,10 +22,10 @@ function render(param, deps = {}) {
 }
 
 describe('màn danh sách', () => {
-  it('có 106 ô theo thứ tự, link tới trang chi tiết, có chip Chưa duyệt', () => {
+  it('có 110 ô theo thứ tự, link tới trang chi tiết, có chip Chưa duyệt', () => {
     const el = render(null);
     const tiles = el.querySelectorAll('a.kanji-tile');
-    expect(tiles).toHaveLength(106);
+    expect(tiles).toHaveLength(110);
     expect(tiles[0].textContent).toContain('一');
     expect(tiles[0].textContent).toContain('NHẤT');
     expect(tiles[0].getAttribute('href')).toBe('#/kanji/%E4%B8%80');
@@ -185,5 +185,92 @@ describe('cleanKanjiVg', () => {
     await box.ready;
     expect(box.querySelector('svg')).toBeNull();
     expect(box.textContent).toBe('Chưa tải được hình thứ tự nét.');
+  });
+});
+
+describe('âm đọc không có audio (4 chữ thêm, Story 1.7)', () => {
+  class A {
+    constructor(src) {
+      A.played.push(src);
+    }
+    play() {
+      return Promise.resolve();
+    }
+    pause() {
+      A.paused += 1;
+    }
+  }
+  A.played = [];
+  A.paused = 0;
+  const noVoices = () => () => {};
+
+  it('có audio thì phát file; không có thì đọc bằng giọng máy (cả từ cho âm kun gốc); dừng thì huỷ giọng', async () => {
+    const status = document.createElement('p');
+    const speak = vi.fn(() => true);
+    const cancelSpeech = vi.fn();
+    const player = createPlayer(status, A, { speak, canSpeak: () => true, voicesChanged: noVoices, cancelSpeech });
+    expect(await player.playReading({ kana: 'ニチ', audio: 'audio/kanji/日-on-にち.mp3' })).toBe(true);
+    expect(decodeURIComponent(A.played.at(-1))).toContain('日-on-');
+    expect(await player.playReading({ kana: 'ギョ', audio: null })).toBe(true);
+    expect(speak).toHaveBeenLastCalledWith('ギョ', expect.objectContaining({ onError: expect.any(Function) }));
+    expect(await player.playReading({ kana: 'すく', audio: null, tts: 'すくない' })).toBe(true);
+    expect(speak).toHaveBeenLastCalledWith('すくない', expect.anything());
+    player.stop();
+    expect(cancelSpeech).toHaveBeenCalled();
+  });
+
+  it('không có giọng: chờ giọng nạp, vẫn không có thì báo; lỗi khi đọc thì báo', async () => {
+    const status = document.createElement('p');
+    let ready = false;
+    let notify;
+    const speak = vi.fn((t, o) => {
+      speak.onError = o.onError;
+      return true;
+    });
+    const player = createPlayer(status, A, { speak, canSpeak: () => ready, voicesChanged: (cb) => ((notify = cb), () => {}), cancelSpeech: () => {} });
+    const p = player.playReading({ kana: 'ギョ', audio: null });
+    ready = true;
+    notify();
+    expect(await p).toBe(true);
+    speak.onError({ error: 'synthesis-failed' });
+    expect(status.textContent).toContain('giọng đọc tiếng Nhật');
+    vi.useFakeTimers();
+    try {
+      ready = false;
+      const silent = createPlayer(status, A, { speak, canSpeak: () => false, voicesChanged: noVoices, cancelSpeech: () => {} });
+      status.textContent = '';
+      const q = silent.playReading({ kana: 'うお', audio: null });
+      await vi.advanceTimersByTimeAsync(2000);
+      expect(await q).toBe(false);
+      expect(status.textContent).toContain('giọng đọc tiếng Nhật');
+    } finally {
+      vi.useRealTimers();
+    }
+  });
+
+  it('trang chi tiết 魚: tải SVG nét viết, bấm nghe âm on đọc bằng giọng máy; không có giọng thì báo trên trang', async () => {
+    const svg = readFileSync(join(process.cwd(), 'public/kanji/svg/魚.svg'), 'utf8');
+    const fetch = vi.fn(() => Promise.resolve({ ok: true, text: () => Promise.resolve(svg) }));
+    const speak = vi.fn(() => true);
+    const el = document.createElement('div');
+    document.body.replaceChildren(el);
+    mount(el, { param: '魚' }, { speak, canSpeak: () => true, fetch });
+    expect(el.textContent).toContain('NGƯ');
+    await vi.waitFor(() => expect(fetch).toHaveBeenCalled());
+    expect(decodeURIComponent(fetch.mock.calls[0][0])).toContain('kanji/svg/魚.svg');
+    el.querySelector('[aria-label="Phát âm ギョ"]').click();
+    await vi.waitFor(() => expect(speak).toHaveBeenCalledWith('ギョ', expect.anything()));
+    await vi.waitFor(() => expect(el.querySelectorAll('.kanji-strokes path').length).toBeGreaterThan(0));
+
+    const el2 = document.createElement('div');
+    mount(el2, { param: '魚' }, { speak, canSpeak: () => false, fetch: () => new Promise(() => {}) });
+    el2.querySelector('[aria-label="Phát âm ギョ"]').click();
+    await vi.waitFor(() => expect(el2.textContent).toContain('giọng đọc tiếng Nhật'), { timeout: 3000 });
+  });
+
+  it('chữ lạ: EmptyState nói 110 kanji', () => {
+    const el = document.createElement('div');
+    mount(el, { param: '龍' }, {});
+    expect(el.textContent).toContain('110 kanji N5');
   });
 });
